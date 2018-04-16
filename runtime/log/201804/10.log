@@ -1,0 +1,2480 @@
+---------------------------------------------------------------
+[ 2018-04-10T20:11:53+08:00 ] 0.0.0.0 GET /cygw/public/index/index/index
+[ error ] [1]Call to undefined method app\index\controller\Index::fetch()
+---------------------------------------------------------------
+[ 2018-04-10T20:12:29+08:00 ] 0.0.0.0 GET /cygw/public/index/index/index
+[ info ] localhost:9096/cygw/public/index/index/index [运行时间：0.039002s][吞吐率：25.64req/s] [内存消耗：1,349.86kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined method app\index\controller\Index::fetch()[D:\phpStudy\WWW\cygw\application\index\controller\Index.php:24]
+---------------------------------------------------------------
+[ 2018-04-10T20:13:19+08:00 ] 0.0.0.0 GET /cygw/public/index/index/index
+[ info ] localhost:9096/cygw/public/index/index/index [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：1,349.85kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined method app\index\controller\Index::fetch()[D:\phpStudy\WWW\cygw\application\index\controller\Index.php:24]
+---------------------------------------------------------------
+[ 2018-04-10T20:13:24+08:00 ] 0.0.0.0 GET /cygw/public/index/index/index
+[ info ] localhost:9096/cygw/public/index/index/index [运行时间：0.047002s][吞吐率：21.28req/s] [内存消耗：1,349.85kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined method app\index\controller\Index::fetch()[D:\phpStudy\WWW\cygw\application\index\controller\Index.php:24]
+---------------------------------------------------------------
+[ 2018-04-10T20:13:30+08:00 ] 0.0.0.0 GET /cygw/public/index/index/index
+[ info ] localhost:9096/cygw/public/index/index/index [运行时间：0.039602s][吞吐率：25.25req/s] [内存消耗：1,349.85kb] [文件加载：40]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined method app\index\controller\Index::fetch()[D:\phpStudy\WWW\cygw\application\index\controller\Index.php:24]
+---------------------------------------------------------------
+[ 2018-04-10T20:14:35+08:00 ] 0.0.0.0 GET /cygw/public/index/index/index
+[ info ] localhost:9096/cygw/public/index/index/index [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：1,723.11kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T20:14:35+08:00 ] 0.0.0.0 GET /cygw/public/static/ueditor/ueditor.config.js
+[ info ] localhost:9096/cygw/public/static/ueditor/ueditor.config.js [运行时间：0.038002s][吞吐率：26.31req/s] [内存消耗：1,334.94kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'ueditor',
+    2 => 'ueditor.config.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost:9096/cygw/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T20:14:35+08:00 ] 0.0.0.0 GET /cygw/public/static/ueditor/ueditor.all.js
+[ info ] localhost:9096/cygw/public/static/ueditor/ueditor.all.js [运行时间：0.055003s][吞吐率：18.18req/s] [内存消耗：1,334.90kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'ueditor',
+    2 => 'ueditor.all.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost:9096/cygw/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T20:15:44+08:00 ] 0.0.0.0 POST /cygw/public/index/index/index
+[ info ] localhost:9096/cygw/public/index/index/index [运行时间：0.075005s][吞吐率：13.33req/s] [内存消耗：2,386.87kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'content-length' => '113',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost:9096',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+  'name' => '武汉雅木网络科技有限公司',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'college.users' doesn't exist[D:\phpStudy\WWW\cygw\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-04-10T20:16:29+08:00 ] 0.0.0.0 POST /cygw/public/index/index/index
+[ info ] localhost:9096/cygw/public/index/index/index [运行时间：0.079005s][吞吐率：12.66req/s] [内存消耗：2,386.95kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'content-length' => '113',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost:9096',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+  'name' => '武汉雅木网络科技有限公司',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'college.users' doesn't exist[D:\phpStudy\WWW\cygw\thinkphp\library\think\db\Connection.php:388]
+---------------------------------------------------------------
+[ 2018-04-10T20:16:51+08:00 ] 0.0.0.0 POST /cygw/public/index/index/index
+[ info ] localhost:9096/cygw/public/index/index/index [运行时间：0.079005s][吞吐率：12.66req/s] [内存消耗：2,390.28kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'content-length' => '113',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost:9096',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+  'name' => '武汉雅木网络科技有限公司',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `team` [ RunTime:0.007000s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'head' cannot be null[D:\phpStudy\WWW\cygw\thinkphp\library\think\db\Connection.php:456]
+---------------------------------------------------------------
+[ 2018-04-10T20:18:14+08:00 ] 0.0.0.0 POST /cygw/public/index/index/index
+[ info ] localhost:9096/cygw/public/index/index/index [运行时间：0.080004s][吞吐率：12.50req/s] [内存消耗：2,390.28kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'content-length' => '113',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost:9096',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+  'name' => '武汉雅木网络科技有限公司',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `team` [ RunTime:0.007001s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'head' cannot be null[D:\phpStudy\WWW\cygw\thinkphp\library\think\db\Connection.php:456]
+---------------------------------------------------------------
+[ 2018-04-10T20:19:02+08:00 ] 0.0.0.0 POST /cygw/public/index/index/index
+[ info ] localhost:9096/cygw/public/index/index/index [运行时间：0.071004s][吞吐率：14.08req/s] [内存消耗：2,390.42kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'content-length' => '113',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost:9096',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+  'name' => '武汉雅木网络科技有限公司',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `team` [ RunTime:0.007000s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'head' cannot be null[D:\phpStudy\WWW\cygw\thinkphp\library\think\db\Connection.php:456]
+---------------------------------------------------------------
+[ 2018-04-10T20:19:07+08:00 ] 0.0.0.0 GET /cygw/public/index/index/index
+[ info ] localhost:9096/cygw/public/index/index/index [运行时间：0.063004s][吞吐率：15.87req/s] [内存消耗：1,723.09kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T20:19:07+08:00 ] 0.0.0.0 GET /cygw/public/static/ueditor/ueditor.all.js
+[ info ] localhost:9096/cygw/public/static/ueditor/ueditor.all.js [运行时间：0.051003s][吞吐率：19.61req/s] [内存消耗：1,334.90kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'ueditor',
+    2 => 'ueditor.all.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost:9096/cygw/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T20:19:07+08:00 ] 0.0.0.0 GET /cygw/public/static/ueditor/ueditor.config.js
+[ info ] localhost:9096/cygw/public/static/ueditor/ueditor.config.js [运行时间：0.060004s][吞吐率：16.67req/s] [内存消耗：1,334.94kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'ueditor',
+    2 => 'ueditor.config.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost:9096/cygw/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T20:19:07+08:00 ] 0.0.0.0 GET /cygw/public/static/ueditor/ueditor.all.js
+[ info ] localhost:9096/cygw/public/static/ueditor/ueditor.all.js [运行时间：0.047003s][吞吐率：21.28req/s] [内存消耗：1,334.90kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'ueditor',
+    2 => 'ueditor.all.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost:9096/cygw/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T20:19:49+08:00 ] 0.0.0.0 POST /cygw/public/index/index/index
+[ info ] localhost:9096/cygw/public/index/index/index [运行时间：0.073004s][吞吐率：13.70req/s] [内存消耗：2,549.13kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'content-length' => '146',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost:9096',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+  'name' => '武汉雅木网络科技有限公司',
+  'head' => '肖运扬',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `team` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] INSERT INTO `team` (`name` , `message` , `head`) VALUES ('武汉雅木网络科技有限公司' , NULL , '肖运扬') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-04-10T20:19:52+08:00 ] 0.0.0.0 GET /cygw/public/index/index/index.html
+[ info ] localhost:9096/cygw/public/index/index/index.html [运行时间：0.056602s][吞吐率：17.67req/s] [内存消耗：1,583.55kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/index/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T20:19:52+08:00 ] 0.0.0.0 GET /cygw/public/static/ueditor/ueditor.config.js
+[ info ] localhost:9096/cygw/public/static/ueditor/ueditor.config.js [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：1,335.02kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'ueditor',
+    2 => 'ueditor.config.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost:9096/cygw/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T20:19:52+08:00 ] 0.0.0.0 GET /cygw/public/static/ueditor/ueditor.all.js
+[ info ] localhost:9096/cygw/public/static/ueditor/ueditor.all.js [运行时间：0.045002s][吞吐率：22.22req/s] [内存消耗：1,334.88kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'ueditor',
+    2 => 'ueditor.all.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost:9096/cygw/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T20:24:58+08:00 ] 0.0.0.0 POST /cygw/public/index/index/index.html
+[ info ] localhost:9096/cygw/public/index/index/index.html [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：2,408.35kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'content-length' => '23',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost:9096',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+  'name' => 'qwqewe',
+  'head' => 'adqweq',
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `team` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] INSERT INTO `team` (`name` , `message` , `head`) VALUES ('qwqewe' , NULL , 'adqweq') [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-10T20:25:01+08:00 ] 0.0.0.0 GET /cygw/public/index/index/index.html
+[ info ] localhost:9096/cygw/public/index/index/index.html [运行时间：0.071603s][吞吐率：13.97req/s] [内存消耗：1,583.51kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T20:25:01+08:00 ] 0.0.0.0 GET /cygw/public/static/ueditor/ueditor.config.js
+[ info ] localhost:9096/cygw/public/static/ueditor/ueditor.config.js [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：1,335.02kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'ueditor',
+    2 => 'ueditor.config.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost:9096/cygw/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T20:25:01+08:00 ] 0.0.0.0 GET /cygw/public/static/ueditor/ueditor.all.js
+[ info ] localhost:9096/cygw/public/static/ueditor/ueditor.all.js [运行时间：0.041003s][吞吐率：24.39req/s] [内存消耗：1,334.88kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'static',
+    1 => 'ueditor',
+    2 => 'ueditor.all.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost:9096/cygw/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T20:34:20+08:00 ] 0.0.0.0 GET /cygw/public/index/index/index.html
+[ info ] localhost:9096/cygw/public/index/index/index.html [运行时间：0.072004s][吞吐率：13.89req/s] [内存消耗：1,723.53kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/index/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T20:56:43+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：1,722.73kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T20:58:03+08:00 ] 0.0.0.0 POST /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.082005s][吞吐率：12.19req/s] [内存消耗：2,584.08kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'content-length' => '36361',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost:9096',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+  'title' => '本科就有导师 岳麓书院把制度做成了“温度”岳麓书院把制度',
+  'publisher' => '管理员',
+  'content' => '<p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-size: medium;"><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: calibri;">6</span></span></span><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: 宋体;">月初，湖南大学岳麓书院</span></span><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: calibri;">2017</span></span></span><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: 宋体;">届毕业典礼上，</span></span><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: calibri;">2013</span></span></span><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: 宋体;">级历史学本科生刘楚莹成了场上第一个泪崩的人。那个瞬间，她正和同门师兄一起向学业导师邓洪波教授鞠躬谢师。</span></span></span></span></p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-size: medium;"><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: 宋体;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://jdcyxy.cn/attachment/cms/item/2017_07/21_17/c512d065549478e6.jpg" target="_blank" style="word-break: break-all; color: rgb(69, 69, 69); text-decoration-line: none;"><img alt="8213c8208c962ddfbbe4a143277fc569.jpg" src="http://jdcyxy.cn/attachment/cms/item/2017_07/21_17/c512d065549478e6.jpg.cthumb.jpg"/></a></span></span></span></span></p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: 宋体;"><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-size: medium;">“你有什么烦恼就尽管来找我。”“老师这里永远为你敞开怀抱。”“你们就像儿女一样，老师希望你们留下来，但老师更希望你们飞得更高。”在刘楚莹眼里，导师不只是她学术的领路人，更是她值得信赖的长辈，是精神导师，是她成长路上的“灯塔”。收到保研录取通知书的那一刻，一句“楚莹，恭喜你出嫁了”，更让她感动到哭。</span></span></span></span></p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-size: medium;"><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: 宋体;">在湖南大学岳麓书院，留下了很多这样“有温度”的师生故事。本科生导师制搭起了师生之间的这座桥梁。从</span></span><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: calibri;">2009</span></span></span><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: 宋体;">年开始，岳麓书院立足当代高等教育发展的实际，汲取传统书院文化之精华，实行本科生导师制。</span></span></span></span></p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: 宋体;"><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-size: medium;">经过八年多的实践和探索，目前已形成了包括学业导师、生活导师、班导师、学术兴趣导师在内四位一体的本科生人才培养模式，续写着千年学府的光荣与梦想。岳麓书院院长肖永明教授表示，岳麓书院本科生导师制既有对古代书院教育传统的继承，对书院教育理念与实践经验的借鉴，也立足于高等教育发展的现实，顺应了时代发展的潮流。</span></span></span></span></p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-size: medium;"><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: 宋体;">做人与做学问</span></span></span></span></strong></p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-size: medium;"><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: 宋体;">本科就有导师是什么样的体验？“如果你对历史学习感兴趣，一定会觉得这是几辈子求来的福气。”在岳麓书院，有学生这样形容来书院求学的“小幸运”。岳麓书院从</span></span><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: calibri;">2009</span></span></span><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: 宋体;">年开始招收历史学专业本科生，每个学生都有一位学业导师进行一对一的指导。</span></span></span></span></p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-size: medium;"><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: 宋体;">李伟，岳麓书院</span></span><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: calibri;">2010</span></span></span><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: 宋体;">级历史学本科生，本科毕业后在复旦大学历史地理研究中心硕博连读，和曾经的学业导师肖永明教授依然保持着非常紧密的联系。</span></span></span></span></p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: 宋体;"><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-size: medium;">“现在看来，他发展得很不错。如果我们不去引导他，可能他的潜力就难以发掘出来了。”肖永明感到很欣慰。他回忆，因为一些外在因素，李伟在大一时曾一心想考公务员。“考上了，那这个社会也只是多了一个普普通通的公务员，却少了一个做学问的好苗子。”凭他的经验，李伟好学慎思，“是个读书的种子”。</span></span></span></span></p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: 宋体;"><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-size: medium;">引导李伟往学术方向改变，他花了不少心思。“我经常找他谈话，希望他看到自己的特长和真正的兴趣。我的博士是他的生活导师，也会在不同的场合跟他交流，希望他找准自己的方向，要扬长避短。”虽然中间偶有反复，但李伟在大二时终于确定了学术之路。每周二的师门读书会，他“雷打不动”地参加。</span></span></span></span></p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: 宋体;"><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-size: medium;">学业导师是岳麓书院本科生导师制的主体。在肖永明看来，传统的书院教育追求“求学”与“求道”的统一，融德行与学问为一体，关注知识的传授，更重视学生品德的培养。“这就要求我们的教师不仅仅在学业方面对学生加以指点，而且要在学生价值观念形成与人格养成的过程中，在为学进德、待人接物、为人处世等方面给予学生以引导。”</span></span></span></span></p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-size: medium;"><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: 宋体;">作为肖永明教授的学生，</span></span><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: calibri;">2013</span></span></span><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: 宋体;">级历史学本科生蒋明也在学业导师的指导下，一步步走向专业历史学科学习的大门。在为人处世上，他更是耳濡目染，以导师为榜样。</span></span></span></span></p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: 宋体;"><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-size: medium;">“让我很有体会的一点就是肖老师对他的老师陈谷嘉教授的尊重和关怀。每次提到老先生时他的眼里总是充满了敬意；老先生现在退休在家，肖老师逢年过节就会去看望他，有年中秋还叫了我们几个学生一起去陪老先生过节。”他说，这让他真正体会到了什么是尊师重道。</span></span></span></span></p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: 宋体;"><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-size: medium;">有学术探讨，有情感交流，亦师亦友，朝夕相处，谈学论道，切磋砥砺——传统书院教育中的师生关系，在今日的岳麓书院重焕活力。</span></span></span></span></p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-size: medium;"><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: 宋体;">书院连续几年就导师制实施情况对毕业生进行回访，当问到“学业导师对您对帮助体现在什么方面”时，有三分之二的人选择了“人格熏陶”和“论文写作”。</span></span><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: calibri;">2013</span></span></span><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: 宋体;">级历史学本科</span></span><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: calibri;">29</span></span></span><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: 宋体;">名学生，有</span></span><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: calibri;">20</span></span></span><span style="word-break: break-all; padding: 0px;"><span style="word-break: break-all; font-family: 宋体;">人继续读研深造，升学率近七成，又为书院当代复兴做了更为生动和有力的注脚。</span></span></span></span></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/></p>',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.024001s ]
+[ sql ] [ SQL ] INSERT INTO `notice` (`title` , `publisher` , `content`) VALUES ('本科就有导师 岳麓书院把制度做成了“温度”岳麓书院把制度' , '管理员' , '<p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-size: medium;\"><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: calibri;\">6</span></span></span><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: 宋体;\">月初，湖南大学岳麓书院</span></span><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: calibri;\">2017</span></span></span><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: 宋体;\">届毕业典礼上，</span></span><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: calibri;\">2013</span></span></span><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: 宋体;\">级历史学本科生刘楚莹成了场上第一个泪崩的人。那个瞬间，她正和同门师兄一起向学业导师邓洪波教授鞠躬谢师。</span></span></span></span></p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-size: medium;\"><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: 宋体;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://jdcyxy.cn/attachment/cms/item/2017_07/21_17/c512d065549478e6.jpg\" target=\"_blank\" style=\"word-break: break-all; color: rgb(69, 69, 69); text-decoration-line: none;\"><img alt=\"8213c8208c962ddfbbe4a143277fc569.jpg\" src=\"http://jdcyxy.cn/attachment/cms/item/2017_07/21_17/c512d065549478e6.jpg.cthumb.jpg\"/></a></span></span></span></span></p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: 宋体;\"><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-size: medium;\">“你有什么烦恼就尽管来找我。”“老师这里永远为你敞开怀抱。”“你们就像儿女一样，老师希望你们留下来，但老师更希望你们飞得更高。”在刘楚莹眼里，导师不只是她学术的领路人，更是她值得信赖的长辈，是精神导师，是她成长路上的“灯塔”。收到保研录取通知书的那一刻，一句“楚莹，恭喜你出嫁了”，更让她感动到哭。</span></span></span></span></p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-size: medium;\"><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: 宋体;\">在湖南大学岳麓书院，留下了很多这样“有温度”的师生故事。本科生导师制搭起了师生之间的这座桥梁。从</span></span><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: calibri;\">2009</span></span></span><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: 宋体;\">年开始，岳麓书院立足当代高等教育发展的实际，汲取传统书院文化之精华，实行本科生导师制。</span></span></span></span></p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: 宋体;\"><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-size: medium;\">经过八年多的实践和探索，目前已形成了包括学业导师、生活导师、班导师、学术兴趣导师在内四位一体的本科生人才培养模式，续写着千年学府的光荣与梦想。岳麓书院院长肖永明教授表示，岳麓书院本科生导师制既有对古代书院教育传统的继承，对书院教育理念与实践经验的借鉴，也立足于高等教育发展的现实，顺应了时代发展的潮流。</span></span></span></span></p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-size: medium;\"><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: 宋体;\">做人与做学问</span></span></span></span></strong></p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-size: medium;\"><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: 宋体;\">本科就有导师是什么样的体验？“如果你对历史学习感兴趣，一定会觉得这是几辈子求来的福气。”在岳麓书院，有学生这样形容来书院求学的“小幸运”。岳麓书院从</span></span><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: calibri;\">2009</span></span></span><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: 宋体;\">年开始招收历史学专业本科生，每个学生都有一位学业导师进行一对一的指导。</span></span></span></span></p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-size: medium;\"><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: 宋体;\">李伟，岳麓书院</span></span><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: calibri;\">2010</span></span></span><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: 宋体;\">级历史学本科生，本科毕业后在复旦大学历史地理研究中心硕博连读，和曾经的学业导师肖永明教授依然保持着非常紧密的联系。</span></span></span></span></p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: 宋体;\"><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-size: medium;\">“现在看来，他发展得很不错。如果我们不去引导他，可能他的潜力就难以发掘出来了。”肖永明感到很欣慰。他回忆，因为一些外在因素，李伟在大一时曾一心想考公务员。“考上了，那这个社会也只是多了一个普普通通的公务员，却少了一个做学问的好苗子。”凭他的经验，李伟好学慎思，“是个读书的种子”。</span></span></span></span></p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: 宋体;\"><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-size: medium;\">引导李伟往学术方向改变，他花了不少心思。“我经常找他谈话，希望他看到自己的特长和真正的兴趣。我的博士是他的生活导师，也会在不同的场合跟他交流，希望他找准自己的方向，要扬长避短。”虽然中间偶有反复，但李伟在大二时终于确定了学术之路。每周二的师门读书会，他“雷打不动”地参加。</span></span></span></span></p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: 宋体;\"><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-size: medium;\">学业导师是岳麓书院本科生导师制的主体。在肖永明看来，传统的书院教育追求“求学”与“求道”的统一，融德行与学问为一体，关注知识的传授，更重视学生品德的培养。“这就要求我们的教师不仅仅在学业方面对学生加以指点，而且要在学生价值观念形成与人格养成的过程中，在为学进德、待人接物、为人处世等方面给予学生以引导。”</span></span></span></span></p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-size: medium;\"><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: 宋体;\">作为肖永明教授的学生，</span></span><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: calibri;\">2013</span></span></span><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: 宋体;\">级历史学本科生蒋明也在学业导师的指导下，一步步走向专业历史学科学习的大门。在为人处世上，他更是耳濡目染，以导师为榜样。</span></span></span></span></p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: 宋体;\"><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-size: medium;\">“让我很有体会的一点就是肖老师对他的老师陈谷嘉教授的尊重和关怀。每次提到老先生时他的眼里总是充满了敬意；老先生现在退休在家，肖老师逢年过节就会去看望他，有年中秋还叫了我们几个学生一起去陪老先生过节。”他说，这让他真正体会到了什么是尊师重道。</span></span></span></span></p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: 宋体;\"><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-size: medium;\">有学术探讨，有情感交流，亦师亦友，朝夕相处，谈学论道，切磋砥砺——传统书院教育中的师生关系，在今日的岳麓书院重焕活力。</span></span></span></span></p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-size: medium;\"><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: 宋体;\">书院连续几年就导师制实施情况对毕业生进行回访，当问到“学业导师对您对帮助体现在什么方面”时，有三分之二的人选择了“人格熏陶”和“论文写作”。</span></span><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: calibri;\">2013</span></span></span><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: 宋体;\">级历史学本科</span></span><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: calibri;\">29</span></span></span><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: 宋体;\">名学生，有</span></span><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: calibri;\">20</span></span></span><span style=\"word-break: break-all; padding: 0px;\"><span style=\"word-break: break-all; font-family: 宋体;\">人继续读研深造，升学率近七成，又为书院当代复兴做了更为生动和有力的注脚。</span></span></span></span></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/></p>') [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-04-10T20:58:06+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index.html
+[ info ] localhost:9096/cygw/public/admin/index/index.html [运行时间：0.065004s][吞吐率：15.38req/s] [内存消耗：1,583.57kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T21:03:05+08:00 ] 0.0.0.0 POST /cygw/public/admin/index/index.html
+[ info ] localhost:9096/cygw/public/admin/index/index.html [运行时间：0.139008s][吞吐率：7.19req/s] [内存消耗：1,655.39kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'content-length' => '10747',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost:9096',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+  'title' => '大文件的空间偶觉得定情物ie',
+  'publisher' => '管理员',
+  'content' => '<p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; font-family: 微软雅黑; color: rgb(51, 51, 51);">&nbsp;5月21日，“中华文化四海行—走进湖南”在我校举办文化讲坛，中央文史馆馆员、复旦大学资深教授、著名历史地理学家葛剑雄带来《传统文化的“传”和“承”》专题讲座。中央文史研究馆、全国各地文史研究馆的200余位专家学者和我校学生代表参加活动。校党委副书记陈伟主持讲座。</span></p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255); text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://jdcyxy.cn/attachment/cms/item/2017_07/21_16/2b8b557312a3c0ec.png" target="_blank" style="word-break: break-all; color: rgb(69, 69, 69); text-decoration-line: none;"><img alt="4878be499e13df32882de1dac97e0f7b.png" src="http://jdcyxy.cn/attachment/cms/item/2017_07/21_16/2b8b557312a3c0ec.png.cthumb.jpg"/></a></p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255); text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px; margin: 0px;">“中华文化四海行—走进湖南”，由国务院参事室、中央文史研究馆、湖南省人民政府共同举办，以“弘扬中华优秀传统文化、展示伟人故里锦绣湖南”为主题，于5月20日至25日在长沙、岳阳举行，包括文化讲坛、书画精品联展、文艺联谊、名家进校园、大型书画联谊笔会等，在湖南大学、湖南师范大学、湖南理工学院三所高校举办文化讲坛。</span></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px; margin: 0px;"><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">讲座上，葛剑雄认为</span><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">传统文化的“传”即无条件保存保留，作为历史的记忆和资源的储存</span><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">，</span><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">传统文化的“承”，</span><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">就</span><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">是有选择的继承和弘扬，取其精华，去其糟粕，并需要进行创造性的转化</span><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">。讲座内容丰富，语言风趣幽默、通俗易懂，现场掌声阵阵、氛围热烈。</span></span></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px; margin: 0px;">陈伟在活动最后勉励我校学子，希望大家能够认真学习、主动担当、自觉传播优秀传统文化，充分认识传统文化的时代价值，坚守精神家园，坚定文化自信，努力成为中华文化的笃信者、传承者、躬行者，为中华文化发扬光大、中华民族伟大复兴贡献自己的青春力量。</span></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px; margin: 0px;">会后，与会专家学者参观了我校岳麓书院。</span></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px; margin: 0px;"><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">据悉，“中华文化四海行”是国务院参事室、中央文史研究馆推出的大型文化活动，</span><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">以强大的专家阵容、深厚的文化含量和丰富的活动形式，全方位、多角度展示和传播中华优秀传统文化，</span><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">自2013年以来已相继在贵州、云南、重庆、甘肃、新疆、澳门成功举办，受到各界民众的热烈欢迎。</span></span></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/></p>',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [1]Class 'app\index\model\Notice' not found[D:\phpStudy\WWW\cygw\application\admin\controller\Index.php:24]
+---------------------------------------------------------------
+[ 2018-04-10T21:04:00+08:00 ] 0.0.0.0 POST /cygw/public/admin/index/index.html
+[ info ] localhost:9096/cygw/public/admin/index/index.html [运行时间：0.069004s][吞吐率：14.49req/s] [内存消耗：2,726.38kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'content-length' => '10747',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost:9096',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+  'title' => '大文件的空间偶觉得定情物ie',
+  'publisher' => '管理员',
+  'content' => '<p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; font-family: 微软雅黑; color: rgb(51, 51, 51);">&nbsp;5月21日，“中华文化四海行—走进湖南”在我校举办文化讲坛，中央文史馆馆员、复旦大学资深教授、著名历史地理学家葛剑雄带来《传统文化的“传”和“承”》专题讲座。中央文史研究馆、全国各地文史研究馆的200余位专家学者和我校学生代表参加活动。校党委副书记陈伟主持讲座。</span></p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255); text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://jdcyxy.cn/attachment/cms/item/2017_07/21_16/2b8b557312a3c0ec.png" target="_blank" style="word-break: break-all; color: rgb(69, 69, 69); text-decoration-line: none;"><img alt="4878be499e13df32882de1dac97e0f7b.png" src="http://jdcyxy.cn/attachment/cms/item/2017_07/21_16/2b8b557312a3c0ec.png.cthumb.jpg"/></a></p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255); text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px; margin: 0px;">“中华文化四海行—走进湖南”，由国务院参事室、中央文史研究馆、湖南省人民政府共同举办，以“弘扬中华优秀传统文化、展示伟人故里锦绣湖南”为主题，于5月20日至25日在长沙、岳阳举行，包括文化讲坛、书画精品联展、文艺联谊、名家进校园、大型书画联谊笔会等，在湖南大学、湖南师范大学、湖南理工学院三所高校举办文化讲坛。</span></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px; margin: 0px;"><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">讲座上，葛剑雄认为</span><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">传统文化的“传”即无条件保存保留，作为历史的记忆和资源的储存</span><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">，</span><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">传统文化的“承”，</span><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">就</span><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">是有选择的继承和弘扬，取其精华，去其糟粕，并需要进行创造性的转化</span><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">。讲座内容丰富，语言风趣幽默、通俗易懂，现场掌声阵阵、氛围热烈。</span></span></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px; margin: 0px;">陈伟在活动最后勉励我校学子，希望大家能够认真学习、主动担当、自觉传播优秀传统文化，充分认识传统文化的时代价值，坚守精神家园，坚定文化自信，努力成为中华文化的笃信者、传承者、躬行者，为中华文化发扬光大、中华民族伟大复兴贡献自己的青春力量。</span></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px; margin: 0px;">会后，与会专家学者参观了我校岳麓书院。</span></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px; margin: 0px;"><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">据悉，“中华文化四海行”是国务院参事室、中央文史研究馆推出的大型文化活动，</span><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">以强大的专家阵容、深厚的文化含量和丰富的活动形式，全方位、多角度展示和传播中华优秀传统文化，</span><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">自2013年以来已相继在贵州、云南、重庆、甘肃、新疆、澳门成功举办，受到各界民众的热烈欢迎。</span></span></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/></p>',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.008000s ]
+[ error ] [0]数据表字段不存在:[update_time][D:\phpStudy\WWW\cygw\thinkphp\library\think\db\Builder.php:109]
+---------------------------------------------------------------
+[ 2018-04-10T21:05:19+08:00 ] 0.0.0.0 POST /cygw/public/admin/index/index.html
+[ info ] localhost:9096/cygw/public/admin/index/index.html [运行时间：0.079005s][吞吐率：12.66req/s] [内存消耗：2,775.30kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'content-length' => '10747',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost:9096',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+  'title' => '大文件的空间偶觉得定情物ie',
+  'publisher' => '管理员',
+  'content' => '<p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; font-family: 微软雅黑; color: rgb(51, 51, 51);">&nbsp;5月21日，“中华文化四海行—走进湖南”在我校举办文化讲坛，中央文史馆馆员、复旦大学资深教授、著名历史地理学家葛剑雄带来《传统文化的“传”和“承”》专题讲座。中央文史研究馆、全国各地文史研究馆的200余位专家学者和我校学生代表参加活动。校党委副书记陈伟主持讲座。</span></p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255); text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://jdcyxy.cn/attachment/cms/item/2017_07/21_16/2b8b557312a3c0ec.png" target="_blank" style="word-break: break-all; color: rgb(69, 69, 69); text-decoration-line: none;"><img alt="4878be499e13df32882de1dac97e0f7b.png" src="http://jdcyxy.cn/attachment/cms/item/2017_07/21_16/2b8b557312a3c0ec.png.cthumb.jpg"/></a></p><p style="word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255); text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px; margin: 0px;">“中华文化四海行—走进湖南”，由国务院参事室、中央文史研究馆、湖南省人民政府共同举办，以“弘扬中华优秀传统文化、展示伟人故里锦绣湖南”为主题，于5月20日至25日在长沙、岳阳举行，包括文化讲坛、书画精品联展、文艺联谊、名家进校园、大型书画联谊笔会等，在湖南大学、湖南师范大学、湖南理工学院三所高校举办文化讲坛。</span></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px; margin: 0px;"><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">讲座上，葛剑雄认为</span><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">传统文化的“传”即无条件保存保留，作为历史的记忆和资源的储存</span><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">，</span><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">传统文化的“承”，</span><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">就</span><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">是有选择的继承和弘扬，取其精华，去其糟粕，并需要进行创造性的转化</span><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">。讲座内容丰富，语言风趣幽默、通俗易懂，现场掌声阵阵、氛围热烈。</span></span></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px; margin: 0px;">陈伟在活动最后勉励我校学子，希望大家能够认真学习、主动担当、自觉传播优秀传统文化，充分认识传统文化的时代价值，坚守精神家园，坚定文化自信，努力成为中华文化的笃信者、传承者、躬行者，为中华文化发扬光大、中华民族伟大复兴贡献自己的青春力量。</span></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px; margin: 0px;">会后，与会专家学者参观了我校岳麓书院。</span></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="word-break: break-all; padding: 0px; margin: 0px;"><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">据悉，“中华文化四海行”是国务院参事室、中央文史研究馆推出的大型文化活动，</span><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">以强大的专家阵容、深厚的文化含量和丰富的活动形式，全方位、多角度展示和传播中华优秀传统文化，</span><span style="word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;">自2013年以来已相继在贵州、云南、重庆、甘肃、新疆、澳门成功举办，受到各界民众的热烈欢迎。</span></span></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/></p>',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] INSERT INTO `notice` (`title` , `publisher` , `content` , `create_time`) VALUES ('大文件的空间偶觉得定情物ie' , '管理员' , '<p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255);\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"word-break: break-all; font-family: 微软雅黑; color: rgb(51, 51, 51);\">&nbsp;5月21日，“中华文化四海行—走进湖南”在我校举办文化讲坛，中央文史馆馆员、复旦大学资深教授、著名历史地理学家葛剑雄带来《传统文化的“传”和“承”》专题讲座。中央文史研究馆、全国各地文史研究馆的200余位专家学者和我校学生代表参加活动。校党委副书记陈伟主持讲座。</span></p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255); text-align: center;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href=\"http://jdcyxy.cn/attachment/cms/item/2017_07/21_16/2b8b557312a3c0ec.png\" target=\"_blank\" style=\"word-break: break-all; color: rgb(69, 69, 69); text-decoration-line: none;\"><img alt=\"4878be499e13df32882de1dac97e0f7b.png\" src=\"http://jdcyxy.cn/attachment/cms/item/2017_07/21_16/2b8b557312a3c0ec.png.cthumb.jpg\"/></a></p><p style=\"word-break: break-all; margin-top: 0px; margin-bottom: 0px; padding: 0px; font-family: &quot;Microsoft YaHei&quot;, 微软雅黑, tahoma, arial, simsun, 宋体; font-size: 14px; white-space: normal; background-color: rgb(255, 255, 255); text-align: center;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"word-break: break-all; padding: 0px; margin: 0px;\">“中华文化四海行—走进湖南”，由国务院参事室、中央文史研究馆、湖南省人民政府共同举办，以“弘扬中华优秀传统文化、展示伟人故里锦绣湖南”为主题，于5月20日至25日在长沙、岳阳举行，包括文化讲坛、书画精品联展、文艺联谊、名家进校园、大型书画联谊笔会等，在湖南大学、湖南师范大学、湖南理工学院三所高校举办文化讲坛。</span></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"word-break: break-all; padding: 0px; margin: 0px;\"><span style=\"word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;\">讲座上，葛剑雄认为</span><span style=\"word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;\">传统文化的“传”即无条件保存保留，作为历史的记忆和资源的储存</span><span style=\"word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;\">，</span><span style=\"word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;\">传统文化的“承”，</span><span style=\"word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;\">就</span><span style=\"word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;\">是有选择的继承和弘扬，取其精华，去其糟粕，并需要进行创造性的转化</span><span style=\"word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;\">。讲座内容丰富，语言风趣幽默、通俗易懂，现场掌声阵阵、氛围热烈。</span></span></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"word-break: break-all; padding: 0px; margin: 0px;\">陈伟在活动最后勉励我校学子，希望大家能够认真学习、主动担当、自觉传播优秀传统文化，充分认识传统文化的时代价值，坚守精神家园，坚定文化自信，努力成为中华文化的笃信者、传承者、躬行者，为中华文化发扬光大、中华民族伟大复兴贡献自己的青春力量。</span></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"word-break: break-all; padding: 0px; margin: 0px;\">会后，与会专家学者参观了我校岳麓书院。</span></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style=\"word-break: break-all; padding: 0px; margin: 0px;\"><span style=\"word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;\">据悉，“中华文化四海行”是国务院参事室、中央文史研究馆推出的大型文化活动，</span><span style=\"word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;\">以强大的专家阵容、深厚的文化含量和丰富的活动形式，全方位、多角度展示和传播中华优秀传统文化，</span><span style=\"word-break: break-all; padding: 0px; margin: 0px; line-height: 21px;\">自2013年以来已相继在贵州、云南、重庆、甘肃、新疆、澳门成功举办，受到各界民众的热烈欢迎。</span></span></p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br/></p>' , 1523365519) [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-04-10T21:05:22+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index.html
+[ info ] localhost:9096/cygw/public/admin/index/index.html [运行时间：0.056003s][吞吐率：17.86req/s] [内存消耗：1,583.16kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T21:17:19+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index.html
+[ info ] localhost:9096/cygw/public/admin/index/index.html [运行时间：0.044003s][吞吐率：22.73req/s] [内存消耗：1,583.47kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T21:17:27+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/view
+[ info ] localhost:9096/cygw/public/admin/index/view [运行时间：0.047003s][吞吐率：21.28req/s] [内存消耗：1,617.23kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T21:17:41+08:00 ] 0.0.0.0 GET /cygw/public/index/index/view
+[ info ] localhost:9096/cygw/public/index/index/view [运行时间：0.064004s][吞吐率：15.62req/s] [内存消耗：2,483.63kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->view[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/index\view\index\view.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-10T21:18:08+08:00 ] 0.0.0.0 GET /cygw/public/index/index/view
+[ info ] localhost:9096/cygw/public/index/index/view [运行时间：0.065004s][吞吐率：15.38req/s] [内存消耗：2,345.80kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->view[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/index\view\index\view.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-10T21:18:13+08:00 ] 0.0.0.0 GET /cygw/public/index/index/view
+[ info ] localhost:9096/cygw/public/index/index/view [运行时间：0.077005s][吞吐率：12.99req/s] [内存消耗：2,345.80kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->view[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/index\view\index\view.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-10T21:18:34+08:00 ] 0.0.0.0 GET /cygw/public/index/index/view
+[ info ] localhost:9096/cygw/public/index/index/view [运行时间：0.068004s][吞吐率：14.70req/s] [内存消耗：2,361.80kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->view[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/index\view\index\view.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-04-10T21:19:25+08:00 ] 0.0.0.0 GET /cygw/public/index/index/view
+[ info ] localhost:9096/cygw/public/index/index/view [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：2,505.06kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->view[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/index\view\index\view.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-04-10T21:19:37+08:00 ] 0.0.0.0 GET /cygw/public/index/index/view
+[ info ] localhost:9096/cygw/public/index/index/view [运行时间：0.069004s][吞吐率：14.49req/s] [内存消耗：2,505.05kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->view[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/index\view\index\view.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-10T21:20:04+08:00 ] 0.0.0.0 GET /cygw/public/index/index/view
+[ info ] localhost:9096/cygw/public/index/index/view [运行时间：0.066003s][吞吐率：15.15req/s] [内存消耗：2,505.15kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->view[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/index\view\index\view.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-04-10T21:22:40+08:00 ] 0.0.0.0 GET /cygw/public/index/index/view
+[ info ] localhost:9096/cygw/public/index/index/view [运行时间：0.089005s][吞吐率：11.24req/s] [内存消耗：2,361.79kb] [文件加载：50]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->view[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/index\view\index\view.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2018-04-10T21:29:03+08:00 ] 0.0.0.0 GET /cygw/public/index/index/view
+[ info ] localhost:9096/cygw/public/index/index/view [运行时间：0.102006s][吞吐率：9.80req/s] [内存消耗：2,685.04kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->view[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/index\view\index\view.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-10T21:33:26+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.068004s][吞吐率：14.71req/s] [内存消耗：1,582.77kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T21:33:38+08:00 ] 0.0.0.0 POST /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.082005s][吞吐率：12.19req/s] [内存消耗：2,729.88kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'content-length' => '204',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost:9096',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+  'title' => '我的企鹅的全文',
+  'publisher' => '撒旦王',
+  'content' => '<p>啊实打实的</p><p>asdwdqawd</p>',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] INSERT INTO `notice` (`title` , `publisher` , `content` , `create_time`) VALUES ('我的企鹅的全文' , '撒旦王' , '<p>啊实打实的</p><p>asdwdqawd</p>' , 1523367218) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-04-10T21:34:12+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.051003s][吞吐率：19.61req/s] [内存消耗：1,582.77kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T21:34:36+08:00 ] 0.0.0.0 POST /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.087005s][吞吐率：11.49req/s] [内存消耗：2,712.06kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'content-length' => '136',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost:9096',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+  'title' => '我的企鹅的全文',
+  'publisher' => '撒旦王',
+  'content' => '<p>qwe</p>',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.007000s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0-我的企鹅的全文' for key 'PRIMARY'[D:\phpStudy\WWW\cygw\thinkphp\library\think\db\Connection.php:456]
+---------------------------------------------------------------
+[ 2018-04-10T21:34:43+08:00 ] 0.0.0.0 POST /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.079004s][吞吐率：12.66req/s] [内存消耗：2,729.62kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'content-length' => '124',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost:9096',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+  'title' => '我的企鹅的',
+  'publisher' => '撒旦王',
+  'content' => '<p>qweqsadwd</p>',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] INSERT INTO `notice` (`title` , `publisher` , `content` , `create_time`) VALUES ('我的企鹅的' , '撒旦王' , '<p>qweqsadwd</p>' , 1523367283) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-04-10T21:35:24+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.042002s][吞吐率：23.81req/s] [内存消耗：1,582.76kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T21:35:29+08:00 ] 0.0.0.0 POST /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.088005s][吞吐率：11.36req/s] [内存消耗：2,729.48kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'content-length' => '110',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost:9096',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+  'title' => '我的企鹅',
+  'publisher' => '撒旦王',
+  'content' => '<p>asdw</p>',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] INSERT INTO `notice` (`title` , `publisher` , `content` , `create_time`) VALUES ('我的企鹅' , '撒旦王' , '<p>asdw</p>' , 1523367329) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-04-10T21:35:32+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index.html
+[ info ] localhost:9096/cygw/public/admin/index/index.html [运行时间：0.051003s][吞吐率：19.61req/s] [内存消耗：1,583.20kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T21:37:32+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index.html
+[ info ] localhost:9096/cygw/public/admin/index/index.html [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：1,723.23kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T21:37:32+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/__STATI%20%20%20%20C__/ueditor/ueditor.all.js
+[ info ] localhost:9096/cygw/public/admin/index/__STATI%20%20%20%20C__/ueditor/ueditor.all.js [运行时间：0.056003s][吞吐率：17.86req/s] [内存消耗：1,617.65kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => '__STATI    C__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+  'ueditor' => 'ueditor.all.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T21:38:43+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index.html
+[ info ] localhost:9096/cygw/public/admin/index/index.html [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：1,583.43kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T21:38:43+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/__STATI%20%20%20%20C__/ueditor/ueditor.all.js
+[ info ] localhost:9096/cygw/public/admin/index/__STATI%20%20%20%20C__/ueditor/ueditor.all.js [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：1,617.65kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => '__STATI    C__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+  'ueditor' => 'ueditor.all.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T21:39:03+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index.html
+[ info ] localhost:9096/cygw/public/admin/index/index.html [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：1,723.16kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T21:39:03+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/__STATI%20%20%20%20C__/ueditor/ueditor.all.js
+[ info ] localhost:9096/cygw/public/admin/index/__STATI%20%20%20%20C__/ueditor/ueditor.all.js [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：1,617.65kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => '__STATI    C__',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+  'ueditor' => 'ueditor.all.js',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T21:40:23+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index.html
+[ info ] localhost:9096/cygw/public/admin/index/index.html [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：1,723.17kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T21:40:32+08:00 ] 0.0.0.0 POST /cygw/public/admin/index/index.html
+[ info ] localhost:9096/cygw/public/admin/index/index.html [运行时间：0.077004s][吞吐率：12.99req/s] [内存消耗：2,729.30kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'content-length' => '160',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost:9096',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+  'title' => '奇闻',
+  'publisher' => '请问企鹅',
+  'content' => '<p>按时大大我的去</p>',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] INSERT INTO `notice` (`title` , `publisher` , `content` , `create_time`) VALUES ('奇闻' , '请问企鹅' , '<p>按时大大我的去</p>' , 1523367632) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-04-10T21:40:35+08:00 ] 0.0.0.0 GET /cygw/public/index/view/index.html
+[ info ] localhost:9096/cygw/public/index/view/index.html [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：1,341.27kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'view',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T21:41:23+08:00 ] 0.0.0.0 GET /cygw/public/index/view/index.html
+[ info ] localhost:9096/cygw/public/index/view/index.html [运行时间：0.040002s][吞吐率：25.00req/s] [内存消耗：1,341.27kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'view',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T21:41:26+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index.html
+[ info ] localhost:9096/cygw/public/admin/index/index.html [运行时间：0.057003s][吞吐率：17.54req/s] [内存消耗：1,583.24kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T21:41:34+08:00 ] 0.0.0.0 POST /cygw/public/admin/index/index.html
+[ info ] localhost:9096/cygw/public/admin/index/index.html [运行时间：0.079004s][吞吐率：12.66req/s] [内存消耗：2,729.34kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'content-length' => '151',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost:9096',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+  'title' => '奇闻安慰',
+  'publisher' => '请问企鹅',
+  'content' => '<p>请问请问</p>',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] INSERT INTO `notice` (`title` , `publisher` , `content` , `create_time`) VALUES ('奇闻安慰' , '请问企鹅' , '<p>请问请问</p>' , 1523367694) [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-04-10T21:41:37+08:00 ] 0.0.0.0 GET /cygw/public/__ROOT__/index/index.html
+[ info ] localhost:9096/cygw/public/__ROOT__/index/index.html [运行时间：0.058003s][吞吐率：17.24req/s] [内存消耗：1,335.45kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '__ROOT__',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T21:44:53+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index.html
+[ info ] localhost:9096/cygw/public/admin/index/index.html [运行时间：0.055003s][吞吐率：18.18req/s] [内存消耗：1,583.24kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T21:44:59+08:00 ] 0.0.0.0 POST /cygw/public/admin/index/index.html
+[ info ] localhost:9096/cygw/public/admin/index/index.html [运行时间：0.078004s][吞吐率：12.82req/s] [内存消耗：2,711.84kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'content-length' => '205',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost:9096',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+  'title' => '奇闻安慰',
+  'publisher' => '请问企鹅',
+  'content' => '<p>权威渠道阿斯顿全文请</p>',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.007000s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'id'[D:\phpStudy\WWW\cygw\thinkphp\library\think\db\Connection.php:456]
+---------------------------------------------------------------
+[ 2018-04-10T21:46:37+08:00 ] 0.0.0.0 POST /cygw/public/admin/index/index.html
+[ info ] localhost:9096/cygw/public/admin/index/index.html [运行时间：0.085005s][吞吐率：11.76req/s] [内存消耗：2,729.33kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'content-length' => '151',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost:9096',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+  'title' => '奇闻安慰',
+  'publisher' => '请问企鹅',
+  'content' => '<p>请问轻轻</p>',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] INSERT INTO `notice` (`title` , `publisher` , `content` , `create_time`) VALUES ('奇闻安慰' , '请问企鹅' , '<p>请问轻轻</p>' , 1523367997) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-10T21:46:40+08:00 ] 0.0.0.0 GET /cygw/public/__ROOT__/index/index.html
+[ info ] localhost:9096/cygw/public/__ROOT__/index/index.html [运行时间：0.044002s][吞吐率：22.73req/s] [内存消耗：1,335.45kb] [文件加载：38]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '__ROOT__',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T22:48:49+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.412024s][吞吐率：2.43req/s] [内存消耗：1,582.79kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T22:49:06+08:00 ] 0.0.0.0 POST /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.371021s][吞吐率：2.70req/s] [内存消耗：2,691.40kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'content-length' => '149',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost:9096',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+  'title' => '挖的经济',
+  'publisher' => '按时大温泉企鹅',
+  'content' => '<p>sadwqqd</p>',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.072004s ]
+[ sql ] [ SQL ] INSERT INTO `notice` (`title` , `publisher` , `content` , `create_time`) VALUES ('挖的经济' , '按时大温泉企鹅' , '<p>sadwqqd</p>' , 1523371746) [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-04-10T22:49:06+08:00 ] 0.0.0.0 GET /cygw/public/index/index/index.html
+[ info ] localhost:9096/cygw/public/index/index/index.html [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：1,585.19kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T22:51:44+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index.html
+[ info ] localhost:9096/cygw/public/admin/index/index.html [运行时间：0.056003s][吞吐率：17.86req/s] [内存消耗：1,582.77kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T22:51:55+08:00 ] 0.0.0.0 POST /cygw/public/admin/index/index.html
+[ info ] localhost:9096/cygw/public/admin/index/index.html [运行时间：0.061003s][吞吐率：16.39req/s] [内存消耗：2,691.58kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'content-length' => '125',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost:9096',
+  'upgrade-insecure-requests' => '1',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+  'title' => '为企鹅1',
+  'publisher' => '奇闻',
+  'content' => '<p>请问请问</p>',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] INSERT INTO `notice` (`title` , `publisher` , `content` , `create_time`) VALUES ('为企鹅1' , '奇闻' , '<p>请问请问</p>' , 1523371915) [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-04-10T22:51:55+08:00 ] 0.0.0.0 GET /cygw/public/index/index/index.html
+[ info ] localhost:9096/cygw/public/index/index/index.html [运行时间：0.028001s][吞吐率：35.71req/s] [内存消耗：1,585.17kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://localhost:9096/cygw/public/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/index\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-10T22:57:06+08:00 ] 0.0.0.0 GET /cygw/public/index/index/view
+[ info ] localhost:9096/cygw/public/index/index/view [运行时间：0.099005s][吞吐率：10.10req/s] [内存消耗：2,665.77kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'view',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->view[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/index\view\index\view.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.005001s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` WHERE  `id` = 0 LIMIT 1 [ RunTime:0.001000s ]

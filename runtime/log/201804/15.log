@@ -1,0 +1,719 @@
+---------------------------------------------------------------
+[ 2018-04-15T19:12:54+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.065603s][吞吐率：15.24req/s] [内存消耗：1,582.95kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-15T19:12:57+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：1,583.09kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-15T19:14:47+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.086005s][吞吐率：11.63req/s] [内存消耗：1,583.16kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-15T19:15:22+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.051003s][吞吐率：19.61req/s] [内存消耗：1,583.09kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-15T19:15:26+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：1,583.09kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-15T19:15:46+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：1,583.09kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-15T19:17:33+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.073004s][吞吐率：13.70req/s] [内存消耗：1,583.09kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-15T19:21:24+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.088006s][吞吐率：11.36req/s] [内存消耗：1,722.85kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-15T19:22:53+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.058004s][吞吐率：17.24req/s] [内存消耗：1,583.08kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-15T19:23:23+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.057003s][吞吐率：17.54req/s] [内存消耗：1,722.73kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-15T19:24:24+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.060004s][吞吐率：16.67req/s] [内存消耗：1,722.64kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-15T19:25:10+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.045003s][吞吐率：22.22req/s] [内存消耗：1,583.13kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-15T19:25:24+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.055003s][吞吐率：18.18req/s] [内存消耗：1,583.06kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-15T19:25:49+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.051003s][吞吐率：19.61req/s] [内存消耗：1,722.74kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-15T19:29:48+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：1,583.08kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-15T19:29:54+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：1,583.08kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-15T19:30:14+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：1,583.08kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-15T19:30:24+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：1,583.08kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-15T19:30:41+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：1,583.15kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-15T19:30:45+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：1,583.08kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-15T19:30:47+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.048003s][吞吐率：20.83req/s] [内存消耗：1,583.08kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-15T19:32:14+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：1,722.81kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-15T19:32:19+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.039002s][吞吐率：25.64req/s] [内存消耗：1,583.09kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-15T19:32:32+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.043003s][吞吐率：23.25req/s] [内存消耗：1,722.81kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File

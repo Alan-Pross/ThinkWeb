@@ -1,0 +1,305 @@
+---------------------------------------------------------------
+[ 2018-04-13T17:11:22+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/index
+[ info ] localhost:9096/cygw/public/admin/index/index [运行时间：0.048201s][吞吐率：20.75req/s] [内存消耗：1,582.95kb] [文件加载：43]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\WWW\cygw\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-13T17:12:19+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/show
+[ info ] localhost:9096/cygw/public/admin/index/show [运行时间：0.115007s][吞吐率：8.70req/s] [内存消耗：1,617.30kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-13T17:13:09+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/show
+[ info ] localhost:9096/cygw/public/admin/index/show [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：1,617.68kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-13T17:13:46+08:00 ] 0.0.0.0 GET /cygw/public/admin/index/show
+[ info ] localhost:9096/cygw/public/admin/index/show [运行时间：0.039003s][吞吐率：25.64req/s] [内存消耗：1,617.36kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-04-13T17:13:58+08:00 ] 0.0.0.0 GET /cygw/public/index/index/show
+[ info ] localhost:9096/cygw/public/index/index/show [运行时间：0.128007s][吞吐率：7.81req/s] [内存消耗：2,809.06kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->show[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/index\view\index\show.html [ array (
+  0 => 'notice',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` WHERE  `id` > 1 LIMIT 5 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2018-04-13T17:14:48+08:00 ] 0.0.0.0 GET /cygw/public/index/index/show
+[ info ] localhost:9096/cygw/public/index/index/show [运行时间：0.084005s][吞吐率：11.90req/s] [内存消耗：1,358.22kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected 'check' (T_STRING), expecting variable (T_VARIABLE) or '$'[D:\phpStudy\WWW\cygw\application\index\controller\Index.php:39]
+---------------------------------------------------------------
+[ 2018-04-13T17:15:52+08:00 ] 0.0.0.0 GET /cygw/public/index/index/show
+[ info ] localhost:9096/cygw/public/index/index/show [运行时间：0.071004s][吞吐率：14.08req/s] [内存消耗：2,713.62kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->show[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/index\view\index\show.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` WHERE  `id` > 1 LIMIT 5 [ RunTime:0.000000s ]
+[ error ] [8]未定义变量: notice[D:\phpStudy\WWW\cygw\runtime\temp\541eed440c9221f4f3f39543ab33eb39.php:19]
+---------------------------------------------------------------
+[ 2018-04-13T17:16:14+08:00 ] 0.0.0.0 GET /cygw/public/index/index/show
+[ info ] localhost:9096/cygw/public/index/index/show [运行时间：0.066004s][吞吐率：15.15req/s] [内存消耗：2,852.34kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->show[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/index\view\index\show.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` WHERE  `id` > 1 LIMIT 5 [ RunTime:0.001000s ]
+[ error ] [2]Invalid argument supplied for foreach()[D:\phpStudy\WWW\cygw\runtime\temp\541eed440c9221f4f3f39543ab33eb39.php:19]
+---------------------------------------------------------------
+[ 2018-04-13T17:17:48+08:00 ] 0.0.0.0 GET /cygw/public/index/index/show
+[ info ] localhost:9096/cygw/public/index/index/show [运行时间：0.094005s][吞吐率：10.64req/s] [内存消耗：2,679.93kb] [文件加载：52]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->show[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\phpStudy\WWW\cygw\public/../application/index\view\index\show.html [ array (
+  0 => 'list',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=college;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `notice` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `notice` WHERE  `id` >= 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-04-13T17:22:12+08:00 ] 0.0.0.0 GET /cygw/public/index/index/show
+[ info ] localhost:9096/cygw/public/index/index/show [运行时间：0.062003s][吞吐率：16.13req/s] [内存消耗：1,944.88kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\cygw\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'index',
+    1 => 'index',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost:9096',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => '_ga=GA1.1.146608984.1514531436; pgv_pvi=1200644096; vip=0; phone=16688886666; SL_G_WPT_TO=zh-CN; SL_GWPT_Show_Hide_tmp=undefined; SL_wptGlobTipTmp=undefined',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->show[ D:\phpStudy\WWW\cygw\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2048]Non-static method app\admin\model\Notice::check() should not be called statically, assuming $this from incompatible context[D:\phpStudy\WWW\cygw\application\index\controller\Index.php:42]

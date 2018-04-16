@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>搜索</title>
+    <link rel="stylesheet" href="__STATIC__/css/style.css">
+</head>
+<body>
+    <div class="search d1">
+          <form action="serch" method="post">
+          <input type="text" placeholder="搜索从这里开始..." name = "search_name" value = "{$search_name}">
+          </form>
+          </div>
+<table border = "1px solid black" cellspacing="0">
+    <tr>
+        <td>title</td>
+        <td>publisher</td>
+        <td>content</td>
+    </tr>
+    {foreach name = "res" item = "vo"}
+        <tr>
+            <td>{$vo.title}</td>
+            <td>{$vo.publisher}</td>
+            <td>{$vo.content}</td>
+        </tr>
+    {/foreach}
+</table>
+{$res}
+</body>
+</html>

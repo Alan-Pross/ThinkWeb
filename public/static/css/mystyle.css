@@ -1,0 +1,187 @@
+body,
+form,
+input,
+ul,
+li,
+a,
+div,
+button {
+    margin: 0;
+}
+
+input,
+button,
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.headbar {
+    min-width: 1000px;
+}
+
+.banner {
+    background: url(../images/header.png) no-repeat center;
+    height: 120px;
+    position: relative;
+    font-size: 0;
+}
+
+.banner::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.logo {
+    width: 60%;
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    white-space: nowrap;
+    text-align: right;
+    font-size: 16px;
+}
+
+.logo img {
+    vertical-align: -.85em;
+}
+
+.font {
+    font-size: 52px;
+    display: inline-block;
+    line-height: 69px;
+}
+
+.search {
+    position: absolute;
+    right: 0;
+    height: 32px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+.search-form {
+    height: 32px;
+    position: relative;
+    background-color: rgba(255,255,255,.88);
+}
+
+.search-input {
+    vertical-align: top;
+    height: 32px;
+    width: 200px;
+    border: none;
+    outline: none;
+    margin-right: 30px;
+    background-color: transparent
+}
+
+.search-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 32px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+
+.wrapper {
+    height: 50px;
+    width: 100%;
+    background: hsl(180, 100%, 70%);
+}
+
+.primary-menu {
+    height: 100%;
+    width: 980px;
+    margin: 0 auto;
+}
+
+
+.nav-menu {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    line-height: 50px;
+    font-size: 0;
+}
+
+.nav-menu li {
+    float: left;
+    width: 20%;
+    height: 100%;
+}
+
+.nav-menu li a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+.nav-menu li a i {
+    display: inline-block;
+    height: 100%;
+    width: 50px;
+    outline: 1px solid red;
+}
+
+.text {
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    font-size: 26px;
+}
+
+.carousel {
+    width: 100%;
+}
+
+.images-wrapper {
+    padding: 0;
+    position: relative;
+    height: 222px;
+    overflow: hidden;
+    width: 980px;
+    margin: 0 auto;
+}
+
+.a {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    transition: left .3s;
+}
+
+.button {
+    background: hsl(0, 100%, 50%);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    border-radius: 50%;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.button+.button {
+    left: auto;
+    right: 0;
+}
+
+.a a {
+    display: block;
+}
