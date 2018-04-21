@@ -21,12 +21,14 @@ class Index extends \think\Controller
       $search_name = input('search_name');
       $search = ['query'=>[]];
       $search['query']['search_name'] = $search_name;
-      $res = Db::name('notice')->where('title','like',"%{$search_name}%")->paginate(5,false,$search);
+      $res = new Notice();
+      $res = Notice::where('title','like',"%{$search_name}%")->paginate(5,false,$search);
       $this -> assign('res',$res);
       $this->assign('search_name',$search_name);
       return view();
     }
   public function search0 (){
+    if()
     $search_name = input('search_name');
     $this->assign('search_name',$search_name);
     return view();

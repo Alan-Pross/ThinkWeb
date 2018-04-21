@@ -61,41 +61,6 @@ a {
     line-height: 69px;
 }
 
-.search {
-    position: absolute;
-    right: 0;
-    height: 32px;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
-}
-
-.search-form {
-    height: 32px;
-    position: relative;
-    background-color: rgba(255,255,255,.88);
-}
-
-.search-input {
-    vertical-align: top;
-    height: 32px;
-    width: 200px;
-    border: none;
-    outline: none;
-    margin-right: 30px;
-    background-color: transparent
-}
-
-.search-btn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 32px;
-    height: 100%;
-    background-color: rgb(255, 255, 255);
-    border: none;
-}
-
 .wrapper {
     height: 50px;
     width: 100%;
