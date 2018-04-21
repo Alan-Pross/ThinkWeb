@@ -140,9 +140,9 @@ return [
 
     // 视图输出字符串内容替换
     'view_replace_str'       => [
-        '__PUBLIC__'=>'/public/',
-        '__STATIC__'=>'/cygw.git/trunk/public/static',
-        '__ROOT__' => '/',
+        '__PUBLIC__'=>'/cw/trunk/public',
+        '__STATIC__'=>'/cw/trunk/public/static',
+        '__ROOT__' => '/cw/trunk',
     ],
     // 默认跳转页面对应的模板文件
     'dispatch_success_tmpl'  => THINK_PATH . 'tpl' . DS . 'dispatch_jump.tpl',
