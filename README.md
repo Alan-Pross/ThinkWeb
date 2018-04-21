@@ -1,17 +1,16 @@
 创网项目 开发文档V1.2
 ===============
 
-* [网站地址]（http://www.jdcyxy.cn/）
+* [网站地址](http://www.jdcyxy.cn/)
 
 ## 环境要求
-* PhpStudy
-* Thinkphp
-* Sublime Text
-* TortoiseSVN
+* [PhpStudy](http://www.phpstudy.net/)
+* [Thinkphp](https://www.kancloud.cn/manual/thinkphp5/118003)
+* [Sublime Text](https://www.sublimetext.com/)
+* [TortoiseSVN](https://tortoisesvn.net/)
 * [主要图标](http://www.iconfont.cn/collections/detail?spm=a313x.7781069.0.da5a778a4&cid=4878)
 * [界面设计](https://modao.cc/app/P5kzvXayQg2Uls9ymA9BPVax28PyaY9)
 * [富文本编辑器](https://www.kancloud.cn/phper123/tools/289772)
-	>1.4.3.3 PHP版本
 
 ## 数据库设计
 | 内容 | 表名 | 字段名 | 
