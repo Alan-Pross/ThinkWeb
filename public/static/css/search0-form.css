@@ -73,7 +73,7 @@ body {padding: 0px; margin:0px; background-position: center; background-size: co
     height:70px;
     border:none;
     border-radius:6px;
-    background: #FFF;
+    background: #393E46;
     padding:0px;
     outline:none;
     position: relative;
@@ -119,7 +119,7 @@ body {padding: 0px; margin:0px; background-position: center; background-size: co
     left: 9px;
     top: 18px;
     border-radius: 2px;
-    background: #000000;
+    background: #FFF;
 }
 .search-wrapper .input-holder .search-icon span::after {
     width: 14px;
@@ -127,7 +127,7 @@ body {padding: 0px; margin:0px; background-position: center; background-size: co
     left: 0px;
     top: 0px;
     border-radius: 16px;
-    border: 4px solid #000000;
+    border: 4px solid #FFF;
 }
 
 .search-wrapper .close {
@@ -163,7 +163,7 @@ body {padding: 0px; margin:0px; background-position: center; background-size: co
 .search-wrapper .close::before, .search-wrapper .close::after {
     position:absolute;
     content:'';
-    background: #FFF;
+    background: #393E46;
     border-radius: 2px;
 }
 .search-wrapper .close::before {
@@ -187,7 +187,7 @@ body {padding: 0px; margin:0px; background-position: center; background-size: co
     font-family: "Open Sans", Arial, Verdana;
     font-size: 14px;
     display:none;
-    color:#B7B7B7;
+    color:#393E46;
 }
 
 
