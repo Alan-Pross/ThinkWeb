@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<title>搜索0</title>
+<title>搜索</title>
 <link rel="stylesheet" type="text/css" href="__STATIC__/css/search-form.css">
 </head>
 <body background="__STATIC__/images/search_bg.jpg">
-	<form action="serach" method="post">
+	<form action="__PUBLIC__/index.php/index/index/search0" method="post">
 		<div class="search-wrapper">
 			<div class="input-holder">
 				<input type="text" class="search-input" placeholder="搜索从这里开始..." name = "search_name" value = "{$search_name}"/>
@@ -20,6 +20,23 @@
 			</div>
 		</div>
 	</form>
+<table border = "1px solid black" cellspacing="0">
+    <tr>
+        <td>title</td>
+        <td>publisher</td>
+        <td>content</td>
+        <td>create_time</td>
+    </tr>
+    {foreach name = "res" item = "vo"}
+        <tr>
+            <td>{$vo.title}</td>
+            <td>{$vo.publisher}</td>
+            <td>{$vo.content}</td>
+            <td>{$vo.create_time}</td>
+        </tr>
+    {/foreach}
+</table>
+{$res}
 
 <script src="__STATIC__/js/jquery-1.11.0.min.js" type="text/javascript"></script>
 <script type="text/javascript">

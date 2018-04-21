@@ -18,7 +18,13 @@ class Index extends \think\Controller
     }
   //刘启明
   public function search (){
+      return view();
+    }
+  public function search0 (){
       $search_name = input('search_name');
+      if (!empty($search_name)){
+        $this->redirect('News/category', ['cate_id' => 2]);
+      }
       $search = ['query'=>[]];
       $search['query']['search_name'] = $search_name;
       $res = new Notice();
@@ -26,12 +32,6 @@ class Index extends \think\Controller
       $this -> assign('res',$res);
       $this->assign('search_name',$search_name);
       return view();
-    }
-  public function search0 (){
-    if()
-    $search_name = input('search_name');
-    $this->assign('search_name',$search_name);
-    return view();
   }
   //周威
     public function play (){
