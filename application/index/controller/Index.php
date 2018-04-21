@@ -12,27 +12,30 @@ class Index extends \think\Controller
   public function index (){
       return view();
     }
+
   //帅中贤
   public function newnotice (){
       return view();
     }
+
   //刘启明
   public function search (){
       return view();
     }
   public function search0 (){
       $search_name = input('search_name');
-      if (!empty($search_name)){
-        $this->redirect('News/category', ['cate_id' => 2]);
+      if (empty($search_name)){
+        $this->redirect('__PUBLIC__/index.php/index/index/search', ['cate_id' => 2]);
       }
       $search = ['query'=>[]];
       $search['query']['search_name'] = $search_name;
       $res = new Notice();
-      $res = Notice::where('title','like',"%{$search_name}%")->paginate(5,false,$search);
+      $res = Notice::where('title|publisher|content','like',"%{$search_name}%")->paginate(5,false,$search);
       $this -> assign('res',$res);
-      $this->assign('search_name',$search_name);
-      return view();
+      $this -> assign('search_name',$search_name);
+      return $this->fetch();
   }
+
   //周威
     public function play (){
        $name = input('param.name');

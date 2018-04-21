@@ -27,16 +27,16 @@
         <td>content</td>
         <td>create_time</td>
     </tr>
-    {foreach name = "res" item = "vo"}
+    {volist name="res" id = "vo"}
         <tr>
             <td>{$vo.title}</td>
             <td>{$vo.publisher}</td>
             <td>{$vo.content}</td>
             <td>{$vo.create_time}</td>
         </tr>
-    {/foreach}
+    {/volist}
 </table>
-{$res}
+
 
 <script src="__STATIC__/js/jquery-1.11.0.min.js" type="text/javascript"></script>
 <script type="text/javascript">
