@@ -39,7 +39,7 @@ a {
 }
 
 .banner {
-    background: url(__STATIC__/images/header.png) no-repeat center;
+    background: url(../images/header.png) no-repeat center;
     height: 120px;
     position: relative;
     font-size: 0;
