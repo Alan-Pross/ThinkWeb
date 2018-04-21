@@ -16,12 +16,17 @@
                 <img src="__STATIC__/images/logo.jpeg" width="69px" height="69px" alt="创业学院">
                 <span class="font">创业学院</span>
             </div>
-            <div class="search bar">
-                <form action="__PUBLIC__/index.php/index/index/search0" method="post">
-            <input type="text" placeholder="搜索从这里开始..." name = "search_name">
-            <button type="submit"></button>
-                </form>
+            <form action="__PUBLIC__/index.php/index/index/search0" method="post">
+            <div class="search-wrapper">
+            <div class="input-holder">
+                <input type="text" class="search-input" placeholder="搜索从这里开始..." name = "search_name" />
+                <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
             </div>
+            <span class="close" onclick="searchToggle(this, event);"></span>
+            <div class="result-container">
+            </div>
+        </div>
+    </form>
         </div>
         <div class="wrapper">
             <div class="primary-menu">
@@ -123,7 +128,25 @@
 
     })()
     </script>
-    <script type="text/javascript" color="0, 100, 255" opacity='1' zIndex="-1" count="100" src="__STATIC__/js/background.js"></script>
+    <script type="text/javascript" color="61,199,190" opacity='1' zIndex="-1" count="50" src="__STATIC__/js/background.js"></script>
+    <script src="__STATIC__/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    function searchToggle(obj, evt){
+        var container = $(obj).closest('.search-wrapper');
+
+        if(!container.hasClass('active')){
+              container.addClass('active');
+              evt.preventDefault();
+        }
+        else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
+              container.removeClass('active');
+              // clear input
+              container.find('.search-input').val('');
+              // clear and hide result container when we press close
+              container.find('.result-container').fadeOut(100, function(){$(this).empty();});
+        }
+    }
+</script>
 </body>
 
 </html>
