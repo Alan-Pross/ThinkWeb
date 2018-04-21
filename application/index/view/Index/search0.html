@@ -12,12 +12,12 @@
 <div class="headbar">
     <div class="banner">
         <div class="logo">
-            <img src="__STATIC__/images/logo.jpeg" width="69px" height="69px" alt="江汉大学">
+            <img src="__STATIC__/images/logo.png" width="69px" height="69px" alt="江汉大学">
             <span class="font">江汉大学</span>
-            <img src="__STATIC__/images/logo.jpeg" width="69px" height="69px" alt="创业学院">
+            <img src="__STATIC__/images/logo.png" width="69px" height="69px" alt="创业学院">
             <span class="font">创业学院</span>
         </div>
-        <form action="__PUBLIC__/index.php/index/index/search0" method="post">
+        <form action="__PUBLIC__/index.php/index/index/search0" class="search-form" method="post">
             <div class="search-wrapper">
                 <div class="input-holder">
                     <input type="text" class="search-input" name="search_name"/>
@@ -33,30 +33,38 @@
         <div class="primary-menu">
             <ul class="nav-menu">
                 <li><a href="">
-                    <i class=""></i>
+                    <i class="ic1"></i>
                     <span class="text">首页</span>
                 </a></li>
                 <li><a href="">
-                    <i class=""></i>
+                    <i class="ic2"></i>
                     <span class="text">学院简介</span>
                 </a></li>
                 <li><a href="">
-                    <i class=""></i>
+                    <i class="ic3"></i>
                     <span class="text">新闻公告</span>
                 </a></li>
                 <li><a href="">
-                    <i class=""></i>
+                    <i class="ic4"></i>
                     <span class="text">入驻团队</span>
                 </a></li>
                 <li><a href="">
-                    <i class=""></i>
+                    <i class="ic5"></i>
                     <span class="text">文件下载</span>
                 </a></li>
             </ul>
         </div>
     </div>
+    <div class="carousel">
+        <ul class="images-wrapper">
+            <div id="pre" class="button left"></div>
+            <div id="next" class="button right"></div>
+            <li class="a"><a href=""><img src="__STATIC__/images/e.jpg" alt="" width=100%></a></li>
+            <li class="a" style="z-index: -1"><a href=""><img src="__STATIC__/images/a.jpg" alt="" width=100%></a></li>
+            <li class="a" style="z-index: -2"><a href=""><img src="__STATIC__/images/b.jpg" alt="" width=100%></a></li>
+        </ul>
+    </div>
 </div>
-
 <table border="1px solid black" cellspacing="0">
     <tr>
         <td>title</td>

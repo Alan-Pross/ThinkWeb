@@ -61,7 +61,7 @@ a {
     display: inline-block;
     white-space: nowrap;
     font-size: 16px;
-     margin-left: -100px;
+    margin-left: -100px;
 }
 
 .logo img {
@@ -110,7 +110,7 @@ a {
     display: inline-block;
     height: 100%;
     width: 50px;
-  
+
 }
 
 .text {
@@ -119,6 +119,7 @@ a {
     vertical-align: top;
     font-size: 26px;
 }
+
 i.ic1 {
     background: url(../images/index.png);
 }
@@ -138,6 +139,7 @@ i.ic4 {
 i.ic5 {
     background: url(../images/download.png);
 }
+
 .carousel {
     width: 100%;
 }
@@ -150,11 +152,13 @@ i.ic5 {
     margin: 0 auto;
     font-size: 0;
 }
-.images-wrapper::after{
-     content: '';
-     display: inline-block;
-     padding-top: 23.08%;
+
+.images-wrapper::after {
+    content: '';
+    display: inline-block;
+    padding-top: 23.08%;
 }
+
 .a {
     width: 100%;
     position: absolute;
@@ -190,24 +194,26 @@ i.ic5 {
 .a a {
     display: block;
 }
-.search-form{
+
+.search-form {
     position: absolute;
     height: 70px;
-    width:560px;
+    width: 560px;
     display: inline-block;
-    right:0;
-    top:0;
+    right: 0;
+    top: 0;
     bottom: 0;
-    margin:auto 0;
+    margin: auto 0;
     overflow: hidden;
 }
+
 .search-wrapper {
     position: absolute;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     top: 50%;
-    left: 50%;
+    left: 45%;
 }
 
 .search-wrapper.active {
