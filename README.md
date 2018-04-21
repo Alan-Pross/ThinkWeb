@@ -1,25 +1,22 @@
 创网项目 开发文档V1.2
 ===============
 
-* 地址：
-http://www.jdcyxy.cn/
+* 网站地址
+（http://www.jdcyxy.cn/）
 
 ## 环境要求
 * PhpStudy
 * Thinkphp
 * Sublime Text
 * TortoiseSVN
-* 主要图标:
-http://www.iconfont.cn/collections/detail?spm=a313x.7781069.0.da5a778a4&cid=4878
-* 界面设计：
-https://modao.cc/app/P5kzvXayQg2Uls9ymA9BPVax28PyaY9
-* 富文本编辑器：
-https://www.kancloud.cn/phper123/tools/289772
+* 主要图标(http://www.iconfont.cn/collections/detail?spm=a313x.7781069.0.da5a778a4&cid=4878)
+* 界面设计(https://modao.cc/app/P5kzvXayQg2Uls9ymA9BPVax28PyaY9)
+* 富文本编辑器(https://www.kancloud.cn/phper123/tools/289772)
 	>1.4.3.3 PHP版本
 
 ## 数据库设计
 | 内容 | 表名 | 字段名 | 
-| - | :-: | -: | 
+| - | :-: | :- | 
 | 公告 | notice | 标题 时间 浏览 内容 发布人 文件路径 | 
 | 新闻 | news | 标题 时间 浏览 内容 发布人 文件路径 | 
 | 团队 | team | 队名 简介 负责人 队员 创建时间 队标 |
@@ -48,4 +45,7 @@ https://www.kancloud.cn/phper123/tools/289772
 * 新闻公告newnotice 
 * 入驻团队team 
 * 文件下载download
->跳转方法：__ROOT__/index/index/名字
+>跳转方法：
+``` 
+__ROOT__/index/index/名字
+```
