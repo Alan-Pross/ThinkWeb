@@ -75,7 +75,7 @@ a {
 .wrapper {
     height: 50px;
     width: 100%;
-    background: rgba(46, 148, 185, 1);
+    background: rgb(102, 255, 255);
 }
 
 .primary-menu {
@@ -108,7 +108,7 @@ a {
     display: inline-block;
     height: 100%;
     width: 50px;
-    outline: 1px solid #D25565;
+  
 }
 
 .text {
@@ -117,7 +117,25 @@ a {
     vertical-align: top;
     font-size: 26px;
 }
+i.ic1 {
+    background: url(../images/index.png);
+}
 
+i.ic2 {
+    background: url(../images/instruction.png);
+}
+
+i.ic3 {
+    background: url(../images/new.png);
+}
+
+i.ic4 {
+    background: url(../images/team.png);
+}
+
+i.ic5 {
+    background: url(../images/download.png);
+}
 .carousel {
     width: 100%;
 }
@@ -139,15 +157,13 @@ a {
 }
 
 .button {
-    background: #D25565;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
     margin: auto 0;
-    border-radius: 50%;
     z-index: 5;
     cursor: pointer;
 }
@@ -155,6 +171,14 @@ a {
 .button + .button {
     left: auto;
     right: 0;
+}
+
+.left {
+    background-image: url(../images/prev.png);
+}
+
+.right {
+    background-image: url(../images/next.png);
 }
 
 .a a {
