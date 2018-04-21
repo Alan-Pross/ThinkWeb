@@ -3,79 +3,43 @@
 
 <head>
     <meta http-equiv="Cache-Control" content="max-age=7200" charset="UTF-8"/>
-    <title>江汉大学创业学院</title>
-    <link rel="stylesheet" href="__STATIC__/css/mystyle.css">
+    <title>搜索</title>
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/search-form.css">
 </head>
-
 <body BGCOLOR="#EFEFEF">
-<div class="headbar">
-    <div class="banner">
-        <div class="logo">
-            <img src="__STATIC__/images/logo.jpeg" width="69px" height="69px" alt="江汉大学">
-            <span class="font">江汉大学</span>
-            <img src="__STATIC__/images/logo.jpeg" width="69px" height="69px" alt="创业学院">
-            <span class="font">创业学院</span>
+<form action="__PUBLIC__/index.php/index/index/search0" method="post">
+    <div class="search-wrapper">
+        <div class="input-holder">
+            <input type="text" class="search-input" name="search_name"/>
+            <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
         </div>
-        <form action="__PUBLIC__/index.php/index/index/search0" method="post">
-            <div class="search-wrapper">
-                <div class="input-holder">
-                    <input type="text" class="search-input" name="search_name"/>
-                    <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
-                </div>
-                <span class="close" onclick="searchToggle(this, event);"></span>
-                <div class="result-container">
-                </div>
-            </div>
-        </form>
-    </div>
-    <div class="wrapper">
-        <div class="primary-menu">
-            <ul class="nav-menu">
-                <li><a href="">
-                    <i class=""></i>
-                    <span class="text">首页</span>
-                </a></li>
-                <li><a href="">
-                    <i class=""></i>
-                    <span class="text">学院简介</span>
-                </a></li>
-                <li><a href="">
-                    <i class=""></i>
-                    <span class="text">新闻公告</span>
-                </a></li>
-                <li><a href="">
-                    <i class=""></i>
-                    <span class="text">入驻团队</span>
-                </a></li>
-                <li><a href="">
-                    <i class=""></i>
-                    <span class="text">文件下载</span>
-                </a></li>
-            </ul>
+        <span class="close" onclick="searchToggle(this, event);"></span>
+        <div class="result-container">
         </div>
     </div>
-    <script type="text/javascript" color="30,100,255" opacity='1' zIndex="-1" count="50"
-            src="__STATIC__/js/background.js"></script>
-    <script src="__STATIC__/js/jquery-1.11.0.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        function searchToggle(obj, evt) {
-            var container = $(obj).closest('.search-wrapper');
+</form>
+<script type="text/javascript" color="30,100,255" opacity='1' zIndex="-1" count="50"
+        src="__STATIC__/js/background.js"></script>
+<script src="__STATIC__/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+    function searchToggle(obj, evt) {
+        var container = $(obj).closest('.search-wrapper');
 
-            if (!container.hasClass('active')) {
-                container.addClass('active');
-                evt.preventDefault();
-            }
-            else if (container.hasClass('active') && $(obj).closest('.input-holder').length == 0) {
-                container.removeClass('active');
-                // clear input
-                container.find('.search-input').val('');
-                // clear and hide result container when we press close
-                container.find('.result-container').fadeOut(100, function () {
-                    $(this).empty();
-                });
-            }
+        if (!container.hasClass('active')) {
+            container.addClass('active');
+            evt.preventDefault();
         }
-    </script>
+        else if (container.hasClass('active') && $(obj).closest('.input-holder').length == 0) {
+            container.removeClass('active');
+            // clear input
+            container.find('.search-input').val('');
+            // clear and hide result container when we press close
+            container.find('.result-container').fadeOut(100, function () {
+                $(this).empty();
+            });
+        }
+    }
+</script>
 </body>
 
 </html>
