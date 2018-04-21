@@ -25,7 +25,7 @@ body {padding: 0px; margin:0px; background-position: center; background-size: co
 .search-wrapper.active .input-holder {
     border-radius: 50px;
     width:450px;
-    background: rgba(210,85,101,1);
+    background: rgba(46,148,185,1);
     -webkit-transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
     -moz-transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
     transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
@@ -119,7 +119,7 @@ body {padding: 0px; margin:0px; background-position: center; background-size: co
     left: 9px;
     top: 18px;
     border-radius: 2px;
-    background: #974BE0;
+    background: #000000;
 }
 .search-wrapper .input-holder .search-icon span::after {
     width: 14px;
@@ -127,7 +127,7 @@ body {padding: 0px; margin:0px; background-position: center; background-size: co
     left: 0px;
     top: 0px;
     border-radius: 16px;
-    border: 4px solid #974BE0;
+    border: 4px solid #000000;
 }
 
 .search-wrapper .close {
@@ -187,7 +187,7 @@ body {padding: 0px; margin:0px; background-position: center; background-size: co
     font-family: "Open Sans", Arial, Verdana;
     font-size: 14px;
     display:none;
-    color:#B7B7B7;
+    color:#000;
 }
 
 
