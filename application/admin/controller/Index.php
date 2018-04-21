@@ -9,7 +9,11 @@ use think\Model;
 
 class Index extends \think\Controller
 {
-    public function index ()
+    public function Index (){
+        return view();
+    }
+
+    public function Manage ()
     {
        $title = input('param.title');
        $publisher = input('param.publisher');

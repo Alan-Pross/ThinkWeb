@@ -1,57 +1,64 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE HTML>
 <head>
-<!--   <title>Jack</title> -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>通知公告</title>
-  
-  <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">  
-  <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
- 
+	<title>创业学院后台登录系统</title>
+	<meta charset=utf-8" />
+	<script>
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<link rel="stylesheet" href="__STATIC__/css/admin-style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="__STATIC__/css/font-awesome.css">
 </head>
+
 <body>
+	<div class="video-w3l" data-vide-bg="video/1">
+		<!--header-->
+		<div class="header-w3l">
+			<h1>
+				<span>创</span>新
+				<span>创</span>意
+				<span>创</span>业
+			</h1>
+		</div>
+		<!--//header-->
+		<div class="main-content-agile">
+			<div class="sub-main-w3">
+				<h2>创业学院后台登陆系统</h2>
+				<form action="#" method="post">
+					<div class="pom-agile">
+						<span class="fa fa-user-o" aria-hidden="true"></span>
+						<input placeholder="用户" name="Name" class="user" type="text" required="">
+					</div>
+					<div class="pom-agile">
+						<span class="fa fa-key" aria-hidden="true"></span>
+						<input placeholder="密码" name="Password" class="pass" type="password" required="">
+					</div>
+					<div class="right-w3l">
+						<input type="submit" value="登陆" id="login">
+					</div>
+				</form>
+			</div>
+		</div>
+		<!--//main-->
+		<!--footer-->
+		<div class="footer">
+			<p>&copy; 2018 Effective Login Form. All rights reserved | Design by
+				<a href="http://w3layouts.com">Yamu</a>
+			</p>
+		</div>
+		<!--//footer-->
+	</div>
 
-  <div  class="container">   
-<h2><a href="#">信息发布</a></h2>
-	<!-- <ol class="breadcrumb">
-  		<li><a href="index">信息显示</a></li>
-  		<li><a href="add">信息添加</a></li>
-	</ol> -->
-<form  action="" method="post">
-  <div class="form-group" >
-  	标题：
-    <input type="text" class="form-control" name="title" value="" placeholder="请输入标题" maxlength="100">
-     
-  </div>
-  <div class="form-group">
-     发布人：
-   <input type="text" class="form-control" name="publisher"  value="" placeholder="请输入发布人" maxlength="100">
-  </div>
-   
-   	<!-- 加载编辑器的容器 -->
-    内容：
-    <script id="container" name="content" type="text/plain" style="height:500px">
+	<!-- js -->
+	<script src="__STATIC__/js/jquery-2.1.4.min.js"></script>
+	<script src="__STATIC__/js/jquery.vide.min.js"></script>
+	<!-- //js -->
 
-__STATIC__
+</body>
 
-    </script>
-    <!-- 配置文件 -->
-    <script type="text/javascript" src="__STATIC__/ueditor/ueditor.config.js"></script>
-    <!--编辑器源码文件 -->
-    <script type="text/javascript" src="__STATIC__/ueditor/ueditor.all.js"></script>
-    <!-- 实例化编辑器 -->
-    <script type="text/javascript">
-        var ue = UE.getEditor('container');
-    </script> 
-	
-  <button type="submit" id="btn" class="btn btn-primary"  >提交</button>
-</form>
- 
- 
- </div>
-
-  
- </body>
- </html>
+</html>
