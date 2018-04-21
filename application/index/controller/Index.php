@@ -10,6 +10,8 @@ class Index extends \think\Controller
 {
   //徐汉雄
   public function index (){
+      $search_name = input('search_name');
+      $this->assign('search_name',$search_name);
       return $this->fetch();
     }
   //帅中贤
@@ -17,7 +19,20 @@ class Index extends \think\Controller
       return $this->fetch();
     }
   //刘启明
-  
+  public function serch (){
+      $search_name = input('search_name');
+      $search = ['query'=>[]];
+      $search['query']['search_name'] = $search_name;
+      $res = Db::name('notice')->where('title','like',"%{$search_name}%")->paginate(5,false,$search);
+      $this -> assign('res',$res);
+      $this->assign('search_name',$search_name);
+      return $this->fetch();
+    }
+  public function serch0 (){
+    $search_name = input('search_name');
+    $this->assign('search_name',$search_name);
+    return $this->fetch();
+  }
   //周威
     public function play (){
        $name = input('param.name');

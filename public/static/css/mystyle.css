@@ -185,3 +185,43 @@ a {
 .a a {
     display: block;
 }
+
+/* 刘启明搜索框CSS */
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+.d1 {background: #A3D0C3;}
+.d1 input {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  border: 2px solid #7BA7AB;
+  border-radius: 5px;
+  outline: none;
+  background: #F9F0DA;
+  color: #9E9C9C;
+}
+.d2 {background: #7BA7AB;}
+.d2:after {content:""; clear:both; display:table}
+.d2 form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+.d2 input {
+  width: 250px;
+  height: 42px;
+  padding-left: 15px;
+  border-radius: 42px;
+  border: 2px solid #324b4e;
+  background: #F9F0DA;
+  outline: none;
+  position: relative;
+  transition: .3s linear;
+}
+.d2 input:focus {
+  width: 300px;
+}
+/* 刘启明搜索框CSS */

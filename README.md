@@ -9,6 +9,8 @@ http://www.jdcyxy.cn/
 * Thinkphp
 * Sublime Text
 * TortoiseSVN
+* 主要图标:
+http://www.iconfont.cn/collections/detail?spm=a313x.7781069.0.da5a778a4&cid=4878
 * 界面设计：
 https://modao.cc/app/P5kzvXayQg2Uls9ymA9BPVax28PyaY9
 * 富文本编辑器：
