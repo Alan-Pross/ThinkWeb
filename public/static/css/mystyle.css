@@ -44,6 +44,7 @@ a {
     position: relative;
     font-size: 0;
     text-align: center;
+    background-color: #FFF;
 }
 
 .banner::before {
