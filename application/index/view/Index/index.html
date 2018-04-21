@@ -2,71 +2,71 @@
 <html lang="zh-CN">
 
 <head>
-    <meta http-equiv="Cache-Control" content="max-age=7200" charset="UTF-8" />
+    <meta http-equiv="Cache-Control" content="max-age=7200" charset="UTF-8"/>
     <title>江汉大学创业学院</title>
     <link rel="stylesheet" href="__STATIC__/css/mystyle.css">
 </head>
 
 <body BGCOLOR="#EFEFEF">
-    <div class="headbar">
-        <div class="banner">
-            <div class="logo">
-                <img src="__STATIC__/images/logo.jpeg" width="69px" height="69px" alt="江汉大学">
-                <span class="font">江汉大学</span>
-                <img src="__STATIC__/images/logo.jpeg" width="69px" height="69px" alt="创业学院">
-                <span class="font">创业学院</span>
-            </div>
-            <form action="__PUBLIC__/index.php/index/index/search0" method="post">
+<div class="headbar">
+    <div class="banner">
+        <div class="logo">
+            <img src="__STATIC__/images/logo.jpeg" width="69px" height="69px" alt="江汉大学">
+            <span class="font">江汉大学</span>
+            <img src="__STATIC__/images/logo.jpeg" width="69px" height="69px" alt="创业学院">
+            <span class="font">创业学院</span>
+        </div>
+        <form action="__PUBLIC__/index.php/index/index/search0" method="post">
             <div class="search-wrapper">
-            <div class="input-holder">
-                <input type="text" class="search-input" name = "search_name" />
-                <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                <div class="input-holder">
+                    <input type="text" class="search-input" name="search_name"/>
+                    <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                </div>
+                <span class="close" onclick="searchToggle(this, event);"></span>
+                <div class="result-container">
+                </div>
             </div>
-            <span class="close" onclick="searchToggle(this, event);"></span>
-            <div class="result-container">
-            </div>
-        </div>
-    </form>
-        </div>
-        <div class="wrapper">
-            <div class="primary-menu">
-                <ul class="nav-menu">
-                    <li><a href="">
-        			<i class=""></i>
-        			<span class="text">首页</span>
-        		</a></li>
-                    <li><a href="">
-        			<i class=""></i>
-        			<span class="text">学院简介</span>
-        		</a></li>
-                    <li><a href="">
-        			<i class=""></i>
-        			<span class="text">新闻公告</span>
-        		</a></li>
-                    <li><a href="">
-        			<i class=""></i>
-        			<span class="text">入驻团队</span>
-        		</a></li>
-                    <li><a href="">
-        			<i class=""></i>
-        			<span class="text">文件下载</span>
-        		</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="carousel">
-            <ul class="images-wrapper">
-                <div id="pre" class="button"></div>
-                <div id="next" class="button"></div>
-                <li class="a"><a href=""><img src="images/e.jpg" alt="" width=100%></a></li>
-                <li class="a" style="z-index: -1"><a href=""><img src="__STATIC__/images/a.jpg" alt="" width=100%></a></li>
-                <li class="a" style="z-index: -2"><a href=""><img src="__STATIC__/images/b.jpg" alt="" width=100%></a></li>
-                <!-- <li class="a" style="z-index: -3"><a href=""><img src="images/a.jpg" alt="" width=100%></a></li> -->
+        </form>
+    </div>
+    <div class="wrapper">
+        <div class="primary-menu">
+            <ul class="nav-menu">
+                <li><a href="">
+                    <i class=""></i>
+                    <span class="text">首页</span>
+                </a></li>
+                <li><a href="">
+                    <i class=""></i>
+                    <span class="text">学院简介</span>
+                </a></li>
+                <li><a href="">
+                    <i class=""></i>
+                    <span class="text">新闻公告</span>
+                </a></li>
+                <li><a href="">
+                    <i class=""></i>
+                    <span class="text">入驻团队</span>
+                </a></li>
+                <li><a href="">
+                    <i class=""></i>
+                    <span class="text">文件下载</span>
+                </a></li>
             </ul>
         </div>
     </div>
-    <script>
-    (function() {
+    <div class="carousel">
+        <ul class="images-wrapper">
+            <div id="pre" class="button"></div>
+            <div id="next" class="button"></div>
+            <li class="a"><a href=""><img src="images/e.jpg" alt="" width=100%></a></li>
+            <li class="a" style="z-index: -1"><a href=""><img src="__STATIC__/images/a.jpg" alt="" width=100%></a></li>
+            <li class="a" style="z-index: -2"><a href=""><img src="__STATIC__/images/b.jpg" alt="" width=100%></a></li>
+            <!-- <li class="a" style="z-index: -3"><a href=""><img src="images/a.jpg" alt="" width=100%></a></li> -->
+        </ul>
+    </div>
+</div>
+<script>
+    (function () {
         var a = document.getElementsByClassName('a');
         var pre = document.getElementById('pre');
         var next = document.getElementById('next');
@@ -80,7 +80,7 @@
             a[next].style.transition = "left 0s";
             a[next].style.left = "100%";
             a[next].style.zIndex = "1";
-            setTimeout(function() {
+            setTimeout(function () {
                 a[i].style.left = "-100%";
                 a[i].style.zIndex = '0';
                 a[next].style.transition = "left .3s";
@@ -91,35 +91,35 @@
         }
 
         function moveright() {
-            var next = (i - 1+count) % count;
+            var next = (i - 1 + count) % count;
             a[next].style.transition = "left 0s";
             a[next].style.left = "-100%";
             a[next].style.zIndex = "1";
-            setTimeout(function() {
+            setTimeout(function () {
                 a[i].style.left = "100%";
                 a[i].style.zIndex = '0';
                 a[next].style.transition = "left .3s";
                 a[next].style.left = "0";
-                i = (i - 1+count) % count;
+                i = (i - 1 + count) % count;
             }, 100);
         }
 
         var time = setInterval(moveleft, 3500);
-        pre.onclick = function() {
+        pre.onclick = function () {
             moveleft();
             if (!bool) {
                 clearInterval(time);
                 bool = true;
             }
         };
-        next.onclick = function() {
+        next.onclick = function () {
             moveright();
             if (!bool) {
                 clearInterval(time);
                 bool = true;
             }
         };
-        main.onmouseleave = function() {
+        main.onmouseleave = function () {
             if (bool) {
                 time = setInterval(moveleft, 3500);
                 bool = false;
@@ -127,23 +127,26 @@
         };
 
     })()
-    </script>
-    <script type="text/javascript" color="30,100,255" opacity='1' zIndex="-1" count="50" src="__STATIC__/js/background.js"></script>
-    <script src="__STATIC__/js/jquery-1.11.0.min.js" type="text/javascript"></script>
+</script>
+<script type="text/javascript" color="30,100,255" opacity='1' zIndex="-1" count="50"
+        src="__STATIC__/js/background.js"></script>
+<script src="__STATIC__/js/jquery-1.11.0.min.js" type="text/javascript"></script>
 <script type="text/javascript">
-    function searchToggle(obj, evt){
+    function searchToggle(obj, evt) {
         var container = $(obj).closest('.search-wrapper');
 
-        if(!container.hasClass('active')){
-              container.addClass('active');
-              evt.preventDefault();
+        if (!container.hasClass('active')) {
+            container.addClass('active');
+            evt.preventDefault();
         }
-        else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
-              container.removeClass('active');
-              // clear input
-              container.find('.search-input').val('');
-              // clear and hide result container when we press close
-              container.find('.result-container').fadeOut(100, function(){$(this).empty();});
+        else if (container.hasClass('active') && $(obj).closest('.input-holder').length == 0) {
+            container.removeClass('active');
+            // clear input
+            container.find('.search-input').val('');
+            // clear and hide result container when we press close
+            container.find('.result-container').fadeOut(100, function () {
+                $(this).empty();
+            });
         }
     }
 </script>

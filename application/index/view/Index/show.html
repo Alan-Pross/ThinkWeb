@@ -2,23 +2,23 @@
 <html lang="zh-CN">
 
 <head>
-	<meta charset="utf-8">
-	 <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>show</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>show</title>
 
-  
-  <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">  
-  <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <div  class="container">
-      <h2>显示信息</h2>
-      <center>
-      {volist name="list" id="vo"} 
-      <a href="__ROOT__/index/index/view/id/{$vo.id}">{$vo.title}</a><br>
-      {/volist}
-  </div>
+<div class="container">
+    <h2>显示信息</h2>
+    <center>
+        {volist name="list" id="vo"}
+        <a href="__ROOT__/index/index/view/id/{$vo.id}">{$vo.title}</a><br>
+        {/volist}
+</div>
 </body>
 </html>
