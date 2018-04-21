@@ -43,6 +43,7 @@ a {
     height: 120px;
     position: relative;
     font-size: 0;
+    text-align: center;
 }
 
 .banner::before {
@@ -53,13 +54,13 @@ a {
 }
 
 .logo {
-    width: 60%;
+    /*width: 60%;*/
     text-align: center;
     vertical-align: middle;
     display: inline-block;
     white-space: nowrap;
-    text-align: right;
     font-size: 16px;
+     margin-left: -100px;
 }
 
 .logo img {
@@ -143,12 +144,16 @@ i.ic5 {
 .images-wrapper {
     padding: 0;
     position: relative;
-    height: 222px;
     overflow: hidden;
-    width: 980px;
+    width: 100%;
     margin: 0 auto;
+    font-size: 0;
 }
-
+.images-wrapper::after{
+     content: '';
+     display: inline-block;
+     padding-top: 23.08%;
+}
 .a {
     width: 100%;
     position: absolute;
@@ -184,14 +189,24 @@ i.ic5 {
 .a a {
     display: block;
 }
-
+.search-form{
+    position: absolute;
+    height: 70px;
+    width:560px;
+    display: inline-block;
+    right:0;
+    top:0;
+    bottom: 0;
+    margin:auto 0;
+    overflow: hidden;
+}
 .search-wrapper {
     position: absolute;
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     top: 50%;
-    left: 80%;
+    left: 50%;
 }
 
 .search-wrapper.active {
@@ -212,7 +227,7 @@ i.ic5 {
 .search-wrapper.active .input-holder {
     border-radius: 50px;
     width: 450px;
-    background: rgba(46, 148, 185, 1);
+    background: rgba(46, 148, 185, .8);
     -webkit-transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
     -moz-transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
     transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
