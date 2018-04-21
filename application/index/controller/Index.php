@@ -25,7 +25,7 @@ class Index extends \think\Controller
   public function search0 (){
       $search_name = input('search_name');
       if (empty($search_name)){
-        $this->redirect('__PUBLIC__/index.php/index/index/search', ['cate_id' => 2]);
+        $this->redirect('__PUBLIC__/index.php/index/index/search');
       }
       $search = ['query'=>[]];
       $search['query']['search_name'] = $search_name;
