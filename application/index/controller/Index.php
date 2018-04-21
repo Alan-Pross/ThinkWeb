@@ -19,7 +19,7 @@ class Index extends \think\Controller
       return $this->fetch();
     }
   //刘启明
-  public function serch (){
+  public function search (){
       $search_name = input('search_name');
       $search = ['query'=>[]];
       $search['query']['search_name'] = $search_name;
@@ -28,7 +28,7 @@ class Index extends \think\Controller
       $this->assign('search_name',$search_name);
       return $this->fetch();
     }
-  public function serch0 (){
+  public function search0 (){
     $search_name = input('search_name');
     $this->assign('search_name',$search_name);
     return $this->fetch();

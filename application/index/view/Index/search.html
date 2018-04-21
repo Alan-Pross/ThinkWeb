@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>搜索</title>
+</head>
+<body>
+<form action="serach" method="post">
+    <input type="text" name = "search_name" value = "{$search_name}">
+    <input type="submit" value = "提交">
+</form>
+<table border = "1px solid black" cellspacing="0">
+    <tr>
+        <td>title</td>
+        <td>publisher</td>
+        <td>content</td>
+        <td>create_time</td>
+    </tr>
+    {foreach name = "res" item = "vo"}
+        <tr>
+            <td>{$vo.title}</td>
+            <td>{$vo.publisher}</td>
+            <td>{$vo.content}</td>
+            <td>{$vo.create_time}</td>
+        </tr>
+    {/foreach}
+</table>
+{$res}
+</body>
+</html>
