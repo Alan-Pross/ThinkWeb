@@ -16,6 +16,26 @@ class Index extends \think\Controller
         return view();
     }
 
+    public function login()
+    {
+        $param = input('post.');
+        $has = db('people')->where('account', $param['account'])->find();
+        if(empty($has)){
+
+            $this->error('用户或密码错误');
+        }
+        if($has['password'] != $param['password']){
+
+            $this->error('用户或密码错误');
+        }
+
+        // 记录用户登录信息
+        cookie('account', $has['account'], 7200);  // 两个小时有效期
+        cookie('password', $has['password'], 7200);
+
+        $this->redirect(url('__PUBLIC__/admin/index/manage'));
+    }
+
     public function manage()
     {
         $title = input('param.title');
