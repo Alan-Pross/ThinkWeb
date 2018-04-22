@@ -8,6 +8,7 @@ use app\admin\model\Notice;
 use app\admin\model\News;
 use app\admin\model\Team;
 use think\Model;
+use think\captcha;
 
 class Index extends \think\Controller
 {
@@ -20,6 +21,10 @@ class Index extends \think\Controller
     {
         $param = input('post.');
         $has = db('people')->where('account', $param['account'])->find();
+        if(!captcha_check($param['captcha'])){
+
+            $this->error('验证码错误');
+        };
         if(empty($has)){
 
             $this->error('用户或密码错误');
@@ -38,22 +43,7 @@ class Index extends \think\Controller
 
     public function manage()
     {
-        $title = input('param.title');
-        $publisher = input('param.publisher');
-        $content = input('param.content');
-        if ($title <> '') {
-            // Db::table('notice')
-            //     ->data(['title'  => $title,
-            //           'publisher' => $publisher,
-            //           'content'   => $content,
-            //   ])
-            //    ->insert();
-            $notice = new Notice;
-            $notice->add($title, $publisher, $content);
-
-
-            return $this->success('恭喜您添加信息成功^_^', 'index');
-        }
+        //
         return $this->fetch();
     }
     public function notice() {

@@ -38,6 +38,13 @@
                     <span class="fa fa-key" aria-hidden="true"></span>
                     <input placeholder="密码" name="password" class="pass" type="password">
                 </div>
+                <div class="input-img">
+                <span class="form-group">
+                    <input type="text" placeholder="验证码" class="form-control" name="captcha">
+                </span>
+                    <img src="{:captcha_src()}" alt="captcha"
+                         onclick="javascript:this.src='{:captcha_src()}?tm='+Math.random();" style="cursor: pointer"/>
+                </div>
                 <div class="right-w3l">
                     <input type="submit" value="登陆" id="login">
                 </div>
