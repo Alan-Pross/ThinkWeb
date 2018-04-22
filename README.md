@@ -40,7 +40,7 @@
 
 - [ ] 未开始
 
-## [甘特图](https://www.zybuluo.com/isProSS/note/1121533)
+## 甘特图
 ```gantt
     title 项目开发流程
     section 项目确定
@@ -55,7 +55,7 @@
         发布: 7d
         验收: 3d
 ```
->GitHub默认不支持[甘特图](https://www.zybuluo.com/isProSS/note/1121533)
+>GitHub默认不支持甘特图[(预览)*](https://www.zybuluo.com/isProSS/note/1121533)
 
 ## 网页名称
 | 名称 | 英文 |
@@ -65,7 +65,11 @@
 | 新闻公告 | newnotice |
 | 入驻团队 | team |
 | 文件下载 | download |
->跳转方法：
 ``` 
-__PUBLIC__/index/index/名字
+// 视图输出字符串内容替换
+    'view_replace_str'       => [
+        '__PUBLIC__'=>'/cw/trunk/public',
+        '__STATIC__'=>'/cw/trunk/public/static',
+        '__ROOT__' => '/cw/trunk',
+    ],
 ```

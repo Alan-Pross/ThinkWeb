@@ -109,7 +109,7 @@ body {
 .video-w3l {
     padding: 0;
     background: rgba(0, 0, 0, 0.28);
-    min-height: 1200px;
+    min-height: 1000px;
     display: grid;
 }
 
@@ -236,17 +236,6 @@ span.fa {
     position: absolute;
     top: 1px;
     left: 2px;
-}
-
-.sub-agile input[type="checkbox"]:checked + label span:first-child:before {
-    content: "";
-    background: url(../images/tick.png) no-repeat;
-    position: absolute;
-    left: 2px;
-    top: 1px;
-    font-size: 10px;
-    width: 10px;
-    height: 10px;
 }
 
 .sub-w3l a {
