@@ -157,23 +157,29 @@ body {
     margin-left: 10px;
 }
 
-.input-img img,input {
-    vertical-align:middle;
-}
-
 .form-group {
-    padding: 11px 15px;
+    padding: 11px;
     background: #fff;
     margin-bottom: 23px;
     border: 1px solid #060606;
-    width: 50%;
 }
 
 .form-group input[type="text"] {
+    outline: none;
     font-size: .9em;
     border: none;
+    background: transparent;
     color: #000;
     font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+    vertical-align: middle;
+}
+
+.yz-img {
+    cursor: pointer;
+    margin-right: 0px;
+    border: 1px solid #060606;
+    vertical-align: middle;
 }
 
 .pom-agile {
@@ -215,7 +221,7 @@ body {
 }
 
 .right-w3l input[type="submit"]:hover {
-    background: #000;
+    background: #2E94B9;
     -webkit-transition: 0.5s all;
     -o-transition: 0.5s all;
     -moz-transition: 0.5s all;

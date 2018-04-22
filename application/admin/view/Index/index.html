@@ -38,13 +38,11 @@
                     <span class="fa fa-key" aria-hidden="true"></span>
                     <input placeholder="密码" name="password" class="pass" type="password">
                 </div>
-                <div class="input-img">
-                <span class="form-group">
+                <div class="form-group">
                     <input type="text" placeholder="验证码" class="form-control" name="captcha">
-                </span>
-                    <img src="{:captcha_src()}" alt="captcha"
-                         onclick="javascript:this.src='{:captcha_src()}?tm='+Math.random();" style="cursor: pointer"/>
                 </div>
+                <img src="{:captcha_src()}" alt="captcha"
+                     onclick="javascript:this.src='{:captcha_src()}?tm='+Math.random();" class="yz-img"/>
                 <div class="right-w3l">
                     <input type="submit" value="登陆" id="login">
                 </div>
@@ -55,7 +53,7 @@
     <!--footer-->
     <div class="footer">
         <p>&copy; 2018 Effective Login Form. All rights reserved | Design by
-            <a href="http://w3layouts.com">Yamu</a>
+            <a href="http://www.yamwl.com/">Yamu</a>
         </p>
     </div>
     <!--//footer-->
