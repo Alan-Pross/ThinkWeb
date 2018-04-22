@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>后台管理</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+     
+</head>
+<body>
+     
+    
+    <nav class="navbar navbar-inverse " style=" border-radius: 0px;margin-bottom: 10px;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="__PUBLIC__/admin/index/index">后台管理</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li> <a href="__ROOT__/index/index/index" target="_blank">预览首页</a>
+ </li>
+        <li> <a href="__ROOT__/index/index/login">管理员您好！</a>
+ 
+    </li>
+        <li class="dropdown">
+          <a href="#" >退出 </a>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!-- 这个是全局容器 -->
+<div class="container-fluid">
+ <!-- 以下是左右两侧 -->
+
+<div class="row">
+  <!-- 左侧 -->
+  <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+
+    <!-- 折叠开始 -->
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" 
+           href="#collapseOne">
+          菜单
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse">
+      <div class="panel-body">
+        常用功能
+      </div>
+    </div>
+  </div>
+ 
+   
+</div>
+    <!-- 折叠结束 -->
+    <div class="list-group">
+  <a href="#" class="list-group-item  ">
+    公告管理
+  </a>
+  <a href="__PUBLIC__/admin/noticement/edit" class="list-group-item">公告添加</a>
+  <a href="" class="list-group-item">公告列表</a>
+  <a href="#" class="list-group-item">公告分类</a>
+  <a href="#" class="list-group-item">公告统计</a>
+</div>
+<div class="list-group">
+  <a href="#" class="list-group-item disabled">
+    新闻管理
+  </a>
+  <a href="__PUBLIC__/admin/newsment/edit" class="list-group-item">新闻添加</a>
+  <a href="#" class="list-group-item">新闻类表</a>
+  <a href="#" class="list-group-item">新闻分类</a>
+  <a href="#" class="list-group-item">新闻统计</a>
+</div>
+<div class="list-group">
+  <a href="#" class="list-group-item disabled">
+    团队管理  
+  </a>
+  <a href="__PUBLIC__/admin/teamment/edit" class="list-group-item">团队添加</a>
+  <a href="#" class="list-group-item">团队类表</a>
+  <a href="#" class="list-group-item">团队分类</a>
+  <a href="#" class="list-group-item">团队统计</a>
+</div>
+</div>
+<!-- 右侧 -->
+  <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+
+
+<ol class="breadcrumb">
+  <li><a href="__ROOT__/admin">首页</a></li>
+  <li><a href="__ROOT__/admin">后台首页</a></li>
+  <li class="active">后台介绍</li>
+</ol>
