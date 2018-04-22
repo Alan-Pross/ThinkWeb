@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -16,7 +17,9 @@ ul,
 li,
 a,
 div,
-button {
+button,
+dl,
+dd{
     margin: 0;
 }
 
@@ -110,7 +113,6 @@ a {
     display: inline-block;
     height: 100%;
     width: 50px;
-
 }
 
 .text {
@@ -178,7 +180,7 @@ i.ic5 {
     cursor: pointer;
 }
 
-.button + .button {
+.button+.button {
     left: auto;
     right: 0;
 }
@@ -216,8 +218,7 @@ i.ic5 {
     left: 45%;
 }
 
-.search-wrapper.active {
-}
+.search-wrapper.active {}
 
 .search-wrapper .input-holder {
     overflow: hidden;
@@ -314,7 +315,6 @@ i.ic5 {
     -webkit-transition: all .4s cubic-bezier(0.650, -0.600, 0.240, 1.650);
     -moz-transition: all .4s cubic-bezier(0.650, -0.600, 0.240, 1.650);
     transition: all .4s cubic-bezier(0.650, -0.600, 0.240, 1.650);
-
 }
 
 .search-wrapper.active .input-holder .search-icon span {
@@ -323,7 +323,8 @@ i.ic5 {
     transform: rotate(-45deg);
 }
 
-.search-wrapper .input-holder .search-icon span::before, .search-wrapper .input-holder .search-icon span::after {
+.search-wrapper .input-holder .search-icon span::before,
+.search-wrapper .input-holder .search-icon span::after {
     position: absolute;
     content: '';
 }
@@ -378,7 +379,8 @@ i.ic5 {
     transition-delay: 0.5s;
 }
 
-.search-wrapper .close::before, .search-wrapper .close::after {
+.search-wrapper .close::before,
+.search-wrapper .close::after {
     position: absolute;
     content: '';
     background: #393E46;
@@ -416,3 +418,35 @@ i.ic5 {
         width: 200px;
     }
 }
+
+
+/*入驻团队*/
+.team-sidebar{
+    width:300px;
+    height: 400px;
+    float: right;
+    outline: 1px solid red;
+}
+.team-title{
+    text-align: center;
+}
+.team-list dt,dd{
+    float: left;
+}
+.team-list dl{
+    outline: 1px solid blue;
+    height: 70px;
+    overflow: hidden;
+    width: 100%;
+}
+.team-list dt{
+   border:1px solid red;
+   height: 60px;
+   width:60px;
+}
+.team-list dd{
+   border:1px solid #000;
+   height: 60px;
+   width:200px;
+}
+/*结束*/
