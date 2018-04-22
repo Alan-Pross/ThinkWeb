@@ -2,13 +2,22 @@ html, body {
     height: 100%;
 }
 
-body {
-    padding: 0px;
-    margin: 0px;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+.top {
+    padding-top: 20em;
+}
+
+.top h1 {
+    font-size: 3.5em;
+    color: #fff;
+    letter-spacing: 10px;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 4px 5px 8px #101010;
+    font-style: italic;
+}
+
+.top h1 span {
+    color: #FF5722;
 }
 
 .search-wrapper {
