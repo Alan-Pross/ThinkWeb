@@ -6,15 +6,15 @@ use think\Model;
 use think\Db;
 use traits\model\SoftDelete;
 
-class Notice extends model{
-    use SoftDelete;
+class News extends model{
+	use SoftDelete;
     protected $deleteTime = 'delete_time';
 	protected $autoWriteTimestamp = true;
 	protected $updateTime = false;
 
 	public function add($title,$publisher,$content) {
 		
-		Notice::create([
+		News::create([
 			'title'  => $title,
             'publisher' => $publisher,
             'content'   => $content,
@@ -23,7 +23,7 @@ class Notice extends model{
 	}
 	public function updata($id,$title,$publisher,$content) {
 			
-			Notice::update([
+			News::update([
 				'id' => $id,
     			'title'  =>  $title,
     			'publisher'  =>  $publisher,
@@ -32,6 +32,8 @@ class Notice extends model{
 		}
 
 	public function delata($id) {
-		Notice::destroy($id);
-	}	
+		News::destroy($id);
+	}
+
+
 }
