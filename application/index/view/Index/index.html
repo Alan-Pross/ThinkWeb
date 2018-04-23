@@ -112,7 +112,7 @@
             setTimeout(function() {
                 a[i].style.left = "-100%";
                 a[i].style.zIndex = '0';
-                a[next].style.transition = "left .3s";
+                a[next].style.transition = "left .5s";
                 a[next].style.left = "0";
                 i = (i + 1) % count;
             }, 100);
@@ -127,7 +127,7 @@
             setTimeout(function() {
                 a[i].style.left = "100%";
                 a[i].style.zIndex = '0';
-                a[next].style.transition = "left .3s";
+                a[next].style.transition = "left .5s";
                 a[next].style.left = "0";
                 i = (i - 1 + count) % count;
             }, 100);
