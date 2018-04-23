@@ -15,7 +15,15 @@ class Index extends \think\Controller
 
   //帅中贤
   public function newnotice (){
-      return view();
+
+      $res=Db::name("notice")->field("title,create_time")->order("id DESC")->limit(5)->select();
+      $this->assign("res",$res);
+      return $this->fetch();
+  }
+    public function upload(){
+        $res=Db::name("notice")->field("title,create_time")->order("id DESC")->select();
+        $this->assign("res",$res);
+        return $this->fetch();
     }
 
   //刘启明
