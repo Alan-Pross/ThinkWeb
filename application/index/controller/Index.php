@@ -38,7 +38,7 @@ class Index extends \think\Controller
       $search = ['query'=>[]];
       $search['query']['search_name'] = $search_name;
       $res = new Notice();
-      $res = Notice::where('title|publisher|content','like',"%{$search_name}%")->paginate(5,false,$search);
+      $res = Notice::where('title','like',"%{$search_name}%")->paginate(5,false,$search);
       $this -> assign('res',$res);
       $this -> assign('search_name',$search_name);
       return $this->fetch();
