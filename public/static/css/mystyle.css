@@ -87,6 +87,8 @@ a {
     height: 100%;
     width: 980px;
     margin: 0 auto;
+    background-color: #fff;
+    text-align: center;
 }
 
 .nav-menu {
@@ -102,7 +104,12 @@ a {
     width: 20%;
     height: 100%;
 }
-
+.nav-menu li:hover {
+    background-color: #aab;
+}
+.nav-menu li:hover .text{
+    color:#fff;
+}
 .nav-menu li a {
     display: inline-block;
     height: 100%;
@@ -120,6 +127,7 @@ a {
     height: 100%;
     vertical-align: top;
     font-size: 22px;
+    color: #000;
 }
 
 i.ic1 {
