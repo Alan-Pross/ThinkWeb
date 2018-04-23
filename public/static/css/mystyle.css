@@ -120,6 +120,9 @@ a {
     display: inline-block;
     height: 100%;
     width: 50px;
+    background-size:60%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .text {
