@@ -17,7 +17,7 @@ class Teamment extends Index
         if($name <> '') {
           $team = new Team;
           $team->add($name,$head,$message);
-          return $this->success('恭喜您公告添加成功^_^','index');
+          return $this->success('恭喜您公告添加成功^_^','__PUBLIC__/admin/index/manage');
         }
         return $this->fetch();
     }

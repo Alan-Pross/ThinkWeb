@@ -17,8 +17,8 @@ class Newsment extends Index
        if($title <> '') {
           $news = new News;
           $news->add($title,$publisher,$content);  
-          return $this->success('恭喜您公告添加成功^_^','index');
+          return $this->success('恭喜您公告添加成功^_^','__PUBLIC__/admin/index/manage');
     }
     return $this->fetch();
-    }
+   }
 }
