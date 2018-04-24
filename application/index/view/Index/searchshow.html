@@ -1,20 +1,38 @@
 {include file="Index/header" /}
 <link rel="stylesheet" href="__STATIC__/css/searchshow-form.css">
+
 <div>
     标题匹配
     <hr>
 
-    {volist name="res" id = "vo"}
+    {volist name="title" id = "vo1"}
     <div class="fdw-pricing-table">
         <div class="plan plan4">
-            <div class="header">{$vo.publisher}</div>
-            <div class="price">{$vo.title}</div>
+            <div class="header">{$vo1.publisher}</div>
+            <div class="price">{$vo1.title}</div>
             <hr>
-            <div class="monthly">{$vo.create_time}</div>
+            <div class="monthly">{$vo1.create_time}</div>
         </div>
     </div>
     {/volist}
-    {$page}
+    {$page1}
+</div>
+
+<div>
+    发布人匹配
+    <hr>
+
+    {volist name="publisher" id = "vo2"}
+    <div class="fdw-pricing-table">
+        <div class="plan plan4">
+            <div class="header">{$vo2.publisher}</div>
+            <div class="price">{$vo2.title}</div>
+            <hr>
+            <div class="monthly">{$vo2.create_time}</div>
+        </div>
+    </div>
+    {/volist}
+    {$page2}
 </div>
 
 
