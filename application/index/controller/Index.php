@@ -13,6 +13,10 @@ class Index extends \think\Controller
       return view();
     }
 
+  public function header() {
+    return view();
+  }  
+
   //帅中贤
   public function newnotice (){
 
