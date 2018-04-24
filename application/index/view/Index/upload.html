@@ -1,21 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title></title>
-   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
     </script>
     <script type="text/javascript">
         $(document).ready(function () {
             var ready = 0;
             var numPage = 2;
-			var allPage=Math.ceil($("#secondPage p").size()/numPage);
-			 $("#allPage").text(function(i,origText){
-				 return allPage;
-             });
-  		 $("#currentPage").text(function(i,origText){
-				 return 1;
-         });
+            var allPage = Math.ceil($("#secondPage p").size() / numPage);
+            $("#allPage").text(function (i, origText) {
+                return allPage;
+            });
+            $("#currentPage").text(function (i, origText) {
+                return 1;
+            });
             $("#secondPage p").slice(ready + numPage).hide();
             $("#up").click(function () {
                 if (ready > 0) {
@@ -23,11 +24,11 @@
                     $("#secondPage p").slice(ready, ready + numPage).show();
                     $("#secondPage p").slice(0, ready).hide();
                     $("#secondPage p").slice(ready + numPage).hide();
-					if($("#currentPage").text()>0){
-						$("#currentPage").text(function(i,origText){
-				 return parseInt(origText)-1;
-         });
-						}
+                    if ($("#currentPage").text() > 0) {
+                        $("#currentPage").text(function (i, origText) {
+                            return parseInt(origText) - 1;
+                        });
+                    }
                 }
             });
             $("#down").click(function () {
@@ -36,50 +37,48 @@
                     $("#secondPage p").slice(ready, ready + numPage).show();
                     $("#secondPage p").slice(0, ready).hide();
                     $("#secondPage p").slice(ready + numPage).hide();
-						if($("#currentPage").text()<allPage+1){
-						$("#currentPage").text(function(i,origText){
-				 return parseInt(origText)+1;
-         });
-						}
+                    if ($("#currentPage").text() < allPage + 1) {
+                        $("#currentPage").text(function (i, origText) {
+                            return parseInt(origText) + 1;
+                        });
+                    }
                 }
             });
             $("#begin").click(function () {
                 $("#secondPage p").slice(0, numPage).show();
                 $("#secondPage p").slice(numPage).hide();
                 ready = 0;
-							$("#currentPage").text(function(i,origText){
-				 return 1;
-         });
+                $("#currentPage").text(function (i, origText) {
+                    return 1;
+                });
             });
             $("#end").click(function () {
-				var end=$("#secondPage p").size()%numPage;
+                var end = $("#secondPage p").size() % numPage;
                 $("#secondPage p").slice(-end).show();
                 $("#secondPage p").slice(0, -end).hide();
                 ready = $("#secondPage p").size() - end;
-							$("#currentPage").text(function(i,origText){
-				 return allPage;
-         });
+                $("#currentPage").text(function (i, origText) {
+                    return allPage;
+                });
             });
         });
     </script>
 </head>
 
 <body>
-<center>
 <div>
-<div id="secondPage" class="show">
-    {volist name="res" id="each" empty="未检测到数据库"}
-    <p id="erg">{$each.title}</p>
-    {/volist}
+    <div id="secondPage" class="show">
+        {volist name="res" id="each" empty="未检测到数据库"}
+        <p id="erg">{$each.title}</p>
+        {/volist}
     </div>
     <div id="button">
-                 <span id="currentPage"></span>/<span id="allPage"></span>
-                <button id="begin" type="button">首页</button>
-                <button id="up" type="button">上一页</button>
-                <button id="down" type="button">下一页</button>
-                <button id="end" type="button">尾页</button>
+        <span id="currentPage"></span>/<span id="allPage"></span>
+        <button id="begin" type="button">首页</button>
+        <button id="up" type="button">上一页</button>
+        <button id="down" type="button">下一页</button>
+        <button id="end" type="button">尾页</button>
     </div>
 </div>
-</center>
 </body>
 </html>

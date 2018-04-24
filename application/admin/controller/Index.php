@@ -1,4 +1,5 @@
 <?php
+
 namespace app\admin\controller;
 
 use think\View;
@@ -12,7 +13,7 @@ use think\captcha;
 
 class Index extends \think\Controller
 {
-     public function index()
+    public function index()
     {
         return view();
     }
@@ -21,15 +22,15 @@ class Index extends \think\Controller
     {
         $param = input('post.');
         $has = db('people')->where('account', $param['account'])->find();
-        if(!captcha_check($param['captcha'])){
+        if (!captcha_check($param['captcha'])) {
 
             $this->error('验证码错误');
         };
-        if(empty($has)){
+        if (empty($has)) {
 
             $this->error('用户或密码错误');
         }
-        if($has['password'] != $param['password']){
+        if ($has['password'] != $param['password']) {
 
             $this->error('用户或密码错误');
         }
@@ -46,5 +47,5 @@ class Index extends \think\Controller
         //
         return $this->fetch();
     }
-   
+
 }
