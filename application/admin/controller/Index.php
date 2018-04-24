@@ -2,14 +2,7 @@
 
 namespace app\admin\controller;
 
-use think\View;
-use think\Db;
-use think\Request;
-use app\admin\model\Notice;
-use app\admin\model\News;
-use app\admin\model\Team;
-use think\Model;
-use think\captcha;
+use \think\Cookie;
 
 class Index extends \think\Controller
 {
@@ -39,13 +32,33 @@ class Index extends \think\Controller
         cookie('account', $has['account'], 7200);  // 两个小时有效期
         cookie('password', $has['password'], 7200);
 
-        $this->redirect(url('__PUBLIC__/admin/index/manage'));
+        $this->redirect(url('/admin/index/manage'));
     }
 
     public function manage()
     {
-        //
-        return $this->fetch();
+        if ($this->accountok()) {
+            return $this->fetch();
+        }
+        $this->redirect(url('/admin'));
+    }
+
+    public function accountok()//是否登录成功
+    {
+        if (Cookie::has('account')) {
+            $has = db('people')->where('account', Cookie::get('account'))->find();
+            if ($has['password'] == Cookie::get('password')) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public function exitaccount()//退出登录
+    {
+        cookie('user_id', null);
+        cookie('user_name', null);
+        $this->redirect(url('/admin'));
     }
 
 }

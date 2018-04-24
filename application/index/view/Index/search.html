@@ -8,27 +8,36 @@
 </head>
 <body BGCOLOR="#EFEFEF">
 <div class="all">
-<div class="top">
-    <h1>
-        <span>搜索</span>从这里开始
-    </h1>
-</div>
-<form action="__PUBLIC__/index.php/index/index/searchshow" method="post">
-    <div class="search-wrapper" class="active">
-        <div class="input-holder">
-            <input type="text" class="search-input" name="search_name"/>
-            <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
-        </div>
-        <span class="close" onclick="searchToggle(this, event);"></span>
-        <div class="result-container">
-        </div>
+    <div class="top">
+        <h1>
+            <span>搜索</span>从这里开始
+        </h1>
     </div>
-</form>
+    <form action="__PUBLIC__/index.php/index/index/searchshow" method="post">
+        <div class="search-wrapper">
+            <div class="input-holder">
+                <input type="text" class="search-input" name="search_name" id="search-input"/>
+                <button class="search-icon" onclick="searchToggle(this, event);" id="search-button"><span></span>
+                </button>
+            </div>
+            <span class="close" onclick="searchToggle(this, event);"></span>
+            <div class="result-container">
+            </div>
+        </div>
+    </form>
 </div>
 <script type="text/javascript" color="30,100,255" opacity='1' zIndex="-1" count="50"
         src="__STATIC__/js/background.js"></script>
 <script src="__STATIC__/js/jquery-1.11.0.min.js" type="text/javascript"></script>
 <script type="text/javascript">
+    window.onload = function () {
+        var obj = document.getElementById('search-button');
+        var container = $(obj).closest('.search-wrapper');
+        container.addClass('active');
+        setTimeout(function () {
+            setCaretPosition(document.getElementById("search-input"), 0);
+        }, 400)
+    }
     function searchToggle(obj, evt) {
         var container = $(obj).closest('.search-wrapper');
 
@@ -38,15 +47,23 @@
         }
         else if (container.hasClass('active') && $(obj).closest('.input-holder').length == 0) {
             container.removeClass('active');
-            // clear input
             container.find('.search-input').val('');
-            // clear and hide result container when we press close
             container.find('.result-container').fadeOut(100, function () {
                 $(this).empty();
             });
         }
     }
+    function setCaretPosition(obj, pos) {
+        if (obj.createTextRange) {
+            var range = obj.createTextRange();
+            range.moveEnd("character", pos);
+            range.moveStart("character", pos);
+            range.select();
+        } else {
+            obj.setSelectionRange(pos, pos);
+            obj.focus();
+        }
+    }
 </script>
 </body>
-
 </html>

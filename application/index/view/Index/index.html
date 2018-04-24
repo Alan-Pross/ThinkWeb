@@ -109,27 +109,5 @@
 
     })()
 </script>
-<script type="text/javascript" color="30,100,255" opacity='1' zIndex="-1" count="50"
-        src="__STATIC__/js/background.js"></script>
-<script src="__STATIC__/js/jquery-1.11.0.min.js" type="text/javascript"></script>
-<script type="text/javascript">
-    function searchToggle(obj, evt) {
-        var container = $(obj).closest('.search-wrapper');
-
-        if (!container.hasClass('active')) {
-            container.addClass('active');
-            evt.preventDefault();
-        } else if (container.hasClass('active') && $(obj).closest('.input-holder').length == 0) {
-            container.removeClass('active');
-            // clear input
-            container.find('.search-input').val('');
-            // clear and hide result container when we press close
-            container.find('.result-container').fadeOut(100, function () {
-                $(this).empty();
-            });
-        }
-    }
-</script>
 </body>
-
 </html>

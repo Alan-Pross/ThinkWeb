@@ -2,9 +2,7 @@
 
 namespace app\index\controller;
 
-use think\View;
 use think\Db;
-use think\Request;
 use app\admin\model\Notice;
 
 class Index extends \think\Controller
@@ -42,7 +40,7 @@ class Index extends \think\Controller
         return view();
     }
 
-    public function searchshow($page)
+    public function searchshow($page='0')
     {
         if (empty($page)) {
             $search_name = input('search_name');

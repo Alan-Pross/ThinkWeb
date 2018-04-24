@@ -13,6 +13,10 @@ class Noticement extends Index
 {
     public function edit()
     {
+        if (!$this->accountok()) {
+            $this->redirect(url('/admin'));
+        }
+
         $title = input('param.title');
         $publisher = input('param.publisher');
         $content = input('param.content');

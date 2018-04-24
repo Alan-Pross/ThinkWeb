@@ -2,17 +2,16 @@
 
 namespace app\admin\controller;
 
-use think\View;
-use think\Db;
-use think\Request;
 use app\admin\model\News;
-use think\Model;
-use think\captcha;
 
 class Newsment extends Index
 {
     public function edit()
     {
+        if (!$this->accountok()) {
+            $this->redirect(url('/admin'));
+        }
+
         $title = input('param.title');
         $publisher = input('param.publisher');
         $content = input('param.content');

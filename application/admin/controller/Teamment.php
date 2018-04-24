@@ -13,6 +13,10 @@ class Teamment extends Index
 {
     public function edit()
     {
+        if (!$this->accountok()) {
+            $this->redirect(url('/admin'));
+        }
+
         $name = input('param.name');
         $head = input('param.head');
         $message = input('param.message');
