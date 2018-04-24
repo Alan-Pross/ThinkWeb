@@ -7,6 +7,7 @@
     <title>搜索结果</title>
     <link rel="stylesheet" type="text/css" href="__STATIC__/css/search0-form.css">
     <link rel="stylesheet" type="text/css" href="__STATIC__/css/mystyle.css">
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/result-styles.css">
 </head>
 <body BGCOLOR="#EFEFEF">
 <div class="headbar">
@@ -65,22 +66,17 @@
         </ul>
     </div>
 </div>
-<table border="1px solid black" cellspacing="0">
-    <tr>
-        <td>title</td>
-        <td>publisher</td>
-        <td>content</td>
-        <td>create_time</td>
-    </tr>
-    {volist name="res" id = "vo"}
-    <tr>
-        <td>{$vo.title}</td>
-        <td>{$vo.publisher}</td>
-        <td>{$vo.content}</td>
-        <td>{$vo.create_time}</td>
-    </tr>
-    {/volist}
-</table>
+{volist name="res" id = "vo"}
+<div id="fdw-pricing-table">
+    <div class="plan plan4">
+        <a href="">
+        <div class="header">{$vo.publisher}</div>
+        <div class="price">{$vo.title}</div>
+        <div class="monthly">{$vo.create_time}</div>
+        </a>
+    </div>
+</div>
+{/volist}
 <script type="text/javascript" color="30,100,255" opacity='1' zIndex="-1" count="50"
         src="__STATIC__/js/background.js"></script>
 <script src="__STATIC__/js/jquery-1.11.0.min.js" type="text/javascript"></script>

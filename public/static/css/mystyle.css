@@ -111,11 +111,12 @@ a {
     margin-right: -57px;
 }
 
-@media screen and (min-width:1400px) {
+@media screen and (min-width: 1400px) {
     .primary-menu,
     .head-top {
         width: 1160px;
     }
+
     .nav-menu li {
         width: 302px;
         margin-right: -87px;
@@ -211,7 +212,7 @@ i.ic5 {
     cursor: pointer;
 }
 
-.button+.button {
+.button + .button {
     left: auto;
     right: 0;
 }
@@ -248,7 +249,8 @@ i.ic5 {
     right: 0;
 }
 
-.search-wrapper.active {}
+.search-wrapper.active {
+}
 
 .search-wrapper .input-holder {
     overflow: hidden;
@@ -449,8 +451,6 @@ i.ic5 {
     }
 }
 
-
-
 /*入驻团队*/
 
 .team-sidebar {
@@ -487,6 +487,5 @@ dd {
     height: 60px;
     width: 200px;
 }
-
 
 /*结束*/

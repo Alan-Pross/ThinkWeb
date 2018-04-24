@@ -38,30 +38,13 @@ class Index extends \think\Controller
       $search = ['query'=>[]];
       $search['query']['search_name'] = $search_name;
       $res = new Notice();
-      $res = Notice::where('title','like',"%{$search_name}%")->paginate(5,false,$search);
+      $res = Notice::where('title|publisher','like',"%{$search_name}%")->paginate(5,false,$search);
       $this -> assign('res',$res);
       $this -> assign('search_name',$search_name);
       return $this->fetch();
   }
 
   //周威
-    public function play (){
-       $name = input('param.name');
-       $head = input('param.head');
-       $message = input('param.message');
-
-       if($name <> '') {
-		Db::table('team')
-    	->data(['name'  => $name,
-			    'message' => $message,
-			    'head'   => $head,
-			])
-    	->insert();
-		return $this->success('恭喜您添加信息成功^_^','index');
-		}
-		return $this->fetch();
-    }
-
     public function view () {
     //   $list = Notice::where('id','=',0)
     //   ->find();
