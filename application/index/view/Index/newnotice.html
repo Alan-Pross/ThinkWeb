@@ -1,85 +1,94 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>无标题文档</title>
     <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js">
     </script>
-     <script type="text/javascript">
-	 $(document).ready(function(){
-		 var ready=0;
-		 var everypage=5;
-		    $("#news").click(function(){
-  $("#firstPage").show();
-  $("#secondPage").hide();
-  });
-  $("#notice").click(function(){
-  $("#firstPage").hide();
-  $("#secondPage").show();
-  });
-});
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var ready = 0;
+            var everypage = 5;
+            $("#news").click(function () {
+                $("#firstPage").show();
+                $("#secondPage").hide();
+            });
+            $("#notice").click(function () {
+                $("#firstPage").hide();
+                $("#secondPage").show();
+            });
+        });
     </script>
-<style type="text/css">
-     /* CSS样式制作 */  
-     *{
-	   padding:0px; 
-	   margin:0px;
-	   }
-      a{
-	    text-decoration:none;
-	    color:black;
-		}
-		li{
-			margin-left:10px;
-			}
-      a:hover,p:hover{
-	   text-decoration:none;
-	   color:#336699;
-	   }
-		.col{
-			    font-size: 18px;
-				background-color:#09F;
-				}
-		#news{
-			margin-bottom:1px;
-			}
-       #tab{ 
-	   width:270px; 
-	   padding:5px;
-	   height:150px;
-	   margin:20px;
-	   }
-     #firstPage,#secondPage{ 
-		   height:230px;
-		   width:248px;
-	       line-height:26px;
-	       border-top:none;
-		   padding:1px;
-		   border:1px solid #336699;
-		   padding:10px;
-		  }
-       .hide{
-		   display:none;
-		   }
+    <style type="text/css">
+        /* CSS样式制作 */
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        li {
+            margin-left: 10px;
+        }
+
+        a:hover, p:hover {
+            text-decoration: none;
+            color: #336699;
+        }
+
+        .col {
+            font-size: 18px;
+            background-color: #09F;
+        }
+
+        #news {
+            margin-bottom: 1px;
+        }
+
+        #tab {
+            width: 270px;
+            padding: 5px;
+            height: 150px;
+            margin: 20px;
+        }
+
+        #firstPage, #secondPage {
+            height: 230px;
+            width: 248px;
+            line-height: 26px;
+            border-top: none;
+            padding: 1px;
+            border: 1px solid #336699;
+            padding: 10px;
+        }
+
+        .hide {
+            display: none;
+        }
     </style>
 </head>
 
 <body>
-<div id = "tab">
-<div id="news" class="col">学院新闻 <a href="upload">more</a></div>
+<div id="tab">
+    <div id="news" class="col">学院新闻 <a href="upload">more</a></div>
     <div id="firstPage" class="show">
-    <ul>
-        {volist name="res" id="each" empty="未检索到数据库"}
-       <li> <p >{$each.title}</p></li>
-        {/volist}
-       </ul>
-	</div>
-<div id="notice" class="col">通知公告  <a href="login.html">more</a></div>
+        <ul>
+            {volist name="res" id="each" empty="未检索到数据库"}
+            <li><p>{$each.title}</p></li>
+            {/volist}
+        </ul>
+    </div>
+    <div id="notice" class="col">通知公告 <a href="login.html">more</a></div>
     <div id="secondPage" class="hide">
-       <a href = "#">275万购昌平邻铁三居</a><br/>
-       <a href = "#">200万内购五环三居环</a><br/>
-       <a href = "#">北京首现零首环5s0平</a><br/>
-       <a href = "#">京楼盘直降500s0sfd</a><br/>
+        <a href="#">275万购昌平邻铁三居</a><br/>
+        <a href="#">200万内购五环三居环</a><br/>
+        <a href="#">北京首现零首环5s0平</a><br/>
+        <a href="#">京楼盘直降500s0sfd</a><br/>
     </div>
 </div>
 </body>
