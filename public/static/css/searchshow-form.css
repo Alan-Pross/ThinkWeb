@@ -1,12 +1,20 @@
+div {
+    margin: 0;
+}
+
+.fenye {
+    text-align: center;
+}
+
 .pagination {
-    display: inline-block;
+    display: block;
     padding-left: 0;
     margin: 20px 0;
     border-radius: 4px;
 }
 
 .pagination li {
-    display: inline;
+    display: inline-block;
 }
 
 .pagination li a, .pagination li span {
@@ -61,10 +69,9 @@
 }
 
 .fdw-pricing-table {
-    margin: 0 auto;
+    margin: 15px;
     text-align: center;
-    width: 20%;
-    display: inline
+    display: inline-block
 }
 
 .fdw-pricing-table:before, .fdw-pricing-table:after {
@@ -87,7 +94,7 @@
     float: left;
     display: inline; /* IE6 double margin fix */
     position: relative;
-    margin: 40px 0px 20px 20px;
+    margin: 0;
     -moz-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, .5);
     -webkit-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, .53);
     box-shadow: 0 2px 2px -1px rgba(0, 0, 0, .5);

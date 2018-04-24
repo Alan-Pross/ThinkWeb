@@ -42,23 +42,25 @@ class Index extends \think\Controller
         return view();
     }
 
-    public function searchshow($page = '0')
+    public function searchshow($page)
     {
-        $search_name = input('search_name');
-        if (empty($search_name) and $page == 0) {
-            $this->redirect('__PUBLIC__/index.php/index/index/search');
+        if (empty($page)) {
+            $search_name = input('search_name');
+            if (empty($search_name) and $page == 0) {
+                $this->redirect('__PUBLIC__/index.php/index/index/search');
+            }
+            $search = ['query' => []];
+            $search['query']['search_name'] = $search_name;
+            new Notice();
+            $title = Notice::where('title', 'like', "%{$search_name}%")->paginate(5, false);
+            $publisher = Notice::where('publisher', 'like', "%{$search_name}%")->paginate(5, false);
+            $page1 = $title->render();
+            $page2 = $publisher->render();
+            $this->assign('title', $title);
+            $this->assign('publisher', $publisher);
+            $this->assign('page1', $page1);
+            $this->assign('page2', $page2);
         }
-        $search = ['query' => []];
-        $search['query']['search_name'] = $search_name;
-        new Notice();
-        $title = Notice::where('title', 'like', "%{$search_name}%")->paginate(5, false);
-        $publisher = Notice::where('publisher', 'like', "%{$search_name}%")->paginate(5, false);
-        $page1 = $title->render();
-        $page2 = $publisher->render();
-        $this->assign('title', $title);
-        $this->assign('publisher', $publisher);
-        $this->assign('page1', $page1);
-        $this->assign('page2', $page2);
         return $this->fetch();
     }
 
