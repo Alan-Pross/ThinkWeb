@@ -30,7 +30,7 @@ class Index extends \think\Controller
   public function search (){
       return view();
     }
-  public function search0 (){
+  public function searchshow (){
       $search_name = input('search_name');
       if (empty($search_name)){
         $this->redirect('__PUBLIC__/index.php/index/index/search');
@@ -38,9 +38,10 @@ class Index extends \think\Controller
       $search = ['query'=>[]];
       $search['query']['search_name'] = $search_name;
       $res = new Notice();
-      $res = Notice::where('title|publisher','like',"%{$search_name}%")->paginate(5,false,$search);
+      $res = Notice::where('title|publisher','like',"%{$search_name}%")->paginate(1,false);
+      $page = $res->render();
       $this -> assign('res',$res);
-      $this -> assign('search_name',$search_name);
+      $this -> assign('page', $page);
       return $this->fetch();
   }
 
