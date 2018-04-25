@@ -4,13 +4,17 @@ namespace app\index\controller;
 
 use think\Db;
 use app\admin\model\Notice;
+use app\admin\model\Team;
+use think\Model;
 
 class Index extends \think\Controller
 {
     //徐汉雄
     public function index()
     {
-        $res = Db::name("notice")->field("title,create_time")->order("id DESC")->limit(5)->select();
+        $ress = Db::name("notice")->field("title,create_time")->order("id DESC")->limit(5)->select();
+        $res = Team::where('id','>',12)->select();
+        $this->assign("ress", $ress);
         $this->assign("res", $res);
         return $this->fetch();
         //return view();

@@ -21,7 +21,7 @@
     <div id="news" class="col">学院新闻 <a href="news">more</a></div>
     <div id="firstPage" class="show">
         <ul>
-            {volist name="res" id="each" empty="未检索到数据库"}
+            {volist name="ress" id="each" empty="未检索到数据库"}
             <li><p>{$each.title}</p></li>
             {/volist}
         </ul>
@@ -43,22 +43,14 @@
             <dt>队标</dt>
             <dd>团队名</dd>
         </dl>
+        {volist name="res" id="vo"}
         <dl>
-            <dt></dt>
-            <dd></dd>
+            <dt><img src="__PUBLIC__/uploads/{$vo.mark}" height="60" width="60"></dt>
+            <dd>{$vo.name}</dd>
+
         </dl>
-        <dl>
-            <dt></dt>
-            <dd></dd>
-        </dl>
-        <dl>
-            <dt></dt>
-            <dd></dd>
-        </dl>
-        <dl>
-            <dt></dt>
-            <dd></dd>
-        </dl>
+        {/volist}
+
     </div>
 </div>
 </div>
