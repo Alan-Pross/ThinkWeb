@@ -17,7 +17,23 @@
         <li class="a" style="z-index: -2"><a href=""><img src="__STATIC__/images/b.jpg" alt="" width=100%></a></li>
     </ul>
 </div>
-//szx
+<div id="tab">
+    <div id="news" class="col">学院新闻 <a href="news">more</a></div>
+    <div id="firstPage" class="show">
+        <ul>
+            {volist name="res" id="each" empty="未检索到数据库"}
+            <li><p>{$each.title}</p></li>
+            {/volist}
+        </ul>
+    </div>
+    <div id="notice" class="col">通知公告 <a href="login.html">more</a></div>
+    <div id="secondPage" class="hide">
+        <a href="#">275万购昌平邻铁三居</a><br/>
+        <a href="#">200万内购五环三居环</a><br/>
+        <a href="#">北京首现零首环5s0平</a><br/>
+        <a href="#">京楼盘直降500s0sfd</a><br/>
+    </div>
+</div>
 <div class="team-sidebar">
     <div class="team-title">
         <p>入驻团队</p>

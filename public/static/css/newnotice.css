@@ -1,0 +1,48 @@
+      * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        li {
+            margin-left: 10px;
+        }
+
+        a:hover, p:hover {
+            text-decoration: none;
+            color: #336699;
+        }
+
+        .col {
+            font-size: 18px;
+            background-color: #09F;
+        }
+
+        #news {
+            margin-bottom: 1px;
+        }
+
+        #tab {
+            width: 270px;
+            padding: 5px;
+            height: 150px;
+            margin: 20px;
+        }
+
+        #firstPage, #secondPage {
+            height: 230px;
+            width: 248px;
+            line-height: 26px;
+            border-top: none;
+            padding: 1px;
+            border: 1px solid #336699;
+            padding: 10px;
+        }
+
+        .hide {
+            display: none;
+        }

@@ -10,7 +10,10 @@ class Index extends \think\Controller
     //徐汉雄
     public function index()
     {
-        return view();
+        $res = Db::name("notice")->field("title,create_time")->order("id DESC")->limit(5)->select();
+        $this->assign("res", $res);
+        return $this->fetch();
+        //return view();
     }
 
     public function header()
@@ -19,6 +22,9 @@ class Index extends \think\Controller
     }
 
     //帅中贤
+    public function upload(){
+      return view();
+    }
     public function newnotice()
     {
 
@@ -27,7 +33,7 @@ class Index extends \think\Controller
         return $this->fetch();
     }
 
-    public function upload()
+    public function news()
     {
         $res = Db::name("notice")->field("title,create_time")->order("id DESC")->select();
         $this->assign("res", $res);
