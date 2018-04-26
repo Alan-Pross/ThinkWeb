@@ -65,12 +65,16 @@
 
 ## 网页名称
 | 名称 | 英文 |
-| :- | :-: |
+| :- | :- |
+| 头部 | header |
 | 首页 | index |
-| 学院简介 | instruction |
+| 学院简介 | introduction |
 | 新闻公告 | newnotice |
 | 入驻团队 | team |
 | 文件下载 | download |
+| 搜索首页 | search |
+| 搜索内容 | searchshow |
+| 版权信息 | footer |
 ``` 
 // 视图输出字符串内容替换
     'view_replace_str'       => [

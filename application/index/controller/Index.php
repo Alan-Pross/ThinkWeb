@@ -5,7 +5,6 @@ namespace app\index\controller;
 use think\Db;
 use app\admin\model\Notice;
 use app\admin\model\Team;
-use think\Model;
 
 class Index extends \think\Controller
 {
@@ -72,40 +71,21 @@ class Index extends \think\Controller
         return $this->fetch();
     }
 
+    public function download()
+    {
+        return view();
+    }
+
+    public function team()
+    {
+        return view();
+    }
+
+    public function instroduction()
+    {
+        return view();
+    }
+
     //周威
-    public function view()
-    {
-        //   $list = Notice::where('id','=',0)
-        //   ->find();
 
-        // $this->assign('list',$list);
-        $id = input('id');
-
-        if ($id <> '') {
-
-            $list = Notice::where('id', '=', $id)
-                ->select();
-
-            $this->assign('list', $list);
-
-            return $this->fetch();
-        }
-        return $this->fetch('no');
-        return "留言不存在";
-
-    }
-
-    public function show()
-    {
-        $list = new Notice;
-        //$list = $notice->check();
-        //
-        $list = Notice::where('id', '>=', 1)
-            ->select();
-
-        $this->assign('list', $list);
-
-
-        return $this->fetch();
-    }
 }
