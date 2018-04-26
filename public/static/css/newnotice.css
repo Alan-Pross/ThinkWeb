@@ -20,9 +20,12 @@
 
       .col {
           font-size: 18px;
-          background-color: #09F;
+          border-bottom: 1px solid blue;
       }
-
+      .col:hover{
+        border-bottom-color: transparent;
+        background: rgba(0,206,209);
+      }
       #news {
           margin-bottom: 1px;
       }
@@ -42,7 +45,6 @@
           height: 285px;
           border-top: none;
           padding: 1px;
-          border: 1px solid #336699;
           padding: 10px;
       }
 
