@@ -1,48 +1,97 @@
       * {
-            padding: 0px;
-            margin: 0px;
-        }
+          padding: 0px;
+          margin: 0px;
+      }
 
-        a {
-            text-decoration: none;
-            color: black;
-        }
+      a {
+          text-decoration: none;
+          color: black;
+      }
 
-        li {
-            margin-left: 10px;
-        }
+      li {
+          margin-left: 10px;
+      }
 
-        a:hover, p:hover {
-            text-decoration: none;
-            color: #336699;
-        }
+      a:hover,
+      p:hover {
+          text-decoration: none;
+          color: #336699;
+      }
 
-        .col {
-            font-size: 18px;
-            background-color: #09F;
-        }
+      .col {
+          font-size: 18px;
+          background-color: #09F;
+      }
 
-        #news {
-            margin-bottom: 1px;
-        }
+      #news {
+          margin-bottom: 1px;
+      }
+     #news,#notice{
+       line-height: 40px;
+     }
+      #tab {
+          width: 500px;
+          float: left;
+          cursor:pointer;
+          height: 390px;
+          margin: 40px 0 0 50px;
+      }
 
-        #tab {
-            width: 270px;
-            padding: 5px;
-            height: 150px;
-            margin: 20px;
-        }
+      #firstPage,
+      #secondPage {
+          height: 285px;
+          border-top: none;
+          padding: 1px;
+          border: 1px solid #336699;
+          padding: 10px;
+      }
 
-        #firstPage, #secondPage {
-            height: 230px;
-            width: 248px;
-            line-height: 26px;
-            border-top: none;
-            padding: 1px;
-            border: 1px solid #336699;
-            padding: 10px;
-        }
+      .hide {
+          display: none;
+      }
+      /**/
 
-        .hide {
-            display: none;
-        }
+      .wp-container {
+          width: 100%;
+      }
+
+      .clearfix::after {
+          content: '';
+          display: block;
+          clear: both;
+      }
+      
+
+      .con-wap {
+          width: 1000px;
+          margin: 0 auto;
+           background:#fff;
+      }
+
+      .more{
+        float: right;
+        margin-right: 20px;
+
+      }
+
+      .label_datatime {
+          width: 6em;
+          background-color: #fff;
+          float: right;
+      }
+
+      .jh_notice {
+          overflow: hidden;
+      }
+
+      .jh_notice li {
+          overflow: hidden;
+          height: 1.2em;
+          margin:20px 0 ;
+      }
+
+      .jh_notice p {
+          display: inline;
+          overflow: hidden;
+      }
+      /**/

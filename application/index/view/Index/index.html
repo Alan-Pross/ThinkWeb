@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <title>江汉大学创业学院</title>
-
 </head>
-
 {include file="Index/header" /}
-
 <div class="carousel">
     <ul class="images-wrapper">
         <div id="pre" class="button left"></div>
@@ -17,48 +15,56 @@
         <li class="a" style="z-index: -2"><a href=""><img src="__STATIC__/images/b.jpg" alt="" width=100%></a></li>
     </ul>
 </div>
-<div id="tab">
-    <div id="news" class="col">学院新闻 <a href="news">more</a></div>
-    <div id="firstPage" class="show">
-        <ul>
-            {volist name="ress" id="each" empty="未检索到数据库"}
-            <li><p>{$each.title}</p></li>
-            {/volist}
-        </ul>
+<div class="wp-container">
+    <div class="con-wap clearfix">
+        <div id="tab">
+            <div id="news" class="col">学院新闻 <span class="more"><a href="news">MORE+</a></span></div>
+            <div id="firstPage" class="show">
+                <ul class="jh_notice">
+                    {volist name="ress" id="each" empty="未检索到数据库"}
+                    <li>
+                        <span class="label_datatime">2018-04-01</span>
+                        <p>{$each.title}</p>
+                    </li>
+                    {/volist}
+                </ul>
+            </div>
+            <div id="notice" class="col">通知公告 <span class="more"><a href="login.html">MORE+</a></span></div>
+            <div id="secondPage" class="hide">
+               <ul class="jh_notice">
+                    {volist name="ress" id="each" empty="未检索到数据库"}
+                    <li>
+                        <span class="label_datatime">2018-04-01</span>
+                        <p>{$each.title}</p>
+                    </li>
+                    {/volist}
+                </ul>
+            </div>
+        </div>
+        <div class="team-sidebar">
+            <div class="team-title">
+                <p>入驻团队</p>
+            </div>
+            <hr />
+            <div class="team-list">
+                <dl>
+                    <dt>队标</dt>
+                    <dd>团队名</dd>
+                </dl>
+                {volist name="res" id="vo"}
+                <dl>
+                    <dt><img src="__PUBLIC__/uploads/{$vo.mark}" height="50" width="50"></dt>
+                    <dd>{$vo.name}</dd>
+                </dl>
+                {/volist}
+            </div>
+        </div>
     </div>
-    <div id="notice" class="col">通知公告 <a href="login.html">more</a></div>
-    <div id="secondPage" class="hide">
-        <a href="#">275万购昌平邻铁三居</a><br/>
-        <a href="#">200万内购五环三居环</a><br/>
-        <a href="#">北京首现零首环5s0平</a><br/>
-        <a href="#">京楼盘直降500s0sfd</a><br/>
-    </div>
-</div>
-<div class="team-sidebar">
-    <div class="team-title">
-        <p>入驻团队</p>
-    </div>
-    <div class="team-list">
-        <dl>
-            <dt>队标</dt>
-            <dd>团队名</dd>
-        </dl>
-        {volist name="res" id="vo"}
-        <dl>
-            <dt><img src="__PUBLIC__/uploads/{$vo.mark}" height="60" width="60"></dt>
-            <dd>{$vo.name}</dd>
-
-        </dl>
-        {/volist}
-
-    </div>
-</div>
-</div>
-<!--
+    <!--
 {include file="Index/footer" /}
 -->
-<script>
-    (function () {
+    <script>
+    (function() {
         var a = document.getElementsByClassName('a');
         var pre = document.getElementById('pre');
         var next = document.getElementById('next');
@@ -72,7 +78,7 @@
             a[next].style.transition = "left 0s";
             a[next].style.left = "100%";
             a[next].style.zIndex = "1";
-            setTimeout(function () {
+            setTimeout(function() {
                 a[i].style.left = "-100%";
                 a[i].style.zIndex = '0';
                 a[next].style.transition = "left .5s";
@@ -87,7 +93,7 @@
             a[next].style.transition = "left 0s";
             a[next].style.left = "-100%";
             a[next].style.zIndex = "1";
-            setTimeout(function () {
+            setTimeout(function() {
                 a[i].style.left = "100%";
                 a[i].style.zIndex = '0';
                 a[next].style.transition = "left .5s";
@@ -97,21 +103,21 @@
         }
 
         var time = setInterval(moveleft, 3500);
-        pre.onclick = function () {
+        pre.onclick = function() {
             moveleft();
             if (!bool) {
                 clearInterval(time);
                 bool = true;
             }
         };
-        next.onclick = function () {
+        next.onclick = function() {
             moveright();
             if (!bool) {
                 clearInterval(time);
                 bool = true;
             }
         };
-        main.onmouseleave = function (event) {
+        main.onmouseleave = function(event) {
             if (bool && event.relatedTarget) {
                 time = setInterval(moveleft, 3500);
                 bool = false;
@@ -121,12 +127,13 @@
                 next.style.opacity = '0';
             }
         };
-        main.onmouseenter = function () {
+        main.onmouseenter = function() {
             pre.style.opacity = '1';
             next.style.opacity = '1';
         };
 
     })()
-</script>
-</body>
+    </script>
+    </body>
+
 </html>
