@@ -12,7 +12,7 @@ class Index extends \think\Controller
     public function index()
     {
         $ress = Db::name("notice")->field("title,create_time")->order("id DESC")->limit(5)->select();
-        $res = Team::where('id','>',12)->select();
+        $res = Team::where("id", ">", 12)->select();
         $this->assign("ress", $ress);
         $this->assign("res", $res);
         return $this->fetch();
@@ -25,6 +25,10 @@ class Index extends \think\Controller
     }
 
     //帅中贤
+    public function download(){
+
+      return view();
+    }
     public function upload(){
       return view();
     }
@@ -71,21 +75,40 @@ class Index extends \think\Controller
         return $this->fetch();
     }
 
-    public function download()
-    {
-        return view();
-    }
-
-    public function team()
-    {
-        return view();
-    }
-
-    public function instroduction()
-    {
-        return view();
-    }
-
     //周威
+    public function view()
+    {
+        //   $list = Notice::where('id','=',0)
+        //   ->find();
 
+        // $this->assign('list',$list);
+        $id = input('id');
+
+        if ($id <> '') {
+
+            $list = Notice::where('id', '=', $id)
+                ->select();
+
+            $this->assign('list', $list);
+
+            return $this->fetch();
+        }
+        return $this->fetch('no');
+        return "留言不存在";
+
+    }
+
+    public function show()
+    {
+        $list = new Notice;
+        //$list = $notice->check();
+        //
+        $list = Notice::where('id', '>=', 1)
+            ->select();
+
+        $this->assign('list', $list);
+
+
+        return $this->fetch();
+    }
 }
