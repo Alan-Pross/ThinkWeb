@@ -22,4 +22,11 @@ class Newsment extends Index
         }
         return $this->fetch();
     }
+
+    public function show() {
+        $show = new News;
+        $show = News::where('id','>',0)->order('id' , 'desc')->paginate(5);
+        $this->assign('show',$show);
+        return $this->fetch();
+    }
 }

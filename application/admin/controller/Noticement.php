@@ -27,4 +27,12 @@ class Noticement extends Index
         }
         return $this->fetch();
     }
+
+    public function show() {
+        $show = new Notice;
+        $show = Notice::where('id','>',0)->order('id' , 'desc')->paginate(5);
+        $this->assign('show',$show);
+        return $this->fetch();
+    }
+
 }

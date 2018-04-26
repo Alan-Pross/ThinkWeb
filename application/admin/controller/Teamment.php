@@ -8,6 +8,7 @@ use think\Request;
 use app\admin\model\Team;
 use think\Model;
 use think\captcha;
+use think\image;
 
 class Teamment extends Index
 {
@@ -53,4 +54,13 @@ class Teamment extends Index
         }
         return $this->fetch();
     }
+
+    public function show() {
+        $show = new Team;
+        $show = Team::where('id','>',0)->order('id' , 'desc')->paginate(5);
+   
+        $this->assign('show',$show);
+        return $this->fetch();
+    }
+
 }

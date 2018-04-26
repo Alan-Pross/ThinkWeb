@@ -58,7 +58,6 @@ class Index extends \think\Controller
     {
         cookie('user_id', null);
         cookie('user_name', null);
-        $this->redirect(url('/admin'));
+        return $this->redirect(url('/admin'));
     }
-
 }

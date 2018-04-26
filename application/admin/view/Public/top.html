@@ -30,13 +30,13 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="__ROOT__/index/index/index" target="_blank">预览首页</a>
+                <li><a href="__ROOT__/admin/index/manage" target="_blank">预览首页</a>
                 </li>
-                <li><a href="__ROOT__/index/index/login">管理员您好！</a>
+                <li><a href="#">{$Think.cookie.account} 管理员您好！</a>
 
                 </li>
-                <li class="dropdown">
-                    <a href="#">退出 </a>
+                <li>
+                    <a href="__PUBLIC__/admin/index/exitaccount">退出 </a>
                 </li>
             </ul>
         </div><!-- /.navbar-collapse -->
@@ -72,11 +72,11 @@
             </div>
             <!-- 折叠结束 -->
             <div class="list-group">
-                <a href="#" class="list-group-item  ">
+                <a href="#" class="list-group-item disabled">
                     公告管理
                 </a>
                 <a href="__PUBLIC__/admin/noticement/edit" class="list-group-item">公告添加</a>
-                <a href="" class="list-group-item">公告列表</a>
+                <a href="__PUBLIC__/admin/noticement/show" class="list-group-item">公告列表</a>
                 <a href="#" class="list-group-item">公告分类</a>
                 <a href="#" class="list-group-item">公告统计</a>
             </div>
@@ -85,7 +85,7 @@
                     新闻管理
                 </a>
                 <a href="__PUBLIC__/admin/newsment/edit" class="list-group-item">新闻添加</a>
-                <a href="#" class="list-group-item">新闻类表</a>
+                <a href="__PUBLIC__/admin/newsment/show" class="list-group-item">新闻类表</a>
                 <a href="#" class="list-group-item">新闻分类</a>
                 <a href="#" class="list-group-item">新闻统计</a>
             </div>
@@ -94,17 +94,8 @@
                     团队管理
                 </a>
                 <a href="__PUBLIC__/admin/teamment/edit" class="list-group-item">团队添加</a>
-                <a href="#" class="list-group-item">团队类表</a>
+                <a href="__PUBLIC__/admin/teamment/show" class="list-group-item">团队列表</a>
                 <a href="#" class="list-group-item">团队分类</a>
                 <a href="#" class="list-group-item">团队统计</a>
             </div>
         </div>
-        <!-- 右侧 -->
-        <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
-
-
-            <ol class="breadcrumb">
-                <li><a href="__ROOT__/admin">首页</a></li>
-                <li><a href="__ROOT__/admin">后台首页</a></li>
-                <li class="active">后台介绍</li>
-            </ol>

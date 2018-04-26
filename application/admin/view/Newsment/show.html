@@ -1,0 +1,46 @@
+{include file="Public/top" /}
+<div class="container">
+
+<table class="table table-bordered table-striped table-hover">
+		<thead>
+			<tr><th>标题</th><th>发布人</th><th>发布时间</th><th>设置</th>
+			</tr>
+		</thead>
+		<tbody>
+			{volist name="show" id="user"}
+			<tr><td><a href="__ROOT__/index/test/view/id/{$user.id}">{$user.title}</a></td><td>{$user.publisher}</td><td>{$user.create_time}</td>
+				<td><a href="__ROOT__/index/test/update/id/{$user.id}"id="btn" class="btn btn-primary" "  >编辑</a>          <a href="#"  id="btn" class="btn btn-danger" data-toggle="modal" data-target="#myModal{$user.id}"  >删除 </a></td>
+
+			</tr>
+
+			<div class="modal fade" id="myModal{$user.id}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">提示</h4>
+			      </div>
+			      <div class="modal-body">
+			        删除确认...{$user.title|mb_substr=0,20,'utf-8' }
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+			       <!--  <button type="button" class="btn btn-primary">确定删除</button> -->
+			       <a href="__ROOT__/index/test/delete/id/{$user.id}"  id="btn" class="btn btn-danger"    >确定删除 </a>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+
+
+			{/volist}
+		</tbody>
+	</table>
+
+{$show->render()}
+
+</div>
+
+{include file="Public/footer" /}
+
