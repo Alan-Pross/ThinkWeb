@@ -95,6 +95,7 @@ div {
     display: inline; /* IE6 double margin fix */
     position: relative;
     margin: 0;
+    height: 300px;
     -moz-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, .5);
     -webkit-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, .53);
     box-shadow: 0 2px 2px -1px rgba(0, 0, 0, .5);
