@@ -38,13 +38,15 @@
       }
 
       #tab {
-          width: 500px;
+          width: 63%;
           float: left;
           cursor: pointer;
           height: 390px;
-          margin: 40px 0 0 50px;
+          background-color: #EFEFEF
       }
-
+      #tab div{
+        margin:0 2em;
+      }
       #firstPage,
       #secondPage {
           height: 285px;
@@ -69,8 +71,9 @@
 
       .con-wap {
           width: 1000px;
-          margin: 0 auto;
-          background: #EFEFEF;
+          margin: 1em auto;
+          background: #fff;
+
       }
 
       .more {
