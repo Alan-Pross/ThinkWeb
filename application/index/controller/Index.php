@@ -22,12 +22,13 @@ class Index extends \think\Controller
 
     //帅中贤
     public function download(){
-
       return view();
     }
+
     public function upload(){
       return view();
     }
+
     public function newnotice()
     {
 
