@@ -57,7 +57,12 @@ class Index extends \think\Controller
 
     public function team()
     {
-        return view();
+        $all = "";
+        $team = Team::where('name', 'like', "%{$all}%")->paginate(5, false);
+        $page = $team->render();
+        $this->assign('team', $team);
+        $this->assign('page', $page);
+        return $this->fetch();
     }
 
     public function search()

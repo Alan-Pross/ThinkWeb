@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>入驻团队</title>
+    <link rel="stylesheet" href="__STATIC__/css/team.css">
 </head>
 <body>
 {include file="Index/header" /}
+
+<div class="team">
+    {volist name="team" id = "vo"}
+    <div class="fdw-pricing-table">
+        <div class="plan plan4">
+            <div class="header">{$vo.head}</div>
+            <div class="price">{$vo.name}</div>
+            <hr>
+            <div class="monthly">{$vo.create_time}</div>
+        </div>
+    </div>
+    {/volist}
+    {$page}
+</div>
+
 </body>
 </html>
