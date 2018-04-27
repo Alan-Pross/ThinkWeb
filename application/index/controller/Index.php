@@ -19,10 +19,6 @@ class Index extends \think\Controller
         //return view();
     }
 
-    public function header()
-    {
-        return view();
-    }
 
     //帅中贤
     public function download(){
@@ -48,6 +44,21 @@ class Index extends \think\Controller
     }
 
     //刘启明
+    public function introduction()
+    {
+        return view();
+    }
+
+    public function loading()
+    {
+        return view();
+    }
+
+    public function team()
+    {
+        return view();
+    }
+
     public function search()
     {
         return view();
