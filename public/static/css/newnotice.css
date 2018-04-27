@@ -22,20 +22,25 @@
           font-size: 18px;
           border-bottom: 1px solid blue;
       }
-      .col:hover{
-        border-bottom-color: transparent;
-        background: rgba(0,206,209);
+
+      .col:hover {
+          border-bottom-color: transparent;
+          background: rgba(0, 206, 209);
       }
+
       #news {
           margin-bottom: 1px;
       }
-     #news,#notice{
-       line-height: 40px;
-     }
+
+      #news,
+      #notice {
+          line-height: 40px;
+      }
+
       #tab {
           width: 500px;
           float: left;
-          cursor:pointer;
+          cursor: pointer;
           height: 390px;
           margin: 40px 0 0 50px;
       }
@@ -44,8 +49,6 @@
       #secondPage {
           height: 285px;
           border-top: none;
-          padding: 1px;
-          padding: 10px;
       }
 
       .hide {
@@ -62,18 +65,17 @@
           display: block;
           clear: both;
       }
-      
+
 
       .con-wap {
           width: 1000px;
           margin: 0 auto;
-           background:#fff;
+          background: #EFEFEF;
       }
 
-      .more{
-        float: right;
-        margin-right: 20px;
-
+      .more {
+          float: right;
+          margin-right: 20px;
       }
 
       .label_datatime {
@@ -89,11 +91,87 @@
       .jh_notice li {
           overflow: hidden;
           height: 1.2em;
-          margin:20px 0 ;
+          margin: 20px 0;
       }
 
       .jh_notice p {
           display: inline;
           overflow: hidden;
+      }
+
+      .col_news {
+          width: 980px;
+          height: 500px;
+          margin: 0 auto;
+          background: #EFEFEF;
+      }
+
+      @media screen and (min-width: 1400px) {
+          .col_news {
+              width: 1160px;
+          }
+      }
+
+      .news_head,
+      .list_detail {
+          height: 1.5em;
+      }
+
+      .list_detail {
+          border-bottom: 2px solid #333;
+          position: relative;
+      }
+
+      .list_detail div {
+          display: inline-block;
+          width: 5em;
+      }
+
+      .list_detail_1 {
+          text-align: left;
+          margin-left: 85px;
+      }
+     
+      #secondPage.show {
+          height: 380px;
+      }
+
+      .list_news {
+          border-bottom: 1px dashed rgba(0, 0, 0, .2);
+          line-height: 50px;
+          position: relative;
+      }
+
+      .list_news a,
+      .list_detail .show div {
+          margin-left: 85px;
+      }
+
+      .news_datatime,
+      .news_count,
+      .list_detail_2,
+      .list_detail_3 {
+          background: transparent;
+          position: absolute;
+          right: 160px;
+          text-align: center;
+      }
+
+      div.list_detail_2,
+      div.news_datatime{
+        width: 100px;
+      }
+
+      .news_count,
+      .list_detail_3 {
+          margin: 0;
+          right: 60px;
+          text-align: center;
+          width:90px;
+          
+      }
+  
+      #button {
+          text-align: center;
       }
       /**/
