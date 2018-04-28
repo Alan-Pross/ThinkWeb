@@ -3,8 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="__STATIC__/css/searchshow-form.css">
 </head>
 
 <body>
-	这里是upload
-</body></html>
+<div>
+<ul>
+{volist name='list' id='user'}
+    <li> {$user.title}</li>
+{/volist}
+</ul>
+</div>
+{$list->render()}
+</body>
+</html>

@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <title>文件下载</title>
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/searchshow-form.css">
 </head>
 <body>
 {include file="Index/header" /}
 <h1>这里是download页面</h1>
 <center>
+<div>
+<ul>
  {volist name="res" id="each" empty="未检索到数据库"}
-            <a href="__STATIC__/{$each.path}" >{$each.title}</a><br/>
-            {/volist}
+    <li>  <a href="__STATIC__/{$each.path}" >{$each.title}</a></li>
+{/volist}
+</ul>
+</div>
+{$res->render()}
  </center>
 </body>
 </html>
