@@ -7,6 +7,10 @@
 <body>
 {include file="Index/header" /}
 <h1>这里是download页面</h1>
-<a href="__STATIC__/images/a.jpg" download>下载</a>
+<center>
+ {volist name="res" id="each" empty="未检索到数据库"}
+            <a href="__STATIC__/{$each.path}" >{$each.title}</a><br/>
+            {/volist}
+ </center>
 </body>
 </html>

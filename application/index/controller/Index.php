@@ -22,17 +22,25 @@ class Index extends \think\Controller
 
     //帅中贤
     public function download(){
-      return view();
+      $res = Db::name("download")->field("title,path")->order("id DESC")->select();
+        $this->assign("res", $res);
+        return $this->fetch();
     }
 
     public function upload(){
       return view();
     }
-
+    public function test(){
+     /* $id=input("get.id");
+       $res = Db::name("download")->where ([
+        "id"=>$id
+       ])->field("path")->find();*/
+echo 1;
+    }
     public function newnotice()
     {
-
-        $res = Db::name("notice")->field("title,create_time")->order("id DESC")->limit(5)->select();
+        $res = new Notice;
+        $res = Notice::field("title,create_time")->order("id DESC")->limit(5)->select();
         $this->assign("res", $res);
         return $this->fetch();
     }

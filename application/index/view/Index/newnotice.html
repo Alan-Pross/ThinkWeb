@@ -79,7 +79,7 @@
     <div id="firstPage" class="show">
         <ul>
             {volist name="res" id="each" empty="未检索到数据库"}
-            <li><p>{$each.title}</p></li>
+            <li><p>{$each.title}{$each.create_time}</p></li>
             {/volist}
         </ul>
     </div>
