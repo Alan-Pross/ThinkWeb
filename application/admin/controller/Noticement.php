@@ -35,4 +35,53 @@ class Noticement extends Index
         return $this->fetch();
     }
 
+    public function update() {
+        $id = input('id');
+        $title = input('param.title');
+        $publisher = input('param.publisher');
+        $content = input('param.content');
+        
+
+        if(!$id) {
+            return "id不能为空！";
+        }
+        
+        // $show = Notice::get($id);
+        // echo $id;
+        // echo $show->title;
+        $show = new Notice();
+       
+        $show = Notice::where('id', '=', $id)
+        ->find();
+
+        if($title) {
+
+           Notice::update([
+                'id' => $id,
+                'title' => $title,
+                'publisher' => $publisher,
+                'content' => $content,
+            ]);
+
+        return $this->success('信息修改成功^_^','show');
+        }
+
+        $this->assign('show', $show);
+        return $this->fetch();
+    }
+
+    public function delete() {
+        $id = input('id');
+        echo $id;
+        if($id <> '') {
+            
+            $user = Notice::get($id);
+            // 软删除
+            dump($user);
+            $user->delete();
+            
+        }
+        return $this->success('删除成功^_^','show');
+    }
+
 }

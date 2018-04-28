@@ -1,4 +1,5 @@
 {include file="Public/top" /}
+
 <div class="container">
 
 <table class="table table-bordered table-striped table-hover">
@@ -9,7 +10,7 @@
 		<tbody>
 			{volist name="show" id="user"}
 			<tr><td><a href="__ROOT__/index/test/view/id/{$user.id}">{$user.name}</a></td><td>{$user.head}</td><td><img src="__PUBLIC__/uploads/{$user.mark}" width="60" height="60"></td>
-				<td><a href="__ROOT__/index/test/update/id/{$user.id}"id="btn" class="btn btn-primary" "  >编辑</a>          <a href="#"  id="btn" class="btn btn-danger" data-toggle="modal" data-target="#myModal{$user.id}"  >删除 </a></td>
+				<td><a href="__PUBLIC__/admin/teamment/update/id/{$user.id}"id="btn" class="btn btn-primary" "  >编辑</a>          <a href="#"  id="btn" class="btn btn-danger" data-toggle="modal" data-target="#myModal{$user.id}"  >删除 </a></td>
 
 			</tr>
 
@@ -37,8 +38,9 @@
 			{/volist}
 		</tbody>
 	</table>
-
+<center>
 {$show->render()}
+</center>
 
 </div>
 

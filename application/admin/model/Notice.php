@@ -34,9 +34,4 @@ class Notice extends model
             'content' => $content,
         ]);
     }
-
-    public function delata($id)
-    {
-        Notice::destroy($id);
-    }
 }

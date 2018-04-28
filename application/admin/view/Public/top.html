@@ -7,12 +7,21 @@
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+<style>
+ body{
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+ }
+ main{
+     flex: 1;
+ }
+</style>
 
 </head>
 <body>
 
-
+<main>
 <nav class="navbar navbar-inverse " style=" border-radius: 0px;margin-bottom: 10px;">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -77,25 +86,31 @@
                 </a>
                 <a href="__PUBLIC__/admin/noticement/edit" class="list-group-item">公告添加</a>
                 <a href="__PUBLIC__/admin/noticement/show" class="list-group-item">公告列表</a>
-                <a href="#" class="list-group-item">公告分类</a>
-                <a href="#" class="list-group-item">公告统计</a>
             </div>
+
             <div class="list-group">
                 <a href="#" class="list-group-item disabled">
                     新闻管理
                 </a>
                 <a href="__PUBLIC__/admin/newsment/edit" class="list-group-item">新闻添加</a>
                 <a href="__PUBLIC__/admin/newsment/show" class="list-group-item">新闻类表</a>
-                <a href="#" class="list-group-item">新闻分类</a>
-                <a href="#" class="list-group-item">新闻统计</a>
             </div>
+
             <div class="list-group">
                 <a href="#" class="list-group-item disabled">
                     团队管理
                 </a>
                 <a href="__PUBLIC__/admin/teamment/edit" class="list-group-item">团队添加</a>
                 <a href="__PUBLIC__/admin/teamment/show" class="list-group-item">团队列表</a>
-                <a href="#" class="list-group-item">团队分类</a>
-                <a href="#" class="list-group-item">团队统计</a>
             </div>
+
+            <div class="list-group">
+                <a href="#" class="list-group-item disabled">
+                    文件管理
+                </a>
+                <a href="__PUBLIC__/admin/teamment/edit" class="list-group-item">文件添加</a>
+                <a href="__PUBLIC__/admin/teamment/show" class="list-group-item">文件列表</a>
+            </div>
+
         </div>
+

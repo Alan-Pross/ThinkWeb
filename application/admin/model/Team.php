@@ -23,7 +23,7 @@ class Team extends model
 
     }
 
-    public function updata($id, $name, $head, $message)
+    public function updata($id, $name, $head, $message, $mark)
     {
 
         Team::update([
@@ -31,6 +31,7 @@ class Team extends model
             'name' => $name,
             'message' => $message,
             'head' => $head,
+            'mark' => $mark,
 
         ]);
     }
