@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2018 年 04 月 26 日 12:00
+-- 生成日期: 2018 年 04 月 28 日 01:07
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.4.45
 
@@ -19,6 +19,27 @@ SET time_zone = "+00:00";
 --
 -- 数据库: `college`
 --
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `download`
+--
+
+CREATE TABLE IF NOT EXISTS `download` (
+  `id` int(30) unsigned NOT NULL AUTO_INCREMENT,
+  `title` varchar(16) NOT NULL,
+  `path` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+
+--
+-- 转存表中的数据 `download`
+--
+
+INSERT INTO `download` (`id`, `title`, `path`) VALUES
+(1, '江汉大学创业团队.doc', 'test/测试j.doc'),
+(2, '一个测试的压缩包.zip', 'test/xinjian.zip');
 
 -- --------------------------------------------------------
 
