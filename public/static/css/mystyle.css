@@ -93,8 +93,7 @@ a {
     background-color: #efefef;
     text-align: center;
     box-sizing: border-box;
-    padding:0 0 0 55px;
-
+    
 }
 
 .nav-menu {
@@ -113,19 +112,20 @@ a {
     font-size: 16px;
     margin:0 57px 0 0;
 }
-
+.nav-menu li:first-child{
+    margin-left: 55px;
+}
 @media screen and (min-width: 1400px) {
     .primary-menu,
     .head-top {
-        /*width: 1160px;*/
         width: 1300px;
     }
 
     .nav-menu li {
          margin-right: 110px;
     }
-    .primary-menu{
-        padding-left:109px;
+    .nav-menu li:first-child{
+        margin-left:109px;
     }
 }
 
@@ -133,8 +133,8 @@ a {
     .nav-menu li {
          margin-right: 103px;
     }
-    .primary-menu{
-        padding-left:103px;
+    .nav-menu li:first-child{
+        margin-left:103px;
     }
 
 }
@@ -181,10 +181,7 @@ a {
     height: 3px;
     background: rgb(0,161,214);
     left:0;
-/*    -o-transition: left .2s;
-    -moz-transition: left .2s;
-    -webkit-transition: left .2s;
-    transition: left .2s .2s;*/
+
 }
 
 i.ic1 {

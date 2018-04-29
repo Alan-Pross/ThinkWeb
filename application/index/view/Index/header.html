@@ -25,18 +25,19 @@
         var cursor = document.getElementsByClassName("n-cursor")[0];
         var localhref = window.location.href;
         var link = nav.getElementsByTagName("a");
+        var left;
         for (var t = 1; t < link.length; t++) {
             var reg = new RegExp('^' + link[t].href);
             if (reg.test(localhref)) {
                 cursor.style.left = link[t].offsetLeft + 'px';
-                console.log(link[t].offsetLeft);
+                left=cursor.style.left;
                 break;
             }
 
         }
         if (t == link.length) {
             cursor.style.left = link[0].offsetLeft + 'px';
-
+            left=cursor.style.left;
         }
 
         nav.onmousemove = function(event) {
@@ -46,7 +47,12 @@
             }
 
         };
-        cursor.style.transition = 'left .2s';
+        setTimeout(function(){ cursor.style.transition = 'left .2s';}, 200)
+       
+        nav.onmouseleave=function(event){
+            if(event.relatedTarget)
+            cursor.style.left = left;
+        }
     }
     </script>
     <div class="headbar">
