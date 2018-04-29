@@ -41,7 +41,9 @@
         }
 
         nav.onmousemove = function(event) {
-            var tag = event.target.parentNode;
+            var event=event||window.event;
+            var target = event.target || event.srcElement;
+            var tag = target.parentNode;
             if (tag.tagName.toLowerCase() == 'a') {
                 cursor.style.left = tag.offsetLeft + "px";
             }
@@ -50,6 +52,7 @@
         setTimeout(function(){ cursor.style.transition = 'left .2s';}, 200)
        
         nav.onmouseleave=function(event){
+            var event=event||window.event;
             if(event.relatedTarget)
             cursor.style.left = left;
         }

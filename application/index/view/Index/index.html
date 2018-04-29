@@ -126,6 +126,7 @@ border-radius:50%;
             }
         };
         main.onmouseleave = function(event) {
+            var event=event||window.event;
             if (bool && event.relatedTarget) {
                 time = setInterval(moveleft, 3500);
                 bool = false;
