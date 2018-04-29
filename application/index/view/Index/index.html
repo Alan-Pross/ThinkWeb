@@ -142,17 +142,15 @@ border-radius:50%;
 
     })()
       
-    var  nav=document.getElementsByClassName("nav-menu")[0];
-    var  link=nav.getElementsByTagName("a");
-    console.log(link);
-    var cursor=document.getElementsByClassName("n-cursor")[0];
-    nav.onmousemove=function(event){
-          var tag=event.target.parentNode;
-           if(tag.tagName.toLowerCase()=='a'){
-           cursor.style.left = tag.offsetLeft+"px";            
-        }
+    // var  nav=document.getElementsByClassName("nav-menu")[0];
+    // var cursor=document.getElementsByClassName("n-cursor")[0];
+    // nav.onmousemove=function(event){
+    //       var tag=event.target.parentNode;
+    //        if(tag.tagName.toLowerCase()=='a'){
+    //        cursor.style.left = tag.offsetLeft+"px";            
+    //     }
          
-    };
+    // };
      
 
     </script>

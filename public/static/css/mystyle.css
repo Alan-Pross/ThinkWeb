@@ -181,10 +181,10 @@ a {
     height: 3px;
     background: rgb(0,161,214);
     left:0;
-    -o-transition: left .2s;
+/*    -o-transition: left .2s;
     -moz-transition: left .2s;
     -webkit-transition: left .2s;
-    transition: left .2s;
+    transition: left .2s .2s;*/
 }
 
 i.ic1 {
