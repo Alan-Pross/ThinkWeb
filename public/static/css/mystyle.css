@@ -1,6 +1,7 @@
 html,
 body {
     height: 100%;
+    font-family:Arial,Helvetica,sans-serif,"宋体";
 }
 
 body {
@@ -76,16 +77,13 @@ a {
     vertical-align: -.85em;
 }
 
-.font {
-    font-size: 40px;
-    display: inline-block;
-    line-height: 70px;
-}
+
 
 .wrapper {
     height: 50px;
     width: 100%;
     background: #2E94B9;
+    
 }
 
 .primary-menu {
@@ -94,6 +92,9 @@ a {
     margin: 0 auto;
     background-color: #efefef;
     text-align: center;
+    box-sizing: border-box;
+    padding:0 0 0 55px;
+
 }
 
 .nav-menu {
@@ -102,39 +103,56 @@ a {
     overflow: hidden;
     line-height: 50px;
     font-size: 0;
+    white-space: nowrap;
+    position: relative;
 }
 
 .nav-menu li {
-    float: left;
-    width: 245px;
+    display: inline-block;
     height: 100%;
-    margin-right: -57px;
+    font-size: 16px;
+    margin:0 57px 0 0;
 }
 
 @media screen and (min-width: 1400px) {
     .primary-menu,
     .head-top {
-        width: 1160px;
+        /*width: 1160px;*/
+        width: 1300px;
     }
 
     .nav-menu li {
-        width: 302px;
-        margin-right: -84px;
+         margin-right: 110px;
+    }
+    .primary-menu{
+        padding-left:109px;
     }
 }
 
+@media screen and (min-width: 2400px) {
+    .nav-menu li {
+         margin-right: 103px;
+    }
+    .primary-menu{
+        padding-left:103px;
+    }
+
+}
+
+
 .nav-menu a:hover {
-    background-color: #aab;
+  
 }
 
 .nav-menu a:hover .text {
-    color: #fff;
+   
 }
 
 .nav-menu li a {
     display: inline-block;
     height: 100%;
-    width: 100%;
+    
+    font-size: 0;
 }
 
 .nav-menu li a i {
@@ -144,14 +162,29 @@ a {
     background-size: 40px;
     background-repeat: no-repeat;
     background-position: center;
+   
 }
 
-.text {
+.nav-menu .text {
     display: inline-block;
     height: 100%;
+    line-height: 50px;
     vertical-align: top;
     font-size: 22px;
     color: #000;
+    min-width:88px;
+}
+
+.n-cursor{
+    position: relative;
+    bottom:50px;
+    height: 50px;
+    background: rgba(0,161,214,.4);
+    left:0;
+    -o-transition: left .2s;
+    -moz-transition: left .2s;
+    -webkit-transition: left .2s;
+    transition: left .2s;
 }
 
 i.ic1 {
@@ -192,6 +225,7 @@ i.ic5 {
     display: inline-block;
     padding-top: 23.08%;
 }
+
 
 .a {
     width: 100%;
