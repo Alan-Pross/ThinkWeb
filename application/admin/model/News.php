@@ -8,8 +8,7 @@ use traits\model\SoftDelete;
 
 class News extends model
 {
-    use SoftDelete;
-    protected $deleteTime = 'delete_time';
+    
     protected $autoWriteTimestamp = true;
     protected $updateTime = false;
 
@@ -33,11 +32,6 @@ class News extends model
             'publisher' => $publisher,
             'content' => $content,
         ]);
-    }
-
-    public function delata($id)
-    {
-        News::destroy($id);
     }
 
 

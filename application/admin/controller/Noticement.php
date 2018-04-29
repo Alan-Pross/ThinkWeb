@@ -75,10 +75,8 @@ class Noticement extends Index
         echo $id;
         if($id <> '') {
             
-            $user = Notice::get($id);
-            // 软删除
-            dump($user);
-            $user->delete();
+            $user = Notice::where('id','=',$id)->delete();
+            
             
         }
         return $this->success('删除成功^_^','show');

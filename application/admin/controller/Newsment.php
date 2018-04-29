@@ -29,4 +29,51 @@ class Newsment extends Index
         $this->assign('show',$show);
         return $this->fetch();
     }
+    
+    public function update() {
+        $id = input('id');
+        $title = input('param.title');
+        $publisher = input('param.publisher');
+        $content = input('param.content');
+        
+
+        if(!$id) {
+            return "id不能为空！";
+        }
+        
+        // $show = Notice::get($id);
+        // echo $id;
+        // echo $show->title;
+        $show = new News();
+       
+        $show = News::where('id', '=', $id)
+        ->find();
+
+        if($title) {
+
+           News::update([
+                'id' => $id,
+                'title' => $title,
+                'publisher' => $publisher,
+                'content' => $content,
+            ]);
+
+        return $this->success('信息修改成功^_^','show');
+        }
+
+        $this->assign('show', $show);
+        return $this->fetch();
+    }
+
+    public function delete() {
+        $id = input('id');
+        echo $id;
+        if($id <> '') {
+           
+           $user = News::where('id','=',$id)->delete();
+            
+            
+        }
+        return $this->success('删除成功^_^','show');
+    }
 }

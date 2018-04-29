@@ -36,8 +36,5 @@ class Team extends model
         ]);
     }
 
-    public function delata($id)
-    {
-        Team::destroy($id);
-    }
+
 }

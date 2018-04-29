@@ -120,4 +120,17 @@ class Teamment extends Index
         return $this->fetch();
     }
 
+     public function delete() {
+        $id = input('id');
+        echo $id;
+        if($id <> '') {
+           
+           $user = Team::where('id','=',$id)->delete();
+            
+            
+        }
+        return $this->success('删除成功^_^','show');
+    }
+
+
 }
