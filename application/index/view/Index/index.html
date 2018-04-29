@@ -4,6 +4,14 @@
 <head>
     <meta charset="UTF-8" />
     <title>江汉大学创业学院</title>
+    <style type="text/css">
+   .radiusImg{
+border-radius:50%;
+-moz-border-radius:50%; /* Old Firefox */
+-webkit-border-radius:50%; /* Safari 和 Chrome */
+-o-border-radius:50%; /* Opera */
+   }
+</style>
 </head>
 {include file="Index/header" /}
 <div class="carousel">
@@ -53,7 +61,7 @@
                 </dl>
                 {volist name="res" id="vo"}
                 <dl>
-                    <dt><img src="__PUBLIC__/uploads/{$vo.mark}" height="50" width="50"></dt>
+                    <dt><img class="radiusImg" src="__PUBLIC__/uploads/{$vo.mark}" height="50" width="50"></dt>
                     <dd>{$vo.name}</dd>
                 </dl>
                 {/volist}
