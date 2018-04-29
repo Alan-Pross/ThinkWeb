@@ -19,7 +19,7 @@
 
       .col {
           font-size: 18px;
-          border-bottom: 1px solid blue;
+          background: rgba(0, 206, 209);
       }
 
       .col:hover {
@@ -104,7 +104,7 @@
         height: 500px;
         width: 980px;
         margin: .5em auto;
-        background: #EFEFEF;
+        background: #efefef;
       }
       .col_menu{
         float: left;
