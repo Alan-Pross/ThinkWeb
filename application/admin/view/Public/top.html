@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>后台管理</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css"> 
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
@@ -39,7 +39,7 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="__ROOT__/admin/index/manage" target="_blank">预览首页</a>
+                <li><a href="__PUBLIC__/admin/index/manage" >预览首页</a>
                 </li>
                 <li><a href="#">{$Think.cookie.account} 管理员您好！</a>
 
@@ -64,17 +64,13 @@
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion"
+                           <a data-toggle="collapse" data-parent="#accordion"
                                href="#collapseOne">
                                 菜单
                             </a>
                         </h4>
                     </div>
-                    <div id="collapseOne" class="panel-collapse collapse">
-                        <div class="panel-body">
-                            常用功能
-                        </div>
-                    </div>
+                    
                 </div>
 
 
@@ -108,8 +104,8 @@
                 <a href="#" class="list-group-item disabled">
                     文件管理
                 </a>
-                <a href="__PUBLIC__/admin/teamment/edit" class="list-group-item">文件添加</a>
-                <a href="__PUBLIC__/admin/teamment/show" class="list-group-item">文件列表</a>
+                <a href="__PUBLIC__/admin/filement/edit" class="list-group-item">文件添加</a>
+                <a href="__PUBLIC__/admin/filement/show" class="list-group-item">文件列表</a>
             </div>
 
         </div>
