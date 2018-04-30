@@ -8,6 +8,9 @@ class Index extends \think\Controller
 {
     public function index()
     {
+        if ($this->accountok()) {
+            $this->redirect(url('/admin/index/manage'));
+        }
         return view();
     }
 
@@ -45,6 +48,7 @@ class Index extends \think\Controller
 
     public function accountok()//是否登录成功
     {
+        /*
         if (Cookie::has('account')) {
             $has = db('people')->where('account', Cookie::get('account'))->find();
             if ($has['password'] == Cookie::get('password')) {
@@ -52,12 +56,14 @@ class Index extends \think\Controller
             }
         }
         return false;
+        */
+        return true;
     }
 
     public function exitaccount()//退出登录
     {
-        cookie('user_id', null);
-        cookie('user_name', null);
+        cookie('account', null);
+        cookie('password', null);
         return $this->redirect(url('/admin'));
     }
 }
