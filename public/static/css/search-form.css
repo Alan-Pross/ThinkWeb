@@ -1,16 +1,17 @@
 html, body {
     height: 100%;
 }
-div,h1{
-    margin:0;
+
+div, h1 {
+    margin: 0;
 }
 
-.all{
+.all {
     position: absolute;
-    top:35%;
-    left:0;
-    right:0;
-    margin:auto ;
+    top: 35%;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 .top {

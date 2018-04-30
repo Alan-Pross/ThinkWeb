@@ -8,7 +8,7 @@ use traits\model\SoftDelete;
 
 class Notice extends model
 {
-   
+
     protected $autoWriteTimestamp = true;
     protected $updateTime = false;
 

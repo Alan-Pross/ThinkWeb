@@ -2,16 +2,16 @@
 <html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <title>江汉大学创业学院</title>
     <style type="text/css">
-   .radiusImg{
-border-radius:50%;
--moz-border-radius:50%; /* Old Firefox */
--webkit-border-radius:50%; /* Safari 和 Chrome */
--o-border-radius:50%; /* Opera */
-   }
-</style>
+        .radiusImg {
+            border-radius: 50%;
+            -moz-border-radius: 50%; /* Old Firefox */
+            -webkit-border-radius: 50%; /* Safari 和 Chrome */
+            -o-border-radius: 50%; /* Opera */
+        }
+    </style>
 </head>
 {include file="Index/header" /}
 <div class="carousel">
@@ -26,7 +26,8 @@ border-radius:50%;
 <div class="wp-container">
     <div class="con-wap clearfix">
         <div id="tab">
-            <div id="news" class="col">学院新闻 <span class="more"><a href="__PUBLIC__/index/index/news">MORE+</a></span></div>
+            <div id="news" class="col">学院新闻 <span class="more"><a href="__PUBLIC__/index/index/news">MORE+</a></span>
+            </div>
             <div id="firstPage" class="show">
                 <ul class="jh_notice">
                     {volist name="ress" id="each" empty="未检索到数据库"}
@@ -39,7 +40,7 @@ border-radius:50%;
             </div>
             <div id="notice" class="col">通知公告 <span class="more"><a href="login.html">MORE+</a></span></div>
             <div id="secondPage" class="hide">
-               <ul class="jh_notice">
+                <ul class="jh_notice">
                     {volist name="ress" id="each" empty="未检索到数据库"}
                     <li>
                         <span class="label_datatime">2018-04-01</span>
@@ -53,7 +54,7 @@ border-radius:50%;
             <div class="team-title">
                 <p>入驻团队</p>
             </div>
-            <hr />
+            <hr/>
             <div class="team-list">
                 {volist name="res" id="vo"}
                 <dl>
@@ -68,8 +69,8 @@ border-radius:50%;
 
 {include file="Index/footer" /}
 
-    <script>
-    (function() {
+<script>
+    (function () {
         var a = document.getElementsByClassName('a');
         var pre = document.getElementById('pre');
         var next = document.getElementById('next');
@@ -83,7 +84,7 @@ border-radius:50%;
             a[next].style.transition = "left 0s";
             a[next].style.left = "100%";
             a[next].style.zIndex = "1";
-            setTimeout(function() {
+            setTimeout(function () {
                 a[i].style.left = "-100%";
                 a[i].style.zIndex = '0';
                 a[next].style.transition = "left .5s";
@@ -98,7 +99,7 @@ border-radius:50%;
             a[next].style.transition = "left 0s";
             a[next].style.left = "-100%";
             a[next].style.zIndex = "1";
-            setTimeout(function() {
+            setTimeout(function () {
                 a[i].style.left = "100%";
                 a[i].style.zIndex = '0';
                 a[next].style.transition = "left .5s";
@@ -108,22 +109,22 @@ border-radius:50%;
         }
 
         var time = setInterval(moveleft, 3500);
-        pre.onclick = function() {
+        pre.onclick = function () {
             moveleft();
             if (!bool) {
                 clearInterval(time);
                 bool = true;
             }
         };
-        next.onclick = function() {
+        next.onclick = function () {
             moveright();
             if (!bool) {
                 clearInterval(time);
                 bool = true;
             }
         };
-        main.onmouseleave = function(event) {
-            var event=event||window.event;
+        main.onmouseleave = function (event) {
+            var event = event || window.event;
             if (bool && event.relatedTarget) {
                 time = setInterval(moveleft, 3500);
                 bool = false;
@@ -133,15 +134,15 @@ border-radius:50%;
                 next.style.opacity = '0';
             }
         };
-        main.onmouseenter = function() {
+        main.onmouseenter = function () {
             pre.style.opacity = '1';
             next.style.opacity = '1';
         };
 
     })()
-      
-    </script>
-    </body>
-    
+
+</script>
+</body>
+
 
 </html>

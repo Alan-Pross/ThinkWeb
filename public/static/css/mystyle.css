@@ -1,7 +1,7 @@
 html,
 body {
     height: 100%;
-    font-family:Arial,Helvetica,sans-serif,"宋体";
+    font-family: Arial, Helvetica, sans-serif, "宋体";
 }
 
 body {
@@ -77,13 +77,11 @@ a {
     vertical-align: -.85em;
 }
 
-
-
 .wrapper {
     height: 50px;
     width: 100%;
     background: #2E94B9;
-    
+
 }
 
 .primary-menu {
@@ -93,7 +91,7 @@ a {
     background-color: #efefef;
     text-align: center;
     box-sizing: border-box;
-    
+
 }
 
 .nav-menu {
@@ -110,11 +108,13 @@ a {
     display: inline-block;
     height: 100%;
     font-size: 16px;
-    margin:0 57px 0 0;
+    margin: 0 57px 0 0;
 }
-.nav-menu li:first-child{
+
+.nav-menu li:first-child {
     margin-left: 55px;
 }
+
 @media screen and (min-width: 1400px) {
     .primary-menu,
     .head-top {
@@ -122,36 +122,37 @@ a {
     }
 
     .nav-menu li {
-         margin-right: 110px;
+        margin-right: 110px;
     }
-    .nav-menu li:first-child{
-        margin-left:109px;
+
+    .nav-menu li:first-child {
+        margin-left: 109px;
     }
 }
 
 @media screen and (min-width: 2400px) {
     .nav-menu li {
-         margin-right: 103px;
+        margin-right: 103px;
     }
-    .nav-menu li:first-child{
-        margin-left:103px;
+
+    .nav-menu li:first-child {
+        margin-left: 103px;
     }
 
 }
 
-
 .nav-menu a:hover {
-  
+
 }
 
 .nav-menu a:hover .text {
-   
+
 }
 
 .nav-menu li a {
     display: inline-block;
     height: 100%;
-    
+
     font-size: 0;
 }
 
@@ -162,7 +163,7 @@ a {
     background-size: 40px;
     background-repeat: no-repeat;
     background-position: center;
-   
+
 }
 
 .nav-menu .text {
@@ -172,15 +173,15 @@ a {
     vertical-align: top;
     font-size: 22px;
     color: #000;
-    min-width:88px;
+    min-width: 88px;
 }
 
-.n-cursor{
+.n-cursor {
     position: relative;
-    bottom:3px;
+    bottom: 3px;
     height: 3px;
-    background: rgb(0,161,214);
-    left:0;
+    background: rgb(0, 161, 214);
+    left: 0;
 
 }
 
@@ -222,7 +223,6 @@ i.ic5 {
     display: inline-block;
     padding-top: 23.08%;
 }
-
 
 .a {
     width: 100%;
@@ -482,36 +482,37 @@ i.ic5 {
     }
 }
 
-
-
-
 /*入驻团队*/
 
 .team-sidebar {
     width: 35%;
     /*height: 400px;*/
     float: right;
-    background:#f9f9f9;
-    
+    background: #f9f9f9;
+
 }
 
 .team-title {
     text-align: center;
 }
-.team-title p{
+
+.team-title p {
     line-height: 3em;
     font-weight: bold;
     color: #0000ff;
 }
+
 .team-list dt,
 dd {
     display: inline-block;
 }
-.team-list{
-       margin:20px 0;
+
+.team-list {
+    margin: 20px 0;
 }
+
 .team-list dl {
-  
+
     height: 60px;
     overflow: hidden;
     width: 100%;
@@ -524,7 +525,7 @@ dd {
 }
 
 .team-list dd {
-   
+
     height: 50px;
     line-height: 50px;
     width: 200px;

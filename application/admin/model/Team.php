@@ -18,7 +18,7 @@ class Team extends model
             'name' => $name,
             'message' => $message,
             'head' => $head,
-            'mark' => $mark, 
+            'mark' => $mark,
         ]);
 
     }

@@ -1,6 +1,7 @@
 <?php
 
 namespace app\index\controller;
+
 use think\Paginator;
 use think\Db;
 use app\admin\model\Notice;
@@ -21,26 +22,31 @@ class Index extends \think\Controller
 
 
     //帅中贤
-    public function download(){
-      $res = Db::name("download")->field("title,path")->order("id DESC")->paginate(1);
+    public function download()
+    {
+        $res = Db::name("download")->field("title,path")->order("id DESC")->paginate(1);
         $this->assign("res", $res);
         return $this->fetch();
     }
 
-    public function upload(){
-      $list = Db::name('notice')->paginate(5);
+    public function upload()
+    {
+        $list = Db::name('notice')->paginate(5);
 // 把分页数据赋值给模板变量list
-$this->assign('list', $list);
+        $this->assign('list', $list);
 // 渲染模板输出
-return $this->fetch();
+        return $this->fetch();
     }
-    public function test(){
-     /* $id=input("get.id");
-       $res = Db::name("download")->where ([
-        "id"=>$id
-       ])->field("path")->find();*/
-echo 1;
+
+    public function test()
+    {
+        /* $id=input("get.id");
+          $res = Db::name("download")->where ([
+           "id"=>$id
+          ])->field("path")->find();*/
+        echo 1;
     }
+
     public function newnotice()
     {
         $res = new Notice;
@@ -82,7 +88,7 @@ echo 1;
         return view();
     }
 
-    public function searchshow($page='0')
+    public function searchshow($page = '0')
     {
         if (empty($page)) {
             $search_name = input('search_name');
