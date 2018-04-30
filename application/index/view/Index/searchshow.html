@@ -33,6 +33,21 @@
     {$page2}
 </div>
 
+<div class="fenye">
+    团队匹配
+    <hr>
+    {volist name="team" id = "vo3"}
+    <div class="fdw-pricing-table">
+        <div class="plan plan4">
+            <div class="header">{$vo3.head}</div>
+            <div class="price">{$vo3.name}</div>
+            <hr>
+            <div class="monthly">{$vo3.create_time}</div>
+        </div>
+    </div>
+    {/volist}
+    {$page3}
+</div>
 
 <script type="text/javascript" color="30,100,255" opacity='1' zIndex="-1" count="50"
         src="__STATIC__/js/background.js"></script>

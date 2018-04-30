@@ -2,7 +2,6 @@
 
 namespace app\index\controller;
 
-use think\Paginator;
 use think\Db;
 use app\admin\model\Notice;
 use app\admin\model\Team;
@@ -32,9 +31,7 @@ class Index extends \think\Controller
     public function upload()
     {
         $list = Db::name('notice')->paginate(5);
-// 把分页数据赋值给模板变量list
         $this->assign('list', $list);
-// 渲染模板输出
         return $this->fetch();
     }
 
@@ -48,14 +45,6 @@ class Index extends \think\Controller
     }
 
     public function newnotice()
-    {
-        $res = new Notice;
-        $res = Notice::field("title,create_time")->order("id DESC")->limit(5)->select();
-        $this->assign("res", $res);
-        return $this->fetch();
-    }
-
-    public function news()
     {
         $res = Db::name("notice")->field("title,create_time")->order("id DESC")->select();
         $this->assign("res", $res);
@@ -100,12 +89,17 @@ class Index extends \think\Controller
             new Notice();
             $title = Notice::where('title', 'like', "%{$search_name}%")->paginate(5, false);
             $publisher = Notice::where('publisher', 'like', "%{$search_name}%")->paginate(5, false);
+            new Team();
+            $team = Team::where('name', 'like', "%{$search_name}%")->paginate(5, false);
             $page1 = $title->render();
             $page2 = $publisher->render();
+            $page3 = $team->render();
             $this->assign('title', $title);
             $this->assign('publisher', $publisher);
+            $this->assign('team', $team);
             $this->assign('page1', $page1);
             $this->assign('page2', $page2);
+            $this->assign('page3', $page3);
         }
         return $this->fetch();
     }
