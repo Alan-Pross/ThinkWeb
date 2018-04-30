@@ -655,13 +655,21 @@ dd {
 
       }
       .listcolumn li{
-       border-bottom: 1px solid red;
+       border-bottom: 1px solid ;
       }
+      .listcolumn li:hover{
+       border-bottom: 1px solid #6daaea;
+       background: #f7fafd;
+      }
+
       .column-name{
-        color: #ff0000;
         line-height: 2em;
         display: inline-block;
       }
+            .column-name:hover{
+             box-shadow: 0 -3px 0 0 #0d6782 inset;
+      }
+      
       .col_news {
           width: 81%;
           height: 100%;
