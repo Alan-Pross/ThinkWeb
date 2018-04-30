@@ -20,7 +20,7 @@
       .col {
           font-size: 18px;
           background: rgba(0, 206, 209);
-         
+          
       }
 
       .col:hover {
@@ -30,11 +30,17 @@
 
       #news {
           margin-bottom: 1px;
+          background-image:url(../images/new.png) ;
       }
-
+      #notice{
+          background-image:url(../images/notice.png) ;
+      }
       #news,
       #notice {
           line-height: 40px;
+          background-size:30px;
+          background-position: 2px 5px;
+          background-repeat: no-repeat;
       }
 
       #tab {
