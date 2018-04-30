@@ -26,6 +26,14 @@ class Index extends \think\Controller
         $res = Db::name("download")->field("title,path")->order("id DESC")->paginate(1);
         $this->assign("res", $res);
         return $this->fetch();
+        /*
+        $all = "";
+        $res = file::where('title', 'like', "%{$all}%")->order("id DESC")->paginate(10, false);
+        $page = $res->render();
+        $this->assign("res", $res);
+        $this->assign("page", $page);
+        return $this->fetch();
+        */
     }
 
     public function upload()
@@ -47,7 +55,6 @@ class Index extends \think\Controller
     public function newnotice()
     {
         $all = "";
-        new Notice();
         $res = Notice::where('title', 'like', "%{$all}%")->order("id DESC")->paginate(1, false);
         $page = $res->render();
         $this->assign("res", $res);
@@ -56,6 +63,14 @@ class Index extends \think\Controller
     }
 
     //刘启明
+    public function article($id)
+    {
+
+        $res = Notice::where('id', 'like', "%{$id}%")->select();
+        $this->assign("res", $res);
+        return $this->fetch();
+    }
+
     public function introduction()
     {
         return view();
@@ -90,10 +105,8 @@ class Index extends \think\Controller
             }
             $search = ['query' => []];
             $search['query']['search_name'] = $search_name;
-            new Notice();
             $title = Notice::where('title', 'like', "%{$search_name}%")->paginate(5, false);
             $publisher = Notice::where('publisher', 'like', "%{$search_name}%")->paginate(5, false);
-            new Team();
             $team = Team::where('name', 'like', "%{$search_name}%")->paginate(5, false);
             $page1 = $title->render();
             $page2 = $publisher->render();

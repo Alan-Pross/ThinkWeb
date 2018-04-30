@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{volist name="res" id="vo"}
+<div>
+    {$vo.title}<!--文章标题-->
+    {$vo.publisher}<!--文章发布人-->
+    {$vo.create_time}<!--发布时间-->
+    {$vo.browsing}<!--浏览次数-->
+    {$vo.content}<!--文章内容-->
+</div>
+{/volist}
+</body>
+</html>
