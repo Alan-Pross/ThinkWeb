@@ -99,6 +99,7 @@ div {
     -moz-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, .5);
     -webkit-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, .53);
     box-shadow: 0 2px 2px -1px rgba(0, 0, 0, .5);
+    position: relative;
 }
 
 .fdw-pricing-table .plan:after {
@@ -121,6 +122,17 @@ div {
     padding: 40px 20px;
 }
 
+.plan-contain{
+    position: absolute;
+    bottom:0;
+    margin:auto;
+    left:0;
+    right: 0;
+}
+
+.plan-contain div{
+    margin:0 1em;
+}
 /* --------------- */
 
 .fdw-pricing-table .header {
@@ -162,7 +174,7 @@ div {
 
 .fdw-pricing-table .price {
     font-size: 20px;
-
+    height: 80px;
 }
 
 .fdw-pricing-table .monthly {
