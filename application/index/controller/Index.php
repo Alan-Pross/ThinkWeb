@@ -46,7 +46,7 @@ class Index extends \think\Controller
 
     public function newnotice()
     {
-        $res = Db::name("notice")->field("title,create_time")->order("id DESC")->select();
+        $res = Db::name("notice")->field("title,create_time")->paginate(10, false)->order("id DESC")->select();
         $this->assign("res", $res);
         return $this->fetch();
     }
@@ -101,43 +101,6 @@ class Index extends \think\Controller
             $this->assign('page2', $page2);
             $this->assign('page3', $page3);
         }
-        return $this->fetch();
-    }
-
-    //周威
-    public function view()
-    {
-        //   $list = Notice::where('id','=',0)
-        //   ->find();
-
-        // $this->assign('list',$list);
-        $id = input('id');
-
-        if ($id <> '') {
-
-            $list = Notice::where('id', '=', $id)
-                ->select();
-
-            $this->assign('list', $list);
-
-            return $this->fetch();
-        }
-        return $this->fetch('no');
-        return "留言不存在";
-
-    }
-
-    public function show()
-    {
-        $list = new Notice;
-        //$list = $notice->check();
-        //
-        $list = Notice::where('id', '>=', 1)
-            ->select();
-
-        $this->assign('list', $list);
-
-
         return $this->fetch();
     }
 }
