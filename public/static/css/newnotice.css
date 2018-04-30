@@ -20,6 +20,7 @@
       .col {
           font-size: 18px;
           background: rgba(0, 206, 209);
+         
       }
 
       .col:hover {
@@ -44,7 +45,7 @@
           background-color: #EFEFEF
       }
       #tab div{
-        margin:0 2em;
+        padding:0 2em;
       }
       #firstPage,
       #secondPage {
