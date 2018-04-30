@@ -704,6 +704,7 @@ dd {
       .list_detail_1 {
           text-align: left;
           margin-left: 85px;
+          color:#0873c0;
       }
      
       #secondPage.show {
@@ -732,13 +733,17 @@ dd {
           text-align: center;
       }
 
-      div.list_detail_2,
       div.news_datatime{
+        width: 100px;
+      }
+      div.list_detail_2{
+        color:#0873c0;
         width: 100px;
       }
 
       .news_count,
       .list_detail_3 {
+          color:#0873c0;
           margin: 0;
           right: 60px;
           text-align: center;
