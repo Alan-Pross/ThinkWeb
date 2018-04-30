@@ -46,8 +46,12 @@ class Index extends \think\Controller
 
     public function newnotice()
     {
-        $res = Db::name("notice")->field("title,create_time")->paginate(10, false)->order("id DESC")->select();
+        $all = "";
+        new Notice();
+        $res = Notice::where('title', 'like', "%{$all}%")->order("id DESC")->paginate(10, false);
+        $page = $res->render();
         $this->assign("res", $res);
+        $this->assign("page", $page);
         return $this->fetch();
     }
 
