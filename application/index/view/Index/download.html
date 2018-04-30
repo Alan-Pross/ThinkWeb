@@ -9,16 +9,7 @@
 
 <body>
     {include file="Index/header" /}
-   <!--  <center>
-        <div>
-            <ul>
-                {volist name="res" id="each" empty="未检索到数据库"}
-                <li><a href="__STATIC__/{$each.path}">{$each.title}</a></li>
-                {/volist}
-            </ul>
-        </div>
-        {$res->render()}
-    </center> -->
+
     <div class="news_wrapper">
         <div class="col_menu">
             <div class="col_head">
@@ -55,7 +46,9 @@
                     {/volist}
                 </ul>
             </div>
-            {$res->render()}
+              {$res->render()}
+        </div>
+          
 </body>
 
 </html>
