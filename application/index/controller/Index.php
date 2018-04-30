@@ -48,7 +48,7 @@ class Index extends \think\Controller
     {
         $all = "";
         new Notice();
-        $res = Notice::where('title', 'like', "%{$all}%")->order("id DESC")->paginate(10, false);
+        $res = Notice::where('title', 'like', "%{$all}%")->order("id DESC")->paginate(1, false);
         $page = $res->render();
         $this->assign("res", $res);
         $this->assign("page", $page);

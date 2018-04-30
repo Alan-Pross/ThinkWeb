@@ -628,13 +628,16 @@ dd {
         height: 500px;
         width: 980px;
         margin: .5em auto;
+        
+      }
+      .col_menu,.col_news{
         background: #efefef;
       }
       .col_menu{
         float: left;
         width: 18%;
         height: 100%;
-        outline: .5em solid #fff;
+       
       }
       .col_head{
         line-height: 2.4em;
@@ -660,7 +663,8 @@ dd {
         display: inline-block;
       }
       .col_news {
-          width: 79%;
+          width: 81%;
+          height: 100%;
           float: right;
           cursor: pointer;
         }
