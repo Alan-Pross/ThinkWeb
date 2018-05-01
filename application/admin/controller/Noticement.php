@@ -21,8 +21,11 @@ class Noticement extends Index
         $publisher = input('param.publisher');
         $content = input('param.content');
         if ($title <> '') {
-            $notice = new Notice;
-            $notice->add($title, $publisher, $content);
+            Notice::create([
+                'title'  =>  $title,
+                'publisher'  => $publisher,
+                'content'  =>  $content,
+            ]);
             return $this->success('恭喜您公告添加成功^_^', '__PUBLIC__/admin/index/manage');
         }
         return $this->fetch();
@@ -30,7 +33,6 @@ class Noticement extends Index
 
     public function show()
     {
-        $show = new Notice;
         $show = Notice::where('id', '>', 0)->order('id', 'desc')->paginate(5);
         $this->assign('show', $show);
         return $this->fetch();
@@ -47,11 +49,6 @@ class Noticement extends Index
         if (!$id) {
             return "id不能为空！";
         }
-
-        // $show = Notice::get($id);
-        // echo $id;
-        // echo $show->title;
-        $show = new Notice();
 
         $show = Notice::where('id', '=', $id)
             ->find();
@@ -77,10 +74,7 @@ class Noticement extends Index
         $id = input('id');
         echo $id;
         if ($id <> '') {
-
-            $user = Notice::where('id', '=', $id)->delete();
-
-
+         $user = Notice::where('id', '=', $id)->delete();
         }
         return $this->success('删除成功^_^', 'show');
     }

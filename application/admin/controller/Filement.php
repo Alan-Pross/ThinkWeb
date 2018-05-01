@@ -49,7 +49,7 @@ class Filement extends Index
 
             $list = new File();
              File::create([
-            	'name'  =>  $name,
+            	'title'  =>  $name,
             	'filepath'  =>  $filepath,
             ]);
             
@@ -78,10 +78,6 @@ class Filement extends Index
         if (!$id) {
             return "id不能为空！";
         }
-
-        // $show = Notice::get($id);
-        // echo $id;
-        // echo $show->title;
         $show = new File();
 
         $show = File::where('id', '=', $id)
@@ -121,13 +117,13 @@ class Filement extends Index
            
             File::update([
             	'id'  =>  $id,
-            	'name'  =>  $name,
+            	'title'  =>  $name,
             	'filepath'  =>  $newfile,
             ]);
         } else {
             File::update([
                 'id'  =>  $id,
-                'name'  =>  $name,
+                'title'  =>  $name,
                 'filepath'  =>  $filepath,
             ]);
         }

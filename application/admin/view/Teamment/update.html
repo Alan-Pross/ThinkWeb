@@ -7,13 +7,18 @@
 	     
 		<div class="form-group" >
     		<label for="exampleInputName2">团队名称:</label>
-    		<input type="text" class="form-control" id="name" name="name" value="{$show.name}" placeholder="请输入名称" maxlength="100">
+    		<input type="text" class="form-control" id="name" name="name" value="{$show.title}" placeholder="请输入名称" maxlength="100">
     	</div>
 
     	<div class="form-group" >
     		<label for="exampleInputName2">负责人:</label>
     		<input type="text" class="form-control" id="head" name="head" value="{$show.head}" placeholder="请输入负责人" maxlength="100">
     	</div>
+
+        <div class="form-group" >
+            <label for="exampleInputName2">团队简介:</label>
+            <textarea class="form-control" id="message" name="message"  placeholder="请输入团队简介" >{$show.message}</textarea> 
+        </div>
 
     	   <div class="form-group" >
     		<label for="exampleInputName2">队标:</label><br />
@@ -24,9 +29,9 @@
     		</div>
 
     	<div class="form-group">
-    		<label for="exampleInputPassword1">内容:</label>
-    			<script id="container" name="message" type="text/plain">
-       			{$show.message}
+    		<label for="exampleInputPassword1">团队详情:</label>
+    			<script id="container" name="content" type="text/plain">
+       			{$show.content}
     			</script>
     	<!-- 配置文件 -->
     			<script type="text/javascript" src="__STATIC__/ueditor/ueditor.config.js"></script>

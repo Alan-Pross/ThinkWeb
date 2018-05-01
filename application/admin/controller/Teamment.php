@@ -22,6 +22,7 @@ class Teamment extends Index
         $name = input('param.name');
         $head = input('param.head');
         $message = input('param.message');
+        $content = input('param.content');
         $mark = "";
         if ($name <> '') {
             // 获取表单上传文件 例如上传了001.jpg
@@ -48,8 +49,13 @@ class Teamment extends Index
                     echo $file->getError();
                 }
             }
-            $team = new Team;
-            $team->add($name, $head, $message, $mark);
+            Team::create([
+                'title'  =>  $title,
+                'message'  =>  $message,
+                'head'  =>  $head,
+                'content'  =>  $content,
+                'mark'  =>  $mark,
+            ]);
             return $this->success('恭喜您公告添加成功^_^', '__PUBLIC__/admin/index/manage');
         }
         return $this->fetch();
@@ -57,7 +63,6 @@ class Teamment extends Index
 
     public function show()
     {
-        $show = new Team;
         $show = Team::where('id', '>', 0)->order('id', 'desc')->paginate(5);
 
         $this->assign('show', $show);
@@ -70,6 +75,7 @@ class Teamment extends Index
         $name = input('param.name');
         $head = input('param.head');
         $message = input('param.message');
+        $content = input('param.content');
         $mark = input('param.oldmark');
         $newmark = "";
 
@@ -77,7 +83,6 @@ class Teamment extends Index
             return "id不能为空！";
         }
 
-        $show = new Team();
         $show = Team::where('id', '=', $id)
             ->find();
         if ($name) {
@@ -107,24 +112,26 @@ class Teamment extends Index
             if($newmark <> ''){
 
             $user =ROOT_PATH . 'public' . DS . 'uploads/'.$mark;
-           echo $user;
+
 
             if(file_exists($user)) {  
                 unlink($user);  
             }
             Team::update([
                 'id' => $id,
-                'name' => $name,
+                'title' => $name,
                 'head' => $head,
                 'message' => $message,
+                'content' => $content,
                 'mark' => $newmark,
             ]);
         }else {
             Team::update([
                 'id' => $id,
-                'name' => $name,
+                'title' => $name,
                 'head' => $head,
                 'message' => $message,
+                'content' => $content,
                 'mark' => $mark,
             ]);
         }

@@ -16,8 +16,11 @@ class Newsment extends Index
         $publisher = input('param.publisher');
         $content = input('param.content');
         if ($title <> '') {
-            $news = new News;
-            $news->add($title, $publisher, $content);
+            News::create([
+                'title'  =>  $title,
+                'publisher'  =>  $publisher,
+                'content'  => $content,
+            ]);
             return $this->success('恭喜您公告添加成功^_^', '__PUBLIC__/admin/index/manage');
         }
         return $this->fetch();
@@ -25,7 +28,7 @@ class Newsment extends Index
 
     public function show()
     {
-        $show = new News;
+        $show = new News();
         $show = News::where('id', '>', 0)->order('id', 'desc')->paginate(5);
         $this->assign('show', $show);
         return $this->fetch();

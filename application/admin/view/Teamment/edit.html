@@ -1,18 +1,23 @@
 {include file="Public/top" /}
 
-<div class="container">
 
 
-<h2><a href="#">添加团队</a></h2>
+
+<h2>添加团队</h2>
 <form action="" method="post" enctype="multipart/form-data">
     <div class="form-group">
         团队名称：
-        <input type="text" class="form-control" name="name" value="" placeholder="请输入团队名称" maxlength="100">
+        <input type="text" class="form-control" name="name" value="" placeholder="请输入团队名称" >
 
     </div>
     <div class="form-group">
         团队负责人：
-        <input type="text" class="form-control" name="head" value="" placeholder="请输入团队负责人" maxlength="100">
+        <input type="text" class="form-control" name="head" value="" placeholder="请输入团队负责人">
+    </div>
+
+    <div class="form-group">
+        团队简介：
+        <textarea class="form-control" name="message" value="" placeholder="请输入团队简介" rows="3"></textarea>
     </div>
     
     <div class="form-group" >
@@ -20,22 +25,25 @@
      <input type="file" name="mark" />
 
     </div>
+      
+    <div class="form-group" >
 
-    <!-- 加载编辑器的容器 -->
-    团队简介：
-    <script id="container" name="message" type="text/plain" style="height:500px">
+    团队详情：
+    <script id="container" name="content" type="text/plain" >
     </script>
-    <!-- 配置文件 -->
+
     <script type = "text/javascript" src = "__STATIC__/ueditor/ueditor.config.js" ></script>
-    <!--编辑器源码文件 -->
+
     <script type="text/javascript" src="__STATIC__/ueditor/ueditor.all.js"></script>
-    <!-- 实例化编辑器 -->
+
     <script type="text/javascript">
         var ue = UE.getEditor('container');
     </script>
+    </div>
+
 
     <button type="submit" id="btn" class="btn btn-primary">提交</button>
 </form>
-</div>
+
 
 {include file="Public/footer" /}

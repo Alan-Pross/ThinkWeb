@@ -1,7 +1,8 @@
 {include file="Public/top" /}
 
 <div class="container">
-<h2><a href="#">文件列表</a></h2>
+<h2>文件列表</h2>
+
 <table class="table table-bordered table-striped table-hover">
 		<thead>
 			<tr><th>文件名称</th><th>上传时间</th><th>设置</th>
@@ -9,7 +10,7 @@
 		</thead>
 		<tbody>
 			{volist name="show" id="user"}
-			<tr><td><a href="__ROOT__/index/test/view/id/{$user.id}">{$user.name}</a></td><td>{$user.create_time}</td>
+			<tr><td><a href="__ROOT__/index/test/view/id/{$user.id}">{$user.title}</a></td><td>{$user.create_time}</td>
 				<td><a href="__PUBLIC__/admin/filement/update/id/{$user.id}"id="btn" class="btn btn-primary" "  >编辑</a>          <a href="#"  id="btn" class="btn btn-danger" data-toggle="modal" data-target="#myModal{$user.id}"  >删除 </a></td>
 
 			</tr>
@@ -22,7 +23,7 @@
 			        <h4 class="modal-title" id="myModalLabel">提示</h4>
 			      </div>
 			      <div class="modal-body">
-			        删除确认...{$user.name|mb_substr=0,20,'utf-8' }
+			        删除确认...{$user.title|mb_substr=0,20,'utf-8' }
 			      </div>
 			      <div class="modal-footer">
 			        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
