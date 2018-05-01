@@ -20,17 +20,24 @@ class Index extends \think\Controller
         $this->assign("notice", $notice);
         $this->assign("news", $news);
         $this->assign("team", $team);
+
         return $this->fetch();
     }
 
 
     //帅中贤
-    public function file()
+    public function file($id = 0)
     {
+        if ($id != 0) {
+            $file = File::where('id', '=', $id)->select();
+            $this->redirect('__PUBLIC__/upload/' + $file[0]['filepath']);
+            //修改
+        }
         $res = Db::name("file")->field("title,filepath")->order("id DESC")->paginate(5);
         $this->assign("res", $res);
 
         return $this->fetch();
+
         /*
         $all = "";
         $res = file::where('title', 'like', "%{$all}%")->order("id DESC")->paginate(10, false);
@@ -86,6 +93,7 @@ class Index extends \think\Controller
         }
         $this->assign("res", $res);
         $this->assign("title", $res[0]['title']);
+
         return $this->fetch();
     }
 
@@ -108,6 +116,18 @@ class Index extends \think\Controller
         $page = $team->render();
         $this->assign('team', $team);
         $this->assign('page', $page);
+
+        return $this->fetch();
+    }
+
+    public function teamcontent($id = 0)
+    {
+        if ($id == 0) {
+            $this->redirect('__PUBLIC__/index.php/index/index/team');
+        }
+        $res = Team::where('id', '=', $id)->select();
+        $this->assign("res", $res);
+        $this->assign("title", $res[0]['title']);
 
         return $this->fetch();
     }
