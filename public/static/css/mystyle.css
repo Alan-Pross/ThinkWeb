@@ -658,9 +658,13 @@ dd {
 }
 
 .col_menu_con {
-    line-height: 2em;
+    line-height: 2.4em;
+    height: 2.4em;
+    font-size: 21px;
+    font-weight: bold;
     text-align: center;
-    font-size: 1.2em;
+    color: #000;
+    background: #fff;
 
 }
 
@@ -675,7 +679,8 @@ dd {
 }
 
 .column-name {
-    line-height: 2em;
+    line-height: 2.4em;
+    color: #000;
     display: inline-block;
 }
 

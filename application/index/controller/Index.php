@@ -3,6 +3,7 @@
 namespace app\index\controller;
 
 use think\Db;
+use app\admin\model\News;
 use app\admin\model\Notice;
 use app\admin\model\Team;
 
@@ -22,7 +23,7 @@ class Index extends \think\Controller
     //帅中贤
     public function download()
     {
-        $res = Db::name("download")->field("title,path")->order("id DESC")->paginate(1);
+        $res = Db::name("download")->field("title,path")->order("id DESC")->paginate(5);
         $this->assign("res", $res);
         return $this->fetch();
         /*
@@ -46,27 +47,41 @@ class Index extends \think\Controller
     public function newnotice()
     {
         $all = "";
-        $res = Notice::where('title', 'like', "%{$all}%")->order("id DESC")->paginate(1, false);
+        $res = Notice::where('title', 'like', "%{$all}%")->order("id DESC")->paginate(5, false);
         $page = $res->render();
         $this->assign("res", $res);
         $this->assign("page", $page);
         return $this->fetch();
     }
 
-    public function shownews($name)
+    public function newnotice2()
     {
-        $ress = Db::name("notice")->where("title", "=", $name)->select();
-        $this->assign("ress", $ress);
+        $all = "";
+        $res = News::where('title', 'like', "%{$all}%")->order("id DESC")->paginate(5, false);
+        $page = $res->render();
+        $this->assign("res", $res);
+        $this->assign("page", $page);
         return $this->fetch();
     }
 
     //刘启明
-    public function article($id)
+    public function article($id = 1)
     {
         if ($id > 0) {
             $res = Notice::where('id', 'like', "%{$id}%")->select();
+            Notice::update([
+                'id' => $id,
+                'browsing' => $res[0]['browsing'] + 1,
+            ]);
+
         } else {
-            $res = News::where('id', 'like', "%{$id}%")->select();
+            $idd = abs($id);
+            $res = News::where('id', 'like', "%{$idd}%")->select();
+            Notice::update([
+                'id' => $id,
+                'browsing' => $res[0]['browsing'] + 1,
+            ]);
+
         }
         $this->assign("res", $res);
         return $this->fetch();

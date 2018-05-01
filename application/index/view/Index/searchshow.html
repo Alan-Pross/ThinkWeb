@@ -4,10 +4,51 @@
 <head>
     <meta charset="UTF-8"/>
     <title>搜索结果</title>
+    <link rel="stylesheet" href="__STATIC__/css/searchshow-form.css">
 </head>
 {include file="Index/header" /}
-<link rel="stylesheet" href="__STATIC__/css/searchshow-form.css">
 
+<div class="news_wrapper">
+    <div class="col_menu">
+        <div class="col_head">
+            <span>搜索内容</span>
+        </div>
+        <div class="col_menu_con">
+            <ul class="listcolumn">
+                <li class="column-1">
+                    <a href="" target="_self"><span class="column-name">新闻公告搜索</span></a>
+                </li>
+                <li class="column-2">
+                    <a href="#" target="_self"><span class="column-name">入驻团队搜索</span></a>
+                </li>
+                <li class="column-3">
+                    <a href="#" target="_self"><span class="column-name">文件下载搜索</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col_news">
+        <div class="news_head">
+        </div>
+        <div class="list_detail ">
+            <div class="list_detail_1">标题</div>
+            <div class="list_detail_2">发布时间</div>
+            <div class="list_detail_3">浏览次数</div>
+        </div>
+        <div id="secondPage" class="show">
+            <ul>
+                {volist name="res" id="vo"}
+                <li id="erg" class="list_news"><a href="shownews?name={$vo.title}">{$vo.title}</a>
+                    <span class="label_datatime news_datatime">{$vo.create_time}</span>
+                    <span class="news_count">{$vo.browsing}</span>
+                </li>
+                {/volist}
+            </ul>
+        </div>
+        {$page}
+
+    </div>
+</div>
 <div class="fenye">
     标题匹配
     <hr>
