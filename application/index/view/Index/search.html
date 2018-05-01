@@ -13,12 +13,11 @@
             <span>搜索</span>从这里开始
         </h1>
     </div>
-    <form action="__PUBLIC__/index.php/index/index/searchshow" method="post">
+    <form action="__PUBLIC__/index.php/index/index/search" class="search-form" method="post" id="search-form">
         <div class="search-wrapper">
             <div class="input-holder">
-                <input type="text" class="search-input" name="search_name" id="search-input"/>
-                <button class="search-icon" onclick="searchToggle(this, event);" id="search-button"><span></span>
-                </button>
+                <input type="text" class="search-input" id="search"/>
+                <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
             </div>
             <span class="close" onclick="searchToggle(this, event);"></span>
             <div class="result-container">
@@ -39,8 +38,9 @@
         }, 400)
     }
     function searchToggle(obj, evt) {
+        var search = $("#search").val();
+        document.getElementById('search-form').action = '__PUBLIC__/index.php/index/index/searchshow?id=1&search=' + search;
         var container = $(obj).closest('.search-wrapper');
-
         if (!container.hasClass('active')) {
             container.addClass('active');
             evt.preventDefault();

@@ -19,10 +19,10 @@
         <div class="col_menu_con">
             <ul class="listcolumn">
                 <li class="column-2">
-                    <a href="__PUBLIC__/index/index/newnotice" title="学院新闻"><span class="column-name">学院新闻</span></a>
+                    <a href="__PUBLIC__/index.php/index/index/newnotice" title="学院新闻"><span class="column-name">学院新闻</span></a>
                 </li>
                 <li class="column-1">
-                    <a href="__PUBLIC__/index/index/newnotice2" title="通知公告"><span class="column-name">通知公告</span></a>
+                    <a href="__PUBLIC__/index.php/index/index/newnotice2" title="通知公告"><span class="column-name">通知公告</span></a>
                 </li>
             </ul>
         </div>
@@ -38,7 +38,7 @@
         <div id="secondPage" class="show">
             <ul>
                 {volist name="res" id="vo"}
-                <li id="erg" class="list_news"><a href="__PUBLIC__/index/index/article?id=-{$vo.id}">{$vo.title}</a>
+                <li id="erg" class="list_news"><a href="__PUBLIC__/index.php/index/index/article?id=-{$vo.id}">{$vo.title}</a>
                     <span class="label_datatime news_datatime">{$vo.create_time}</span>
                     <span class="news_count">{$vo.browsing}</span>
                 </li>
@@ -51,5 +51,4 @@
 </div>
 {include file="Index/footer" /}
 </body>
-
 </html>
