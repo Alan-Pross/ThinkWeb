@@ -8,20 +8,21 @@
 </head>
 {include file="Index/header" /}
 <style>
-#publisher{
-position: relative;
-left:55%;
-}
+    #publisher {
+        position: relative;
+        left: 55%;
+    }
 </style>
 <body>
 
-  <div>
-                    {volist name="ress" id="each" empty="未检索到数据库"}
-                    <center><p><h2>{$each.title}</h2></p></center>  
-                    <right id="publisher">{$each.publisher}</right>
-                            <p>{$each.content}</p>
-                    {/volist}
-            </div>
-     
+<div>
+    {volist name="ress" id="each" empty="未检索到数据库"}
+    <center><p>
+        <h2>{$each.title}</h2></p></center>
+    <right id="publisher">{$each.publisher}</right>
+    <p>{$each.content}</p>
+    {/volist}
+</div>
+
 </body>
 </html>

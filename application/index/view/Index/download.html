@@ -8,46 +8,46 @@
 </head>
 
 <body>
-    {include file="Index/header" /}
+{include file="Index/header" /}
 
-    <div class="news_wrapper">
-        <div class="col_menu">
-            <div class="col_head">
-                <span>文件下载</span>
-            </div>
-            <!-- <div class="col_menu_con">
-                <ul class="listcolumn">
-                    <li class="column-1">
-                        <a href="__PUBLIC__/index/index/news" title="学院新闻"  target="_self" >
-                            <span class="column-name" style="box-shadow: 0 -3px 0 0 #0d6782 inset;">学院新闻</span></a>
-                    </li>
-                    <li class="column-2">
-                        <a href="#" title="通知公告"  target="_self"><span class="column-name">通知公告</span></a>
-                    </li>
-                </ul>
-            </div> -->
+<div class="news_wrapper">
+    <div class="col_menu">
+        <div class="col_head">
+            <span>文件下载</span>
         </div>
-        <div class="col_news">
-            <div class="news_head">
-            </div>
-            <div class="list_detail ">
-                <div class="list_detail_1">标题</div>
-                <div class="list_detail_2">发布时间</div>
-                <div class="list_detail_3">浏览次数</div>
-            </div>
-            <div id="secondPage" class="show">
-                <ul>
-                    {volist name="res" id="each" empty="未检测到数据库"}
-                    <li id="erg" class="list_news"><a href="__STATIC__/{$each.path}">{$each.title}</a>
-                        <span class="label_datatime news_datatime">2018-04-01</span>
-                        <span class="news_count">12</span>
-                    </li>
-                    {/volist}
-                </ul>
-            </div>
-              {$res->render()}
+        <!-- <div class="col_menu_con">
+            <ul class="listcolumn">
+                <li class="column-1">
+                    <a href="__PUBLIC__/index/index/news" title="学院新闻"  target="_self" >
+                        <span class="column-name" style="box-shadow: 0 -3px 0 0 #0d6782 inset;">学院新闻</span></a>
+                </li>
+                <li class="column-2">
+                    <a href="#" title="通知公告"  target="_self"><span class="column-name">通知公告</span></a>
+                </li>
+            </ul>
+        </div> -->
+    </div>
+    <div class="col_news">
+        <div class="news_head">
         </div>
-          
+        <div class="list_detail ">
+            <div class="list_detail_1">标题</div>
+            <div class="list_detail_2">发布时间</div>
+            <div class="list_detail_3">浏览次数</div>
+        </div>
+        <div id="secondPage" class="show">
+            <ul>
+                {volist name="res" id="each" empty="未检测到数据库"}
+                <li id="erg" class="list_news"><a href="__STATIC__/{$each.path}">{$each.title}</a>
+                    <span class="label_datatime news_datatime">2018-04-01</span>
+                    <span class="news_count">12</span>
+                </li>
+                {/volist}
+            </ul>
+        </div>
+        {$res->render()}
+    </div>
+    {include file="Index/footer" /}
 </body>
 
 </html>

@@ -16,7 +16,6 @@ class Index extends \think\Controller
         $this->assign("ress", $ress);
         $this->assign("res", $res);
         return $this->fetch();
-        //return view();
     }
 
 
@@ -43,14 +42,6 @@ class Index extends \think\Controller
         return $this->fetch();
     }
 
-    public function test()
-    {
-        /* $id=input("get.id");
-          $res = Db::name("download")->where ([
-           "id"=>$id
-          ])->field("path")->find();*/
-        echo 1;
-    }
 
     public function newnotice()
     {
@@ -62,16 +53,21 @@ class Index extends \think\Controller
         return $this->fetch();
     }
 
-    public function shownews($name){
+    public function shownews($name)
+    {
         $ress = Db::name("notice")->where("title", "=", $name)->select();
         $this->assign("ress", $ress);
         return $this->fetch();
     }
+
     //刘启明
     public function article($id)
     {
-
-        $res = Notice::where('id', 'like', "%{$id}%")->select();
+        if ($id > 0) {
+            $res = Notice::where('id', 'like', "%{$id}%")->select();
+        } else {
+            $res = News::where('id', 'like', "%{$id}%")->select();
+        }
         $this->assign("res", $res);
         return $this->fetch();
     }

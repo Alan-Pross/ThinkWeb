@@ -60,17 +60,18 @@ div {
     padding: 40px 20px;
 }
 
-.plan-contain{
+.plan-contain {
     position: absolute;
-    bottom:0;
-    margin:auto;
-    left:0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
     right: 0;
 }
 
-.plan-contain div{
-    margin:0 1em;
+.plan-contain div {
+    margin: 0 1em;
 }
+
 /* --------------- */
 
 .fdw-pricing-table .header {
