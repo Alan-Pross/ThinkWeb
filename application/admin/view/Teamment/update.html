@@ -19,7 +19,8 @@
     		<label for="exampleInputName2">队标:</label><br />
     			<img src="__PUBLIC__/uploads/{$show.mark}" width="60" height="60" /><br />
     			<label for="exampleInputName2">选择上传新队标:</label>
-     			<input type="file" name="mark" />
+                <input type="hidden" name="oldmark" value="{$show.mark}" />
+     			<input type="file" name="mark"/>
     		</div>
 
     	<div class="form-group">

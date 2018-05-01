@@ -9,6 +9,7 @@ use think\Request;
 use think\Model;
 use think\captcha;
 
+
 class Filement extends Index
 {
     public function edit()
@@ -69,7 +70,8 @@ class Filement extends Index
     {
         $id = input('id');
         $name = input('param.name');
-        $filepath = "";
+        $filepath = input('param.oldfile');
+        $newfile = "";
         
 
 
@@ -100,7 +102,7 @@ class Filement extends Index
                     echo $info->getSaveName() . "<br>";
                     // 输出 42a79759f284b767dfcb2a0197904287.jpg
                     echo $info->getFilename() . "<br>";
-                    $filepath = $info->getSaveName();
+                    $newfile = $info->getSaveName();
 
 
                     // exit();
@@ -110,12 +112,25 @@ class Filement extends Index
                     echo $file->getError();
                 }
             }
-
+        if($newfile <> '') {
+            $user =ROOT_PATH . 'public' . DS . 'upload/'.$filepath;
+            //echo file_exists($user);
+              if(file_exists($user)) {  
+                unlink($user);  
+            }
+           
             File::update([
             	'id'  =>  $id,
             	'name'  =>  $name,
-            	'filepath'  =>  $filepath,
+            	'filepath'  =>  $newfile,
             ]);
+        } else {
+            File::update([
+                'id'  =>  $id,
+                'name'  =>  $name,
+                'filepath'  =>  $filepath,
+            ]);
+        }
 
             return $this->success('修改成功^_^', 'show');
         }
@@ -127,13 +142,20 @@ class Filement extends Index
     public function delete()
     {
         $id = input('id');
-        echo $id;
+        
         if ($id <> '') {
-
-            $user = News::where('id', '=', $id)->delete();
+           $list = File::get($id);
+            $filepath = $list->filepath;
+            $user =ROOT_PATH . 'public' . DS . 'upload/'.$filepath;
+            
+            if(file_exists($user)) {  
+                unlink($user);  
+            }
+            $user = File::where('id', '=', $id)->delete();
 
 
         }
         return $this->success('删除成功^_^', 'show');
     }
+
 }

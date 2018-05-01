@@ -8,6 +8,7 @@ use think\Request;
 use app\admin\model\Team;
 use think\Model;
 use think\captcha;
+use think\cache\driver\File;
 
 
 class Teamment extends Index
@@ -69,7 +70,8 @@ class Teamment extends Index
         $name = input('param.name');
         $head = input('param.head');
         $message = input('param.message');
-        $mark = input('param.mark');
+        $mark = input('param.oldmark');
+        $newmark = "";
 
         if (!$id) {
             return "id不能为空！";
@@ -78,7 +80,6 @@ class Teamment extends Index
         $show = new Team();
         $show = Team::where('id', '=', $id)
             ->find();
-
         if ($name) {
 
             $file = request()->file('mark');
@@ -94,17 +95,31 @@ class Teamment extends Index
                     echo $info->getSaveName() . "<br>";
                     // 输出 42a79759f284b767dfcb2a0197904287.jpg
                     echo $info->getFilename() . "<br>";
-                    $mark = $info->getSaveName();
-
-
-                    // exit();
-
+                    $newmark = $info->getSaveName();
                 } else {
                     // 上传失败获取错误信息
                     echo $file->getError();
                 }
             }
 
+           
+
+            if($newmark <> ''){
+
+            $user =ROOT_PATH . 'public' . DS . 'uploads/'.$mark;
+           echo $user;
+
+            if(file_exists($user)) {  
+                unlink($user);  
+            }
+            Team::update([
+                'id' => $id,
+                'name' => $name,
+                'head' => $head,
+                'message' => $message,
+                'mark' => $newmark,
+            ]);
+        }else {
             Team::update([
                 'id' => $id,
                 'name' => $name,
@@ -112,7 +127,9 @@ class Teamment extends Index
                 'message' => $message,
                 'mark' => $mark,
             ]);
-
+        }
+         
+      
             return $this->success('信息修改成功^_^', 'show');
         }
 
@@ -123,10 +140,15 @@ class Teamment extends Index
     public function delete()
     {
         $id = input('id');
-        echo $id;
-        if ($id <> '') {
-
-            $user = Team::where('id', '=', $id)->delete();
+        
+        if ($id <> '') { 
+            $list = Team::get($id);
+            $mark ='/' . $list->mark;
+            $user =ROOT_PATH . 'public' . DS . 'uploads'.$mark;
+            if(file_exists($user)) {  
+                unlink($user);  
+            }
+            Team::where('id', '=', $id)->delete();
 
 
         }
