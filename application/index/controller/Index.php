@@ -13,19 +13,22 @@ class Index extends \think\Controller
     //徐汉雄
     public function index()
     {
-        $ress = Db::name("notice")->field("title,create_time")->order("id DESC")->limit(5)->select();
-        $res = Team::where("id", ">", 12)->select();
-        $this->assign("ress", $ress);
-        $this->assign("res", $res);
+        $all = "";
+        $notice = Notice::where('title', 'like', "%{$all}%")->order("id DESC")->limit(5)->select();
+        $news = News::where('title', 'like', "%{$all}%")->order("id DESC")->limit(5)->select();
+        $team = Team::where('title', 'like', "%{$all}%")->select();
+        $this->assign("notice", $notice);
+        $this->assign("news", $news);
+        $this->assign("team", $team);
         return $this->fetch();
     }
 
 
     //帅中贤
-    public function download()
+    public function file()
     {
         $search = input('search');
-        $res = Db::name("download")->field("title,path")->order("id DESC")->paginate(5);
+        $res = Db::name("file")->field("title,filepath")->order("id DESC")->paginate(5);
         $this->assign("res", $res);
         $this->assign('search', $search);
         return $this->fetch();
@@ -76,9 +79,8 @@ class Index extends \think\Controller
     //刘启明
     public function newnoticearticle($id = 1)
     {
-        $search = input('search');
         if ($id > 0) {
-            $res = Notice::where('id', 'like', "%{$id}%")->select();
+            $res = Notice::where('id', '=', $id)->select();
             Notice::update([
                 'id' => $id,
                 'browsing' => $res[0]['browsing'] + 1,
@@ -86,15 +88,14 @@ class Index extends \think\Controller
 
         } else {
             $idd = abs($id);
-            $res = News::where('id', 'like', "%{$idd}%")->select();
-            Notice::update([
-                'id' => $id,
+            $res = News::where('id', '=', $idd)->select();
+            News::update([
+                'id' => $idd,
                 'browsing' => $res[0]['browsing'] + 1,
             ]);
 
         }
         $this->assign("res", $res);
-        $this->assign('search', $search);
         return $this->fetch();
     }
 
@@ -114,7 +115,7 @@ class Index extends \think\Controller
     {
         $search = input('search');
         $all = "";
-        $team = Team::where('name', 'like', "%{$all}%")->paginate(5, false);
+        $team = Team::where('title', 'like', "%{$all}%")->paginate(10, false);
         $page = $team->render();
         $this->assign('team', $team);
         $this->assign('page', $page);

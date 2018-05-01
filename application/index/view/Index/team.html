@@ -12,10 +12,11 @@
     {volist name="team" id = "vo"}
     <div class="fdw-pricing-table">
         <div class="plan plan4">
-            <div class="header">{$vo.head}</div>
-            <img src="#" width="150px"  height="150px" alt="图标">
+            <div class="header">{$vo.title}</div>
+            <img src="__PUBLIC__/uploads/{$vo.mark}" width="128px"  height="128px" alt="图标">
             <div class="plan-contain">
-            <div class="price">{$vo.name}</div>
+            <div class="price">{$vo.head}</div>
+                <div class="message">{$vo.message}</div>
             <hr>
             <div class="monthly">{$vo.create_time}</div>
             </div>

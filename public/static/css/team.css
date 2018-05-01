@@ -1,23 +1,17 @@
-div {
+div ,p{
     margin: 0;
 }
 
 .team {
     text-align: center;
+    margin: 10px auto;
+    width: 1332px;
 }
 
 .fdw-pricing-table {
-    margin: 15px;
+    margin: 20px;
     text-align: center;
     display: inline-block
-}
-
-.fdw-pricing-table:before, .fdw-pricing-table:after {
-    display: table
-}
-
-.fdw-pricing-table:after {
-    clear: both
 }
 
 /* --------------- */
@@ -34,9 +28,9 @@ div {
     position: relative;
     margin: 0;
     height: 300px;
-    -moz-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, .5);
-    -webkit-box-shadow: 0 2px 2px -1px rgba(0, 0, 0, .53);
-    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 4px 4px -2px rgba(0, 0, 0, .5), 0 4px 4px -2px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 4px 4px -2px rgba(0, 0, 0, .53), 0 4px 4px -2px rgba(0, 0, 0, .53);
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, .5), 0 -2px 4px -2px rgba(0, 0, 0, .5);
     position: relative;
 }
 
@@ -79,8 +73,8 @@ div {
     font-size: 20px;
     font-weight: normal;
     text-transform: uppercase;
-    padding: 20px;
-    margin: -20px -20px 20px -20px;
+    padding: 15px;
+    margin: -20px -20px 10px -20px;
     border-bottom: 8px solid;
     background-color: #eee;
     background-image: -moz-linear-gradient(#fff, #eee);
@@ -89,15 +83,6 @@ div {
     background-image: -o-linear-gradient(#fff, #eee);
     background-image: -ms-linear-gradient(#fff, #eee);
     background-image: linear-gradient(#fff, #eee);
-}
-
-.fdw-pricing-table .header:after {
-    position: absolute;
-    bottom: -8px;
-    left: 0;
-    height: 3px;
-    width: 100%;
-    content: '';
 }
 
 .fdw-pricing-table .popular-plan .header {
@@ -112,8 +97,8 @@ div {
 /* --------------- */
 
 .fdw-pricing-table .price {
-    font-size: 20px;
-    height: 80px;
+    font-size: 18px;
+    height: 30px;
 }
 
 .fdw-pricing-table .monthly {
@@ -165,6 +150,12 @@ div {
 
 .fdw-pricing-table .plan4 .signup {
     background: #2E94B9;
+}
+
+.message{
+    font-size: 12px;
+    height: 40px;
+
 }
 
 /* end --------------- */
