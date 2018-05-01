@@ -15,16 +15,17 @@
 ## 数据库设计
 | 内容 | 表名 | 字段名 | 
 | - | :-: | :- | 
-| 公告 | notice | 标题 时间 浏览 内容 发布人 文件路径 | 
-| 新闻 | news | 标题 时间 浏览 内容 发布人 文件路径 | 
-| 团队 | team | 队名 简介 负责人 队员 创建时间 队标 |
-| 用户 | people | 用户名 密码 |
+| 公告 | notice | id title publisher content browsing create_time | 
+| 新闻 | news | id title publisher content browsing create_time | 
+| 团队 | team | id title message head content mark browsing create_time |
+| 用户 | people | id account password |
+| 文件 | file | id title filepath browsing create_time |
 
 ## 协作分工
 >第一周
 
 - [x] 刘启明：界面设计 美工 搜索页面 写文档 分工
-- [x] 周威： 数据库搭建 UEditor的后台保存与前台显示
+- [x] 周威：数据库搭建 UEditor的后台保存与前台显示
 - [x] 帅中贤：具体页面 新闻公告列表
 - [x] 徐汉雄：主页分栏与轮播图
 
@@ -35,16 +36,19 @@
 - [x] 帅中贤：左标签，上下页用图片 连上数据库 首页通知公告
 - [x] 徐汉雄：标签变色，颜色对于内容 首页入驻团队
 
->第三周
+>第三、四周
 
-- [ ] 刘启明：版权信息 登录逻辑 学院简介 搜索列表实现 页面跳转 搜索标红 时间去秒
-- [ ] 周威：入驻团队管理 后台列表完善 分头 标题16字数限制 图片上传 去软删除
-- [ ] 帅中贤：新闻通告加入图标、图片、时间 文件上传下载 
-- [ ] 徐汉雄：图标两侧留白 加竖线 标题搜索左右标齐 新闻通告、文件下载、搜索的列表界面
+- [X] 刘启明：版权信息 登录逻辑 搜索列表实现 页面跳转 时间去秒
+- [X] 周威：入驻团队管理 后台列表完善 分头 图片上传
+- [X] 帅中贤：新闻通告 文件下载 
+- [X] 徐汉雄：图标两侧留白 标题搜索左右标齐 新闻通告、文件下载、搜索的列表界面
 
->第四周
+>查漏补缺最后阶段
 
-- [ ] 每周备份数据库
+- [ ] 刘启明：搜索标红 每周备份数据库
+- [ ] 周威：后台细节
+- [ ] 帅中贤：首页JS问题
+- [ ] 徐汉雄：界面功能细节美化
 
 ## 甘特图
 ```gantt
@@ -69,12 +73,15 @@
 | 头部 | header |
 | 首页 | index |
 | 学院简介 | introduction |
-| 新闻公告 | newnotice |
+| 公告 | newnotice1 |
+| 公告 | newnotice2 |
 | 入驻团队 | team |
-| 文件下载 | download |
+| 文件下载 | file |
 | 搜索首页 | search |
 | 搜索内容 | searchshow |
 | 版权信息 | footer |
+| 载入 | loading |
+| 文章 | newnoticearticle |
 ``` 
 // 视图输出字符串内容替换
     'view_replace_str'       => [
