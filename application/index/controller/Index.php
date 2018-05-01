@@ -141,7 +141,8 @@ class Index extends \think\Controller
         } elseif ($id == 2) {
             $res = News::where('title', 'like', "%{$search}%")->paginate(5, false);
         } elseif ($id == 3) {
-            $res = Team::where('name', 'like', "%{$search}%")->paginate(5, false);
+            $res = Team::where('title', 'like', "%{$search}%")->paginate(5, false);
+            $tape = "";
         } elseif ($id == 4) {
             $res = File::where('title', 'like', "%{$search}%")->paginate(5, false);
             $tape = "下载次数";
