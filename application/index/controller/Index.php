@@ -96,6 +96,7 @@ class Index extends \think\Controller
 
         }
         $this->assign("res", $res);
+        $this->assign("title", $res[0]['title']);
         return $this->fetch();
     }
 
