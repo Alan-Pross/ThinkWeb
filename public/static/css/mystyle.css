@@ -20,7 +20,8 @@ a,
 div,
 button,
 dl,
-dd {
+dd,
+h1{
     margin: 0;
 }
 
@@ -632,10 +633,13 @@ dd {
 .news_wrapper {
     height: 500px;
     width: 980px;
-    margin: .5em auto;
+    margin: .8em auto;
 
 }
-
+.news_wrapper::before{
+  content: '';
+  display: table-cell;
+}
 .col_menu, .col_news {
     background: #efefef;
 }
@@ -778,3 +782,23 @@ div.list_detail_2 {
 }
 
 /**/
+
+article {
+  background: #efefef;
+  padding:0 0 2em 0;
+}
+article.news_wrapper{
+  height: auto;
+}
+h1{
+  text-align: center;
+  margin:1.5em 0 0 0;
+  font-size: 2em;
+}
+.meta{
+  text-align: center;
+  margin:1em 0;
+}
+.meta span{
+  margin:5px;
+}

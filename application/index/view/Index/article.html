@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/mystyle.css">
 </head>
+
 <body>
-{volist name="res" id="vo"}
-<div>
-    {$vo.title}<!--文章标题-->
-    {$vo.publisher}<!--文章发布人-->
-    {$vo.create_time}<!--发布时间-->
-    {$vo.browsing}<!--浏览次数-->
-    {$vo.content}<!--文章内容-->
-</div>
-{/volist}
+    {include file="Index/header" /} 
+    {volist name="res" id="vo"}
+    <article class="news_wrapper">
+        <h1>{$vo.title}</h1>
+        <!--文章标题-->
+        <hr>
+        <p class="meta">
+        	<span>作者：{$vo.publisher}</span>
+            <!--文章发布人-->
+            <span>时间：{$vo.create_time}</span>
+            <!--发布时间-->
+            <span>浏览：{$vo.browsing}</span>
+        </p>
+        <!--浏览次数-->
+        {$vo.content}
+        <!--文章内容-->
+    </article>
+    {/volist}
+    {include file="Index/footer" /}
 </body>
+
 </html>
