@@ -129,7 +129,7 @@ class Index extends \think\Controller
         return view();
     }
 
-    public function searchshow($id = '-1', $search)
+    public function searchshow($id = '0', $search)
     {
         $tape = "浏览次数";
         if ($id == 0 || empty($search)) {
@@ -138,14 +138,11 @@ class Index extends \think\Controller
 
         if ($id == 1) {
             $res = Notice::where('title', 'like', "%{$search}%")->paginate(5, false);
-        }
-        if ($id == 2) {
+        } elseif ($id == 2) {
             $res = News::where('title', 'like', "%{$search}%")->paginate(5, false);
-        }
-        if ($id == 3) {
-            $res = Team::where('title', 'like', "%{$search}%")->paginate(5, false);
-        }
-        if ($id == 4) {
+        } elseif ($id == 3) {
+            $res = Team::where('name', 'like', "%{$search}%")->paginate(5, false);
+        } elseif ($id == 4) {
             $res = File::where('title', 'like', "%{$search}%")->paginate(5, false);
             $tape = "下载次数";
         }
