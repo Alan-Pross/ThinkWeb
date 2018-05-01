@@ -1,0 +1,22 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>无标题文档</title>
+    <link rel="stylesheet" type="text/css" href="__STATIC__/css/searchshow-form.css">
+</head>
+{include file="Index/header" /}
+<body>
+  <div id="firstPage" class="show">
+                <ul class="jh_notice">
+                    {volist name="ress" id="each" empty="未检索到数据库"}
+                    <li>
+                        <span class="label_datatime">2018-04-01</span>
+                        <p>{$each.content}</p>
+                    </li>
+                    {/volist}
+                </ul>
+            </div>
+</body>
+</html>
