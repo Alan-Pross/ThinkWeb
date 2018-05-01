@@ -655,6 +655,7 @@ dd {
 
       }
       .listcolumn li{
+        height: 2.4em;
        border-bottom: 1px solid ;
       }
       .listcolumn li:hover{

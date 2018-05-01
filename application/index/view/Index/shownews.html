@@ -8,15 +8,14 @@
 </head>
 {include file="Index/header" /}
 <body>
+
   <div id="firstPage" class="show">
-                <ul class="jh_notice">
                     {volist name="ress" id="each" empty="未检索到数据库"}
-                    <li>
-                        <span class="label_datatime">2018-04-01</span>
+                    <span class="label_datatime">2018-04-01</span>
+                        <p>{$each.title}</p>
                         <p>{$each.content}</p>
-                    </li>
                     {/volist}
-                </ul>
             </div>
+     
 </body>
 </html>
