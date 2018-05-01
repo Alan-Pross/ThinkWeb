@@ -7,13 +7,19 @@
     <link rel="stylesheet" type="text/css" href="__STATIC__/css/searchshow-form.css">
 </head>
 {include file="Index/header" /}
+<style>
+#publisher{
+position: relative;
+left:55%;
+}
+</style>
 <body>
 
-  <div id="firstPage" class="show">
+  <div>
                     {volist name="ress" id="each" empty="未检索到数据库"}
-                    <span class="label_datatime">2018-04-01</span>
-                        <p>{$each.title}</p>
-                        <p>{$each.content}</p>
+                    <center><p><h2>{$each.title}</h2></p></center>  
+                    <right id="publisher">{$each.publisher}</right>
+                            <p>{$each.content}</p>
                     {/volist}
             </div>
      
