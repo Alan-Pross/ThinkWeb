@@ -16,16 +16,20 @@
         <div class="col_menu_con">
             <ul class="listcolumn">
                 <li class="column-1">
-                    <a href="__PUBLIC__/index.php/index/index/searchshow?id=1&search={$search}"><span class="column-name">新闻搜索</span></a>
+                    <a href="__PUBLIC__/index.php/index/index/searchshow?id=1&search={$search}"><span
+                            class="column-name">新闻搜索</span></a>
                 </li>
                 <li class="column-1">
-                    <a href="__PUBLIC__/index.php/index/index/searchshow?id=2&search={$search}"><span class="column-name">公告搜索</span></a>
+                    <a href="__PUBLIC__/index.php/index/index/searchshow?id=2&search={$search}"><span
+                            class="column-name">公告搜索</span></a>
                 </li>
                 <li class="column-2">
-                    <a href="__PUBLIC__/index.php/index/index/searchshow?id=3&search={$search}"><span class="column-name">团队搜索</span></a>
+                    <a href="__PUBLIC__/index.php/index/index/searchshow?id=3&search={$search}"><span
+                            class="column-name">团队搜索</span></a>
                 </li>
                 <li class="column-3">
-                    <a href="__PUBLIC__/index.php/index/index/searchshow?id=4&search={$search}"><span class="column-name">文件搜索</span></a>
+                    <a href="__PUBLIC__/index.php/index/index/searchshow?id=4&search={$search}"><span
+                            class="column-name">文件搜索</span></a>
                 </li>
             </ul>
         </div>
@@ -41,7 +45,8 @@
         <div id="secondPage" class="show">
             <ul>
                 {volist name="res" id="vo"}
-                <li id="erg" class="list_news"><a href="__PUBLIC__/index/index/newnoticearticle?id={$vo.id}">{$vo.title}</a>
+                <li id="erg" class="list_news"><a
+                        href="__PUBLIC__/index/index/newnoticearticle?id={$vo.id}">{$vo.title}</a>
                     <span class="label_datatime news_datatime">{$vo.create_time}</span>
                     <span class="news_count">{$vo.browsing}</span>
                 </li>

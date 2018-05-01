@@ -12,5 +12,4 @@ class News extends model
     protected $autoWriteTimestamp = true;
     protected $updateTime = false;
 
-
 }

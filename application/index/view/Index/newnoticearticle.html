@@ -7,25 +7,25 @@
 </head>
 
 <body>
-    {include file="Index/header" /} 
-    {volist name="res" id="vo"}
-    <article class="news_wrapper">
-        <h1>{$vo.title}</h1>
-        <!--文章标题-->
-        <hr>
-        <p class="meta">
-        	<span>作者：{$vo.publisher}</span>
-            <!--文章发布人-->
-            <span>时间：{$vo.create_time}</span>
-            <!--发布时间-->
-            <span>浏览：{$vo.browsing}</span>
-        </p>
-        <!--浏览次数-->
-        {$vo.content}
-        <!--文章内容-->
-    </article>
-    {/volist}
-    {include file="Index/footer" /}
+{include file="Index/header" /}
+{volist name="res" id="vo"}
+<article class="news_wrapper">
+    <h1>{$vo.title}</h1>
+    <!--文章标题-->
+    <hr>
+    <p class="meta">
+        <span>作者：{$vo.publisher}</span>
+        <!--文章发布人-->
+        <span>时间：{$vo.create_time}</span>
+        <!--发布时间-->
+        <span>浏览：{$vo.browsing}</span>
+    </p>
+    <!--浏览次数-->
+    {$vo.content}
+    <!--文章内容-->
+</article>
+{/volist}
+{include file="Index/footer" /}
 </body>
 
 </html>

@@ -50,11 +50,11 @@ class Teamment extends Index
                 }
             }
             Team::create([
-                'title'  =>  $title,
-                'message'  =>  $message,
-                'head'  =>  $head,
-                'content'  =>  $content,
-                'mark'  =>  $mark,
+                'title' => $title,
+                'message' => $message,
+                'head' => $head,
+                'content' => $content,
+                'mark' => $mark,
             ]);
             return $this->success('恭喜您公告添加成功^_^', '__PUBLIC__/admin/index/manage');
         }
@@ -107,36 +107,35 @@ class Teamment extends Index
                 }
             }
 
-           
 
-            if($newmark <> ''){
+            if ($newmark <> '') {
 
-            $user =ROOT_PATH . 'public' . DS . 'uploads/'.$mark;
+                $user = ROOT_PATH . 'public' . DS . 'uploads/' . $mark;
 
 
-            if(file_exists($user)) {  
-                unlink($user);  
+                if (file_exists($user)) {
+                    unlink($user);
+                }
+                Team::update([
+                    'id' => $id,
+                    'title' => $name,
+                    'head' => $head,
+                    'message' => $message,
+                    'content' => $content,
+                    'mark' => $newmark,
+                ]);
+            } else {
+                Team::update([
+                    'id' => $id,
+                    'title' => $name,
+                    'head' => $head,
+                    'message' => $message,
+                    'content' => $content,
+                    'mark' => $mark,
+                ]);
             }
-            Team::update([
-                'id' => $id,
-                'title' => $name,
-                'head' => $head,
-                'message' => $message,
-                'content' => $content,
-                'mark' => $newmark,
-            ]);
-        }else {
-            Team::update([
-                'id' => $id,
-                'title' => $name,
-                'head' => $head,
-                'message' => $message,
-                'content' => $content,
-                'mark' => $mark,
-            ]);
-        }
-         
-      
+
+
             return $this->success('信息修改成功^_^', 'show');
         }
 
@@ -147,13 +146,13 @@ class Teamment extends Index
     public function delete()
     {
         $id = input('id');
-        
-        if ($id <> '') { 
+
+        if ($id <> '') {
             $list = Team::get($id);
-            $mark ='/' . $list->mark;
-            $user =ROOT_PATH . 'public' . DS . 'uploads'.$mark;
-            if(file_exists($user)) {  
-                unlink($user);  
+            $mark = '/' . $list->mark;
+            $user = ROOT_PATH . 'public' . DS . 'uploads' . $mark;
+            if (file_exists($user)) {
+                unlink($user);
             }
             Team::where('id', '=', $id)->delete();
 

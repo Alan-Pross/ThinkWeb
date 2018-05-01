@@ -22,9 +22,9 @@ class Noticement extends Index
         $content = input('param.content');
         if ($title <> '') {
             Notice::create([
-                'title'  =>  $title,
-                'publisher'  => $publisher,
-                'content'  =>  $content,
+                'title' => $title,
+                'publisher' => $publisher,
+                'content' => $content,
             ]);
             return $this->success('恭喜您公告添加成功^_^', '__PUBLIC__/admin/index/manage');
         }
@@ -74,7 +74,7 @@ class Noticement extends Index
         $id = input('id');
         echo $id;
         if ($id <> '') {
-         $user = Notice::where('id', '=', $id)->delete();
+            $user = Notice::where('id', '=', $id)->delete();
         }
         return $this->success('删除成功^_^', 'show');
     }

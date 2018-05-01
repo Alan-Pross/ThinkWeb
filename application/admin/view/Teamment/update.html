@@ -1,50 +1,53 @@
 {include file="Public/top" /}
 
 
-<div  class="container">
-	<h3>修改团队信息</h3>
-	<form action="" method="post" enctype="multipart/form-data">
-	     
-		<div class="form-group" >
-    		<label for="exampleInputName2">团队名称:</label>
-    		<input type="text" class="form-control" id="name" name="name" value="{$show.title}" placeholder="请输入名称" maxlength="100">
-    	</div>
+<div class="container">
+    <h3>修改团队信息</h3>
+    <form action="" method="post" enctype="multipart/form-data">
 
-    	<div class="form-group" >
-    		<label for="exampleInputName2">负责人:</label>
-    		<input type="text" class="form-control" id="head" name="head" value="{$show.head}" placeholder="请输入负责人" maxlength="100">
-    	</div>
-
-        <div class="form-group" >
-            <label for="exampleInputName2">团队简介:</label>
-            <textarea class="form-control" id="message" name="message"  placeholder="请输入团队简介" >{$show.message}</textarea> 
+        <div class="form-group">
+            <label for="exampleInputName2">团队名称:</label>
+            <input type="text" class="form-control" id="name" name="name" value="{$show.title}" placeholder="请输入名称"
+                   maxlength="100">
         </div>
 
-    	   <div class="form-group" >
-    		<label for="exampleInputName2">队标:</label><br />
-    			<img src="__PUBLIC__/uploads/{$show.mark}" width="60" height="60" /><br />
-    			<label for="exampleInputName2">选择上传新队标:</label>
-                <input type="hidden" name="oldmark" value="{$show.mark}" />
-     			<input type="file" name="mark"/>
-    		</div>
+        <div class="form-group">
+            <label for="exampleInputName2">负责人:</label>
+            <input type="text" class="form-control" id="head" name="head" value="{$show.head}" placeholder="请输入负责人"
+                   maxlength="100">
+        </div>
 
-    	<div class="form-group">
-    		<label for="exampleInputPassword1">团队详情:</label>
-    			<script id="container" name="content" type="text/plain">
+        <div class="form-group">
+            <label for="exampleInputName2">团队简介:</label>
+            <textarea class="form-control" id="message" name="message" placeholder="请输入团队简介">{$show.message}</textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputName2">队标:</label><br/>
+            <img src="__PUBLIC__/uploads/{$show.mark}" width="60" height="60"/><br/>
+            <label for="exampleInputName2">选择上传新队标:</label>
+            <input type="hidden" name="oldmark" value="{$show.mark}"/>
+            <input type="file" name="mark"/>
+        </div>
+
+        <div class="form-group">
+            <label for="exampleInputPassword1">团队详情:</label>
+            <script id="container" name="content" type="text/plain">
        			{$show.content}
-    			</script>
-    	<!-- 配置文件 -->
-    			<script type="text/javascript" src="__STATIC__/ueditor/ueditor.config.js"></script>
-    	<!-- 编辑器源码文件 -->
-    			<script type="text/javascript" src="__STATIC__/ueditor/ueditor.all.js"></script>
-    	<!-- 实例化编辑器 -->
-    			<script type="text/javascript">
-        		var ue = UE.getEditor('container');
-        
-    			</script>
-    		</div>
-    		<button type="submit" id="btn" class="btn btn-primary"  >提交</button>
-		</form>
-	</div>
+
+            </script>
+            <!-- 配置文件 -->
+            <script type="text/javascript" src="__STATIC__/ueditor/ueditor.config.js"></script>
+            <!-- 编辑器源码文件 -->
+            <script type="text/javascript" src="__STATIC__/ueditor/ueditor.all.js"></script>
+            <!-- 实例化编辑器 -->
+            <script type="text/javascript">
+                var ue = UE.getEditor('container');
+
+            </script>
+        </div>
+        <button type="submit" id="btn" class="btn btn-primary">提交</button>
+    </form>
+</div>
 
 {include file="Public/footer" /}

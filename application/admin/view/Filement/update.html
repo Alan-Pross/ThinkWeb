@@ -1,26 +1,27 @@
 {include file="Public/top" /}
 
 
-<div  class="container">
-	<h3>修改上传文件</h3>
-	<form action="" method="post" enctype="multipart/form-data">
-	      
-		<div class="form-group" >
-    		<label for="exampleInputName2">文件名称:</label>
-    		<input type="text" class="form-control" id="name" name="name" value="{$show.name}" placeholder="请输入名称" maxlength="100">
-    	</div>
+<div class="container">
+    <h3>修改上传文件</h3>
+    <form action="" method="post" enctype="multipart/form-data">
 
-    	 <div class="form-group" >
-    		<label for="exampleInputName2">文件:</label><br />
-    		__PUBLIC__/upload/{$show.filepath}
-    			<a href="__PUBLIC__/upload/{$show.filepath}">下载</a><br />
-    			<label for="exampleInputName2">选择上传新文件:</label>
-                <input type="hidden" name="oldfile" value="{$show.filepath}" />
-     			<input type="file" name="filepath" />
-    		</div>
-    		    <button type="submit" id="btn" class="btn btn-primary">提交</button>
+        <div class="form-group">
+            <label for="exampleInputName2">文件名称:</label>
+            <input type="text" class="form-control" id="name" name="name" value="{$show.name}" placeholder="请输入名称"
+                   maxlength="100">
+        </div>
 
-  
-	</div>
+        <div class="form-group">
+            <label for="exampleInputName2">文件:</label><br/>
+            __PUBLIC__/upload/{$show.filepath}
+            <a href="__PUBLIC__/upload/{$show.filepath}">下载</a><br/>
+            <label for="exampleInputName2">选择上传新文件:</label>
+            <input type="hidden" name="oldfile" value="{$show.filepath}"/>
+            <input type="file" name="filepath"/>
+        </div>
+        <button type="submit" id="btn" class="btn btn-primary">提交</button>
+
+
+</div>
 
 {include file="Public/footer" /}

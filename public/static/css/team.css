@@ -1,4 +1,4 @@
-div ,p{
+div, p {
     margin: 0;
 }
 
@@ -152,7 +152,7 @@ div ,p{
     background: #2E94B9;
 }
 
-.message{
+.message {
     font-size: 12px;
     height: 40px;
 

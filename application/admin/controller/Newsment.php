@@ -17,9 +17,9 @@ class Newsment extends Index
         $content = input('param.content');
         if ($title <> '') {
             News::create([
-                'title'  =>  $title,
-                'publisher'  =>  $publisher,
-                'content'  => $content,
+                'title' => $title,
+                'publisher' => $publisher,
+                'content' => $content,
             ]);
             return $this->success('恭喜您公告添加成功^_^', '__PUBLIC__/admin/index/manage');
         }

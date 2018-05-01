@@ -20,10 +20,10 @@ class Filement extends Index
 
         $name = input('param.name');
         $filepath = "";
-        
+
         if ($name <> '') {
 
-        	$file = request()->file('filepath');
+            $file = request()->file('filepath');
 
             // 移动到框架应用根目录/public/uploads/ 目录下
             if ($file) {
@@ -48,11 +48,11 @@ class Filement extends Index
             }
 
             $list = new File();
-             File::create([
-            	'title'  =>  $name,
-            	'filepath'  =>  $filepath,
+            File::create([
+                'title' => $name,
+                'filepath' => $filepath,
             ]);
-            
+
             return $this->success('恭喜您文件上传成功^_^', '__PUBLIC__/admin/index/manage');
         }
         return $this->fetch();
@@ -72,7 +72,6 @@ class Filement extends Index
         $name = input('param.name');
         $filepath = input('param.oldfile');
         $newfile = "";
-        
 
 
         if (!$id) {
@@ -85,7 +84,7 @@ class Filement extends Index
 
         if ($name) {
 
-        	$file = request()->file('filepath');
+            $file = request()->file('filepath');
 
             // 移动到框架应用根目录/public/uploads/ 目录下
             if ($file) {
@@ -108,25 +107,25 @@ class Filement extends Index
                     echo $file->getError();
                 }
             }
-        if($newfile <> '') {
-            $user =ROOT_PATH . 'public' . DS . 'upload/'.$filepath;
-            //echo file_exists($user);
-              if(file_exists($user)) {  
-                unlink($user);  
+            if ($newfile <> '') {
+                $user = ROOT_PATH . 'public' . DS . 'upload/' . $filepath;
+                //echo file_exists($user);
+                if (file_exists($user)) {
+                    unlink($user);
+                }
+
+                File::update([
+                    'id' => $id,
+                    'title' => $name,
+                    'filepath' => $newfile,
+                ]);
+            } else {
+                File::update([
+                    'id' => $id,
+                    'title' => $name,
+                    'filepath' => $filepath,
+                ]);
             }
-           
-            File::update([
-            	'id'  =>  $id,
-            	'title'  =>  $name,
-            	'filepath'  =>  $newfile,
-            ]);
-        } else {
-            File::update([
-                'id'  =>  $id,
-                'title'  =>  $name,
-                'filepath'  =>  $filepath,
-            ]);
-        }
 
             return $this->success('修改成功^_^', 'show');
         }
@@ -138,14 +137,14 @@ class Filement extends Index
     public function delete()
     {
         $id = input('id');
-        
+
         if ($id <> '') {
-           $list = File::get($id);
+            $list = File::get($id);
             $filepath = $list->filepath;
-            $user =ROOT_PATH . 'public' . DS . 'upload/'.$filepath;
-            
-            if(file_exists($user)) {  
-                unlink($user);  
+            $user = ROOT_PATH . 'public' . DS . 'upload/' . $filepath;
+
+            if (file_exists($user)) {
+                unlink($user);
             }
             $user = File::where('id', '=', $id)->delete();
 

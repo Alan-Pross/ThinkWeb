@@ -27,10 +27,9 @@ class Index extends \think\Controller
     //帅中贤
     public function file()
     {
-        $search = input('search');
         $res = Db::name("file")->field("title,filepath")->order("id DESC")->paginate(5);
         $this->assign("res", $res);
-        $this->assign('search', $search);
+
         return $this->fetch();
         /*
         $all = "";
@@ -38,43 +37,33 @@ class Index extends \think\Controller
         $page = $res->render();
         $this->assign("res", $res);
         $this->assign("page", $page);
+
         return $this->fetch();
         */
     }
 
-    public function upload()
-    {
-        $search = input('search');
-        $list = Db::name('notice')->paginate(5);
-        $this->assign('list', $list);
-        $this->assign('search', $search);
-        return $this->fetch();
-    }
-
-
     public function newnotice()
     {
-        $search = input('search');
         $all = "";
         $res = Notice::where('title', 'like', "%{$all}%")->order("id DESC")->paginate(5, false);
         $page = $res->render();
         $this->assign("res", $res);
         $this->assign("page", $page);
-        $this->assign('search', $search);
+
         return $this->fetch();
     }
 
     public function newnotice2()
     {
-        $search = input('search');
         $all = "";
         $res = News::where('title', 'like', "%{$all}%")->order("id DESC")->paginate(5, false);
         $page = $res->render();
         $this->assign("res", $res);
         $this->assign("page", $page);
-        $this->assign('search', $search);
+
         return $this->fetch();
     }
+
 
     //刘启明
     public function newnoticearticle($id = 1)
@@ -102,32 +91,30 @@ class Index extends \think\Controller
 
     public function introduction()
     {
-        $search = input('search');
+
         return view();
     }
 
     public function loading()
     {
-        $search = input('search');
+
         return view();
     }
 
     public function team()
     {
-        $search = input('search');
         $all = "";
         $team = Team::where('title', 'like', "%{$all}%")->paginate(10, false);
         $page = $team->render();
         $this->assign('team', $team);
         $this->assign('page', $page);
-        $this->assign('search', $search);
+
         return $this->fetch();
     }
 
     public function search()
     {
-        $search = input('search');
-        $this->assign('search', $search);
+
         return view();
     }
 

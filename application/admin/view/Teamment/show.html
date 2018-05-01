@@ -1,46 +1,56 @@
 {include file="Public/top" /}
 
 <div class="container">
-<h2>团队列表</h2>
-<table class="table table-bordered table-striped table-hover">
-		<thead>
-			<tr><th>团队名称</th><th>团队负责人</th><th>队标</th><th>设置</th>
-			</tr>
-		</thead>
-		<tbody>
-			{volist name="show" id="user"}
-			<tr><td><a href="">{$user.title}</a></td><td>{$user.head}</td><td><img src="__PUBLIC__/uploads/{$user.mark}" width="60" height="60"></td>
-				<td><a href="__PUBLIC__/admin/Teamment/update/id/{$user.id}"id="btn" class="btn btn-primary" "  >编辑</a>          <a href="#"  id="btn" class="btn btn-danger" data-toggle="modal" data-target="#myModal{$user.id}"  >删除 </a></td>
+    <h2>团队列表</h2>
+    <table class="table table-bordered table-striped table-hover">
+        <thead>
+        <tr>
+            <th>团队名称</th>
+            <th>团队负责人</th>
+            <th>队标</th>
+            <th>设置</th>
+        </tr>
+        </thead>
+        <tbody>
+        {volist name="show" id="user"}
+        <tr>
+            <td><a href="">{$user.title}</a></td>
+            <td>{$user.head}</td>
+            <td><img src="__PUBLIC__/uploads/{$user.mark}" width="60" height="60"></td>
+            <td><a href="__PUBLIC__/admin/Teamment/update/id/{$user.id}" id="btn" class="btn btn-primary" " >编辑</a>
+                <a href="#" id="btn" class="btn btn-danger" data-toggle="modal" data-target="#myModal{$user.id}">删除 </a>
+            </td>
 
-			</tr>
+        </tr>
 
-			<div class="modal fade" id="myModal{$user.id}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-			  <div class="modal-dialog" role="document">
-			    <div class="modal-content">
-			      <div class="modal-header">
-			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			        <h4 class="modal-title" id="myModalLabel">提示</h4>
-			      </div>
-			      <div class="modal-body">
-			        删除确认...{$user.title|mb_substr=0,20,'utf-8' }
-			      </div>
-			      <div class="modal-footer">
-			        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-			      
-			       <a href="__PUBLIC__/admin/Teamment/delete/id/{$user.id}"  id="btn" class="btn btn-danger"    >确定删除 </a>
-			      </div>
-			    </div>
-			  </div>
-			</div>
+        <div class="modal fade" id="myModal{$user.id}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">提示</h4>
+                    </div>
+                    <div class="modal-body">
+                        删除确认...{$user.title|mb_substr=0,20,'utf-8' }
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+
+                        <a href="__PUBLIC__/admin/Teamment/delete/id/{$user.id}" id="btn"
+                           class="btn btn-danger">确定删除 </a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
-
-			{/volist}
-		</tbody>
-	</table>
-<center>
-{$show->render()}
-</center>
+        {/volist}
+        </tbody>
+    </table>
+    <center>
+        {$show->render()}
+    </center>
 
 </div>
 

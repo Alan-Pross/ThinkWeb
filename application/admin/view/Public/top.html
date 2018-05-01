@@ -4,99 +4,99 @@
     <meta charset="utf-8">
     <title>后台管理</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style>
- body{
-    display: flex;
-    flex-flow: column;
-    min-height: 100vh;
- }
- main{
-     flex: 1;
- }
-</style>
+    <style>
+        body {
+            display: flex;
+            flex-flow: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
+    </style>
 
 </head>
 <body>
 
 <main>
-<nav class="navbar navbar-inverse " style=" border-radius: 0px;margin-bottom: 10px;">
+    <nav class="navbar navbar-inverse " style=" border-radius: 0px;margin-bottom: 10px;">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="__PUBLIC__/admin/index/index">后台管理</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="__PUBLIC__/index" target="_blank">预览官网首页</a>
+                    </li>
+                    <li><a href="#">{$Think.cookie.account} 管理员您好！</a>
+
+                    </li>
+                    <li>
+                        <a href="__PUBLIC__/admin/index/exitaccount">退出 </a>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!-- 这个是全局容器 -->
     <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="__PUBLIC__/admin/index/index">后台管理</a>
-        </div>
+        <!-- 以下是左右两侧 -->
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="__PUBLIC__/index"  target="_blank">预览官网首页</a>
-                </li>
-                <li><a href="#">{$Think.cookie.account} 管理员您好！</a>
+        <div class="row">
+            <!-- 左侧 -->
+            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
 
-                </li>
-                <li>
-                    <a href="__PUBLIC__/admin/index/exitaccount">退出 </a>
-                </li>
-            </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-</nav>
-<!-- 这个是全局容器 -->
-<div class="container-fluid">
-    <!-- 以下是左右两侧 -->
+                <!-- 折叠开始 -->
+                <div class="panel-group" id="accordion">
 
-    <div class="row">
-        <!-- 左侧 -->
-        <div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
 
-            <!-- 折叠开始 -->
-            <div class="panel-group" id="accordion">
-               
+                </div>
+                <!-- 折叠结束 -->
+                <div class="list-group">
+                    <a href="#" class="list-group-item disabled">
+                        公告管理
+                    </a>
+                    <a href="__PUBLIC__/admin/noticement/edit" class="list-group-item">公告添加</a>
+                    <a href="__PUBLIC__/admin/noticement/show" class="list-group-item">公告列表</a>
+                </div>
 
+                <div class="list-group">
+                    <a href="#" class="list-group-item disabled">
+                        新闻管理
+                    </a>
+                    <a href="__PUBLIC__/admin/newsment/edit" class="list-group-item">新闻添加</a>
+                    <a href="__PUBLIC__/admin/newsment/show" class="list-group-item">新闻列表</a>
+                </div>
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item disabled">
+                        团队管理
+                    </a>
+                    <a href="__PUBLIC__/admin/teamment/edit" class="list-group-item">团队添加</a>
+                    <a href="__PUBLIC__/admin/teamment/show" class="list-group-item">团队列表</a>
+                </div>
+
+                <div class="list-group">
+                    <a href="#" class="list-group-item disabled">
+                        文件管理
+                    </a>
+                    <a href="__PUBLIC__/admin/filement/edit" class="list-group-item">文件添加</a>
+                    <a href="__PUBLIC__/admin/filement/show" class="list-group-item">文件列表</a>
+                </div>
 
             </div>
-            <!-- 折叠结束 -->
-            <div class="list-group">
-                <a href="#" class="list-group-item disabled">
-                    公告管理
-                </a>
-                <a href="__PUBLIC__/admin/noticement/edit" class="list-group-item">公告添加</a>
-                <a href="__PUBLIC__/admin/noticement/show" class="list-group-item">公告列表</a>
-            </div>
-
-            <div class="list-group">
-                <a href="#" class="list-group-item disabled">
-                    新闻管理
-                </a>
-                <a href="__PUBLIC__/admin/newsment/edit" class="list-group-item">新闻添加</a>
-                <a href="__PUBLIC__/admin/newsment/show" class="list-group-item">新闻列表</a>
-            </div>
-
-            <div class="list-group">
-                <a href="#" class="list-group-item disabled">
-                    团队管理
-                </a>
-                <a href="__PUBLIC__/admin/teamment/edit" class="list-group-item">团队添加</a>
-                <a href="__PUBLIC__/admin/teamment/show" class="list-group-item">团队列表</a>
-            </div>
-
-            <div class="list-group">
-                <a href="#" class="list-group-item disabled">
-                    文件管理
-                </a>
-                <a href="__PUBLIC__/admin/filement/edit" class="list-group-item">文件添加</a>
-                <a href="__PUBLIC__/admin/filement/show" class="list-group-item">文件列表</a>
-            </div>
-
-        </div>
-  <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
+            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
