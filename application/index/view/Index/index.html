@@ -12,6 +12,21 @@
             -o-border-radius: 50%; /* Opera */
         }
     </style>
+<script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery
+/jquery-1.4.min.js"></script>
+</script>
+<script>
+$(document).ready(function(){
+  $("#news").click(function(){
+    $("#firstPage").show();
+    $("#secondPage").hide();
+  });
+    $("#notice").click(function(){
+    $("#firstPage").hide();
+    $("#secondPage").show();
+  });
+});
+</script>
 </head>
 {include file="Index/header" /}
 <div class="carousel">
