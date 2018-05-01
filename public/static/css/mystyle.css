@@ -658,7 +658,7 @@ dd {
        border-bottom: 1px solid ;
       }
       .listcolumn li:hover{
-       border-bottom: 1px solid #6daaea;
+       border: 1px solid #6daaea;
        background: #f7fafd;
       }
 

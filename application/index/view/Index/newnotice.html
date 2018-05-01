@@ -19,7 +19,8 @@
             <div class="col_menu_con">
                 <ul class="listcolumn">
                     <li class="column-1">
-                        <a href="__PUBLIC__/index/index/news" title="学院新闻"  target="_self" >
+                      <!--  <a href="__PUBLIC__/index/index/news" title="学院新闻"  target="_self" >-->
+                     <a href="" title="学院新闻"  target="_self" >
                             <span class="column-name">学院新闻</span></a>
                     </li>
                     <li class="column-2">
@@ -39,7 +40,7 @@
             <div id="secondPage" class="show">
                 <ul>
                     {volist name="res" id="vo"}
-                    <li id="erg" class="list_news"><a>{$vo.title}</a>
+                    <li id="erg" class="list_news"><a href="shownews?name={$vo.title}">{$vo.title}</a>
                         <span class="label_datatime news_datatime">{$vo.create_time}</span>
                         <span class="news_count">{$vo.browsing}</span>
                     </li>

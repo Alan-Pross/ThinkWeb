@@ -62,6 +62,11 @@ class Index extends \think\Controller
         return $this->fetch();
     }
 
+    public function shownews($name){
+        $ress = Db::name("notice")->where("title", "=", $name)->select();
+        $this->assign("ress", $ress);
+        return $this->fetch();
+    }
     //刘启明
     public function article($id)
     {
