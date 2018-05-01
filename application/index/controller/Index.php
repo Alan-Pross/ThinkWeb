@@ -74,7 +74,7 @@ class Index extends \think\Controller
     }
 
     //刘启明
-    public function article($id = 1)
+    public function newnoticearticle($id = 1)
     {
         $search = input('search');
         if ($id > 0) {

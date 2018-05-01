@@ -41,7 +41,7 @@
         <div id="secondPage" class="show">
             <ul>
                 {volist name="res" id="vo"}
-                <li id="erg" class="list_news"><a href="__PUBLIC__/index/index/article?id={$vo.id}">{$vo.title}</a>
+                <li id="erg" class="list_news"><a href="__PUBLIC__/index/index/newnoticearticle?id={$vo.id}">{$vo.title}</a>
                     <span class="label_datatime news_datatime">{$vo.create_time}</span>
                     <span class="news_count">{$vo.browsing}</span>
                 </li>
