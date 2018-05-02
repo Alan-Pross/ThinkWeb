@@ -525,7 +525,7 @@ dd {
     position: absolute;
     width: 100%;
     top:0;
-    
+    transform: translateY(0);
 }
 
 .team-list dl {
