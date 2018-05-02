@@ -49,8 +49,8 @@
                 <ul class="jh_notice">
                     {volist name="news" id="vo1"}
                     <li>
+                        <a href="__PUBLIC__/index.php/index/index/newnoticearticle?id=-{$vo1.id}">{$vo1.title}</a>
                         <span class="label_datatime">{$vo1.create_time}</span>
-                        <p>{$vo1.title}</p>
                     </li>
                     {/volist}
                 </ul>
@@ -61,8 +61,8 @@
                 <ul class="jh_notice">
                     {volist name="notice" id="vo2"}
                     <li>
+                        <a href="__PUBLIC__/index.php/index/index/newnoticearticle?id={$vo1.id}">{$vo2.title}</a>
                         <span class="label_datatime">{$vo2.create_time}</span>
-                        <p>{$vo2.title}</p>
                     </li>
                     {/volist}
                 </ul>
@@ -70,7 +70,7 @@
         </div>
         <div class="team-sidebar">
             <div class="team-title">
-                <p> <img src="#" width="40px" height="40px" alt="图标"> <span>入驻团队</span></p>
+                <p> <img src="__STATIC__/images/team-b.png" width="40px" height="40px" alt="图标"> <span>入驻团队</span></p>
             </div>
             <div class="list-hide">
                 <div class="team-list" id="dl-list">

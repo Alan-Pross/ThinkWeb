@@ -184,7 +184,7 @@ a {
     position: relative;
     bottom: 3px;
     height: 3px;
-    background: rgb(0, 161, 214);
+    background: #2E94B9;
     left: 0;
     opacity: 0;
 }
@@ -302,7 +302,7 @@ i.ic5 {
 .search-wrapper.active .input-holder {
     border-radius: 50px;
     width: 450px;
-    background: rgba(46, 148, 185, .8);
+    background: #2E94B9;
     -webkit-transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
     -moz-transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
     transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
@@ -503,7 +503,7 @@ i.ic5 {
 }
 .team-title {
     text-align: center;
-    background: rgb(0, 206, 209);
+    background: #2E94B9;
     height: 40px;
 }
 
@@ -553,13 +553,13 @@ dd {
 /**/
 .col {
     font-size: 18px;
-    background: rgb(0, 206, 209);
+    background: #2E94B9;
 
 }
 
 .col:hover {
     border-bottom-color: transparent;
-    background: rgba(0, 206, 209);
+    background: #2E94B9;
 }
 
 #news {
@@ -705,7 +705,7 @@ dd {
 }
 
 .column-name:hover {
-    box-shadow: 0 -3px 0 0 #0d6782 inset;
+    box-shadow: 0 -3px 0 0 #2E94B9 inset;
 }
 
 .col_news {
@@ -744,7 +744,7 @@ dd {
 .list_detail_1 {
     text-align: left;
     margin-left: 85px;
-    color: #0873c0;
+    color: #2E94B9;
 }
 
 #secondPage.show {
@@ -778,13 +778,13 @@ div.news_datatime {
 }
 
 div.list_detail_2 {
-    color: #0873c0;
+    color: #2E94B9;
     width: 100px;
 }
 
 .news_count,
 .list_detail_3 {
-    color: #0873c0;
+    color: #2E94B9;
     margin: 0;
     right: 60px;
     text-align: center;

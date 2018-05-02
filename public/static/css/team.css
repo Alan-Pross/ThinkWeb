@@ -122,22 +122,6 @@ div, p {
 
 /* --------------- */
 
-.fdw-pricing-table .signup {
-    position: relative;
-    padding: 10px 20px;
-    color: #fff;
-    font: bold 14px Arial, Helvetica;
-    text-transform: uppercase;
-    text-decoration: none;
-    display: inline-block;
-    background-color: #72ce3f;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, .15);
-    opacity: .9;
-}
-
 .fdw-pricing-table .signup:hover {
     opacity: 1;
 }
