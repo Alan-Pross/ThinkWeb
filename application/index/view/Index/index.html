@@ -165,12 +165,12 @@
                var firstdl=dl[0]
                div2.removeChild(firstdl);
                div2.appendChild(firstdl);
-                div2.style.transform='translateY(0)';
+                div2.style.top=0+'px';
                  m=0;
              }else{
-                 div2.style.transform = "translateY("+m+"px)";
+                  div2.style.top=m+'px';
              }
-           var time=setTimeout(roll, 20);
+           var time=setTimeout(roll, 25);
 
         }
         roll();
