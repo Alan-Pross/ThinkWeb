@@ -92,7 +92,7 @@ a {
     height: 100%;
     width: 980px;
     margin: 0 auto;
-    background-color: #efefef;
+    background-color: #f9f9f9;
     text-align: center;
     box-sizing: border-box;
 
@@ -582,9 +582,8 @@ dd {
 #tab {
     width: 63%;
     float: left;
-    cursor: pointer;
     min-height: 360px;
-    background-color: #EFEFEF
+    background-color: #f9f9f9;
 }
 
 #tab div {
@@ -659,7 +658,7 @@ dd {
 }
 
 .col_menu, .col_news {
-    background: #efefef;
+    background: #f9f9f9;
 }
 
 .col_menu {
@@ -756,6 +755,7 @@ dd {
     line-height: 50px;
     position: relative;
     overflow: hidden;
+    padding:0 0 0 50px;
 }
 
 .list_news a,
@@ -800,7 +800,7 @@ div.list_detail_2 {
 /**/
 
 article {
-    background: #efefef;
+    background: #f9f9f9;
     padding: 0 0 2em 0;
 }
 
