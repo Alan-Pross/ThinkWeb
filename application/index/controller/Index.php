@@ -26,27 +26,15 @@ class Index extends \think\Controller
 
 
     //帅中贤
-    public function file($id = 0)
+    public function file()
     {
-        if ($id != 0) {
-            $file = File::where('id', '=', $id)->select();
-            $this->redirect('__PUBLIC__/upload/' + $file[0]['filepath']);
-            //修改
-        }
-        $res = Db::name("file")->field("title,filepath")->order("id DESC")->paginate(5);
-        $this->assign("res", $res);
-
-        return $this->fetch();
-
-        /*
         $all = "";
-        $res = file::where('title', 'like', "%{$all}%")->order("id DESC")->paginate(10, false);
-        $page = $res->render();
-        $this->assign("res", $res);
+        $file = file::where('title', 'like', "%{$all}%")->order("id DESC")->paginate(5, false);
+        $page = $file->render();
+        $this->assign("file", $file);
         $this->assign("page", $page);
 
         return $this->fetch();
-        */
     }
 
     public function newnotice()

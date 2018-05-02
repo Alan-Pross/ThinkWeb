@@ -20,24 +20,42 @@
         <div class="news_head">
         </div>
         <div class="list_detail ">
-            <div class="list_detail_1">标题</div>
+            <div class="list_detail_1">文件名</div>
             <div class="list_detail_2">发布时间</div>
-            <div class="list_detail_3">浏览次数</div>
+            <div class="list_detail_3">下载次数</div>
         </div>
         <div id="secondPage" class="show">
             <ul>
-                {volist name="res" id="each" empty="未检测到数据库"}
-                <li id="erg" class="list_news"><a href="__STATIC__/{$each.filepath}">{$each.title}</a>
-                    <span class="label_datatime news_datatime">2018-04-01</span>
-                    <span class="news_count">12</span>
+                {volist name="file" id="vo"}
+                <li id="erg" class="list_news"><a href="javascript:a({$vo.filepath})">{$vo.title}</a>
+                    <span class="label_datatime news_datatime">{$vo.title}</span>
+                    <span class="news_count">{$vo.browsing}</span>
                 </li>
                 {/volist}
             </ul>
         </div>
-        {$res->render()}
+        {$page}
     </div>
 </div>
+<script type="text/javascript">
+    function GetRequest() {
+        var url = location.search; //获取url中"?"符后的字串
+        var theRequest = new Object();
+        if (url.indexOf("?") != -1) {
+            var str = url.substr(1);
+            strs = str.split("&");
+            for (var i = 0; i < strs.length; i++) {
+                theRequest[strs[i].split("=")[0]] = decodeURIComponent(strs[i].split("=")[1]);
+            }
+        }
+        return theRequest;
+    }
+    function a(var1) {
+        var str = var1.replace(/\\/,/);
+        alert('__PUBLIC__/upload/+'str);
+        window.location.href = '__PUBLIC__/upload/+'str;
+    }
+</script>
 {include file="Index/footer" /}
 </body>
-
 </html>
