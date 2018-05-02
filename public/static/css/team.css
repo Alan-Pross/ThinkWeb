@@ -5,7 +5,7 @@ div, p {
 .team {
     text-align: center;
     margin: 10px auto;
-    width: 1332px;
+    width: 1400px;
 }
 
 .fdw-pricing-table {
@@ -103,7 +103,7 @@ div, p {
 
 .fdw-pricing-table .monthly {
     font-size: 13px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     text-transform: uppercase;
     color: #999;
 }
