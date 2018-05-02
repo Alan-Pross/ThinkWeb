@@ -165,10 +165,10 @@
                var firstdl=dl[0]
                div2.removeChild(firstdl);
                div2.appendChild(firstdl);
-                div2.style.top=0+'px';
+                div2.style.transform='translateY(0)';
                  m=0;
              }else{
-                  div2.style.top=m+'px';
+                 div2.style.transform = "translateY("+m+"px)";
              }
            var time=setTimeout(roll, 20);
 
