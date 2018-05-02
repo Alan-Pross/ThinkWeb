@@ -2,32 +2,32 @@
 <html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <title>江汉大学创业学院</title>
     <style type="text/css">
-    .radiusImg {
-        border-radius: 50%;
-        -moz-border-radius: 50%;
-        /* Old Firefox */
-        -webkit-border-radius: 50%;
-        /* Safari 和 Chrome */
-        -o-border-radius: 50%;
-        /* Opera */
-    }
+        .radiusImg {
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+            /* Old Firefox */
+            -webkit-border-radius: 50%;
+            /* Safari 和 Chrome */
+            -o-border-radius: 50%;
+            /* Opera */
+        }
     </style>
     <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery
 /jquery-1.4.min.js"></script>
     <script>
-    $(document).ready(function() {
-        $("#news").click(function() {
-            $("#firstPage").show();
-            $("#secondPage").hide();
+        $(document).ready(function () {
+            $("#news").click(function () {
+                $("#firstPage").show();
+                $("#secondPage").hide();
+            });
+            $("#notice").click(function () {
+                $("#firstPage").hide();
+                $("#secondPage").show();
+            });
         });
-        $("#notice").click(function() {
-            $("#firstPage").hide();
-            $("#secondPage").show();
-        });
-    });
     </script>
 </head>
 {include file="Index/header" /}
@@ -70,7 +70,7 @@
         </div>
         <div class="team-sidebar">
             <div class="team-title">
-                <p> <img src="__STATIC__/images/team-b.png" width="40px" height="40px" alt="图标"> <span>入驻团队</span></p>
+                <p><img src="__STATIC__/images/team-b.png" width="40px" height="40px" alt="图标"> <span>入驻团队</span></p>
             </div>
             <div class="list-hide">
                 <div class="team-list" id="dl-list">
@@ -84,9 +84,10 @@
             </div>
         </div>
     </div>
-    {include file="Index/footer" /}
-    <script>
-    (function() {
+</div>
+{include file="Index/footer" /}
+<script>
+    (function () {
         var a = document.getElementsByClassName('a');
         var pre = document.getElementById('pre');
         var next = document.getElementById('next');
@@ -100,7 +101,7 @@
             a[next].style.transition = "left 0s";
             a[next].style.left = "100%";
             a[next].style.zIndex = "1";
-            setTimeout(function() {
+            setTimeout(function () {
                 a[i].style.left = "-100%";
                 a[i].style.zIndex = '0';
                 a[next].style.transition = "left .5s";
@@ -115,7 +116,7 @@
             a[next].style.transition = "left 0s";
             a[next].style.left = "-100%";
             a[next].style.zIndex = "1";
-            setTimeout(function() {
+            setTimeout(function () {
                 a[i].style.left = "100%";
                 a[i].style.zIndex = '0';
                 a[next].style.transition = "left .5s";
@@ -125,21 +126,21 @@
         }
 
         var time = setInterval(moveleft, 3500);
-        pre.onclick = function() {
+        pre.onclick = function () {
             moveleft();
             if (!bool) {
                 clearInterval(time);
                 bool = true;
             }
         };
-        next.onclick = function() {
+        next.onclick = function () {
             moveright();
             if (!bool) {
                 clearInterval(time);
                 bool = true;
             }
         };
-        main.onmouseleave = function(event) {
+        main.onmouseleave = function (event) {
             var event = event || window.event;
             if (bool && event.relatedTarget) {
                 time = setInterval(moveleft, 3500);
@@ -150,46 +151,47 @@
                 next.style.opacity = '0';
             }
         };
-        main.onmouseenter = function() {
+        main.onmouseenter = function () {
             pre.style.opacity = '1';
             next.style.opacity = '1';
         };
 
-        var div2=document.getElementById('dl-list');
-        var dl=div2.getElementsByTagName('dl');
-        var h=-dl[0].offsetHeight;
-        var m=0;
-        function roll(){
-           //  m-=1;
-           //  if(m<h){
-           //     var firstdl=dl[0]
-           //     div2.removeChild(firstdl);
-           //     div2.appendChild(firstdl);
-           //      div2.style.top=0+'px';
-           //       m=0;
-           //   }else{
-           //        div2.style.top=m+'px';
-           //   }
-           // var time=setTimeout(roll, 25);
-            timer=requestAnimationFrame(function fn(){              
-            if(m<h){
-               var firstdl=dl[0]
-               div2.removeChild(firstdl);
-               div2.appendChild(firstdl);
-               div2.style.transform='translateY(0)';
-               m=0;
-             }else{
-                div2.style.transform = "translateY("+m+"px)";
-                m-=.5;
-             }
-                 timer=requestAnimationFrame(fn);
-           });
+        var div2 = document.getElementById('dl-list');
+        var dl = div2.getElementsByTagName('dl');
+        var h = -dl[0].offsetHeight;
+        var m = 0;
+
+        function roll() {
+            //  m-=1;
+            //  if(m<h){
+            //     var firstdl=dl[0]
+            //     div2.removeChild(firstdl);
+            //     div2.appendChild(firstdl);
+            //      div2.style.top=0+'px';
+            //       m=0;
+            //   }else{
+            //        div2.style.top=m+'px';
+            //   }
+            // var time=setTimeout(roll, 25);
+            timer = requestAnimationFrame(function fn() {
+                if (m < h) {
+                    var firstdl = dl[0]
+                    div2.removeChild(firstdl);
+                    div2.appendChild(firstdl);
+                    div2.style.transform = 'translateY(0)';
+                    m = 0;
+                } else {
+                    div2.style.transform = "translateY(" + m + "px)";
+                    m -= .3;
+                }
+                timer = requestAnimationFrame(fn);
+            });
 
         }
+
         roll();
 
     })()
-    </script>
-    </body>
-
+</script>
+</body>
 </html>

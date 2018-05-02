@@ -48,7 +48,6 @@ class Index extends \think\Controller
 
     public function accountok()//是否登录成功
     {
-        /*
         if (Cookie::has('account')) {
             $has = db('people')->where('account', Cookie::get('account'))->find();
             if ($has['password'] == Cookie::get('password')) {
@@ -56,8 +55,6 @@ class Index extends \think\Controller
             }
         }
         return false;
-        */
-        return true;
     }
 
     public function exitaccount()//退出登录
