@@ -10,13 +10,39 @@
     text-align: center;
     background-color: #2a2730">
     <div class="container">
-
-        <p> Tp5创业官网 2018-4-30</p>
-
+        
+        <strong style="font-size: 20px">江汉大学创业学院官网</strong>
+        <p id="a"></p>
 
     </div>
 </footer>
+<script>
+    Number.prototype.getWeekName = function(){
+        switch(parseInt(this)){
+            case 0:
+                return "星期日";
+            case 1:
+                return "星期一";
+            case 2:
+                return "星期二";
+            case 3:
+                return "星期三";
+            case 4:
+                return "星期四";
+            case 5:
+                return "星期五";
+            case 6:
+                return "星期六";
+            default:
+                return "unknow";
+        }
+    }
 
-
+    var x = setInterval(function(){
+        var d = new Date();
+        document.getElementById("a").innerText =
+            d.getFullYear() + "-" + (d.getMonth() + 1) + "-" + d.getDate() + " " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + ", " + d.getDay().getWeekName();
+    }, 1000);
+</script>
 </body>
 </html>
