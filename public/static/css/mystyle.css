@@ -495,7 +495,12 @@ i.ic5 {
     background: #f9f9f9;
     overflow: hidden;
 }
-
+.list-hide{
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+    margin:8px 0;
+}
 .team-title {
     text-align: center;
     background: rgb(0, 206, 209);
@@ -517,7 +522,9 @@ dd {
 }
 
 .team-list {
-    margin: 30px 0;
+    position: absolute;
+    width: 100%;
+    top:0;
 }
 
 .team-list dl {
