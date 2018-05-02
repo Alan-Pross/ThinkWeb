@@ -3,6 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>{$title}</title>
+    <style type="text/css">
+img{
+
+	float:right;
+	position: relative;
+	right: 5%;
+	top: 5%;
+}
+  .bolder{
+  	    font-weight: bolder;
+  }
+  .font-size-6rem{
+  	display: block;
+  	    margin:10px;
+  	    font-size: 1.8rem;
+  }
+  #turn{
+  	margin-left:5%; 
+  }
+  #time{
+  	float:right;
+  	clear: both;
+  	position: relative;
+	right: 5%;
+
+}
+  }
+</style>
 </head>
 
 <body>
@@ -11,11 +39,13 @@
 <article class="news_wrapper">
     <h1>{$vo.title}</h1>
     <hr>
-    <p class="meta">
-        <span>作者：{$vo.head}</span>
-        <span>时间：{$vo.create_time}</span>
-        <span>简介：{$vo.message}</span>
-    </p>
+    <div id="turn">
+   <img  src="__PUBLIC__/uploads/{$vo.mark}" height="150" width="150">
+   <div class="font-size-3rem ">创始人</div>
+       <span class="font-size-6rem bolder">{$vo.head}</span><br>
+        <span id="time">{$vo.create_time}</span>
+        <span>{$vo.message}</span>
+       </div>
 </article>
 {/volist}
 {include file="Index/footer" /}
