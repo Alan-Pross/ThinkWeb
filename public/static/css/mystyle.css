@@ -21,6 +21,9 @@ div,
 button,
 dl,
 dd,
+h1,
+p,
+hr，
 h1 {
     margin: 0;
 }
@@ -183,7 +186,7 @@ a {
     height: 3px;
     background: rgb(0, 161, 214);
     left: 0;
-
+    opacity: 0;
 }
 
 i.ic1 {
@@ -487,29 +490,34 @@ i.ic5 {
 
 .team-sidebar {
     width: 35%;
-    /*height: 400px;*/
+    height: 366px;
     float: right;
     background: #f9f9f9;
-
+    overflow: hidden;
 }
 
 .team-title {
     text-align: center;
+    background: rgb(0, 206, 209);
+    height: 40px;
 }
 
 .team-title p {
-    line-height: 3em;
+    line-height: 40px;
     font-weight: bold;
-    color: #0000ff;
+    color: #fff;
+  
 }
-
+.team-title p span{
+    vertical-align: top;
+}
 .team-list dt,
 dd {
     display: inline-block;
 }
 
 .team-list {
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .team-list dl {
@@ -537,7 +545,7 @@ dd {
 /**/
 .col {
     font-size: 18px;
-    background: rgba(0, 206, 209);
+    background: rgb(0, 206, 209);
 
 }
 
@@ -567,7 +575,7 @@ dd {
     width: 63%;
     float: left;
     cursor: pointer;
-    height: 390px;
+    min-height: 360px;
     background-color: #EFEFEF
 }
 
@@ -665,13 +673,11 @@ dd {
 
 .col_menu_con {
     line-height: 2.4em;
-    height: 2.4em;
     font-size: 21px;
     font-weight: bold;
     text-align: center;
     color: #000;
-    background: #fff;
-
+   
 }
 
 .listcolumn li {
@@ -807,4 +813,7 @@ h1 {
 
 .meta span {
     margin: 5px;
+}
+.active{
+    background: #fff;
 }
