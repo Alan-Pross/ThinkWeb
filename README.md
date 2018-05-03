@@ -1,13 +1,7 @@
 创网项目 开发文档V1.6
 ===============
 
-* [网站地址](http://www.jdcyxy.cn/)
-
 ## 环境要求
-* [PhpStudy](http://www.phpstudy.net/)
-* [Thinkphp](https://www.kancloud.cn/manual/thinkphp5/118003)
-* [Sublime Text](https://www.sublimetext.com/)
-* [TortoiseSVN](https://tortoisesvn.net/)
 * [主要图标](http://www.iconfont.cn/collections/detail?spm=a313x.7781069.0.da5a778a4&cid=4878)
 * [界面设计](https://modao.cc/app/P5kzvXayQg2Uls9ymA9BPVax28PyaY9)
 * [富文本编辑器](https://www.kancloud.cn/phper123/tools/289772)
@@ -73,11 +67,11 @@
 | 头部 | header |
 | 首页 | index |
 | 学院简介 | introduction |
-| 公告 | newnotice1 |
-| 公告 | newnotice2 |
+| 公告 | newnotice |
+| 新闻 | newnotice2 |
 | 文章 | newnoticearticle |
 | 入驻团队 | team |
-| 入驻团队 | teamcontent |
+| 团队介绍 | teamcontent |
 | 文件下载 | file |
 | 搜索首页 | search |
 | 搜索内容 | searchshow |
