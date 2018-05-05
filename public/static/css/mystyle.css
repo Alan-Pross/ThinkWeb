@@ -145,7 +145,6 @@ a {
 
 }
 
-
 .nav-menu li a {
     display: inline-block;
     height: 100%;
@@ -488,14 +487,15 @@ i.ic5 {
     background: #f9f9f9;
     overflow: hidden;
 }
-.list-hide{
+
+.list-hide {
     overflow: hidden;
     position: relative;
     height: 300px;
-    margin:8px 0;
+    margin: 8px 0;
 }
+
 .team-title {
-    text-align: center;
     background: #2E94B9;
     height: 40px;
 }
@@ -503,12 +503,12 @@ i.ic5 {
 .team-title p {
     line-height: 40px;
     font-weight: bold;
-    color: #fff;
-  
 }
-.team-title p span{
+
+.team-title p span {
     vertical-align: top;
 }
+
 .team-list dt,
 dd {
     display: inline-block;
@@ -517,7 +517,7 @@ dd {
 .team-list {
     position: absolute;
     width: 100%;
-    top:0;
+    top: 0;
     transform: translateY(0);
 }
 
@@ -558,14 +558,16 @@ dd {
 #news {
     margin-bottom: 1px;
     background-image: url(../images/new.png);
+
+    line-height: 40px;
+    background-size: 30px;
+    background-position: 2px 5px;
+    background-repeat: no-repeat;
 }
 
 #notice {
     background-image: url(../images/notice.png);
-}
 
-#news,
-#notice {
     line-height: 40px;
     background-size: 30px;
     background-position: 2px 5px;
@@ -677,31 +679,34 @@ dd {
     font-weight: bold;
     text-align: center;
     color: #000;
-   
+
 }
 
 .listcolumn li {
     height: 2.4em;
     border-bottom: 1px solid;
 }
-.listcolumn a{
+
+.listcolumn a {
     display: inline-block;
     width: 100%;
     height: 100%;
 }
+
 .listcolumn a:hover {
     background: #2E9;
 
 }
-.listcolumn a:hover .column-name{
+
+.listcolumn a:hover .column-name {
     color: #fff;
 }
+
 .column-name {
     line-height: 2.4em;
     color: #000;
     display: inline-block;
 }
-
 
 .col_news {
     width: 81%;
@@ -751,7 +756,7 @@ dd {
     line-height: 50px;
     position: relative;
     overflow: hidden;
-    padding:0 0 0 50px;
+    padding: 0 0 0 50px;
 }
 
 .list_news a,
@@ -818,9 +823,11 @@ h1 {
 .meta span {
     margin: 5px;
 }
-.active{
+
+.active {
     background: #2E9;
 }
-.active .column-name{
+
+.active .column-name {
     color: #fff;
 }
