@@ -694,7 +694,7 @@ dd {
 }
 
 .listcolumn a:hover {
-    background: #2E9;
+    background: #2E94B9;
 
 }
 
@@ -825,7 +825,7 @@ h1 {
 }
 
 .active {
-    background: #2E9;
+    background: #fff;
 }
 
 .active .column-name {
