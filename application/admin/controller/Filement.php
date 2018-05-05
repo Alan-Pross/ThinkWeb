@@ -108,10 +108,12 @@ class Filement extends Index
                 }
             }
             if ($newfile <> '') {
-                $user = ROOT_PATH . 'public' . DS . 'upload/' . $filepath;
-                //echo file_exists($user);
-                if (file_exists($user)) {
-                    unlink($user);
+                if($filepath <> '') {
+                    $user = ROOT_PATH . 'public' . DS . 'upload/' . $filepath;
+                    //echo file_exists($user);
+                    if (file_exists($user)) {
+                        unlink($user);
+                    }
                 }
 
                 File::update([
@@ -139,15 +141,16 @@ class Filement extends Index
         $id = input('id');
 
         if ($id <> '') {
-            $list = File::get($id);
-            $filepath = $list->filepath;
-            $user = ROOT_PATH . 'public' . DS . 'upload/' . $filepath;
+            $list = File::where('id','=',$id);
+            $filepath = $list[0]['filepath'];
+            if($filepath <> '') {
+                $user = ROOT_PATH . 'public' . DS . 'upload/' . $filepath;
 
-            if (file_exists($user)) {
-                unlink($user);
+                if (file_exists($user)) {
+                    unlink($user);
+                }
             }
-            $user = File::where('id', '=', $id)->delete();
-
+                $user = File::where('id', '=', $id)->delete();
 
         }
         return $this->success('删除成功^_^', 'show');

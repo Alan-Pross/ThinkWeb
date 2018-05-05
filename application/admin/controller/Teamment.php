@@ -108,7 +108,12 @@ class Teamment extends Index
             }
 
 
-            if ($newmark <> '') {
+            if ($newmark <> '' ) {
+                if($mark <> '') {
+                    $user = ROOT_PATH . 'public' . DS . 'uploads/' . $mark;
+                    echo $user;
+                    echo file_exists($user);
+                    if (file_exists($user)) {
                 if ($mark <> '') {
                     $user = ROOT_PATH . 'public' . DS . 'uploads/' . $mark;
                     if (file_exists($user)) {
@@ -148,11 +153,13 @@ class Teamment extends Index
         $id = input('id');
 
         if ($id <> '') {
-            $list = Team::get($id);
-            $mark = '/' . $list->mark;
-            $user = ROOT_PATH . 'public' . DS . 'uploads' . $mark;
-            if (file_exists($user)) {
-                unlink($user);
+            $list = Team::where('id', '=', $id)->select();
+            $mark = $list[0]['mark'];
+            if($mark <> '') {
+                $user = ROOT_PATH . 'public' . DS . 'uploads/' . $mark;
+                if (file_exists($user)) {
+                    unlink($user);
+                }
             }
             Team::where('id', '=', $id)->delete();
 
