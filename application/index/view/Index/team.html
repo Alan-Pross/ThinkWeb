@@ -10,18 +10,20 @@
 
 <div class="team">
     {volist name="team" id = "vo"}
-    <div class="fdw-pricing-table">
-        <div class="plan plan4">
-            <div class="header">{$vo.title}</div>
-            <img src="__PUBLIC__/uploads/{$vo.mark}" width="128px" height="128px" alt="图标">
-            <div class="plan-contain">
-                <div class="price">{$vo.head}</div>
-                <div class="message">{$vo.message}</div>
-                <hr>
-                <div class="monthly">{$vo.create_time |date="Y-m-d",###}</div>
+    <a href="__PUBLIC__/index.php/index/index/teamcontent?id={$vo.id}">
+        <div class="fdw-pricing-table">
+            <div class="plan plan4">
+                <div class="header">{$vo.title}</div>
+                <img src="__PUBLIC__/uploads/{$vo.mark}" width="128px" height="128px" alt="图标">
+                <div class="plan-contain">
+                    <div class="price">{$vo.head}</div>
+                    <div class="message">{$vo.message}</div>
+                    <hr>
+                    <div class="monthly">{$vo.create_time |date="Y-m-d",###}</div>
+                </div>
             </div>
         </div>
-    </div>
+    </a>
     {/volist}
     {$page}
 </div>

@@ -75,10 +75,12 @@
             <div class="list-hide">
                 <div class="team-list" id="dl-list">
                     {volist name="team" id="vo3"}
+                    <a href="__PUBLIC__/index.php/index/index/teamcontent?id={$vo3.id}">
                     <dl>
                         <dt><img class="radiusImg" src="__PUBLIC__/uploads/{$vo3.mark}" height="50" width="50"></dt>
                         <dd>{$vo3.title}</dd>
                     </dl>
+                    </a>
                     {/volist}
                 </div>
             </div>
