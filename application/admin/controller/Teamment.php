@@ -109,13 +109,13 @@ class Teamment extends Index
 
 
             if ($newmark <> '') {
-
-                $user = ROOT_PATH . 'public' . DS . 'uploads/' . $mark;
-
-
-                if (file_exists($user)) {
-                    unlink($user);
+                if ($mark <> '') {
+                    $user = ROOT_PATH . 'public' . DS . 'uploads/' . $mark;
+                    if (file_exists($user)) {
+                        unlink($user);
+                    }
                 }
+
                 Team::update([
                     'id' => $id,
                     'title' => $name,

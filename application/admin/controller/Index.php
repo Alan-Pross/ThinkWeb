@@ -63,4 +63,69 @@ class Index extends \think\Controller
         cookie('password', null);
         return $this->redirect(url('/admin'));
     }
+
+    //修改轮播图
+    public function changea($filepath)
+    {
+        unlink("__STATIC__/images/a.jpg");
+        if($filepath = "1"){
+            $res = "__STATIC__/images/de/a.jpg";
+        } else if(is_file($filepath)) {
+            $res = $filepath;
+        }
+        CopyFunc($res,"__STATIC__/images/de/a.jpg");
+    }
+    public function changeb($filepath)
+    {
+        unlink("__STATIC__/images/b.jpg");
+        if($filepath = "1"){
+            $res = "__STATIC__/images/de/b.jpg";
+        } else if(is_file($filepath)) {
+            $res = $filepath;
+        }
+        CopyFunc($res,"__STATIC__/images/de/b.jpg");
+    }
+    public function changee($filepath)
+    {
+        unlink("__STATIC__/images/e.jpg");
+        if($filepath = "1"){
+            $res = "__STATIC__/images/de/e.jpg";
+        } else if(is_file($filepath)) {
+            $res = $filepath;
+        }
+        CopyFunc($res,"__STATIC__/images/de/e.jpg");
+    }
+    //拷贝文件
+    function CopyFunc($res, $des) {
+        if(file_exists($res)) {
+            $r_fp=fopen($res,"r");
+
+            //定位
+            $pos=strripos($des,"\\");
+            $dir=substr($des,0,$pos);
+            if(!file_exists($dir)) {
+                //可创建多级目录
+                mkdir($dir,0777,true);
+                echo "创建目录成功<br/>";
+            }
+
+            $d_fp=fopen($des,"w+");
+            //$fres=fread($r_fp,filesize($res));
+
+            //边读边写
+            $buffer=1024;
+            $fres="";
+            while(!feof($r_fp)) {
+                $fres=fread($r_fp,$buffer);
+                fwrite($d_fp,$fres);
+            }
+
+            fclose($r_fp);
+            fclose($d_fp);
+
+            echo "复制成功";
+        } else {
+            echo "源文件不存在";
+        }
+    }
 }
