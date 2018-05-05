@@ -4,33 +4,37 @@
     <meta charset="UTF-8">
     <title>{$title}</title>
     <style type="text/css">
-img{
+        img {
 
-	float:right;
-	position: relative;
-	right: 5%;
-	top: 5%;
-}
-  .bolder{
-  	    font-weight: bolder;
-  }
-  .font-size-6rem{
-  	display: block;
-  	    margin:10px;
-  	    font-size: 1.8rem;
-  }
-  #turn{
-  	margin-left:5%; 
-  }
-  #time{
-  	float:right;
-  	clear: both;
-  	position: relative;
-	right: 5%;
+            float: right;
+            position: relative;
+            right: 5%;
+            top: 5%;
+        }
 
-}
+        .bolder {
+            font-weight: bolder;
+        }
 
-</style>
+        .font-size-6rem {
+            display: block;
+            margin: 10px;
+            font-size: 1.8rem;
+        }
+
+        #turn {
+            margin-left: 5%;
+        }
+
+        #time {
+            float: right;
+            clear: both;
+            position: relative;
+            right: 5%;
+
+        }
+
+    </style>
 </head>
 
 <body>
@@ -40,13 +44,13 @@ img{
     <h1>{$vo.title}</h1>
     <hr>
     <div id="turn">
-   <img  src="__PUBLIC__/uploads/{$vo.mark}" height="150" width="150">
-   <div class="font-size-3rem ">创始人</div>
-       <span class="font-size-6rem bolder">{$vo.head}</span><br>
+        <img src="__PUBLIC__/uploads/{$vo.mark}" height="150" width="150">
+        <div class="font-size-3rem ">创始人</div>
+        <span class="font-size-6rem bolder">{$vo.head}</span><br>
         <span id="time">{$vo.create_time|date="y-m-d",###}</span>
         <span>{$vo.message}</span>
         <span>{$vo.content}</span>
-       </div>
+    </div>
 </article>
 {/volist}
 {include file="Index/footer" /}
