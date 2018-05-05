@@ -9,7 +9,7 @@ use traits\model\SoftDelete;
 class News extends model
 {
 
-    protected $autoWriteTimestamp = true;
+
     protected $updateTime = false;
 
 }

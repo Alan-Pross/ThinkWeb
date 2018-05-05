@@ -29,7 +29,7 @@ img{
 	right: 5%;
 
 }
-  }
+
 </style>
 </head>
 
@@ -43,7 +43,7 @@ img{
    <img  src="__PUBLIC__/uploads/{$vo.mark}" height="150" width="150">
    <div class="font-size-3rem ">创始人</div>
        <span class="font-size-6rem bolder">{$vo.head}</span><br>
-        <span id="time">{$vo.create_time}</span>
+        <span id="time">{$vo.create_time|date="y-m-d",###}</span>
         <span>{$vo.message}</span>
        </div>
 </article>

@@ -34,7 +34,7 @@ trait Jump
      * @return void
      * @throws HttpResponseException
      */
-    protected function success($msg = '', $url = null, $data = '', $wait = 3, array $header = [])
+    protected function success($msg = '', $url = null, $data = '', $wait = 2, array $header = [])
     {
         if (is_null($url) && !is_null(Request::instance()->server('HTTP_REFERER'))) {
             $url = Request::instance()->server('HTTP_REFERER');
@@ -75,7 +75,7 @@ trait Jump
      * @return void
      * @throws HttpResponseException
      */
-    protected function error($msg = '', $url = null, $data = '', $wait = 3, array $header = [])
+    protected function error($msg = '', $url = null, $data = '', $wait = 2, array $header = [])
     {
         if (is_null($url)) {
             $url = Request::instance()->isAjax() ? '' : 'javascript:history.back(-1);';

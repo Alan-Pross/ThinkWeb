@@ -9,7 +9,7 @@ use think\Db;
 class File extends model
 {
 
-    protected $autoWriteTimestamp = true;
+
     protected $updateTime = false;
 
 }
