@@ -50,7 +50,7 @@ class Teamment extends Index
                 }
             }
             Team::create([
-                'title' => $title,
+                'title' => $name,
                 'message' => $message,
                 'head' => $head,
                 'content' => $content,
