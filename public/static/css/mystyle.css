@@ -489,7 +489,7 @@ i.ic5 {
 .list-hide {
     overflow: hidden;
     position: relative;
-    height: 300px;
+    height: 420px;
     margin: 8px 0;
 }
 
@@ -525,7 +525,7 @@ dd {
 
 .team-list dl {
 
-    height: 60px;
+    height: 70px;
     overflow: hidden;
     width: 100%;
     text-align: center;
@@ -535,13 +535,16 @@ dd {
     height: 50px;
     width: 50px;
 }
-
+.team-list dl a{
+    display: inline-block;
+}
 .team-list dd {
 
     height: 50px;
     line-height: 50px;
     width: 200px;
     vertical-align: top;
+    overflow: hidden;
 }
 
 
