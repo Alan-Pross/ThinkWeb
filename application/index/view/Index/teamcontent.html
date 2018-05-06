@@ -1,58 +1,47 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
     <title>{$title}</title>
-    <style type="text/css">
-        img {
-
-            float: right;
-            position: relative;
-            right: 5%;
-            top: 5%;
-        }
-
-        .bolder {
-            font-weight: bolder;
-        }
-
-        .font-size-6rem {
-            display: block;
-            margin: 10px;
-            font-size: 1.8rem;
-        }
-
-        #turn {
-            margin-left: 5%;
-        }
-
-        #time {
-            float: right;
-            clear: both;
-            position: relative;
-            right: 5%;
-
-        }
-
-    </style>
+    <link rel="stylesheet" href="__STATIC__/css/bootstrap.min.css">                                        <!-- https://getbootstrap.com/ -->
+   <link rel="stylesheet" href="__STATIC__/css/templatemo-style.css">   
 </head>
 
 <body>
 {include file="Index/header" /}
 {volist name="res" id="vo"}
-<article class="news_wrapper">
-    <h1>{$vo.title}</h1>
-    <hr>
-    <div id="turn">
-        <img src="__PUBLIC__/uploads/{$vo.mark}" height="150" width="150">
-        <div class="font-size-3rem ">创始人</div>
-        <span class="font-size-6rem bolder">{$vo.head}</span><br>
-        <span id="time">{$vo.create_time|date="y-m-d",###}</span>
-        <span>{$vo.message}</span>
-        <span>{$vo.content}</span>
+
+ <div class="container">
+
+  <!-- 1st section -->
+  <section class="row tm-section">
+   <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 p-0">
+    <div class="tm-flex-center p-5 tm-bg-color-primary tm-section-min-h">
+     <!-- <h1 class="tm-text-color-white tm-site-name">Magazee</h1>-->
+       <div class="tm-max-w-400 tm-flex-center tm-flex-col">
+      <img id="img_" src="__PUBLIC__/uploads/{$vo.mark}" alt="Image" class="rounded-circle mb-4">
+      <p class="tm-text-color-white small tm-font-thin mb-0 tm-site-name">{$vo.title}</p>
     </div>
-</article>
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+    <h5 class="tm-text-color-white tm-site-name">{$vo.head}</h5>
+    <div  class="tm-flex-center p-5">
+      <q id="headsay" class="tm-quote tm-text-color-gray">{$vo.message}</q>
+    </div>
+  </div>
+</section>
+
+
+    <div id="team_content">{$vo.content}</div>
+
+
+
+
+</div>
 {/volist}
+
 {include file="Index/footer" /}
 </body>
 
