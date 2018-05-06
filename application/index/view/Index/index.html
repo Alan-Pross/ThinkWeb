@@ -35,9 +35,9 @@
     <ul class="images-wrapper">
         <div id="pre" class="button left"></div>
         <div id="next" class="button right"></div>
-        <li class="a"><a href=""><img src="__STATIC__/images/e.jpg" alt="" width=100%></a></li>
-        <li class="a" style="z-index: -1"><a href=""><img src="__STATIC__/images/a.jpg" alt="" width=100%></a></li>
-        <li class="a" style="z-index: -2"><a href=""><img src="__STATIC__/images/b.jpg" alt="" width=100%></a></li>
+        <li class="a"><a href=""><img src="__STATIC__/images/a.jpg" alt="" width=100%></a></li>
+        <li class="a" style="z-index: -1"><a href=""><img src="__STATIC__/images/b.jpg" alt="" width=100%></a></li>
+        <li class="a" style="z-index: -2"><a href=""><img src="__STATIC__/images/c.jpg" alt="" width=100%></a></li>
     </ul>
 </div>
 <div class="wp-container">
@@ -82,12 +82,14 @@
             <div class="list-hide">
                 <div class="team-list" id="dl-list">
                     {volist name="team" id="vo3"}
-                    <a href="__PUBLIC__/index.php/index/index/teamcontent?id={$vo3.id}">
-                        <dl>
-                            <dt><img class="radiusImg" src="__PUBLIC__/uploads/{$vo3.mark}" height="50" width="50"></dt>
-                            <dd>{$vo3.title}</dd>
+                   
+                        <dl> 
+                            <a href="__PUBLIC__/index.php/index/index/teamcontent?id={$vo3.id}">
+                               <dt><img class="radiusImg" src="__PUBLIC__/uploads/{$vo3.mark}" height="50" width="50"></dt>
+                               <dd>{$vo3.title}</dd>
+                             </a>
                         </dl>
-                    </a>
+                    
                     {/volist}
                 </div>
             </div>
