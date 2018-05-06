@@ -108,18 +108,15 @@ class Teamment extends Index
             }
 
 
-            if ($newmark <> '' ) {
-                if($mark <> '') {
-                    $user = ROOT_PATH . 'public' . DS . 'uploads/' . $mark;
-                    echo $user;
-                    echo file_exists($user);
-                    if (file_exists($user)) {
+            if ($newmark <> '') {
+
                 if ($mark <> '') {
                     $user = ROOT_PATH . 'public' . DS . 'uploads/' . $mark;
                     if (file_exists($user)) {
                         unlink($user);
                     }
                 }
+
 
                 Team::update([
                     'id' => $id,
@@ -139,6 +136,7 @@ class Teamment extends Index
                     'mark' => $mark,
                 ]);
             }
+
 
 
             return $this->success('信息修改成功^_^', 'show');
