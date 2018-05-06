@@ -65,59 +65,115 @@ class Index extends \think\Controller
     }
 
     //修改轮播图
+    public function lunbotu($id = "z", $idd = 0)
+    {
+        if ($id == "z") {
+            return $this->fetch();
+        } else {
+            if ($id == "a") {
+                if ($idd == 1) {
+                    $this->changea("1");
+                } else {
+                    $file = request()->file('filepath1');
+                    $path =  "";
+                    // 移动到框架应用根目录/public/uploads/ 目录下
+                    if ($file) {
+                        $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
+                        if ($info) {
+                            // 成功上传后 获取上传信息
+                            // 输出 jpg
+                            echo $info->getExtension() . "<br>";
+                            // 输出 20160820/42a79759f284b767dfcb2a0197904287.jpg
+                            echo $info->getSaveName() . "<br>";
+                            // 输出 42a79759f284b767dfcb2a0197904287.jpg
+                            echo $info->getFilename() . "<br>";
+                            $path = $info->getSaveName();
+                        } else {
+                            // 上传失败获取错误信息
+                            echo $file->getError();
+                        }
+                    }
+                    $user = ROOT_PATH . 'public' . DS . 'uploads/' . $path;
+                    echo $user;
+                    exit();
+                    $this->changea($user);
+
+                }
+            } elseif ($id == "b") {
+                if ($idd == 1) {
+                    $this->changeb("1");
+                } else {
+                    $file = request()->file('filepath2');
+                    $this->changeb($file);
+                }
+            } elseif ($id == "e") {
+                if ($idd == 1) {
+                    $this->changee("1");
+                } else {
+                    $file = request()->file('filepath3');
+                    $this->changee($file);
+                }
+            }
+        }
+    }
+
     public function changea($filepath)
     {
-        unlink("__STATIC__/images/a.jpg");
-        if($filepath = "1"){
+        unlink(ROOT_PATH . 'public' . DS . 'static\images\a.jpg');
+        if ($filepath = "1") {
             $res = "__STATIC__/images/de/a.jpg";
-        } else if(is_file($filepath)) {
+        } else if (is_file($filepath)) {
             $res = $filepath;
         }
-        CopyFunc($res,"__STATIC__/images/de/a.jpg");
+        $this->CopyFunc($res, "__STATIC__/images/de/a.jpg");
     }
+
     public function changeb($filepath)
     {
         unlink("__STATIC__/images/b.jpg");
-        if($filepath = "1"){
+        if ($filepath = "1") {
             $res = "__STATIC__/images/de/b.jpg";
-        } else if(is_file($filepath)) {
+        } else if (is_file($filepath)) {
             $res = $filepath;
         }
-        CopyFunc($res,"__STATIC__/images/de/b.jpg");
+        CopyFunc($res, "__STATIC__/images/de/b.jpg");
     }
+
     public function changee($filepath)
     {
         unlink("__STATIC__/images/e.jpg");
-        if($filepath = "1"){
+        if ($filepath = "1") {
             $res = "__STATIC__/images/de/e.jpg";
-        } else if(is_file($filepath)) {
+        } else if (is_file($filepath)) {
             $res = $filepath;
         }
-        CopyFunc($res,"__STATIC__/images/de/e.jpg");
+        CopyFunc($res, "__STATIC__/images/de/e.jpg");
     }
+
     //拷贝文件
-    function CopyFunc($res, $des) {
-        if(file_exists($res)) {
-            $r_fp=fopen($res,"r");
+    function CopyFunc($res, $des)
+    {
+        if (file_exists($res)) {
+            $r_fp = fopen($res, "r");
 
             //定位
-            $pos=strripos($des,"\\");
-            $dir=substr($des,0,$pos);
-            if(!file_exists($dir)) {
+            $pos = strripos($des, "\\");
+            $dir = substr($des, 0, $pos);
+            if (!file_exists($dir)) {
                 //可创建多级目录
-                mkdir($dir,0777,true);
+                mkdir($dir, 0777, true);
                 echo "创建目录成功<br/>";
             }
 
-            $d_fp=fopen($des,"w+");
+            $d_fp = fopen($des, "w+");
             //$fres=fread($r_fp,filesize($res));
 
             //边读边写
-            $buffer=1024;
-            $fres="";
-            while(!feof($r_fp)) {
-                $fres=fread($r_fp,$buffer);
-                fwrite($d_fp,$fres);
+            $buffer = 1024;
+            $fres = "";
+            while (!feof($r_fp)) {
+                $fres = fread($r_fp, $buffer);
+                fwrite($d_fp, $fres);
             }
 
             fclose($r_fp);
