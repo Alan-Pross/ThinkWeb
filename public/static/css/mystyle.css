@@ -26,13 +26,14 @@ h1,
 p,
 hr， 
 h1,
-h5{
+h5,
+hr{
     margin: 0;
 }
 
 input,
 button,
-ul {
+ul{
     padding: 0;
 }
 
@@ -877,7 +878,7 @@ h1 {
     font-style: italic;
     word-break: break-all;
     width: 80%;
-    margin:0 auto;
+    margin:20px auto;
 }
 .team-container{
     text-align: center;
