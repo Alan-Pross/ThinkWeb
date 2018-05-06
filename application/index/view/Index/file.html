@@ -1,12 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <title>文件下载</title>
-    <link rel="stylesheet" type="text/css" href="__STATIC__/css/searchshow-form.css">
 </head>
-
 <body>
 {include file="Index/header" /}
 
@@ -25,7 +22,7 @@
         <div id="secondPage" class="show">
             <ul>
                 {volist name="file" id="vo"}
-                <li id="erg" class="list_news"><a href="__PUBLIC__/upload/{$vo.filepath}" download="{$vo.title}">{$vo.title}</a>
+                <li id="erg" class="list_news"><a href="__PUBLIC__/upload/{$vo.filepath}" onclick="a({$vo.id})">{$vo.title}</a>
                     <span class="label_datatime news_datatime">{$vo.create_time |date="Y-m-d",###}</span>
                     <span class="news_count">{$vo.browsing}</span>
                 </li>
@@ -35,6 +32,11 @@
         {$page}
     </div>
 </div>
+<script>
+    function a(id) {
+        window.open("__PUBLIC__/index.php/index/index/filepp?id="+id);
+    }
+</script>
 {include file="Index/footer" /}
 </body>
 </html>

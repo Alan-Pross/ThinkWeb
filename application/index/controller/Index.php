@@ -14,8 +14,8 @@ class Index extends \think\Controller
     public function index()
     {
         $all = "";
-        $notice = Notice::where('title', 'like', "%{$all}%")->order("id DESC")->limit(5)->select();
-        $news = News::where('title', 'like', "%{$all}%")->order("id DESC")->limit(5)->select();
+        $notice = Notice::where('title', 'like', "%{$all}%")->order("id DESC")->limit(8)->select();
+        $news = News::where('title', 'like', "%{$all}%")->order("id DESC")->limit(8)->select();
         $team = Team::where('title', 'like', "%{$all}%")->select();
         $this->assign("notice", $notice);
         $this->assign("news", $news);
@@ -35,6 +35,17 @@ class Index extends \think\Controller
         $this->assign("page", $page);
 
         return $this->fetch();
+    }
+
+    public function filepp($id)
+    {
+        $res = File::where('id', '=', $id)->select();
+        File::update([
+            'id' => $id,
+            'browsing' => $res[0]['browsing'] + 1,
+        ]);
+
+        return view();
     }
 
     public function newnotice()
@@ -91,12 +102,6 @@ class Index extends \think\Controller
         return view();
     }
 
-    public function loading()
-    {
-
-        return view();
-    }
-
     public function team()
     {
         $all = "";
@@ -126,22 +131,19 @@ class Index extends \think\Controller
         return view();
     }
 
-    public function searchshow($id = '0', $search)
+    public function searchshow($id, $search)
     {
         $tape = "浏览次数";
-        if ($id == 0 || empty($search)) {
-            $this->redirect('__PUBLIC__/index.php/index/index/search');
-        }
 
         if ($id == 1) {
-            $res = Notice::where('title', 'like', "%{$search}%")->paginate(5, false);
+            $res = Notice::where('title', 'like', "%{$search}%")->paginate(5,false,['query'=>request()->param()]);
         } elseif ($id == 2) {
-            $res = News::where('title', 'like', "%{$search}%")->paginate(5, false);
+            $res = News::where('title', 'like', "%{$search}%")->paginate(5,false,['query'=>request()->param()]);
         } elseif ($id == 3) {
-            $res = Team::where('title', 'like', "%{$search}%")->paginate(5, false);
+            $res = Team::where('title', 'like', "%{$search}%")->paginate(5,false,['query'=>request()->param()]);
             $tape = "";
         } elseif ($id == 4) {
-            $res = File::where('title', 'like', "%{$search}%")->paginate(5, false);
+            $res = File::where('title', 'like', "%{$search}%")->paginate(5,false,['query'=>request()->param()]);
             $tape = "下载次数";
         }
         $page = $res->render();

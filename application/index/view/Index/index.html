@@ -2,38 +2,38 @@
 <html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <title>江汉大学创业学院</title>
     <style type="text/css">
-    .radiusImg {
-        border-radius: 50%;
-        -moz-border-radius: 50%;
-        /* Old Firefox */
-        -webkit-border-radius: 50%;
-        /* Safari 和 Chrome */
-        -o-border-radius: 50%;
-        /* Opera */
-    }
+        .radiusImg {
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+            /* Old Firefox */
+            -webkit-border-radius: 50%;
+            /* Safari 和 Chrome */
+            -o-border-radius: 50%;
+            /* Opera */
+        }
     </style>
     <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery
 /jquery-1.4.min.js"></script>
     <script>
-    $(document).ready(function() {
-        $("#news").click(function() {
-            $("#firstPage").show();
-            $("#secondPage").hide();
-            $("#news").addClass("new-active");
-            $("#notice").removeClass("new-active");
-            $("#a_href").attr("href","__PUBLIC__/index.php/index/index/newnotice");
+        $(document).ready(function () {
+            $("#news").click(function () {
+                $("#firstPage").show();
+                $("#secondPage").hide();
+                $("#news").addClass("new-active");
+                $("#notice").removeClass("new-active");
+                $("#a_href").attr("href", "__PUBLIC__/index.php/index/index/newnotice");
+            });
+            $("#notice").click(function () {
+                $("#firstPage").hide();
+                $("#secondPage").show();
+                $("#news").removeClass("new-active");
+                $("#notice").addClass("new-active");
+                $("#a_href").attr("href", "__PUBLIC__/index.php/index/index/newnotice2");
+            });
         });
-        $("#notice").click(function() {
-            $("#firstPage").hide();
-            $("#secondPage").show();
-            $("#news").removeClass("new-active");
-            $("#notice").addClass("new-active");
-            $("#a_href").attr("href","__PUBLIC__/index.php/index/index/newnotice2");
-        });
-    });
     </script>
 </head>
 {include file="Index/header" /}
@@ -54,10 +54,10 @@
                     <span>学院新闻</span>
                 </div>
                 <div id="notice" class="col">
-                    <span>通知公告</span> 
+                    <span>通知公告</span>
                 </div>
-                    <span class="more"><a id="a_href" href="__PUBLIC__/index.php/index/index/newnotice">MORE+</a></span>
-                    <!-- <span class="more"><a href="__PUBLIC__/index.php/index/index/newnotice">MORE+</a></span>  -->
+                <span class="more"><a id="a_href" href="__PUBLIC__/index.php/index/index/newnotice">MORE+</a></span>
+                <!-- <span class="more"><a href="__PUBLIC__/index.php/index/index/newnotice">MORE+</a></span>  -->
             </div>
             <div id="firstPage" class="show">
                 <ul class="jh_notice">
@@ -88,14 +88,14 @@
             <div class="list-hide">
                 <div class="team-list" id="dl-list">
                     {volist name="team" id="vo3"}
-                   
-                        <dl> 
-                            <a href="__PUBLIC__/index.php/index/index/teamcontent?id={$vo3.id}">
-                               <dt><img class="radiusImg" src="__PUBLIC__/uploads/{$vo3.mark}" height="50" width="50"></dt>
-                               <dd>{$vo3.title}</dd>
-                             </a>
-                        </dl>
-                    
+
+                    <dl>
+                        <a href="__PUBLIC__/index.php/index/index/teamcontent?id={$vo3.id}">
+                            <dt><img class="radiusImg" src="__PUBLIC__/uploads/{$vo3.mark}" height="50" width="50"></dt>
+                            <dd>{$vo3.title}</dd>
+                        </a>
+                    </dl>
+
                     {/volist}
                 </div>
             </div>
@@ -104,100 +104,100 @@
 </div>
 {include file="Index/footer" /}
 <script>
-(function() {
-    var a = document.getElementsByClassName('a');
-    var pre = document.getElementById('pre');
-    var next = document.getElementById('next');
-    var main = document.getElementsByClassName('images-wrapper')[0];
-    var count = a.length;
-    var bool = false;
-    var i = 0;
+    (function () {
+        var a = document.getElementsByClassName('a');
+        var pre = document.getElementById('pre');
+        var next = document.getElementById('next');
+        var main = document.getElementsByClassName('images-wrapper')[0];
+        var count = a.length;
+        var bool = false;
+        var i = 0;
 
-    function moveleft() {
-        var next = (i + 1) % count;
-        a[next].style.transition = "left 0s";
-        a[next].style.left = "100%";
-        a[next].style.zIndex = "1";
-        setTimeout(function() {
-            a[i].style.left = "-100%";
-            a[i].style.zIndex = '0';
-            a[next].style.transition = "left .5s";
-            a[next].style.left = "0";
-            i = (i + 1) % count;
-        }, 100);
+        function moveleft() {
+            var next = (i + 1) % count;
+            a[next].style.transition = "left 0s";
+            a[next].style.left = "100%";
+            a[next].style.zIndex = "1";
+            setTimeout(function () {
+                a[i].style.left = "-100%";
+                a[i].style.zIndex = '0';
+                a[next].style.transition = "left .5s";
+                a[next].style.left = "0";
+                i = (i + 1) % count;
+            }, 100);
 
-    }
-
-    function moveright() {
-        var next = (i - 1 + count) % count;
-        a[next].style.transition = "left 0s";
-        a[next].style.left = "-100%";
-        a[next].style.zIndex = "1";
-        setTimeout(function() {
-            a[i].style.left = "100%";
-            a[i].style.zIndex = '0';
-            a[next].style.transition = "left .5s";
-            a[next].style.left = "0";
-            i = (i - 1 + count) % count;
-        }, 100);
-    }
-
-    var time = setInterval(moveleft, 3500);
-    pre.onclick = function() {
-        moveleft();
-        if (!bool) {
-            clearInterval(time);
-            bool = true;
         }
-    };
-    next.onclick = function() {
-        moveright();
-        if (!bool) {
-            clearInterval(time);
-            bool = true;
-        }
-    };
-    main.onmouseleave = function(event) {
-        var event = event || window.event;
-        if (bool && event.relatedTarget) {
-            time = setInterval(moveleft, 3500);
-            bool = false;
-        }
-        if (event.relatedTarget) {
-            pre.style.opacity = '0';
-            next.style.opacity = '0';
-        }
-    };
-    main.onmouseenter = function() {
-        pre.style.opacity = '1';
-        next.style.opacity = '1';
-    };
 
-    var div2 = document.getElementById('dl-list');
-    var dl = div2.getElementsByTagName('dl');
-    var h = -dl[0].offsetHeight;
-    var m = 0;
+        function moveright() {
+            var next = (i - 1 + count) % count;
+            a[next].style.transition = "left 0s";
+            a[next].style.left = "-100%";
+            a[next].style.zIndex = "1";
+            setTimeout(function () {
+                a[i].style.left = "100%";
+                a[i].style.zIndex = '0';
+                a[next].style.transition = "left .5s";
+                a[next].style.left = "0";
+                i = (i - 1 + count) % count;
+            }, 100);
+        }
 
-    function roll() {
-        timer = requestAnimationFrame(function fn() {
-            if (m < h) {
-                var firstdl = dl[0]
-                div2.removeChild(firstdl);
-                div2.appendChild(firstdl);
-                div2.style.transform = 'translateY(0)';
-                m = 0;
-            } else {
-                div2.style.transform = "translateY(" + m + "px)";
-                m -= .3;
+        var time = setInterval(moveleft, 3500);
+        pre.onclick = function () {
+            moveleft();
+            if (!bool) {
+                clearInterval(time);
+                bool = true;
             }
-            timer = requestAnimationFrame(fn);
-        });
+        };
+        next.onclick = function () {
+            moveright();
+            if (!bool) {
+                clearInterval(time);
+                bool = true;
+            }
+        };
+        main.onmouseleave = function (event) {
+            var event = event || window.event;
+            if (bool && event.relatedTarget) {
+                time = setInterval(moveleft, 3500);
+                bool = false;
+            }
+            if (event.relatedTarget) {
+                pre.style.opacity = '0';
+                next.style.opacity = '0';
+            }
+        };
+        main.onmouseenter = function () {
+            pre.style.opacity = '1';
+            next.style.opacity = '1';
+        };
 
-    }
+        var div2 = document.getElementById('dl-list');
+        var dl = div2.getElementsByTagName('dl');
+        var h = -dl[0].offsetHeight;
+        var m = 0;
 
-    roll();
+        function roll() {
+            timer = requestAnimationFrame(function fn() {
+                if (m < h) {
+                    var firstdl = dl[0]
+                    div2.removeChild(firstdl);
+                    div2.appendChild(firstdl);
+                    div2.style.transform = 'translateY(0)';
+                    m = 0;
+                } else {
+                    div2.style.transform = "translateY(" + m + "px)";
+                    m -= .3;
+                }
+                timer = requestAnimationFrame(fn);
+            });
 
-})()
+        }
+
+        roll();
+
+    })()
 </script>
 </body>
 
