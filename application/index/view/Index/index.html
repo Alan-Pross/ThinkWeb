@@ -44,16 +44,14 @@
     <div class="con-wap clearfix">
         <div id="tab">
             <div class="clearfix" style="border-bottom: 1px solid #d9d9d9">
-                <div id="news" class="col"><span>学院新闻</span>
-                   <!--  <span class="more">
-                    <a href="__PUBLIC__/index.php/index/index/newnotice">MORE+</a>
-                    </span> -->
+                <div id="news" class="col">
+                    <span>学院新闻</span>
                 </div>
-                <div id="notice" class="col"><span>通知公告</span>
-                   <!--  <span class="more">
-                    <a href="__PUBLIC__/index.php/index/index/newnotice2">MORE+</a>
-                    </span> -->
+                <div id="notice" class="col">
+                    <span>通知公告</span> 
                 </div>
+                    <span class="more"><a href="__PUBLIC__/index.php/index/index/newnotice2">MORE+</a></span>
+                    <!-- <span class="more"><a href="__PUBLIC__/index.php/index/index/newnotice">MORE+</a></span>  -->
             </div>
             <div id="firstPage" class="show">
                 <ul class="jh_notice">
@@ -65,9 +63,7 @@
                     {/volist}
                 </ul>
             </div>
-            <!-- <div id="notice" class="col"><span>通知公告</span> <span class="more"><a
-                    href="__PUBLIC__/index.php/index/index/newnotice2">MORE+</a></span>
-            </div> -->
+
             <div id="secondPage" class="hide">
                 <ul class="jh_notice">
                     {volist name="notice" id="vo2"}
@@ -81,7 +77,7 @@
         </div>
         <div class="team-sidebar">
             <div class="team-title">
-                <p><img src="__STATIC__/images/team-b.png" width="40px" height="40px" alt="图标"> <span>入驻团队</span></p>
+                <p class="col"><span>入驻团队</span></p>
             </div>
             <div class="list-hide">
                 <div class="team-list" id="dl-list">

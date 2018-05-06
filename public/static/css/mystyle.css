@@ -494,11 +494,15 @@ i.ic5 {
 }
 
 .team-title {
-    background: #2E94B9;
+   border-bottom: 1px solid #d9d9d9;
+   overflow: hidden;
 }
 
-.team-title p {
+.team-title p.col {
     font-weight: bold;
+    border:none;
+    width: 100%;
+    background-image: url(../images/team-b.png);
 }
 .team-title img{
     vertical-align: middle;
@@ -560,8 +564,8 @@ dd {
     cursor: pointer;
 }
 .col span{
-    font-size: 12px;
-
+    font-size: 13px;
+    font-weight: bold;
 }
 
 
@@ -616,7 +620,8 @@ dd {
 
 .more {
     float: right;
-    margin-right: 20px;
+    line-height: 55px;
+    padding-right: 3.2em;
 }
 .more a{
     color:#0000ff;
@@ -633,8 +638,7 @@ dd {
     overflow: hidden;
     padding:0 2em;
 } 
-.jh_notice li,
-.team-title p{
+.jh_notice li{
         height: 55px;  
     line-height: 55px;
 }
