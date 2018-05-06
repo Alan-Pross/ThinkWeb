@@ -23,8 +23,7 @@ dl,
 dd,
 h1,
 p,
-hr，
-h1 {
+hr， h1 {
     margin: 0;
 }
 
@@ -85,7 +84,6 @@ a {
     height: 50px;
     width: 100%;
     background: #2E94B9;
-
 }
 
 .primary-menu {
@@ -95,7 +93,6 @@ a {
     background-color: #f9f9f9;
     text-align: center;
     box-sizing: border-box;
-
 }
 
 .nav-menu {
@@ -142,7 +139,6 @@ a {
     .nav-menu li:first-child {
         margin-left: 103px;
     }
-
 }
 
 .nav-menu li a {
@@ -159,7 +155,6 @@ a {
     background-size: 40px;
     background-repeat: no-repeat;
     background-position: center;
-
 }
 
 .nav-menu .text {
@@ -239,7 +234,7 @@ i.ic5 {
     cursor: pointer;
 }
 
-.button + .button {
+.button+.button {
     left: auto;
     right: 0;
 }
@@ -276,8 +271,7 @@ i.ic5 {
     right: 0;
 }
 
-.search-wrapper.active {
-}
+.search-wrapper.active {}
 
 .search-wrapper .input-holder {
     overflow: hidden;
@@ -478,6 +472,7 @@ i.ic5 {
     }
 }
 
+
 /*入驻团队*/
 
 .team-sidebar {
@@ -542,12 +537,15 @@ dd {
     vertical-align: top;
 }
 
+
 /*结束*/
+
+
 /**/
+
 .col {
     font-size: 18px;
     background: #2E94B9;
-
 }
 
 .col:hover {
@@ -595,6 +593,7 @@ dd {
     display: none;
 }
 
+
 /**/
 
 .wp-container {
@@ -611,7 +610,6 @@ dd {
     width: 1000px;
     margin: 1em auto;
     background: #fff;
-
 }
 
 .more {
@@ -644,7 +642,6 @@ dd {
     height: 500px;
     width: 980px;
     margin: .8em auto;
-
 }
 
 .news_wrapper::before {
@@ -652,7 +649,8 @@ dd {
     display: table-cell;
 }
 
-.col_menu, .col_news {
+.col_menu,
+.col_news {
     background: #f9f9f9;
 }
 
@@ -660,17 +658,17 @@ dd {
     float: left;
     width: 18%;
     height: 100%;
-
 }
 
 .col_head {
-    line-height: 2.4em;
-    height: 2.4em;
+    line-height: 51px;
+    height: 51px;
     font-size: 21px;
     font-weight: bold;
     text-align: center;
     color: #fff;
     background: #2E94B9;
+    border-bottom: 1px solid #000;
 }
 
 .col_menu_con {
@@ -679,12 +677,11 @@ dd {
     font-weight: bold;
     text-align: center;
     color: #000;
-
 }
 
 .listcolumn li {
     height: 2.4em;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #000;
 }
 
 .listcolumn a {
@@ -694,8 +691,7 @@ dd {
 }
 
 .listcolumn a:hover {
-    background: #2E94B9;
-
+    background: rgba(46,148,185,.5);
 }
 
 .listcolumn a:hover .column-name {
@@ -712,22 +708,22 @@ dd {
     width: 81%;
     height: 100%;
     float: right;
-    cursor: pointer;
 }
 
 @media screen and (min-width: 1400px) {
-    .news_wrapper, .con-wap {
+    .news_wrapper,
+    .con-wap {
         width: 1300px;
     }
 }
 
 .news_head,
 .list_detail {
-    height: 2em;
-    line-height: 2em;
+    height: 51px;
+    line-height: 51px;
 }
 
-.news_head > p {
+.news_head>p {
     margin: 10px 0 0 0;
 }
 
@@ -760,9 +756,7 @@ dd {
 }
 
 .list_news a,
-.list_detail .show div {
-
-}
+.list_detail .show div {}
 
 .news_datatime,
 .news_count,
@@ -790,13 +784,13 @@ div.list_detail_2 {
     right: 60px;
     text-align: center;
     width: 90px;
-
 }
 
 #button {
     text-align: center;
     margin-top: 1.5em;
 }
+
 
 /**/
 
@@ -828,6 +822,4 @@ h1 {
     background: #fff;
 }
 
-.active .column-name {
-    color: #fff;
-}
+.active .column-name {}
