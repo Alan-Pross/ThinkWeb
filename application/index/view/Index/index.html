@@ -2,32 +2,32 @@
 <html lang="zh-CN">
 
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <title>江汉大学创业学院</title>
     <style type="text/css">
-        .radiusImg {
-            border-radius: 50%;
-            -moz-border-radius: 50%;
-            /* Old Firefox */
-            -webkit-border-radius: 50%;
-            /* Safari 和 Chrome */
-            -o-border-radius: 50%;
-            /* Opera */
-        }
+    .radiusImg {
+        border-radius: 50%;
+        -moz-border-radius: 50%;
+        /* Old Firefox */
+        -webkit-border-radius: 50%;
+        /* Safari 和 Chrome */
+        -o-border-radius: 50%;
+        /* Opera */
+    }
     </style>
     <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery
 /jquery-1.4.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $("#news").click(function () {
-                $("#firstPage").show();
-                $("#secondPage").hide();
-            });
-            $("#notice").click(function () {
-                $("#firstPage").hide();
-                $("#secondPage").show();
-            });
+    $(document).ready(function() {
+        $("#news").click(function() {
+            $("#firstPage").show();
+            $("#secondPage").hide();
         });
+        $("#notice").click(function() {
+            $("#firstPage").hide();
+            $("#secondPage").show();
+        });
+    });
     </script>
 </head>
 {include file="Index/header" /}
@@ -43,8 +43,17 @@
 <div class="wp-container">
     <div class="con-wap clearfix">
         <div id="tab">
-            <div id="news" class="col"><span>学院新闻</span> <span class="more"><a
-                    href="__PUBLIC__/index.php/index/index/newnotice">MORE+</a></span>
+            <div class="clearfix" style="border-bottom: 1px solid #d9d9d9">
+                <div id="news" class="col"><span>学院新闻</span>
+                   <!--  <span class="more">
+                    <a href="__PUBLIC__/index.php/index/index/newnotice">MORE+</a>
+                    </span> -->
+                </div>
+                <div id="notice" class="col"><span>通知公告</span>
+                   <!--  <span class="more">
+                    <a href="__PUBLIC__/index.php/index/index/newnotice2">MORE+</a>
+                    </span> -->
+                </div>
             </div>
             <div id="firstPage" class="show">
                 <ul class="jh_notice">
@@ -56,9 +65,9 @@
                     {/volist}
                 </ul>
             </div>
-            <div id="notice" class="col"><span>通知公告</span> <span class="more"><a
+            <!-- <div id="notice" class="col"><span>通知公告</span> <span class="more"><a
                     href="__PUBLIC__/index.php/index/index/newnotice2">MORE+</a></span>
-            </div>
+            </div> -->
             <div id="secondPage" class="hide">
                 <ul class="jh_notice">
                     {volist name="notice" id="vo2"}
@@ -91,100 +100,101 @@
 </div>
 {include file="Index/footer" /}
 <script>
-    (function () {
-        var a = document.getElementsByClassName('a');
-        var pre = document.getElementById('pre');
-        var next = document.getElementById('next');
-        var main = document.getElementsByClassName('images-wrapper')[0];
-        var count = a.length;
-        var bool = false;
-        var i = 0;
+(function() {
+    var a = document.getElementsByClassName('a');
+    var pre = document.getElementById('pre');
+    var next = document.getElementById('next');
+    var main = document.getElementsByClassName('images-wrapper')[0];
+    var count = a.length;
+    var bool = false;
+    var i = 0;
 
-        function moveleft() {
-            var next = (i + 1) % count;
-            a[next].style.transition = "left 0s";
-            a[next].style.left = "100%";
-            a[next].style.zIndex = "1";
-            setTimeout(function () {
-                a[i].style.left = "-100%";
-                a[i].style.zIndex = '0';
-                a[next].style.transition = "left .5s";
-                a[next].style.left = "0";
-                i = (i + 1) % count;
-            }, 100);
+    function moveleft() {
+        var next = (i + 1) % count;
+        a[next].style.transition = "left 0s";
+        a[next].style.left = "100%";
+        a[next].style.zIndex = "1";
+        setTimeout(function() {
+            a[i].style.left = "-100%";
+            a[i].style.zIndex = '0';
+            a[next].style.transition = "left .5s";
+            a[next].style.left = "0";
+            i = (i + 1) % count;
+        }, 100);
 
+    }
+
+    function moveright() {
+        var next = (i - 1 + count) % count;
+        a[next].style.transition = "left 0s";
+        a[next].style.left = "-100%";
+        a[next].style.zIndex = "1";
+        setTimeout(function() {
+            a[i].style.left = "100%";
+            a[i].style.zIndex = '0';
+            a[next].style.transition = "left .5s";
+            a[next].style.left = "0";
+            i = (i - 1 + count) % count;
+        }, 100);
+    }
+
+    var time = setInterval(moveleft, 3500);
+    pre.onclick = function() {
+        moveleft();
+        if (!bool) {
+            clearInterval(time);
+            bool = true;
         }
-
-        function moveright() {
-            var next = (i - 1 + count) % count;
-            a[next].style.transition = "left 0s";
-            a[next].style.left = "-100%";
-            a[next].style.zIndex = "1";
-            setTimeout(function () {
-                a[i].style.left = "100%";
-                a[i].style.zIndex = '0';
-                a[next].style.transition = "left .5s";
-                a[next].style.left = "0";
-                i = (i - 1 + count) % count;
-            }, 100);
+    };
+    next.onclick = function() {
+        moveright();
+        if (!bool) {
+            clearInterval(time);
+            bool = true;
         }
-
-        var time = setInterval(moveleft, 3500);
-        pre.onclick = function () {
-            moveleft();
-            if (!bool) {
-                clearInterval(time);
-                bool = true;
-            }
-        };
-        next.onclick = function () {
-            moveright();
-            if (!bool) {
-                clearInterval(time);
-                bool = true;
-            }
-        };
-        main.onmouseleave = function (event) {
-            var event = event || window.event;
-            if (bool && event.relatedTarget) {
-                time = setInterval(moveleft, 3500);
-                bool = false;
-            }
-            if (event.relatedTarget) {
-                pre.style.opacity = '0';
-                next.style.opacity = '0';
-            }
-        };
-        main.onmouseenter = function () {
-            pre.style.opacity = '1';
-            next.style.opacity = '1';
-        };
-
-        var div2 = document.getElementById('dl-list');
-        var dl = div2.getElementsByTagName('dl');
-        var h = -dl[0].offsetHeight;
-        var m = 0;
-
-        function roll() {
-            timer = requestAnimationFrame(function fn() {
-                if (m < h) {
-                    var firstdl = dl[0]
-                    div2.removeChild(firstdl);
-                    div2.appendChild(firstdl);
-                    div2.style.transform = 'translateY(0)';
-                    m = 0;
-                } else {
-                    div2.style.transform = "translateY(" + m + "px)";
-                    m -= .3;
-                }
-                timer = requestAnimationFrame(fn);
-            });
-
+    };
+    main.onmouseleave = function(event) {
+        var event = event || window.event;
+        if (bool && event.relatedTarget) {
+            time = setInterval(moveleft, 3500);
+            bool = false;
         }
+        if (event.relatedTarget) {
+            pre.style.opacity = '0';
+            next.style.opacity = '0';
+        }
+    };
+    main.onmouseenter = function() {
+        pre.style.opacity = '1';
+        next.style.opacity = '1';
+    };
 
-        roll();
+    var div2 = document.getElementById('dl-list');
+    var dl = div2.getElementsByTagName('dl');
+    var h = -dl[0].offsetHeight;
+    var m = 0;
 
-    })()
+    function roll() {
+        timer = requestAnimationFrame(function fn() {
+            if (m < h) {
+                var firstdl = dl[0]
+                div2.removeChild(firstdl);
+                div2.appendChild(firstdl);
+                div2.style.transform = 'translateY(0)';
+                m = 0;
+            } else {
+                div2.style.transform = "translateY(" + m + "px)";
+                m -= .3;
+            }
+            timer = requestAnimationFrame(fn);
+        });
+
+    }
+
+    roll();
+
+})()
 </script>
 </body>
+
 </html>

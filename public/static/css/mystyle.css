@@ -13,6 +13,7 @@ body {
     background-repeat: no-repeat;
 }
 
+
 input,
 ul,
 li,
@@ -23,7 +24,8 @@ dl,
 dd,
 h1,
 p,
-hr， h1 {
+hr， 
+h1 {
     margin: 0;
 }
 
@@ -39,6 +41,7 @@ li {
 
 a {
     text-decoration: none;
+    color:#000;
 }
 
 .headbar {
@@ -477,7 +480,7 @@ i.ic5 {
 
 .team-sidebar {
     width: 35%;
-    height: 366px;
+    height: 500px;
     float: right;
     background: #f9f9f9;
     overflow: hidden;
@@ -492,14 +495,14 @@ i.ic5 {
 
 .team-title {
     background: #2E94B9;
-    height: 40px;
 }
 
 .team-title p {
-    line-height: 40px;
     font-weight: bold;
 }
-
+.team-title img{
+    vertical-align: middle;
+}
 .team-title p span {
     vertical-align: top;
 }
@@ -544,44 +547,43 @@ dd {
 /**/
 
 .col {
-    font-size: 18px;
-    background: #2E94B9;
+    border-left: 1px solid #d9d9d9;
+    padding:28px 0 0 0;
+    float: left;
+    box-sizing: border-box;
+    background-size: 25px;
+    background-position: center 6px;
+    background-repeat: no-repeat;
+    height: 55px;
+    width: 170px;
+    text-align: center;
+    cursor: pointer;
+}
+.col span{
+    font-size: 12px;
+
 }
 
-.col:hover {
-    border-bottom-color: transparent;
-    background: #2E94B9;
-}
 
 #news {
-    margin-bottom: 1px;
+
     background-image: url(../images/new.png);
 
-    line-height: 40px;
-    background-size: 30px;
-    background-position: 2px 5px;
-    background-repeat: no-repeat;
 }
 
 #notice {
     background-image: url(../images/notice.png);
-
-    line-height: 40px;
-    background-size: 30px;
-    background-position: 2px 5px;
-    background-repeat: no-repeat;
+    border-right: 1px solid #d9d9d9;
 }
 
 #tab {
     width: 63%;
     float: left;
-    min-height: 360px;
+    min-height: 500px;
     background-color: #f9f9f9;
 }
 
-#tab div {
-    padding: 0 2em;
-}
+
 
 #firstPage,
 #secondPage {
@@ -616,23 +618,29 @@ dd {
     float: right;
     margin-right: 20px;
 }
-
+.more a{
+    color:#0000ff;
+}
 .label_datatime {
     width: 6em;
-    background-color: #fff;
     float: right;
 }
 
 .jh_notice {
     overflow: hidden;
 }
-
 .jh_notice li {
     overflow: hidden;
-    height: 1.2em;
-    margin: 20px 0;
+    padding:0 2em;
+} 
+.jh_notice li,
+.team-title p{
+        height: 55px;  
+    line-height: 55px;
 }
-
+.jh_notice li:nth-child(even){
+    background:#d9edf7; 
+}
 .jh_notice p {
     display: inline;
     overflow: hidden;
@@ -668,7 +676,7 @@ dd {
     text-align: center;
     color: #fff;
     background: #2E94B9;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #555;
 }
 
 .col_menu_con {
@@ -681,7 +689,7 @@ dd {
 
 .listcolumn li {
     height: 2.4em;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #555;
 }
 
 .listcolumn a {
@@ -694,9 +702,7 @@ dd {
     background: rgba(46,148,185,.5);
 }
 
-.listcolumn a:hover .column-name {
-    color: #fff;
-}
+
 
 .column-name {
     line-height: 2.4em;
@@ -728,7 +734,7 @@ dd {
 }
 
 .list_detail {
-    border-bottom: 2px solid #333;
+    border-bottom: 1px solid rgba(0,0,0,.3);
     position: relative;
 }
 
@@ -739,24 +745,29 @@ dd {
 
 .list_detail_1 {
     text-align: left;
-    margin-left: 85px;
-    color: #2E94B9;
+    margin-left: 50px;
+    color: #000;
 }
 
-#secondPage.show {
-    height: auto;
+.show {
+    padding:0;
 }
 
 .list_news {
-    border-bottom: 1px dashed rgba(0, 0, 0, .2);
     line-height: 50px;
     position: relative;
     overflow: hidden;
     padding: 0 0 0 50px;
 }
 
-.list_news a,
-.list_detail .show div {}
+.list_news:nth-child(even){
+    background: #d9edf7;
+}
+
+.list_news a{
+    color: #000;
+}
+
 
 .news_datatime,
 .news_count,
@@ -773,13 +784,12 @@ div.news_datatime {
 }
 
 div.list_detail_2 {
-    color: #2E94B9;
+   
     width: 100px;
 }
 
 .news_count,
 .list_detail_3 {
-    color: #2E94B9;
     margin: 0;
     right: 60px;
     text-align: center;
@@ -818,8 +828,7 @@ h1 {
     margin: 5px;
 }
 
-.active {
-    background: #fff;
+.list-active {
+    background:  rgba(46,148,185,.5);
 }
 
-.active .column-name {}
