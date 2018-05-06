@@ -11,6 +11,7 @@ use think\captcha;
 
 class Noticement extends Index
 {
+
     public function edit()
     {
         if (!$this->accountok()) {
@@ -33,6 +34,10 @@ class Noticement extends Index
 
     public function show()
     {
+        if (!$this->accountok()) {
+            $this->redirect(url('/admin'));
+        }
+
         $show = Notice::where('id', '>', 0)->order('id', 'desc')->paginate(5);
         $this->assign('show', $show);
         return $this->fetch();
@@ -40,6 +45,10 @@ class Noticement extends Index
 
     public function update()
     {
+        if (!$this->accountok()) {
+            $this->redirect(url('/admin'));
+        }
+
         $id = input('id');
         $title = input('param.title');
         $publisher = input('param.publisher');
@@ -71,6 +80,10 @@ class Noticement extends Index
 
     public function delete()
     {
+        if (!$this->accountok()) {
+            $this->redirect(url('/admin'));
+        }
+
         $id = input('id');
         echo $id;
         if ($id <> '') {

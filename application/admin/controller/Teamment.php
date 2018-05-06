@@ -40,10 +40,6 @@ class Teamment extends Index
                     // 输出 42a79759f284b767dfcb2a0197904287.jpg
                     echo $info->getFilename() . "<br>";
                     $mark = $info->getSaveName();
-
-
-                    // exit();
-
                 } else {
                     // 上传失败获取错误信息
                     echo $file->getError();
@@ -63,14 +59,21 @@ class Teamment extends Index
 
     public function show()
     {
-        $show = Team::where('id', '>', 0)->order('id', 'desc')->paginate(5);
+        if (!$this->accountok()) {
+            $this->redirect(url('/admin'));
+        }
 
+        $show = Team::where('id', '>', 0)->order('id', 'desc')->paginate(5);
         $this->assign('show', $show);
         return $this->fetch();
     }
 
     public function update()
     {
+        if (!$this->accountok()) {
+            $this->redirect(url('/admin'));
+        }
+
         $id = input('id');
         $name = input('param.name');
         $head = input('param.head');
@@ -148,6 +151,10 @@ class Teamment extends Index
 
     public function delete()
     {
+        if (!$this->accountok()) {
+            $this->redirect(url('/admin'));
+        }
+
         $id = input('id');
 
         if ($id <> '') {

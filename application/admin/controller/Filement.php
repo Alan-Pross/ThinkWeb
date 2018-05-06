@@ -60,6 +60,9 @@ class Filement extends Index
 
     public function show()
     {
+        if (!$this->accountok()) {
+            $this->redirect(url('/admin'));
+        }
         $show = new File();
         $show = File::where('id', '>', 0)->order('id', 'desc')->paginate(5);
         $this->assign('show', $show);
@@ -68,6 +71,10 @@ class Filement extends Index
 
     public function update()
     {
+        if (!$this->accountok()) {
+            $this->redirect(url('/admin'));
+        }
+
         $id = input('id');
         $name = input('param.name');
         $filepath = input('param.oldfile');
@@ -138,6 +145,10 @@ class Filement extends Index
 
     public function delete()
     {
+        if (!$this->accountok()) {
+            $this->redirect(url('/admin'));
+        }
+
         $id = input('id');
 
         if ($id <> '') {

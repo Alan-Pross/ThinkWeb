@@ -14,7 +14,7 @@
         <tbody>
         {volist name="show" id="user"}
         <tr>
-            <td><a href="__ROOT__/index/test/view/id/{$user.id}">{$user.title}</a></td>
+            <td>{$user.title}</a></td>
             <td>{$user.create_time}</td>
             <td><a href="__PUBLIC__/admin/filement/update/id/{$user.id}"  class="btn btn-primary"  >编辑</a>
                 <a href="#"  class="btn btn-danger" data-toggle="modal" data-target="#myModal{$user.id}">删除 </a>

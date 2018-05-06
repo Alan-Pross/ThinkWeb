@@ -28,6 +28,10 @@ class Newsment extends Index
 
     public function show()
     {
+        if (!$this->accountok()) {
+            $this->redirect(url('/admin'));
+        }
+
         $show = new News();
         $show = News::where('id', '>', 0)->order('id', 'desc')->paginate(5);
         $this->assign('show', $show);
@@ -36,6 +40,11 @@ class Newsment extends Index
 
     public function update()
     {
+
+        if (!$this->accountok()) {
+            $this->redirect(url('/admin'));
+        }
+
         $id = input('id');
         $title = input('param.title');
         $publisher = input('param.publisher');
@@ -72,6 +81,10 @@ class Newsment extends Index
 
     public function delete()
     {
+        if (!$this->accountok()) {
+            $this->redirect(url('/admin'));
+        }
+
         $id = input('id');
         echo $id;
         if ($id <> '') {

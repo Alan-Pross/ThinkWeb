@@ -13,7 +13,7 @@
         <tbody>
         {volist name="show" id="user"}
         <tr>
-            <td><a href="__ROOT__/index/test/view/id/{$user.id}">{$user.title}</a></td>
+            <td>{$user.title}</a></td>
             <td>{$user.publisher}</td>
             <td>{$user.create_time}</td>
             <td><a href="__PUBLIC__/admin/newsment/update/id/{$user.id}" id="btn" class="btn btn-primary" " >编辑</a>
@@ -35,7 +35,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-                        <!--  <button type="button" class="btn btn-primary">确定删除</button> -->
+
                         <a href="__PUBLIC__/admin/newsment/delete/id/{$user.id}" id="btn"
                            class="btn btn-danger">确定删除 </a>
                     </div>
