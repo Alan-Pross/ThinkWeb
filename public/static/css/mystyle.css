@@ -25,7 +25,8 @@ dd,
 h1,
 p,
 hr， 
-h1 {
+h1,
+h5{
     margin: 0;
 }
 
@@ -843,3 +844,60 @@ h1 {
     border-bottom: 3px solid #2E94B9;
 }
 
+.tm-section{
+   width: 100%;
+}
+.fleft{
+    float: left;
+    width: 50%;
+}
+
+.rounded-circle{
+    border-radius: 50%;
+}
+.team-1{
+    height: 450px;
+    line-height: 450px;
+    font-size: 0;
+    text-align: center;
+}
+.team-1:first-child{
+    background: #2E94B9;
+}
+.team-1:nth-child(2){
+    background: #f9f9f9;
+}
+.team-text{
+    font-size: 20px;
+    line-height: 1em;
+    color: #666;
+    font-style: italic;
+    word-break: break-all;
+    width: 500px;
+}
+.team-container{
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+h5{
+    text-align: center;
+    font-size: 56px;
+    line-height: 1em;
+    margin:0 0 100px 0;
+}
+
+.team-con{
+    line-height: 16px;
+}
+.team-text-1{
+    color: #000;
+    font-size:50px;
+    font-style: normal;
+    margin:20px 0 0 0;
+}
+.team_content{
+    background: #f9f9f9;
+    margin-top:20px;
+    padding:30px 60px;
+}

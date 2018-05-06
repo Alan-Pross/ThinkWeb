@@ -139,7 +139,7 @@ div, p {
 .message {
     font-size: 12px;
     height: 40px;
-
+    overflow: hidden;
 }
 
 /* end --------------- */
