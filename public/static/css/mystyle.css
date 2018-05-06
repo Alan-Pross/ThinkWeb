@@ -133,6 +133,9 @@ a {
     .nav-menu li:first-child {
         margin-left: 109px;
     }
+    .team-text{
+
+    }
 }
 
 @media screen and (min-width: 2400px) {
@@ -873,12 +876,14 @@ h1 {
     color: #666;
     font-style: italic;
     word-break: break-all;
-    width: 500px;
+    width: 80%;
+    margin:0 auto;
 }
 .team-container{
     text-align: center;
     display: inline-block;
     vertical-align: middle;
+    width: 100%;
 }
 h5{
     text-align: center;
@@ -889,12 +894,12 @@ h5{
 
 .team-con{
     line-height: 16px;
+    width: 100%;
 }
 .team-text-1{
     color: #000;
     font-size:50px;
     font-style: normal;
-    margin:20px 0 0 0;
 }
 .team_content{
     background: #f9f9f9;
