@@ -9,7 +9,6 @@ use think\Db;
 class Team extends model
 {
 
-    protected $autoWriteTimestamp = true;
     protected $updateTime = false;
 
 }

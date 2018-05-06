@@ -15,7 +15,7 @@
         <tr>
             <td>{$user.title}</a></td>
             <td>{$user.publisher}</td>
-            <td>{$user.create_time}</td>
+            <td>{$user.create_time |date="Y-m-d",###}</td>
             <td><a href="__PUBLIC__/admin/Noticement/update/id/{$user.id}"  class="btn btn-primary" " >编辑</a>
                 <a href="#"  class="btn btn-danger" data-toggle="modal" data-target="#myModal{$user.id}">删除 </a>
             </td>

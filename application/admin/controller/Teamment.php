@@ -52,7 +52,7 @@ class Teamment extends Index
                 'content' => $content,
                 'mark' => $mark,
             ]);
-            return $this->success('恭喜您公告添加成功^_^', '__PUBLIC__/admin/index/manage');
+            return $this->success('恭喜您公告添加成功^_^', 'edit');
         }
         return $this->fetch();
     }
@@ -81,17 +81,16 @@ class Teamment extends Index
         $content = input('param.content');
         $mark = input('param.oldmark');
         $newmark = "";
-
+        echo $name;
         if (!$id) {
             return "id不能为空！";
         }
 
         $show = Team::where('id', '=', $id)
             ->find();
-        if ($name) {
+        if ($name <> '') {
 
             $file = request()->file('mark');
-
             // 移动到框架应用根目录/public/uploads/ 目录下
             if ($file) {
                 $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
@@ -119,8 +118,6 @@ class Teamment extends Index
                         unlink($user);
                     }
                 }
-
-
                 Team::update([
                     'id' => $id,
                     'title' => $name,
@@ -130,7 +127,7 @@ class Teamment extends Index
                     'mark' => $newmark,
                 ]);
             } else {
-                Team::update([
+               Team::update([
                     'id' => $id,
                     'title' => $name,
                     'head' => $head,
@@ -138,6 +135,7 @@ class Teamment extends Index
                     'content' => $content,
                     'mark' => $mark,
                 ]);
+
             }
 
 

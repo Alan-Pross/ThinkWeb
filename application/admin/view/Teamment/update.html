@@ -6,32 +6,32 @@
     <form action="" method="post" enctype="multipart/form-data">
 
         <div class="form-group">
-            <label for="exampleInputName2">团队名称:</label>
+            <label>团队名称:</label>
             <input type="text" class="form-control" id="name" name="name" value="{$show.title}" placeholder="请输入名称"
-                   maxlength="100">
+                   maxlength="20">
         </div>
 
         <div class="form-group">
-            <label for="exampleInputName2">负责人:</label>
+            <label>负责人:</label>
             <input type="text" class="form-control" id="head" name="head" value="{$show.head}" placeholder="请输入负责人"
-                   maxlength="100">
+                   maxlength="16">
         </div>
 
         <div class="form-group">
-            <label for="exampleInputName2">团队口号:</label>
+            <label>团队口号:</label>
             <textarea class="form-control" id="message" name="message" placeholder="请输入团队口号">{$show.message}</textarea>
         </div>
 
         <div class="form-group">
-            <label for="exampleInputName2">logo:</label><br/>
+            <label>logo:</label><br/>
             <img src="__PUBLIC__/uploads/{$show.mark}" width="60" height="60"/><br/>
-            <label for="exampleInputName2">选择上传新logo:</label>
+            <label>选择上传新logo:</label>
             <input type="hidden" name="oldmark" value="{$show.mark}"/>
             <input type="file" name="mark"/>
         </div>
 
         <div class="form-group">
-            <label for="exampleInputPassword1">团队详情:</label>
+            <label>团队详情:</label>
             <script id="container" name="content" type="text/plain">
        			{$show.content}
 
