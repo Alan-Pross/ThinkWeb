@@ -52,7 +52,7 @@ class Teamment extends Index
                 'content' => $content,
                 'mark' => $mark,
             ]);
-            return $this->success('恭喜您公告添加成功^_^', 'edit');
+            return $this->success('恭喜您团队添加成功^_^', 'edit');
         }
         return $this->fetch();
     }
@@ -108,8 +108,6 @@ class Teamment extends Index
                     echo $file->getError();
                 }
             }
-
-
             if ($newmark <> '') {
 
                 if ($mark <> '') {
@@ -153,7 +151,8 @@ class Teamment extends Index
             $this->redirect(url('/admin'));
         }
 
-        $id = input('id');
+
+       $id = input('id');
 
         if ($id <> '') {
             $list = Team::where('id', '=', $id)->select();
@@ -173,3 +172,5 @@ class Teamment extends Index
 
 
 }
+
+
