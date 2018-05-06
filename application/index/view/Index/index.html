@@ -22,10 +22,16 @@
         $("#news").click(function() {
             $("#firstPage").show();
             $("#secondPage").hide();
+            $("#news").addClass("new-active");
+            $("#notice").removeClass("new-active");
+            $("#a_href").attr("href","__PUBLIC__/index.php/index/index/newnotice");
         });
         $("#notice").click(function() {
             $("#firstPage").hide();
             $("#secondPage").show();
+            $("#news").removeClass("new-active");
+            $("#notice").addClass("new-active");
+            $("#a_href").attr("href","__PUBLIC__/index.php/index/index/newnotice2");
         });
     });
     </script>
@@ -44,13 +50,13 @@
     <div class="con-wap clearfix">
         <div id="tab">
             <div class="clearfix" style="border-bottom: 1px solid #d9d9d9">
-                <div id="news" class="col">
+                <div id="news" class="col new-active">
                     <span>学院新闻</span>
                 </div>
                 <div id="notice" class="col">
                     <span>通知公告</span> 
                 </div>
-                    <span class="more"><a href="__PUBLIC__/index.php/index/index/newnotice2">MORE+</a></span>
+                    <span class="more"><a id="a_href" href="__PUBLIC__/index.php/index/index/newnotice">MORE+</a></span>
                     <!-- <span class="more"><a href="__PUBLIC__/index.php/index/index/newnotice">MORE+</a></span>  -->
             </div>
             <div id="firstPage" class="show">

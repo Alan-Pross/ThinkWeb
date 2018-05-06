@@ -839,3 +839,7 @@ h1 {
     background:  rgba(46,148,185,.5);
 }
 
+.new-active{
+    border-bottom: 3px solid yellow;
+}
+
