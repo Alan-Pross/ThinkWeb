@@ -1,36 +1,37 @@
 {include file="Public/top" /}
 <!-- 右侧 -->
 <div class="col-xs-12 col-sm-8 col-md-9 col-lg-10">
-
-
     <ol class="breadcrumb">
         <li><a href="__PUBLIC__/admin/index/manage
                     ">首页</a></li>
-        <li class="active">后台介绍</li>
+        <li class="active">后台首页</li>
     </ol>
-    <div class="container">
-
-
-        <h1>系统基本信息</h1>
-
-
-        <li>
-            <label>操作系统：</label><span>Windows</span>
-        </li>
-        <li>
-            <label>运行环境：</label><span>Apache/(Win64) PHP/5.4.45</span>
-        </li>
-        <li>
-            <label>服务器域名/IP：</label><span>localhost [ 127.0.0.1 ]</span>
-        </li>
-        <li>
-            <label>技术支持：</label><span>雅木网络</span>
-        </li>
-        <li>
-            <label>开发-版本：</label><span>V1.7.0</span>
-        </li>
-        </ul>
-
+    <div class="video-w3l" data-vide-bg="__STATIC__/video/1">
+        <!--header-->
+        <div class="header-w3l">
+            <h1>
+                <span>创</span>业学院<span>后台管理</span>系统
+                <br>
+                <br>
+                <span>创</span>新
+                <span>创</span>意
+                <span>创</span>业
+            </h1>
+        </div>
+        <!--//header-->
     </div>
 </div>
-    {include file="Public/footer" /}
+<script>
+    addEventListener("load", function () {
+        setTimeout(hideURLbar, 0);
+    }, false);
+
+    function hideURLbar() {
+        window.scrollTo(0, 1);
+    }
+</script>
+<link rel="stylesheet" href="__STATIC__/css/manage-style.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="__STATIC__/css/font-awesome.css">
+<script src="__STATIC__/js/jquery-1.11.0.min.js"></script>
+<script src="__STATIC__/js/jquery.vide.min.js"></script>
+{include file="Public/footer" /}
