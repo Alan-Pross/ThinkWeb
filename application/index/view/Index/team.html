@@ -11,13 +11,13 @@
 <div class="team">
     {volist name="team" id = "vo"}
     <a href="__PUBLIC__/index.php/index/index/teamcontent?id={$vo.id}">
-        <div class="fdw-pricing-table">
+        <div class="fdw-pricing-table" onclick="">
             <div class="plan plan4">
                 <div class="header">{$vo.title}</div>
                 <img src="__PUBLIC__/uploads/{$vo.mark}" width="110px" height="110px" alt="图标">
                 <div class="plan-contain">
                     <div class="price">{$vo.head}</div>
-                    <div class="message">{$vo.message}</div>
+                    <p class="message">{$vo.message}</p>
                     </a>
                     <hr> 
                     <div class="monthly">{$vo.create_time |date="Y-m-d",###}</div>

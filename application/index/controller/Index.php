@@ -45,7 +45,7 @@ class Index extends \think\Controller
             'browsing' => $res[0]['browsing'] + 1,
         ]);
 
-        return view();
+        $this->redirect('__PUBLIC__/index.php/index/index/file');
     }
 
     public function newnotice()
