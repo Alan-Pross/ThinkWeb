@@ -23,6 +23,7 @@ class Teamment extends Index
         $head = input('param.head');
         $message = input('param.message');
         $content = input('param.content');
+        $createtime = input('param.createtime');
         $mark = "";
         if ($name <> '') {
             // 获取表单上传文件 例如上传了001.jpg
@@ -51,6 +52,7 @@ class Teamment extends Index
                 'head' => $head,
                 'content' => $content,
                 'mark' => $mark,
+                'create_time' => $createtime,
             ]);
             return $this->success('恭喜您团队添加成功^_^', 'edit');
         }
