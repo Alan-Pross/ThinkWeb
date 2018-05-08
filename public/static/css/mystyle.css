@@ -907,3 +907,12 @@ h5{
     margin-top:20px;
     padding:30px 60px;
 }
+.radiusImg {
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+            /* Old Firefox */
+            -webkit-border-radius: 50%;
+            /* Safari 和 Chrome */
+            -o-border-radius: 50%;
+            /* Opera */
+        }
