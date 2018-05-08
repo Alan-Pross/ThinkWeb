@@ -36,17 +36,18 @@
     </div>
     <div class="col_news">
         <div class="list_detail ">
-            <div class="list_detail_1">标题</div>
-            <div class="list_detail_2">发布时间</div>
-            <div class="list_detail_3">{$tape}</div>
+            <div class="list_detail_1">{$tape}</div>
+            <div class="list_detail_2">{$tape2}</div>
+            <div class="list_detail_3">{$tape3}</div>
         </div>
         <div id="secondPage" class="show">
             <ul>
                 {volist name="res" id="vo"}
-                <li id="erg" class="list_news"><a
-                        href="javascript:a({$vo.id})" id="a">{$vo.title}</a>
-                    <span class="label_datatime news_datatime">{$vo.create_time |date="Y-m-d",###}</span>
-                    <span class="news_count">{$vo.browsing}</span>
+                <li id="erg" class="list_news">
+                    <a href="javascript:a({$vo.id})" id="a">{$vo.title}</a>
+                        <span class="label_datatime news_datatime"
+                              id="zhouwei">{$vo.create_time |date="Y-m-d",###}</span>
+                    <a class="news_count">{$vo.browsing}</a>
                 </li>
                 {/volist}
             </ul>
@@ -55,7 +56,17 @@
 
     </div>
 </div>
+<style id="css"></style>
 <script type="text/javascript">
+    window.onload()
+    {
+        var a = GetRequest();
+        var abc = a['id'];
+        if (abc == 3) {
+            var oCss = document.getElementById('css');
+            oCss.innerHTML+=".show span{display:none}";
+        }
+    }
     function GetRequest() {
         var url = location.search; //获取url中"?"符后的字串
         var theRequest = new Object();

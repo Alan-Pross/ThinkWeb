@@ -133,8 +133,9 @@ class Index extends \think\Controller
 
     public function searchshow($id, $search)
     {
-        $tape = "浏览次数";
+        $tape = "标题";
         $tape2 = "发布时间";
+        $tape3 = "浏览次数";
 
         if ($id == 1) {
             $res = Notice::where('title', 'like', "%{$search}%")->paginate(5,false,['query'=>request()->param()]);
@@ -142,11 +143,12 @@ class Index extends \think\Controller
             $res = News::where('title', 'like', "%{$search}%")->paginate(5,false,['query'=>request()->param()]);
         } elseif ($id == 3) {
             $res = Team::where('title', 'like', "%{$search}%")->paginate(5,false,['query'=>request()->param()]);
-            $tape = "";
-            $tape2 = "创建时间";
+            $tape = "公司名称";
+            $tape2 = "";
+            $tape3 = "负责人";
         } elseif ($id == 4) {
             $res = File::where('title', 'like', "%{$search}%")->paginate(5,false,['query'=>request()->param()]);
-            $tape = "下载次数";
+            $tape3 = "下载次数";
         }
         $page = $res->render();
         $this->assign('res', $res);
@@ -154,6 +156,7 @@ class Index extends \think\Controller
         $this->assign('page', $page);
         $this->assign('tape', $tape);
         $this->assign('tape2', $tape2);
+        $this->assign('tape3', $tape3);
 
         return $this->fetch();
     }
