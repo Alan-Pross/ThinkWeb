@@ -162,7 +162,7 @@ class Index extends \think\Controller
     }
 
     public function admin(){
-        $this->redirect('__PUBLIC__/admin');
+        $this->redirect('__PUBLIC__/index.php/admin/index/index');
     }
 
 }
