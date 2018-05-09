@@ -52,6 +52,7 @@ class Teamment extends Index
                 'head' => $head,
                 'content' => $content,
                 'mark' => $mark,
+                'browsing'  => $head,
                 'create_time' => $createtime,
             ]);
             return $this->success('恭喜您团队添加成功^_^', 'edit');
@@ -82,8 +83,9 @@ class Teamment extends Index
         $message = input('param.message');
         $content = input('param.content');
         $mark = input('param.oldmark');
+        $createtime = input('param.createtime');
         $newmark = "";
-        echo $name;
+
         if (!$id) {
             return "id不能为空！";
         }
@@ -125,6 +127,8 @@ class Teamment extends Index
                     'message' => $message,
                     'content' => $content,
                     'mark' => $newmark,
+                    'browsing'  => $head,
+                    'create_time' => $createtime,
                 ]);
             } else {
                Team::update([
@@ -134,6 +138,8 @@ class Teamment extends Index
                     'message' => $message,
                     'content' => $content,
                     'mark' => $mark,
+                   'browsing'  => $head,
+                   'create_time' => $createtime,
                 ]);
 
             }
