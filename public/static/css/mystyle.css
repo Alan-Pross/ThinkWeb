@@ -2,6 +2,7 @@ html,
 body {
     height: 100%;
     font-family: Arial, Helvetica, sans-serif, "宋体";
+    
 }
 
 body {
@@ -47,7 +48,7 @@ a {
 }
 
 .headbar {
-    min-width: 1000px;
+    width: 100%;
 }
 
 .banner {
@@ -621,7 +622,7 @@ dd {
 }
 
 .con-wap {
-    width: 1000px;
+    width: 980px;
     margin: 1em auto;
     background: #fff;
 }
