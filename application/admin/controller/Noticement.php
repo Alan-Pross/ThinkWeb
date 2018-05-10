@@ -27,7 +27,7 @@ class Noticement extends Index
                 'publisher' => $publisher,
                 'content' => $content,
             ]);
-            return $this->success('恭喜您公告添加成功^_^', '__PUBLIC__/admin/index/manage');
+            return $this->success('恭喜您公告添加成功^_^', 'edit');
         }
         return $this->fetch();
     }
@@ -85,7 +85,7 @@ class Noticement extends Index
         }
 
         $id = input('id');
-        echo $id;
+
         if ($id <> '') {
             $user = Notice::where('id', '=', $id)->delete();
         }

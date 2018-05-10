@@ -53,7 +53,7 @@ class Teamment extends Index
                 'content' => $content,
                 'mark' => $mark,
                 'browsing'  => $head,
-                'create_time' => $createtime,
+                'date' => $createtime,
             ]);
             return $this->success('恭喜您团队添加成功^_^', 'edit');
         }
@@ -128,7 +128,7 @@ class Teamment extends Index
                     'content' => $content,
                     'mark' => $newmark,
                     'browsing'  => $head,
-                    'create_time' => $createtime,
+                    'date' => $createtime,
                 ]);
             } else {
                Team::update([
@@ -139,7 +139,7 @@ class Teamment extends Index
                     'content' => $content,
                     'mark' => $mark,
                    'browsing'  => $head,
-                   'create_time' => $createtime,
+                   'date' => $createtime,
                 ]);
 
             }

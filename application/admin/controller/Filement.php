@@ -53,7 +53,7 @@ class Filement extends Index
                 'filepath' => $filepath,
             ]);
 
-            return $this->success('恭喜您文件上传成功^_^', '__PUBLIC__/admin/index/manage');
+            return $this->success('恭喜您文件上传成功^_^', 'edit');
         }
         return $this->fetch();
     }
