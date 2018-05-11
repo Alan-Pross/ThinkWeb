@@ -15,7 +15,7 @@ class Filement extends Index
     public function edit()
     {
         if (!$this->accountok()) {
-            $this->redirect(url('/admin'));
+            $this->redirect(url('__PUBLIC__/index.php/admin/index/index'));
         }
 
         $name = input('param.name');
@@ -61,7 +61,7 @@ class Filement extends Index
     public function show()
     {
         if (!$this->accountok()) {
-            $this->redirect(url('/admin'));
+            $this->redirect(url('__PUBLIC__/index.php/admin/index/index'));
         }
         $show = new File();
         $show = File::where('id', '>', 0)->order('id', 'desc')->paginate(5);
@@ -72,7 +72,7 @@ class Filement extends Index
     public function update()
     {
         if (!$this->accountok()) {
-            $this->redirect(url('/admin'));
+            $this->redirect(url('__PUBLIC__/index.php/admin/index/index'));
         }
 
         $id = input('id');
@@ -146,7 +146,7 @@ class Filement extends Index
     public function delete()
     {
         if (!$this->accountok()) {
-            $this->redirect(url('/admin'));
+            $this->redirect(url('__PUBLIC__/index.php/admin/index/index'));
         }
 
         $id = input('id');

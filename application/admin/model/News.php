@@ -8,8 +8,5 @@ use think\Db;
 
 class News extends model
 {
-
-
     protected $updateTime = false;
-
 }

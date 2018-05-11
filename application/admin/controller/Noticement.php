@@ -15,7 +15,7 @@ class Noticement extends Index
     public function edit()
     {
         if (!$this->accountok()) {
-            $this->redirect(url('/admin'));
+            $this->redirect(url('__PUBLIC__/index.php/admin/index/index'));
         }
 
         $title = input('param.title');
@@ -35,7 +35,7 @@ class Noticement extends Index
     public function show()
     {
         if (!$this->accountok()) {
-            $this->redirect(url('/admin'));
+            $this->redirect(url('__PUBLIC__/index.php/admin/index/index'));
         }
 
         $show = Notice::where('id', '>', 0)->order('id', 'desc')->paginate(5);
@@ -46,7 +46,7 @@ class Noticement extends Index
     public function update()
     {
         if (!$this->accountok()) {
-            $this->redirect(url('/admin'));
+            $this->redirect(url('__PUBLIC__/index.php/admin/index/index'));
         }
 
         $id = input('id');
@@ -81,7 +81,7 @@ class Noticement extends Index
     public function delete()
     {
         if (!$this->accountok()) {
-            $this->redirect(url('/admin'));
+            $this->redirect(url('__PUBLIC__/index.php/admin/index/index'));
         }
 
         $id = input('id');

@@ -7,8 +7,5 @@ use think\Db;
 
 class Notice extends model
 {
-
-
     protected $updateTime = false;
-
 }

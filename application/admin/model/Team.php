@@ -8,7 +8,5 @@ use think\Db;
 
 class Team extends model
 {
-
     protected $updateTime = false;
-
 }

@@ -7,7 +7,7 @@
 <script type="text/javascript">
     function searchToggle(obj, evt) {
         var search = $("#search").val();
-        if(search == ""){
+        if (search == "") {
             document.getElementById('search-form').action = "__PUBLIC__/index.php/index/index/search";
         } else {
             document.getElementById('search-form').action = '__PUBLIC__/index.php/index/index/searchshow?id=1&search=' + search;

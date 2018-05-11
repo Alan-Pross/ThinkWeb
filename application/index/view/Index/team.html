@@ -5,11 +5,11 @@
     <title>入驻团队</title>
     <link rel="stylesheet" href="__STATIC__/css/team.css">
     <style>
-        @media screen and (max-width: 1000px){
-          body{
-              width: 1400px;
+        @media screen and (max-width: 1000px) {
+            body {
+                width: 1400px;
+            }
         }
-      }
     </style>
 </head>
 <body>
@@ -25,12 +25,12 @@
                 <div class="plan-contain">
                     <div class="price">{$vo.head}</div>
                     <p class="message">{$vo.message}</p>
-                    </a>
-                    <hr> 
+                    <div style="background-color:#000000;height:1px;border:none;"></div>
                     <div class="monthly">{$vo.date}</div>
                 </div>
             </div>
         </div>
+    </a>
     {/volist}
     {$page}
 </div>

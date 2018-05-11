@@ -45,8 +45,8 @@
                 {volist name="res" id="vo"}
                 <li id="erg" class="list_news">
                     <a href="javascript:a({$vo.id})" id="a">{$vo.title}</a>
-                        <span class="label_datatime news_datatime"
-                              id="zhouwei">{$vo.create_time |date="Y-m-d",###}</span>
+                    <span class="label_datatime news_datatime"
+                          id="zhouwei">{$vo.create_time |date="Y-m-d",###}</span>
                     <a class="news_count">{$vo.browsing}</a>
                 </li>
                 {/volist}
@@ -64,7 +64,7 @@
         var abc = a['id'];
         if (abc == 3) {
             var oCss = document.getElementById('css');
-            oCss.innerHTML+=".show span{display:none}";
+            oCss.innerHTML += ".show span{display:none}";
         }
     }
     function GetRequest() {

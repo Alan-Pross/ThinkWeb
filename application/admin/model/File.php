@@ -8,8 +8,5 @@ use think\Db;
 
 class File extends model
 {
-
-
     protected $updateTime = false;
-
 }

@@ -9,7 +9,7 @@ class Index extends \think\Controller
     public function index()
     {
         if ($this->accountok()) {
-            $this->redirect(url('/admin/index/manage'));
+            $this->redirect(url('__PUBLIC__/index.php/admin/index/manage'));
         }
         return view();
     }
@@ -35,7 +35,7 @@ class Index extends \think\Controller
         cookie('account', $has['account'], 7200);  // 两个小时有效期
         cookie('password', $has['password'], 7200);
 
-        $this->redirect(url('/admin/index/manage'));
+        $this->redirect(url('__PUBLIC__/index.php/admin/index/manage'));
     }
 
     public function manage()
@@ -43,7 +43,7 @@ class Index extends \think\Controller
         if ($this->accountok()) {
             return $this->fetch();
         }
-        $this->redirect(url('/admin'));
+        $this->redirect(url('__PUBLIC__/index.php/admin/index/index'));
     }
 
     public function accountok()//是否登录成功
@@ -61,7 +61,7 @@ class Index extends \think\Controller
     {
         cookie('account', null);
         cookie('password', null);
-        return $this->redirect(url('/admin'));
+        return $this->redirect(url('__PUBLIC__/index.php/admin/index/index'));
     }
 }
 

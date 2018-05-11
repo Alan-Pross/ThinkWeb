@@ -9,7 +9,7 @@ class Newsment extends Index
     public function edit()
     {
         if (!$this->accountok()) {
-            $this->redirect(url('/admin'));
+            $this->redirect(url('__PUBLIC__/index.php/admin/index/index'));
         }
 
         $title = input('param.title');
@@ -29,7 +29,7 @@ class Newsment extends Index
     public function show()
     {
         if (!$this->accountok()) {
-            $this->redirect(url('/admin'));
+            $this->redirect(url('__PUBLIC__/index.php/admin/index/index'));
         }
 
         $show = new News();
@@ -42,7 +42,7 @@ class Newsment extends Index
     {
 
         if (!$this->accountok()) {
-            $this->redirect(url('/admin'));
+            $this->redirect(url('__PUBLIC__/index.php/admin/index/index'));
         }
 
         $id = input('id');
@@ -82,7 +82,7 @@ class Newsment extends Index
     public function delete()
     {
         if (!$this->accountok()) {
-            $this->redirect(url('/admin'));
+            $this->redirect(url('__PUBLIC__/index.php/admin/index/index'));
         }
 
         $id = input('id');
