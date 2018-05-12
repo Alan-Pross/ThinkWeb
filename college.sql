@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2018 年 05 月 12 日 14:30
+-- 生成日期: 2018 年 05 月 12 日 14:45
 -- 服务器版本: 5.5.53
 -- PHP 版本: 5.4.45
 
@@ -86,7 +86,7 @@ CREATE TABLE IF NOT EXISTS `people` (
 --
 
 INSERT INTO `people` (`id`, `account`, `password`) VALUES
-(1, 'admin', 'admin');
+(1, 'swq16s9DNsM0wTxggR', 'e8PAL0sZ1hpvVDV7s9');
 
 -- --------------------------------------------------------
 
