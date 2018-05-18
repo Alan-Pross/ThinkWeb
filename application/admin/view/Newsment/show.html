@@ -16,7 +16,7 @@
             <td>{$user.title}</a></td>
             <td>{$user.publisher}</td>
             <td>{$user.create_time|date="Y-m-d",###}</td>
-            <td><a href="__PUBLIC__/admin/newsment/update/id/{$user.id}"  class="btn btn-primary">编辑</a>
+            <td><a href="__PUBLIC__/index.php/admin/newsment/update/id/{$user.id}"  class="btn btn-primary">编辑</a>
                 <a href="#"  class="btn btn-danger" data-toggle="modal" data-target="#myModal{$user.id}">删除 </a>
             </td>
 
@@ -36,7 +36,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
 
-                        <a href="__PUBLIC__/admin/newsment/delete/id/{$user.id}" id="btn"
+                        <a href="__PUBLIC__/index.php/admin/newsment/delete/id/{$user.id}" id="btn"
                            class="btn btn-danger">确定删除 </a>
                     </div>
                 </div>
