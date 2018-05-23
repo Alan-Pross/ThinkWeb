@@ -63,7 +63,7 @@
                 <ul class="jh_notice">
                     {volist name="notice" id="vo2"}
                     <li>
-                        <a href="__PUBLIC__/index.php/index/index/newnoticearticle?id={$vo1.id}">{$vo2.title}</a>
+                        <a href="__PUBLIC__/index.php/index/index/newnoticearticle?id={$vo2.id}">{$vo2.title}</a>
                         <span class="label_datatime">{$vo2.create_time |date="Y-m-d",###}</span>
                     </li>
                     {/volist}
