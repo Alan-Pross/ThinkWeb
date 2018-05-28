@@ -58,6 +58,7 @@ a {
     font-size: 0;
     text-align: center;
     background-color: #FFF;
+    min-width: 980px;
 }
 
 .banner::before {
@@ -76,10 +77,10 @@ a {
 }
 
 .logo {
-    height: 70px;
+    height: 82px;
     display: inline-block;
     white-space: nowrap;
-    font-size: 12px;
+    font-size: 0;
 }
 
 .logo img {
