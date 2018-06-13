@@ -81,8 +81,8 @@
 ``` 
 // 视图输出字符串内容替换
     'view_replace_str'       => [
-        '__PUBLIC__'=>'/cw/trunk/public',
-        '__STATIC__'=>'/cw/trunk/public/static',
-        '__ROOT__' => '/cw/trunk',
+        '__PUBLIC__'=>'/cw/public',
+        '__STATIC__'=>'/cw/public/static',
+        '__ROOT__' => '/cw/',
     ],
 ```
