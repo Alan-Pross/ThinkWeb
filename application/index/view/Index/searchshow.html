@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-
+<html>
 <head>
     <meta charset="UTF-8"/>
     <title>搜索结果</title>
     <link rel="stylesheet" href="__STATIC__/css/searchshow-form.css">
 </head>
+<body>
 {include file="Index/header" /}
-
 <div class="news_wrapper">
     <div class="col_menu">
         <div class="col_head">
@@ -67,6 +66,7 @@
             oCss.innerHTML += ".show span{display:none}";
         }
     }
+
     function GetRequest() {
         var url = location.search; //获取url中"?"符后的字串
         var theRequest = new Object();
@@ -79,6 +79,7 @@
         }
         return theRequest;
     }
+
     function a(var1) {
         var a = GetRequest();
         var abc = a['id'];

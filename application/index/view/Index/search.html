@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-
+<html>
 <head>
     <meta http-equiv="Cache-Control" content="max-age=7200" charset="UTF-8"/>
     <title>搜索</title>
@@ -37,6 +36,7 @@
             setCaretPosition(document.getElementById('search'), 0);
         }, 400)
     }
+
     function searchToggle(obj, evt) {
         var search = $("#search").val();
         if (search == "") {
@@ -57,6 +57,7 @@
             });
         }
     }
+
     function setCaretPosition(obj, pos) {
         if (obj.createTextRange) {
             var range = obj.createTextRange();
