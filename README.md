@@ -59,7 +59,7 @@
         发布: 7d
         验收: 3d
 ```
->GitHub默认不支持甘特图[(预览)*](https://www.zybuluo.com/isProSS/note/1121533)
+>GitHub与Gitee不支持甘特图
 
 ## 网页名称
 | 名称 | 英文 |
