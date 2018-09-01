@@ -14,15 +14,13 @@
 		}
 		var obj = document.getElementById("team");
 		if(isMobile){
-			obj.setAttribute("class", "teammb");
-		} else {
-			obj.setAttribute("class", "teampc");
+			obj.className = "teammb";
 		}
     </script>
 </head>
 <body>
 {include file="Index/header" /}
-<div id="team">
+<div id="team" class="teampc">
     {volist name="team" id = "vo"}
     <a href="__PUBLIC__/index.php/index/index/teamcontent?id={$vo.id}">
         <div class="fdw-pricing-table" onclick="">
