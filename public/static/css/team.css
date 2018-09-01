@@ -2,15 +2,22 @@ div, p {
     margin: 0;
 }
 
-.team {
+.teampc {
     text-align: center;
     margin: 10px auto;
+    width: 1400px;
+}
+
+.teammb {
+    text-align: center;
+    margin: 10px auto;
+    width: 980px;
 }
 
 .fdw-pricing-table {
     margin: 20px;
     text-align: center;
-    display: inline-block
+    display: inline-block;
 }
 
 /* --------------- */
