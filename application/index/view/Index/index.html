@@ -1,99 +1,98 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8" />
     <title>江汉大学创业学院</title>
     <script type="text/javascript" src="http://ajax.microsoft.com/ajax/jquery
 /jquery-1.4.min.js"></script>
     <script>
-        $(document).ready(function () {
-            $("#news").click(function () {
-                $("#firstPage").show();
-                $("#secondPage").hide();
-                $("#news").addClass("new-active");
-                $("#notice").removeClass("new-active");
-                $("#a_href").attr("href", "__PUBLIC__/index.php/index/index/newnotice");
-            });
-            $("#notice").click(function () {
-                $("#firstPage").hide();
-                $("#secondPage").show();
-                $("#news").removeClass("new-active");
-                $("#notice").addClass("new-active");
-                $("#a_href").attr("href", "__PUBLIC__/index.php/index/index/newnotice2");
-            });
+    $(document).ready(function() {
+        $("#news").click(function() {
+            $("#firstPage").show();
+            $("#secondPage").hide();
+            $("#news").addClass("new-active");
+            $("#notice").removeClass("new-active");
+            $("#a_href").attr("href", "__PUBLIC__/index.php/index/index/newnotice");
         });
+        $("#notice").click(function() {
+            $("#firstPage").hide();
+            $("#secondPage").show();
+            $("#news").removeClass("new-active");
+            $("#notice").addClass("new-active");
+            $("#a_href").attr("href", "__PUBLIC__/index.php/index/index/newnotice2");
+        });
+    });
     </script>
 </head>
+
 <body>
-{include file="Index/header" /}
-<div class="carousel">
-    <ul class="images-wrapper">
-        <div id="pre" class="button left"></div>
-        <div id="next" class="button right"></div>
-        <li class="a"><a href=""><img src="__STATIC__/images/a.jpg" alt="" width=100%></a></li>
-        <li class="a" style="z-index: -1"><a href=""><img src="__STATIC__/images/b.jpg" alt="" width=100%></a></li>
-        <li class="a" style="z-index: -2"><a href=""><img src="__STATIC__/images/c.jpg" alt="" width=100%></a></li>
-    </ul>
-</div>
-<div class="wp-container">
-    <div class="con-wap clearfix">
-        <div id="tab">
-            <div class="clearfix" style="border-bottom: 1px solid #d9d9d9">
-                <div id="news" class="col new-active">
-                    <span>学院新闻</span>
+    {include file="Index/header" /}
+    <div class="carousel">
+        <ul class="images-wrapper">
+            <div id="pre" class="button left"></div>
+            <div id="next" class="button right"></div>
+            <li class="a" style="transition: left .5s"><a href=""><img src="__STATIC__/images/a.jpg" alt="" width=100%></a></li>
+            <li class="a" style="z-index: -1"><a href=""><img src="__STATIC__/images/b.jpg" alt="" width=100%></a></li>
+            <li class="a" style="z-index: -2"><a href=""><img src="__STATIC__/images/c.jpg" alt="" width=100%></a></li>
+        </ul>
+    </div>
+    <div class="wp-container">
+        <div class="con-wap clearfix">
+            <div id="tab">
+                <div class="clearfix" style="border-bottom: 1px solid #d9d9d9">
+                    <div id="news" class="col new-active">
+                        <span>学院新闻</span>
+                    </div>
+                    <div id="notice" class="col">
+                        <span>通知公告</span>
+                    </div>
+                    <span class="more"><a id="a_href" href="__PUBLIC__/index.php/index/index/newnotice">MORE+</a></span>
+                    <!-- <span class="more"><a href="__PUBLIC__/index.php/index/index/newnotice">MORE+</a></span>  -->
                 </div>
-                <div id="notice" class="col">
-                    <span>通知公告</span>
+                <div id="firstPage" class="show">
+                    <ul class="jh_notice">
+                        {volist name="news" id="vo1"}
+                        <li>
+                            <a href="__PUBLIC__/index.php/index/index/newnoticearticle?id=-{$vo1.id}">{$vo1.title}</a>
+                            <span class="label_datatime">{$vo1.create_time |date="Y-m-d",###}</span>
+                        </li>
+                        {/volist}
+                    </ul>
                 </div>
-                <span class="more"><a id="a_href" href="__PUBLIC__/index.php/index/index/newnotice">MORE+</a></span>
-                <!-- <span class="more"><a href="__PUBLIC__/index.php/index/index/newnotice">MORE+</a></span>  -->
+                <div id="secondPage" class="hide">
+                    <ul class="jh_notice">
+                        {volist name="notice" id="vo2"}
+                        <li>
+                            <a href="__PUBLIC__/index.php/index/index/newnoticearticle?id={$vo2.id}">{$vo2.title}</a>
+                            <span class="label_datatime">{$vo2.create_time |date="Y-m-d",###}</span>
+                        </li>
+                        {/volist}
+                    </ul>
+                </div>
             </div>
-            <div id="firstPage" class="show">
-                <ul class="jh_notice">
-                    {volist name="news" id="vo1"}
-                    <li>
-                        <a href="__PUBLIC__/index.php/index/index/newnoticearticle?id=-{$vo1.id}">{$vo1.title}</a>
-                        <span class="label_datatime">{$vo1.create_time |date="Y-m-d",###}</span>
-                    </li>
-                    {/volist}
-                </ul>
-            </div>
-
-            <div id="secondPage" class="hide">
-                <ul class="jh_notice">
-                    {volist name="notice" id="vo2"}
-                    <li>
-                        <a href="__PUBLIC__/index.php/index/index/newnoticearticle?id={$vo2.id}">{$vo2.title}</a>
-                        <span class="label_datatime">{$vo2.create_time |date="Y-m-d",###}</span>
-                    </li>
-                    {/volist}
-                </ul>
-            </div>
-        </div>
-        <div class="team-sidebar">
-            <div class="team-title">
-                <p class="col"><span>入驻团队</span></p>
-            </div>
-            <div class="list-hide">
-                <div class="team-list" id="dl-list">
-                    {volist name="team" id="vo3"}
-
-                    <dl>
-                        <a href="__PUBLIC__/index.php/index/index/teamcontent?id={$vo3.id}">
-                            <dt><img class="radiusImg" src="__PUBLIC__/uploads/{$vo3.mark}" height="50" width="50"></dt>
-                            <dd>{$vo3.title}</dd>
-                        </a>
-                    </dl>
-
-                    {/volist}
+            <div class="team-sidebar">
+                <div class="team-title">
+                    <p class="col"><span>入驻团队</span></p>
+                </div>
+                <div class="list-hide">
+                    <div class="team-list" id="dl-list">
+                        {volist name="team" id="vo3"}
+                        <dl>
+                            <a href="__PUBLIC__/index.php/index/index/teamcontent?id={$vo3.id}">
+                                <dt><img class="radiusImg" src="__PUBLIC__/uploads/{$vo3.mark}" height="50" width="50"></dt>
+                                <dd>{$vo3.title}</dd>
+                            </a>
+                        </dl>
+                        {/volist}
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-{include file="Index/footer" /}
-<script>
-    (function () {
+    {include file="Index/footer" /}
+    <script>
+    (function() {
         var a = document.getElementsByClassName('a');
         var pre = document.getElementById('pre');
         var next = document.getElementById('next');
@@ -107,7 +106,7 @@
             a[next].style.transition = "left 0s";
             a[next].style.left = "100%";
             a[next].style.zIndex = "1";
-            setTimeout(function () {
+            setTimeout(function() {
                 a[i].style.left = "-100%";
                 a[i].style.zIndex = '0';
                 a[next].style.transition = "left .5s";
@@ -122,7 +121,7 @@
             a[next].style.transition = "left 0s";
             a[next].style.left = "-100%";
             a[next].style.zIndex = "1";
-            setTimeout(function () {
+            setTimeout(function() {
                 a[i].style.left = "100%";
                 a[i].style.zIndex = '0';
                 a[next].style.transition = "left .5s";
@@ -132,21 +131,21 @@
         }
 
         var time = setInterval(moveleft, 3500);
-        pre.onclick = function () {
+        pre.onclick = function() {
             moveleft();
             if (!bool) {
                 clearInterval(time);
                 bool = true;
             }
         };
-        next.onclick = function () {
+        next.onclick = function() {
             moveright();
             if (!bool) {
                 clearInterval(time);
                 bool = true;
             }
         };
-        main.onmouseleave = function (event) {
+        main.onmouseleave = function(event) {
             var event = event || window.event;
             if (bool && event.relatedTarget) {
                 time = setInterval(moveleft, 3500);
@@ -157,7 +156,7 @@
                 next.style.opacity = '0';
             }
         };
-        main.onmouseenter = function () {
+        main.onmouseenter = function() {
             pre.style.opacity = '1';
             next.style.opacity = '1';
         };
@@ -187,6 +186,7 @@
         roll();
 
     })()
-</script>
+    </script>
 </body>
+
 </html>
