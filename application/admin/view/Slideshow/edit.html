@@ -1,6 +1,23 @@
 {include file="Public/top" /}
 
-<div class="container">
+<div id="tips"  class="container">
+    <h2>轮播图上传</h2>
+    <div id="tipsone" class="btn ">重要提示</div>
+    <form action="" class="layui-form" method="post" enctype="multipart/form-data" id="save_form">
+
+
+        <div class="form-group">
+                        <label>选择上传轮播图1:</label>
+            <input id="oneSowing" type="file"  name="image[]" />
+                        <label>选择上传轮播图2:</label>
+            <input type="file" name="image[]"/>
+                        <label>选择上传轮播图3:</label>
+            <input type="file" name="image[]"/>
+        </div>
+
+        <button id="btn" class=" btn btn-primary" lay-submit lay-filter="login" >提交</button>
+        <input type="reset"  value="重置"   class="btn btn-primary"/>
+        <div class="hide" id="okBtn"><span>确认</span><span>取消</span></div>
 
 </div>
 

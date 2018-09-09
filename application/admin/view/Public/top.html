@@ -5,20 +5,57 @@
     <title>江汉大学创业学院 后台管理</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__STATIC__/layui/css/layui.css">
     <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="__STATIC__/layer/layer.js" ></script>
+    <script src="__STATIC__/layui/layui.all.js" ></script>
     <style>
         body {
             display: flex;
             flex-flow: column;
             min-height: 100vh;
         }
-
+         #tipsone{         
+    color: #fff;
+    background-color: #b73345;
+    border-color: #b73345;
+         }
         main {
             flex: 1;
         }
     </style>
+    <script type="text/javascript">
+$(document).ready(function(){
+      $("#tipsone").click(function(){
+layer.msg('请上传1920*433像素的jpg格式照片#^_^#', {
+  icon: 1,
+  time: 3000 //2秒关闭（如果不配置，默认是3秒）
+}, function(){
+  //do something
+          }); 
+          });
+      /* layui.use('form', function(){
+              var form = layui.form;
+              //监听提交
+              form.on('submit(login)', function(data){
+                //layer.msg("1");
+               // alert("操作完成");
+                 //   return false;
+                 
+              });
+            });*/
+                  $("#btn").click(function(){ 
+                    layer.confirm('是否提交?', {icon: 3, title:'提示'}, function(index){
+                                    $('#save_form').submit();
+                    layer.close(index);
+                     });
+            return false;
+                     });
+      });
 
+          
+</script>
 </head>
 <body>
 
