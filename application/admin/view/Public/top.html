@@ -35,19 +35,10 @@ layer.msg('请上传1920*433像素的jpg格式照片#^_^#', {
   //do something
           }); 
           });
-      /* layui.use('form', function(){
-              var form = layui.form;
-              //监听提交
-              form.on('submit(login)', function(data){
-                //layer.msg("1");
-               // alert("操作完成");
-                 //   return false;
-                 
-              });
-            });*/
                   $("#btn").click(function(){ 
                     layer.confirm('是否提交?', {icon: 3, title:'提示'}, function(index){
-                                    $('#save_form').submit();
+                                  layer.msg("你已提交成功#^_^#，3秒后自动刷新");
+                                  setTimeout("$('#save_form').submit()","3000"); // $('#save_form').submit();
                     layer.close(index);
                      });
             return false;
